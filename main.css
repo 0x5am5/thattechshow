@@ -25,13 +25,13 @@ header {
     box-shadow: rgba(0, 0, 0, 0.05) 0px -10px 10px -10px inset, rgba(0, 0, 0, 0.25) 0px -10px 25px -10px inset;
     color: white;
     min-height: 100vh;
-    padding: 0 15px 100px 0;
+    padding: 0 15px 100px 15px;
 }
 
 .hero-content {
     display: flex;
     align-items: center;
-    max-width: 800px;
+    max-width: 900px;
     width: 100%;
     flex-direction: column;
     text-align: center;
@@ -74,11 +74,13 @@ h1 {
     display: flex;
     margin-top: 1em;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .links-list li {
     display: inline-block;
     margin-right: 1em;
+    margin-bottom: 1em;
 }
 
 .listen-image {
