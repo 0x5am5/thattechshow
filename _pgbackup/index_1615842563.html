@@ -39,27 +39,5 @@
             </section>
         </main>
         <iframe src="https://player.acast.com/that-tech-show/episodes/that-tech-show-the-trailer" style="position: fixed; bottom: 0; left: 0; right: 0; width: 100%; border-width: 0;"></iframe>
-        <script>
-     const RSS_URL = 'https://feeds.acast.com/public/shows/6012fcea40e3fd5f183effd9';
-
-     fetch(RSS_URL)
-     .then(response => response.text())
-     .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
-     .then(data => {
-         const items = data.querySelectorAll('item');
-         const html = items.map(episode => {
-             return `
-                 <article>
-                     <p class="date">${episode.querySelector('pubDate').innerHTML}</p>
-                     <h2>${episode.querySelector('title').innerHTML}</h2>
-                     <p>${episode.querySelector('').innerHTML}</p>
-
-                     <a href="${episode.querySelector('link').innerHTML}" rel="noreferrer nofollow">Watch now!</a>
-                 </article>
-             `
-         })
-         console.log(html);
-     })
- </script>
     </body>
 </html>
