@@ -60,7 +60,7 @@
 				 return `<article>
 						 <p class="date">${episode.querySelector('pubDate').innerHTML}</p>
 						 <h3>${episode.querySelector('title').innerHTML}</h3>
-						 <a href="${episode.querySelector('link').innerHTML}" rel="noreferrer nofollow">Listen now!</a>
+						 <a href="${episode.querySelector('link').innerHTML}" rel="noreferrer nofollow">Watch now!</a>
 					 </article>`;
 			 }).join('');
 			 document.getElementById('episodes').insertAdjacentHTML('beforeend', html);

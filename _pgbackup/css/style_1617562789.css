@@ -22,12 +22,6 @@
     margin-bottom: 1em;
 }
 
-.list-item {
-}
-
-.list-item {
-}
-
 .hero-text {
     font-size: 2em;
 }
@@ -56,12 +50,13 @@
     transform: translateY(-5px);
 }
 
-@media screen and (max-width:767px) {
-    .hero {
-    }
+#episodes article + article {
+    margin-top: 3rem;
+    border-top: 1px solid #fff;
+}
 
-    .hero {
-    }
+#episodes a {
+    color: inherit;
 }
 
 @media screen and (min-width:768px) {
@@ -70,7 +65,33 @@
         padding-left: 0;
         padding-right: 0;
     }
+}
 
-    .hero {
+.main {
+    padding-bottom: 100px;
+}
+
+@media screen and (min-width:768px) {
+    .main {
     }
+}
+
+.hero-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+.episodes {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
 }
