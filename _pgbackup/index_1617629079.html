@@ -45,7 +45,7 @@
 				<div class="pg-empty-placeholder" id="episodes" style="background-color: #2b2b2b; padding: 1em;"></div>
 			</section>
 		</main>
-		<iframe id="iframe" src="https://player.acast.com/that-tech-show/episodes/that-tech-show-the-trailer" style="position: fixed; bottom: 0; left: 0; right: 0; width: 100%; border-width: 0; transition: transform,.3s; transform: translateY(100%);"></iframe>
+		<iframe id="iframe" src="https://player.acast.com/that-tech-show/episodes/that-tech-show-the-trailer" style="position: fixed; bottom: 0; left: 0; right: 0; width: 100%; border-width: 0;"></iframe>
 		<script>
      const RSS_URL = 'https://s8hdp1sdz5.execute-api.eu-west-2.amazonaws.com/latest/proxy/';	
 
@@ -63,9 +63,7 @@
 						 <a href="${episode.querySelector('link').innerHTML}" rel="noreferrer nofollow">Listen now!</a>
 					 </article>`;
 			 }).join('');
-		 const latestEpisode = Array.from(items)[0].querySelector('link').innerHTML.replace('https://shows.acast.com', 'https://player.acast.com');
-		 	document.getElementById('iframe').src = latestEpisode;
-		 document.getElementById('iframe').style.transform = 'translateY(0)';
+		 	document.getElementById('iframe').src = Array.from(items)[0].querySelector('link').innerHTML
 			 document.getElementById('episodes').insertAdjacentHTML('beforeend', html);
 			
      })
