@@ -41,13 +41,13 @@
                     Buy us a coffee! </a>
 						<ul class="list-reset podcast-list">
 							<li class="list-item">
-								<a href="spotify:show:1Qcv0qPRsA7FjB2yjMqjGd" target="_blank" rel="noreferrer nofollow" title="Listen on Spotify" class="hero-link"> <img src="spotify.png" alt="Listen on Spotify" class="link-image listen-image"></a>
+								<a href="spotify:show:1Qcv0qPRsA7FjB2yjMqjGd" target="_blank" rel="noreferrer nofollow" title="Listen on Spotify" class="hero-link"> <img src="/images/spotify.png" alt="Listen on Spotify" class="link-image listen-image"></a>
 							</li>
 							<li class="list-item">
-								<a name="anchor" target="_blank" rel="noreferrer nofollow" class="hero-link"><img src="Stitcher_Listen_Badge_Color_Dark_BG.png" class="link-image"></a>
+								<a name="anchor" target="_blank" rel="noreferrer nofollow" class="hero-link"><img src="/images/Stitcher_Listen_Badge_Color_Dark_BG.png" class="link-image"></a>
 							</li>
 							<li class="list-item">
-								<a href="https://itunes.apple.com/us/podcast/id1551868741?mt=2" target="_blank" rel="noreferrer nofollow" title="Listen on Apple Podcast" class="hero-link"> <img alt="Listen on Apple Podcast" class="link-image" src="apple.png" style="max-height: 50px;"></a>
+								<a href="https://itunes.apple.com/us/podcast/id1551868741?mt=2" target="_blank" rel="noreferrer nofollow" title="Listen on Apple Podcast" class="hero-link"> <img alt="Listen on Apple Podcast" class="link-image" src="/images/apple.png" style="max-height: 50px;"></a>
 							</li>
 						</ul>
 					</div>
@@ -76,7 +76,7 @@
 				 const uri = episode.querySelector('guid').innerHTML;
 				 return `<article>
 						 <p class="date">${episode.querySelector('pubDate').innerHTML}</p>
-						 <h3>${episode.querySelector('title').innerHTML}</h3>
+						 <h3>${episode.querySelector('title').innerHTML.replace('<![CDATA[', '').replace(']]>','')}</h3>
 						 <a href="/episode.html?episode=${uri}" rel="noreferrer nofollow">Listen now!</a>
 					 </article>`;
 			 }).join('');
