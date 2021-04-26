@@ -11,19 +11,12 @@ $(function() {
         f.allow_single_type = true;
         f.user_lib = true
 
-        var comp_comp2 = new PgComponentType('comp2', 'TTS Header ');
-        comp_comp2.code = '<header class="header-wrap">\
-	<a class="header-title" data-pg-collapsed href="/">That Tech Show</a>\
-</header>';
-        comp_comp2.parent_selector = null;
-        f.addComponentType(comp_comp2);
-        
         //Tell Pinegrow about the framework
         pinegrow.addFramework(f);
             
         var section = new PgFrameworkLibSection("UserLib_lib", "Components");
         //Pass components in array
-        section.setComponentTypes([comp_comp2]);
+        section.setComponentTypes([]);
 
         f.addLibSection(section);
    });

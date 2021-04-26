@@ -113,6 +113,9 @@
     top: 0;
     left: 0;
     right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .about-hero {
@@ -129,4 +132,13 @@
     padding-left: 1em;
     padding-right: 1em;
     margin-top: 5em;
+}
+
+.patreon-link {
+    background: rgba(255, 66, 77, .9);
+}
+
+.patreon-link:hover {
+    background: rgba(255, 66, 77, .4);
+    color: #fff;
 }

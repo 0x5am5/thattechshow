@@ -23,10 +23,15 @@
 		<script>
 	window.RSS_URL = 'https://s8hdp1sdz5.execute-api.eu-west-2.amazonaws.com/latest/proxy/'
 </script>
+		<meta content="image" property="og:image">
 	</head>
 	<body style="padding-top: 0; margin: 0;">
-		<header class="header-wrap">
+		<header class="header-wrap" data-pgc="tts.header">
 			<a class="header-title" href="/">That Tech Show</a>
+			<a href="https://www.patreon.com/thattechshow" target="_blank" rel="noreferrer nofollow" class="button-link patreon-link"> <svg style="vertical-align: middle;" viewBox="0 0 512 512" width="15" height="15">
+					<path fill="white" d="M512 194.8c0 101.3-82.4 183.8-183.8 183.8-101.7 0-184.4-82.4-184.4-183.8 0-101.6 82.7-184.3 184.4-184.3C429.6 10.5 512 93.2 512 194.8zM0 501.5h90v-491H0v491z"></path>
+				</svg>
+                    Buy us a coffee! </a>
 		</header>
 		<main class="main">
 			<div class="hero-wrapper">
@@ -35,29 +40,24 @@
 					<div>
 						<h1 class="hero-text" id="title">That Tech Show</h1>
 						<p id="description">The podcast that takes a deeper look into all things tech with those who make it happen. Weekly we talk about the latest developments in technology around the world, and we have a fantastic guest talking about the part they play in the tech industry and how it&apos;s shaped their lives.</p>
-						<a href="https://www.patreon.com/thattechshow" target="_blank" rel="noreferrer nofollow" class="button-link patreon-link"> <svg style="vertical-align: middle;" viewBox="0 0 512 512" width="15" height="15">
-								<path fill="white" d="M512 194.8c0 101.3-82.4 183.8-183.8 183.8-101.7 0-184.4-82.4-184.4-183.8 0-101.6 82.7-184.3 184.4-184.3C429.6 10.5 512 93.2 512 194.8zM0 501.5h90v-491H0v491z"></path>
-							</svg>
-                    Buy us a coffee! </a>
 						<ul class="list-reset podcast-list">
 							<li class="list-item">
-								<a href="spotify:show:1Qcv0qPRsA7FjB2yjMqjGd" target="_blank" rel="noreferrer nofollow" title="Listen on Spotify" class="hero-link"> <img src="spotify.png" alt="Listen on Spotify" class="link-image listen-image"></a>
+								<a href="spotify:show:1Qcv0qPRsA7FjB2yjMqjGd" target="_blank" rel="noreferrer nofollow" title="Listen on Spotify" class="hero-link"> <img src="images/spotify.png" alt="Listen on Spotify" class="link-image listen-image"></a>
 							</li>
 							<li class="list-item">
-								<a name="anchor" target="_blank" rel="noreferrer nofollow" class="hero-link"><img src="Stitcher_Listen_Badge_Color_Dark_BG.png" class="link-image"></a>
+								<a name="anchor" target="_blank" rel="noreferrer nofollow" class="hero-link" href="https://www.stitcher.com/show/that-tech-show"><img src="images/Stitcher_Listen_Badge_Color_Dark_BG.png" class="link-image"></a>
 							</li>
 							<li class="list-item">
-								<a href="https://itunes.apple.com/us/podcast/id1551868741?mt=2" target="_blank" rel="noreferrer nofollow" title="Listen on Apple Podcast" class="hero-link"> <img alt="Listen on Apple Podcast" class="link-image" src="apple.png" style="max-height: 50px;"></a>
+								<a href="https://itunes.apple.com/us/podcast/id1551868741?mt=2" target="_blank" rel="noreferrer nofollow" title="Listen on Apple Podcast" class="hero-link"> <img alt="Listen on Apple Podcast" class="link-image" src="images/apple.png" style="max-height: 50px;"></a>
 							</li>
 						</ul>
 					</div>
 				</section>
 			</div>
 			<section class="episodes">
-				<h2>Episodes</h2>
-				<div class="pg-empty-placeholder" id="episodes" style="background-color: #2b2b2b; padding: 1em;"></div>
-			</section>
+</section>
 		</main>
+		<iframe id="iframe" src="https://player.acast.com/that-tech-show/episodes/that-tech-show-the-trailer" style="position: fixed; bottom: 0; left: 0; right: 0; width: 100%; border-width: 0; transition: transform,.3s; transform: translateY(100%);"></iframe>
 		<script>
 	const episodeUrl = window.location.search.split('&').filter(url => url.match(/episode/))[0].split('=')[1];
 
@@ -85,9 +85,13 @@
 					 }
 
 			 });
+		 		 const latestEpisode = Array.from(items)[0].querySelector('link').innerHTML.replace('https://shows.acast.com', 'https://player.acast.com');
 		 			 document.getElementById('image').src = episodeData.image;
+		 		 	document.getElementById('iframe').src = latestEpisode;
+		 document.getElementById('iframe').style.transform = 'translateY(0)';
 			 document.getElementById('title').innerText = episodeData.title.replace('<![CDATA[', '').replace(']]>','');
 		 			 document.getElementById('description').innerHTML = episodeData.description.replace(']]>', '');
+		 document.querySelector('meta[property="og:image"]').setAttribute('content', episodeData.image)
 			
      })
 	
