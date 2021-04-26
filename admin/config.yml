@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   repo: fakesamgregory/thattechshow
+  branch: main
 
 media_folder: "images/" # Media files will be stored in the repo under images/
 
