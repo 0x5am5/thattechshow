@@ -1,0 +1,48 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en" style="font-family: 'Roboto', sans-serif; font-size: 16px; background: #333; color: #FFF;">
+	<head>
+		<link href="favicon.jpeg" rel="icon" type="image/jpg"/>
+		<meta charset="utf-8">
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script>
+</script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>THAT TECH SHOW - Hosted by Chris Addams & Sam Gregory</title>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-TEM8PPB2T0"></script>
+		<script>
+	if (window.location.href.match(/thattech/)) {
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-TEM8PPB2T0');
+	}
+</script>
+	</head>
+	<body style="padding-top: 0; margin: 0;">
+		<header class="header-wrap">
+			<a class="header-title" href="/">That Tech Show</a>
+		</header>
+		<main class="main" style="padding-left: 15px; padding-right: 15px;">
+			<section>
+				<h2>About That Tech Show</h2>
+				<div style="display: flex; align-items: flex-start; justify-content: space-around;">
+					<div>
+						<img src="images/Chris-Profile-small.jpg" width="400"/>
+					</div>
+					<div>
+						<img src="images/me-crop.jpg" width="400"/>
+					</div>
+				</div>
+				{{ site.data.about.content }}
+			</section>
+		</main>
+		<iframe id="iframe" src="https://player.acast.com/that-tech-show/episodes/that-tech-show-the-trailer" style="position: fixed; bottom: 0; left: 0; right: 0; width: 100%; border-width: 0; transition: transform,.3s; transform: translateY(100%);"></iframe>
+	</body>
+</html>
