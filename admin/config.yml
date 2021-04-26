@@ -10,4 +10,5 @@ collections:
     label: "About" # Used in the UI
     folder: "_data/about" # The path to the folder where the documents are stored
     fields: # The fields for each document, usually in front matter
-      - {label: "Content", name: "content", widget: "markdown"}
+      - { label: "Content", name: "content", widget: "markdown" }
+      - { label: "Content", name: "content", widget: "string" }
