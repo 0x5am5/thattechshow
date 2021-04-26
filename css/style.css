@@ -114,3 +114,19 @@
     left: 0;
     right: 0;
 }
+
+.about-hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+.about-content {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 5em;
+}
