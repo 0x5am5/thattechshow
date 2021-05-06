@@ -50,8 +50,19 @@
 }
 
 #episodes article + article {
-    margin-top: 3rem;
+    margin-top: 1rem;
     border-top: 1px solid #fff;
+}
+
+#episodes article img {
+    max-width: 150px;
+    width: 100%;
+    margin-right: 1em;
+}
+
+#episodes article {
+    display: flex;
+    padding-top: 1em;
 }
 
 #episodes a {
@@ -74,6 +85,8 @@
 
 .main {
     padding-bottom: 160px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .hero-wrapper {
@@ -141,4 +154,15 @@
 .patreon-link:hover {
     background: rgba(255, 66, 77, .4);
     color: #fff;
+}
+
+@media screen and (min-width:768px) {
+    .main {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.loading {
+    text-align: center;
 }

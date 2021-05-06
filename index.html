@@ -13,6 +13,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<title>THAT TECH SHOW - Hosted by Chris Addams & Sam Gregory</title>
+		<script src="https://kit.fontawesome.com/440cd2ca6e.js" crossorigin="anonymous"></script>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-TEM8PPB2T0"></script>
 		<script>
 	if (window.location.href.match(/thattech/)) {
@@ -23,6 +24,7 @@
 		gtag('config', 'G-TEM8PPB2T0');
 	}
 </script>
+		<script src="https://kit.fontawesome.com/440cd2ca6e.js" crossorigin="anonymous"></script>
 	</head>
 	<body style="padding-top: 0; margin: 0;">
 		<header class="header-wrap" data-pgc="tts.header">
@@ -55,12 +57,18 @@
 			</div>
 			<section class="episodes">
 				<h2>Episodes</h2>
-				<div id="episodes" style="background-color: #2b2b2b; padding: 1em;">
-					<article style="display: none;">
-						<p class="date">Sun, 04 Apr 2021 16:38:48 GMT</p>
-						<h3>That Tech Show News - 4/4/21</h3>
-						<a href="/episode" rel="noreferrer nofollow">Listen now!</a>
-					</article>
+				<div>
+					<div id="episodes" style="background-color: #2b2b2b; padding: 1em;">
+						<div class="loading">
+							<i class="fa-2x fa-spin fa-spinner-third fal"></i>
+						</div>
+						<article style="display: none;">
+							<p class="date">Sun, 04 Apr 2021 16:38:48 GMT</p>
+							<h3>That Tech Show News - 4/4/21</h3>
+							<a href="/episode" rel="noreferrer nofollow">Listen now!</a>
+						</article>
+					</div>
+					<div class="pg-empty-placeholder"></div>
 				</div>
 			</section>
 		</main>
@@ -74,17 +82,21 @@
 		 //							<p>${episode.querySelector('itunes:subtitle').innerHTML}</p>
 			 const html = Array.from(items).map(episode => {
 				 const uri = episode.querySelector('guid').innerHTML;
+				 const image = episode.querySelector('[href]');
 				 return `<article>
-						 <p class="date">${episode.querySelector('pubDate').innerHTML}</p>
+						${image ? '<img src="' + episode.querySelector('[href]').getAttribute('href') + '" />' : ''}
+						<div>
+						 <p class="date">${episode.querySelector('pubDate').innerHTML.replace(/ \d+:\d+:\d+ GMT$/, '')}</p>
 						 <h3>${episode.querySelector('title').innerHTML.replace('<![CDATA[', '').replace(']]>','')}</h3>
-						 <a href="/episode.html?episode=${uri}" rel="noreferrer nofollow">Listen now!</a>
+						 <a href="/episode.html?episode=${uri}" rel="noreferrer nofollow">More info</a>
+</div>
 					 </article>`;
 			 }).join('');
 		 const latestEpisode = Array.from(items)[0].querySelector('link').innerHTML.replace('https://shows.acast.com', 'https://player.acast.com');
 		 	document.getElementById('iframe').src = latestEpisode;
 		 document.getElementById('iframe').style.transform = 'translateY(0)';
 			 document.getElementById('episodes').insertAdjacentHTML('afterbegin', html);
-			
+			 document.querySelector('.loading').style.display = 'none';
      })
  </script>
 	</body>
