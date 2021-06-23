@@ -1,21 +1,19 @@
----
----
 <!DOCTYPE html>
 <html lang="en" style="font-family: 'Roboto', sans-serif; font-size: 16px; background: #333; color: #FFF;">
-	<head>
-		<link href="favicon.jpeg" rel="icon" type="image/jpg"/>
-		<meta charset="utf-8">
-		<link href="css/style.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script>
+    <head>
+        <link href="favicon.jpeg" rel="icon" type="image/jpg"/>
+        <meta charset="utf-8">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
 </script>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="description" content="">
-		<meta name="author" content="">
-		<title>THAT TECH SHOW - Hosted by Chris Addams & Sam Gregory</title>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-TEM8PPB2T0"></script>
-		<script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>THAT TECH SHOW - Hosted by Chris Addams & Sam Gregory</title>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEM8PPB2T0"></script>
+        <script>
 	if (window.location.href.match(/thattech/)) {
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
@@ -24,29 +22,56 @@
 		gtag('config', 'G-TEM8PPB2T0');
 	}
 </script>
-	</head>
-	<body style="padding-top: 0; margin: 0;">
-		<header class="header-wrap" data-pgc="tts.header">
-			<a class="header-title" href="/">That Tech Show</a>
-			<a href="https://www.patreon.com/thattechshow" target="_blank" rel="noreferrer nofollow" class="button-link patreon-link"> <svg style="vertical-align: middle;" viewBox="0 0 512 512" width="15" height="15">
-					<path fill="white" d="M512 194.8c0 101.3-82.4 183.8-183.8 183.8-101.7 0-184.4-82.4-184.4-183.8 0-101.6 82.7-184.3 184.4-184.3C429.6 10.5 512 93.2 512 194.8zM0 501.5h90v-491H0v491z"></path>
-				</svg>
+        <script src="https://kit.fontawesome.com/440cd2ca6e.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    </head>
+    <body style="padding-top: 0; margin: 0;">
+        <header class="header-wrap bg-dark" data-pgc="TTSNavbar">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand header-title" href="/">That Tech Show</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/about-us.html">About Us</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contact</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="/links.html">Links</a>
+                        </li>-->
+                    </ul>
+                    <!-- <form class="form-inline justify-start my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">GO</button>
+                    </form> -->
+                    <a href="https://www.patreon.com/thattechshow" target="_blank" rel="noreferrer nofollow" class="button-link patreon-link"> <svg style="vertical-align: middle;" viewBox="0 0 512 512" width="15" height="15">
+                            <path fill="white" d="M512 194.8c0 101.3-82.4 183.8-183.8 183.8-101.7 0-184.4-82.4-184.4-183.8 0-101.6 82.7-184.3 184.4-184.3C429.6 10.5 512 93.2 512 194.8zM0 501.5h90v-491H0v491z"></path>
+                        </svg>
                     Buy us a coffee! </a>
-		</header>
-		<main class="main" style="padding-left: 15px; padding-right: 15px;">
-			<section class="about-content">
-				<h2>About That Tech Show</h2>
-				<div class="about-hero">
-					<div>
-						<img src="images/Chris-Profile-small.jpg" width="400"/>
-					</div>
-					<div>
-						<img src="images/me-crop.jpg" width="400"/>
-					</div>
-				</div>
-				{{ site.data.about.content }}
-			</section>
-		</main>
-		<iframe id="iframe" src="https://player.acast.com/that-tech-show/episodes/that-tech-show-the-trailer" style="position: fixed; bottom: 0; left: 0; right: 0; width: 100%; border-width: 0; transition: transform,.3s; transform: translateY(100%);"></iframe>
-	</body>
+                </div>
+            </nav>
+        </header>
+        <main class="main p-3 mb-2 bg-dark text-white" style="padding-left: 15px; padding-right: 15px;">
+            <section class="about-content">
+                <h2>About That Tech Show</h2>
+                <div class="about-hero">
+                    <div>
+                        <img src="images/Chris-Profile-small.jpg" style="height: 400px;"/>
+                    </div>
+                    <div>
+                        <img src="images/Sam-crop.jpg" style="height: 400px;"/>
+                    </div>
+                </div>
+                {{ site.data.about.content }}
+            </section>
+        </main>
+        <iframe id="iframe" src="https://player.acast.com/that-tech-show/episodes/that-tech-show-the-trailer" style="position: fixed; bottom: 0; left: 0; right: 0; width: 100%; border-width: 0; transition: transform,.3s; transform: translateY(100%);"></iframe>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+    </body>
 </html>
