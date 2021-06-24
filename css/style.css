@@ -170,6 +170,9 @@
   position: relative;
   top: -60px;
 }
+h2 {
+  text-transform: uppercase;
+}
 h2 span {
   color: white;
   font: bold 24px/45px Helvetica, Sans-Serif;
