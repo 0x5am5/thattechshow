@@ -1,3 +1,10 @@
+html {
+  height: 100%;
+  background: #212529;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
 .hero {
   max-width: 900px;
   display: flex;
@@ -173,7 +180,7 @@
 }
 h2 {
   text-transform: uppercase;
-  font: bold 24px/45px Futura, Sans-Serif;
+  font: bold Futura, Sans-Serif;
   padding: 10px;
 }
 h2 span {
@@ -186,5 +193,5 @@ h2 span {
 .hero-text {
   font-family: Futura;
   letter-spacing: -1px;
-  font: bold 45px Futura, Sans-Serif;
+  font: bold Futura, Sans-Serif;
 }
