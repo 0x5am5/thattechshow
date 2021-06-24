@@ -195,3 +195,9 @@ h2 span {
   letter-spacing: -1px;
   font: bold Futura, Sans-Serif;
 }
+.hr-rule {
+  height: 3px;
+  border-width: 0;
+  color: gold;
+  background-color: gold;
+}
