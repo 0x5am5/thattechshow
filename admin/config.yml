@@ -19,3 +19,8 @@ collections:
         file: '_data/whatis.yml'
         fields:
           - { label: 'Content', name: 'content', widget: 'markdown' }
+      - label: 'Contact'
+        name: 'contact'
+        file: '_data/contact.yml'
+        fields:
+          - { label: 'Content', name: 'content', widget: 'markdown' }
