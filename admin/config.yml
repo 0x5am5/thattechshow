@@ -3,14 +3,19 @@ backend:
   repo: fakesamgregory/thattechshow
   branch: main
 
-media_folder: "images/" # Media files will be stored in the repo under images/
+media_folder: 'images/' # Media files will be stored in the repo under images/
 
 collections:
-  - name: "pages" # Used in routes, e.g., /admin/collections/about
-    label: "Pages" # Used in the UI
+  - name: 'pages' # Used in routes, e.g., /admin/collections/about
+    label: 'Pages' # Used in the UI
     files: # The fields for each document, usually in front matter
-      - label: "About Page"
-        name: "about"
-        file: "_data/about.yml"
+      - label: 'About Page'
+        name: 'about'
+        file: '_data/about.yml'
         fields:
-          - { label: "Content", name: "content", widget: "markdown" }
+          - { label: 'Content', name: 'content', widget: 'markdown' }
+      - label: 'WhatIs'
+        name: 'whatis'
+        file: '_data/whatis.yml'
+        fields:
+          - { label: 'Content', name: 'content', widget: 'markdown' }
