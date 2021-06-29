@@ -1,201 +1,201 @@
+body,
 html {
-    height: 100%;
-    background: #212529;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #fff;
+  height: 100%;
+  background: #212529;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 .hero {
-    max-width: 900px;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+  max-width: 900px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .link-image {
-    max-height: 50px;
+  max-height: 50px;
 }
 
 .list-reset {
-    list-style-type: none;
-    padding-left: 0;
-    display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
 }
 
 .list-item {
-    margin-right: 1em;
-    margin-bottom: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
 }
 
 .hero-text {
-    font-size: 2em;
-    margin-top: 0;
+  font-size: 2em;
+  margin-top: 0;
 }
 
 .button-link {
-    display: inline-block;
-    border: 1px solid #999999;
-    padding: 0.5em;
-    border-radius: 3px;
-    color: #fff;
-    text-decoration: none;
-    transition: background 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  border: 1px solid #999999;
+  padding: 0.5em;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .button-link:hover {
-    background: #999;
-    color: #000;
+  background: #999;
+  color: #000;
 }
 
 .hero-link {
-    display: inline-block;
-    transition: transform 0.3s ease;
+  display: inline-block;
+  transition: transform 0.3s ease;
 }
 
 .hero-link:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 #episodes article + article {
-    margin-top: 1rem;
-    border-top: 1px solid #fff;
+  margin-top: 1rem;
+  border-top: 1px solid #fff;
 }
 
 #episodes article img {
-    max-width: 150px;
-    width: 100%;
-    margin-right: 1em;
+  max-width: 150px;
+  width: 100%;
+  margin-right: 1em;
 }
 
 #episodes article {
-    display: flex;
-    padding-top: 1em;
+  display: flex;
+  padding-top: 1em;
 }
 
 #episodes a {
-    color: inherit;
-    transition: color 0.3s ease;
+  color: inherit;
+  transition: color 0.3s ease;
 }
 
 #episodes a:hover,
 #episodes a:focus {
-    color: #f7f300;
+  color: #f7f300;
 }
 
 @media screen and (min-width: 768px) {
-    .hero {
-        flex-direction: row;
-        padding-left: 0;
-        padding-right: 0;
-    }
+  .hero {
+    flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .main {
-    padding-bottom: 160px;
-    padding-left: 15px;
-    padding-right: 15px;
+  padding-bottom: 160px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .hero-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 .header-title {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 1rem;
-    display: block;
-    color: inherit;
-    text-decoration: none;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1rem;
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }
 
 .episodes {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
 }
 
 .podcast-list {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .header-wrap {
-    text-transform: uppercase;
-    padding: 1em;
+  text-transform: uppercase;
+  padding: 1em;
 }
 
 .about-hero {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    margin-bottom: 1em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-bottom: 1em;
 }
 
 .about-content {
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-top: 5em;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 5em;
 }
 
 .patreon-link {
-    background: rgba(255, 66, 77, 0.9);
+  background: rgba(255, 66, 77, 0.9);
 }
 
 .patreon-link:hover {
-    background: rgba(255, 66, 77, 0.4);
-    color: #fff;
+  background: rgba(255, 66, 77, 0.4);
+  color: #fff;
 }
 
 @media screen and (min-width: 768px) {
-    .main {
-        padding-left: 0;
-        padding-right: 0;
-    }
+  .main {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .loading {
-    text-align: center;
+  text-align: center;
 }
 
 .img-text-overlay {
-    position: relative;
-    top: -60px;
-    left: -10px;
+  position: relative;
+  top: -60px;
+  left: -10px;
 }
 
 h2 {
-    text-transform: uppercase;
-    font: bold Futura, Sans-Serif;
+  text-transform: uppercase;
+  font: bold Futura, Sans-Serif;
 }
 
 h2 span {
-    color: white;
-    letter-spacing: -1px;
-    background: rgb(0, 0, 0);
+  color: white;
+  letter-spacing: -1px;
+  background: rgb(0, 0, 0);
 
-    /* fallback color */
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px 10px;
+  /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 10px;
 }
 
 .hero-text {
-    font-family: Futura;
-    letter-spacing: -1px;
-    font: bold Futura, Sans-Serif;
+  font-family: Futura;
+  letter-spacing: -1px;
+  font: bold Futura, Sans-Serif;
 }
 
 .hr-rule {
-    height: 3px;
-    border-width: 0;
-    color: gold;
-    background-color: gold;
+  height: 3px;
+  border-width: 0;
+  color: gold;
+  background-color: gold;
 }
