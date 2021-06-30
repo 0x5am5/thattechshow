@@ -24,23 +24,3 @@ collections:
         file: '_data/contact.yml'
         fields:
           - { label: 'Content', name: 'content', widget: 'markdown' }
-
-  - name: 'links' # Used in routes, e.g., /admin/collections/about
-    label: 'links' # Used in the UI
-    files: # The fields for each document, usually in front matter
-      - label: 'spotify'
-        name: 'spotify'
-        file: '_data/links/spotify.yml'
-        fields:
-          - { label: 'link', name: 'link', widget: 'markdown' }
-            { label: 'label', name: 'label', widget: 'markdown' }
-      - label: 'WhatIs'
-        name: 'whatis'
-        file: '_data/whatis.yml'
-        fields:
-          - { label: 'Content', name: 'content', widget: 'markdown' }
-      - label: 'Contact'
-        name: 'contact'
-        file: '_data/contact.yml'
-        fields:
-          - { label: 'Content', name: 'content', widget: 'markdown' }
