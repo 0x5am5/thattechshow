@@ -227,14 +227,11 @@
               'https://player.acast.com'
             );
           document.getElementById('image').src = episodeData.image;
-          // document.getElementById('iframe').src = latestEpisode;
-          // document.getElementById('iframe').style.transform = 'translateY(0)';
           document.getElementById('title').innerText = episodeData.title
             .replace('<![CDATA[', '')
             .replace(']]>', '');
           document.getElementById('description').innerHTML =
             episodeData.description.replace(']]>', '');
-          //document.getElementById('description').innerHTML = document.querySelector('#description p').innerText;
           document.querySelector('meta[property="og:image"]');
         });
     </script>
