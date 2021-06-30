@@ -79,12 +79,12 @@
                         {{ site.data.contact.content }}
                         <a href="mailto:hello@thattech.show" class="text-secondary" target="_pg_blank">hello@thattech.show</a>
                     </div>
-                    <form action="https://formspree.io/f/moqyllvy" method="POST">
+                    <form name="contact" method="POST" data-netlify="true">
                         <div class="mb-3">
-                            <input type="text" name="_name" class="border border-0 form-control rounded-0" placeholder="Enter name..."/>
+                            <input type="text" name="name" class="border border-0 form-control rounded-0" placeholder="Enter name..."/>
                         </div>
                         <div class="mb-3">
-                            <input type="email" name="_replyto" class="border border-0 form-control rounded-0" placeholder="Enter email..."/>
+                            <input type="email" name="email" class="border border-0 form-control rounded-0" placeholder="Enter email..."/>
                         </div>
                         <div class="mb-3">
                             <textarea name="message" class="border-0 form-control rounded-0" rows="6" placeholder="Enter your message..."></textarea>
