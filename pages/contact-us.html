@@ -90,19 +90,25 @@
                         {{ site.data.contact.content }}
                         <a href="mailto:hello@thattech.show" class="text-secondary" target="_pg_blank">hello@thattech.show</a>
                     </div>
-                    <form>
-                        <div class="mb-3">
-                            <input type="text" class="border border-0 form-control rounded-0" placeholder="Enter name..."/>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="border border-0 form-control rounded-0" placeholder="Enter email..."/>
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="border-0 form-control rounded-0" rows="6" placeholder="Enter your message..."></textarea>
-                        </div>
-                        <button type="submit" class="btn d-block w-100 btn-primary rounded-0 text-uppercase">
-                            Submit
-</button>
+
+                    <form
+                    action="https://formspree.io/f/moqyllvy"
+                    method="POST"
+                    >
+                    <div class="mb-3">
+                        <input type="text" name="_name" class="border border-0 form-control rounded-0" placeholder="Enter name..."/>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" name="_replyto" class="border border-0 form-control rounded-0" placeholder="Enter email..."/>
+                    </div>
+                    <div class="mb-3">
+                        <textarea name="message" class="border-0 form-control rounded-0" rows="6" placeholder="Enter your message..."></textarea>
+                    </div>
+
+
+                    <!-- your other form fields go here -->
+
+                    <button type="submit" class="btn d-block w-100 btn-primary rounded-0 text-uppercase">Send</button>
                     </form>
                 </div>
             </div>
@@ -118,6 +124,7 @@
         transition: transform, 0.3s;
         transform: translateY(100%);
       "></iframe>
+  
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
 </body>
