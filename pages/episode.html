@@ -68,11 +68,7 @@
     />
   </head>
   <body style="padding-top: 0; margin: 0" class="bg-dark">
-    <header
-      class="bg-dark header-wrap"
-      data-pgc-define="tts.header"
-      data-pgc-define-name="header"
-    >
+    <header class="bg-dark header-wrap" data-pgc="tts.header">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand header-title hero-text" href="/"
           >That Tech Show</a
@@ -91,14 +87,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="/about-us.html">About Us</a>
+              <a class="nav-link" href="about-us.html">About Us</a>
             </li>
-            <!-- <li class="nav-item">
-                    <a class="nav-link" href="/contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/links.html">Links</a>
-                </li>-->
+            <li class="nav-item active">
+              <a class="nav-link" href="contact-us.html">CONTACT</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="links.html">Links</a>
+            </li>
           </ul>
           -->
           <a
@@ -186,19 +182,15 @@
       <section class="episodes"></section>
     </main>
     <iframe
-      id="iframe"
-      src="https://player.acast.com/that-tech-show/episodes/that-tech-show-the-trailer"
-      style="
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        border-width: 0;
-        transition: transform, 0.3s;
-        transform: translateY(100%);
-      "
-    ></iframe>
+      src="https://embed.acast.com/6012fcea40e3fd5f183effd9?cover=true&font-family=Lato&font-src=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DLato&feed=true"
+      frameborder="0"
+      allow="autoplay"
+      width="100%"
+      height="500"
+      style="position: fixed; bottom: 0; left: 0; right: 0; border-width: 0"
+    >
+      ></iframe
+    >
     <script>
       let episodeUrl = window.location.search
         .split('&')
@@ -235,17 +227,15 @@
               'https://player.acast.com'
             );
           document.getElementById('image').src = episodeData.image;
-          document.getElementById('iframe').src = latestEpisode;
-          document.getElementById('iframe').style.transform = 'translateY(0)';
+          // document.getElementById('iframe').src = latestEpisode;
+          // document.getElementById('iframe').style.transform = 'translateY(0)';
           document.getElementById('title').innerText = episodeData.title
             .replace('<![CDATA[', '')
             .replace(']]>', '');
           document.getElementById('description').innerHTML =
             episodeData.description.replace(']]>', '');
           //document.getElementById('description').innerHTML = document.querySelector('#description p').innerText;
-          document
-            .querySelector('meta[property="og:image"]')
-            .setAttribute('content', episodeData.image);
+          document.querySelector('meta[property="og:image"]');
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
