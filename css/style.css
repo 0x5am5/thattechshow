@@ -101,13 +101,9 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
+
   padding-top: 2rem;
   padding-bottom: 2rem;
-=======
-  padding-top: 7rem;
-  padding-bottom: 7rem;
->>>>>>> 93d97c0 (add links and icons)
 }
 
 .header-title {
