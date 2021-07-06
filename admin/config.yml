@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
-  repo: fakesamgregory/thattechshow
-  branch: main
+  # repo: fakesamgregory/thattechshow
+  branch: pages/links
 
 media_folder: 'images/' # Media files will be stored in the repo under images/
 
@@ -24,3 +24,77 @@ collections:
         file: '_data/contact.yml'
         fields:
           - { label: 'Content', name: 'content', widget: 'markdown' }
+  - name: 'links' # Used in routes, e.g., /admin/collections/about
+    label: 'Links' # Used in the UI
+    create: true
+    files: # The fields for each document, usually in front matter
+      - label: 'Apple'
+        name: 'apple'
+        file: '_data/links/apple.yaml'
+        fields:
+          - { label: 'Link', name: 'link', widget: 'markdown' }
+      - label: 'buymeacoffee'
+        name: 'buymeacoffee'
+        file: '_data/links/buymeacoffee.yaml'
+        fields:
+          - { label: 'Link', name: 'link', widget: 'markdown' }
+      - label: 'facebook'
+        name: 'facebook'
+        file: '_data/links/facebook.yaml'
+        fields:
+          - { label: 'Link', name: 'link', widget: 'markdown' }
+      - label: 'Instagram'
+        name: 'instagram'
+        file: '_data/links/instagram.yaml'
+        fields:
+          - { label: 'Link', name: 'link', widget: 'markdown' }
+      - label: 'LinkedIn'
+        name: 'linkedin'
+        file: '_data/links/linkedin.yaml'
+        fields:
+          - { label: 'Link', name: 'link', widget: 'markdown' }
+      - label: 'patreon'
+        name: 'patreon'
+        file: '_data/links/patreon.yaml'
+        fields:
+          - { label: 'Link', name: 'link', widget: 'markdown' }
+      - label: 'podchaser'
+        name: 'podchaser'
+        file: '_data/links/podchaser.yaml'
+        fields:
+          - { label: 'Link', name: 'link', widget: 'markdown' }
+      - label: 'spotify'
+        name: 'spotify'
+        file: '_data/links/spotify.yaml'
+        fields:
+          - { label: 'Link', name: 'link', widget: 'markdown' }
+      - label: 'stitcher'
+        name: 'stitcher'
+        file: '_data/links/stitcher.yaml'
+        fields:
+          - { label: 'Link', name: 'link', widget: 'markdown' }
+      - label: 'tiktok'
+        name: 'tiktok'
+        file: '_data/links/tiktok.yaml'
+        fields:
+          - { label: 'Link', name: 'link', widget: 'markdown' }
+      - label: 'tune-in'
+        name: 'tune-in'
+        file: '_data/links/tune-in.yaml'
+        fields:
+          - { label: 'Link', name: 'link', widget: 'markdown' }
+      - label: 'twitch'
+        name: 'twitch'
+        file: '_data/links/twitch.yaml'
+        fields:
+          - { label: 'Link', name: 'link', widget: 'markdown' }
+      - label: 'twitter'
+        name: 'twitter'
+        file: '_data/links/twitter.yaml'
+        fields:
+          - { label: 'Link', name: 'link', widget: 'markdown' }
+      - label: 'youtube'
+        name: 'youtube'
+        file: '_data/links/youtube.yaml'
+        fields:
+          - { label: 'Link', name: 'link', widget: 'markdown' }
