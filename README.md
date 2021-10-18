@@ -11,3 +11,4 @@ Feed of posts is built using:
 `ruby feed.rb`
 first run requires:
 `bundle exec`
+.
