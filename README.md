@@ -5,3 +5,7 @@
 Site is ran on Jekyll and built in Pinegrow
 
 `bundle exec jekyll serve`
+
+Feed of posts is built using:
+
+`ruby feed.rb`
