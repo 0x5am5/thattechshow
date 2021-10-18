@@ -8,7 +8,4 @@ Site is ran on Jekyll and built in Pinegrow
 
 Feed of posts is built using:
 
-`ruby feed.rb`
-first run requires:
-`bundle exec`
-.
+`bundle exec ruby feed.rb`
