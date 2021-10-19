@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My First Page</title>
+    //
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/blog/">Blog</a>
+    </nav>
+    <h1>{{page.title}}</h1>
+    <h2>{{page.subtitle}}</h2>
+    <img src="{{page.image}}" width="300px" />
+    <section>{{page.description}}</section>
+    <audio controls>
+      <source src="{{page.media}}" type="audio/mp3" />
+    </audio>
+    <p>runtime: {{page.duration}}</p>
+    <footer>&copy; to me</footer>
+  </body>
+</html>
