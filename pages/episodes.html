@@ -6,7 +6,7 @@
   <head>
     <link href="favicon.jpeg" rel="icon" type="image/jpg" />
     <meta charset="utf-8" />
-    <link href="../../../../css/style.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
@@ -20,7 +20,10 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>THAT TECH SHOW - Hosted by Chris Addams & Sam Gregory</title>
-
+    <script
+      src="https://kit.fontawesome.com/440cd2ca6e.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-TEM8PPB2T0"
@@ -51,13 +54,10 @@
         gtag('config', 'G-TEM8PPB2T0');
       }
     </script>
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    <script
+      src="https://kit.fontawesome.com/440cd2ca6e.js"
       crossorigin="anonymous"
-    />
+    ></script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
@@ -87,22 +87,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="../../../pages/about-us.html"
-                >About Us</a
-              >
+              <a class="nav-link" href="about-us.html">About Us</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="../../../pages/contact-us.html"
-                >CONTACT</a
-              >
+              <a class="nav-link" href="contact-us.html">CONTACT</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="../../../pages/episodes.html"
-                >Episodes</a
-              >
+              <a class="nav-link" href="episodes.html">Episodes</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="../../../pages/links.html">Links</a>
+              <a class="nav-link" href="links.html">Links</a>
             </li>
           </ul>
           <a
@@ -132,113 +126,8 @@
       class="main p-3 mb-2 bg-dark text-white"
       style="padding-left: 15px; padding-right: 15px"
     >
-      <div class="hero-wrapper">
-        <section class="hero col-md-12 hstack gap-5">
-          <div class="col-md-4">
-            <img
-              src="{{page.image}}"
-              style="
-                width: 300px;
-                border-radius: 10px;
-                box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
-                margin-right: 1em;
-              "
-            />
-            <audio class="p-1 mt-4" controls>
-              <source src="{{page.media}}" type="audio/mp3" />
-            </audio>
-            <p class="mt-4">
-              <i>Available where all good podcasts are downloaded</i>
-            </p>
-            <div class="row">
-              <a
-                href="{{ site.data.links.spotify.link }}"
-                aria-label="spotify"
-                class="col-2 btn m-1 p-2 text-white"
-              >
-                <i
-                  style="width: 30px; height: 30px"
-                  class="fa-spotify fab fa-2x"
-                ></i>
-              </a>
-              <p class="col-6 text-uppercase m-3">Spotify</p>
-            </div>
-            <div class="row">
-              <a
-                href="{{ site.data.links.apple.link }}"
-                aria-label="apple"
-                class="col-2 btn m-1 p-2 text-white"
-              >
-                <i
-                  style="width: 30px; height: 30px"
-                  class="fa-apple fab fa-2x"
-                ></i>
-              </a>
-              <p class="col-6 text-uppercase m-3">Apple</p>
-            </div>
-            <div class="row">
-              <a
-                href="{{ site.data.links.stitcher.link }}"
-                aria-label="stitcher"
-                class="col-2 btn m-1 p-2 text-white"
-                ><img
-                  class=""
-                  height="30px"
-                  width="30px"
-                  src="../../../images/icons/stitcher.svg"
-              /></a>
-              <p class="col-6 text-uppercase m-3">Stitcher</p>
-            </div>
-            <div class="row">
-              <a
-                href="{{ site.data.links.tune-in.link }}"
-                aria-label="tune-in"
-                class="col-2 btn m-1 p-2 text-white"
-                ><img
-                  height="30px"
-                  width="30px"
-                  src="../../../images/icons/tunein.svg"
-              /></a>
-              <p class="col-6 text-uppercase m-3">Tune-In</p>
-            </div>
-            <div class="row">
-              <a
-                href="{{ site.data.links.podchaser.link }}"
-                aria-label="podchaser"
-                class="col-2 btn m-1 p-2 text-white"
-                ><img
-                  height="30px"
-                  width="30px"
-                  src="../../../images/icons/podchaser.svg"
-              /></a>
-              <p class="col-6 text-uppercase m-3">Podchaser</p>
-            </div>
-            <div class="row">
-              <a
-                href="{{ site.data.links.youtube.link }}"
-                aria-label="YouTube"
-                class="col-2 btn m-1 p-2 text-white"
-              >
-                <i
-                  style="width: 40; height: 40"
-                  class="fa-youtube fab fa-2x"
-                ></i>
-              </a>
-              <p class="col-6 text-uppercase m-3">YouTube</p>
-            </div>
-          </div>
-          <div class="col-md-7">
-            <h1 class="hero-text text-uppercase">{{page.title}}</h1>
-            <h6>{{ page.subtitle }}</h6>
-            <small class="text-muted vstack gap-2"
-              >Published: {{page.pubdate}}</small
-            >
-            <p>{{ page.description }}</p>
-          </div>
-        </section>
-      </div>
       <section class="episodes">
-        <h2>More Episodes</h2>
+        <h2>Episodes</h2>
         <div class="container">
           {% for post in site.posts %}
           <div class="row">
