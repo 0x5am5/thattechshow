@@ -6,7 +6,8 @@ require 'safe_yaml'
 require 'httparty'
 require 'feedjira'
 
-url = 'https://s8hdp1sdz5.execute-api.eu-west-2.amazonaws.com/latest/proxy/'
+# url = 'https://s8hdp1sdz5.execute-api.eu-west-2.amazonaws.com/latest/proxy/'
+url = 'https://feeds.acast.com/public/shows/6012fcea40e3fd5f183effd9'
 xml = HTTParty.get(url).body
 feed = Feedjira.parse(xml)
 
