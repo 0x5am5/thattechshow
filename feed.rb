@@ -36,4 +36,10 @@ feed.entries.each do |item|
         f.puts header.to_yaml
         f.puts "---\n\n"
     end
+    
+    FileUtils.mkdir_p("_posts")
+    File.open("_posts/#{name}.html", "w") do |f|
+        f.puts header.to_yaml
+        f.puts "---\n\n"
+    end
 end
