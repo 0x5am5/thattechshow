@@ -3,11 +3,10 @@ liquid:
   strict_filters: true
 collections:
   posts:
-    permalink: episodes/:title
+    permalink: episode/:title
 url: "https://thattech.show"
 plugins:
   - jekyll-sitemap
-collections_dir: _posts
 defaults:
   -
     scope:
@@ -34,10 +33,5 @@ defaults:
       path:            "pages/episode.html"
     values:
       sitemap:         false
-  -
-    scope:
-      path:            "_posts/*.html"
-    values:
-      sitemap:         true
 
-include: ["episodes"]
+include: ["episode"]
