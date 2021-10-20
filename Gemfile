@@ -11,3 +11,4 @@ gem "to_slug"
 gem "sanitize"
 gem "feedjira"
 gem "httparty"
+gem 'jekyll-sitemap'
