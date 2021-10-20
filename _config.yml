@@ -5,3 +5,6 @@ liquid:
 collections:
   posts:
     permalink: episodes/:title
+url: "https://thattech.show"
+plugins:
+  - jekyll-sitemap
