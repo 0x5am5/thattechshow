@@ -7,7 +7,7 @@ collections:
 url: "https://thattech.show"
 plugins:
   - jekyll-sitemap
-collections_dir: posts
+collections_dir: _posts
 defaults:
   -
     scope:
@@ -29,3 +29,15 @@ defaults:
       path:            "recovery.html"
     values:
       sitemap:         false
+  -
+    scope:
+      path:            "pages/episode.html"
+    values:
+      sitemap:         false
+  -
+    scope:
+      path:            "_posts/*.html"
+    values:
+      sitemap:         true
+
+include: ["episodes"]

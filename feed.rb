@@ -5,7 +5,6 @@ require 'fileutils'
 require 'safe_yaml'
 require 'httparty'
 require 'feedjira'
-require 'jekyll-sitemap'
 
 # url = 'https://s8hdp1sdz5.execute-api.eu-west-2.amazonaws.com/latest/proxy/'
 url = 'https://feeds.acast.com/public/shows/6012fcea40e3fd5f183effd9'
@@ -32,8 +31,8 @@ feed.entries.each do |item|
 
         }
 
-    FileUtils.mkdir_p("_posts")
-    File.open("_posts/#{name}.html", "w") do |f|
+    FileUtils.mkdir_p("episode")
+    File.open("episode/#{name}.html", "w") do |f|
         f.puts header.to_yaml
         f.puts "---\n\n"
     end
