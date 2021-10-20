@@ -33,5 +33,3 @@ defaults:
       path:            "pages/episode.html"
     values:
       sitemap:         false
-
-include: ["episode"]

@@ -1,7 +1,6 @@
 .DS_Store
 _pgbackup
 .jekyll-cache
-_site
 pgia
+_site
 _posts
-episode
