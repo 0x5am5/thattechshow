@@ -16,7 +16,7 @@ feed.entries.each do |item|
     post_name = item.title.split(%r{ |!|/|:|&|-|$|,|\?|\.\.\.}).map do |i|
         i.downcase if i != ''
     end.compact.join('-')
-    name = "#{formatted_date}-#{post_name}"
+    name = "#{formatted_date}-#{post_name.sub! 'episode', ''}"
     
     header = {
         'layout' => 'post',
