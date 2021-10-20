@@ -4,9 +4,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href="favicon.jpeg" rel="icon" type="image/jpg" />
+    <link href="{{site.baseurl}}/favicon.jpeg" rel="icon" type="image/jpg" />
     <meta charset="utf-8" />
-    <link href="../../../../css/style.css" rel="stylesheet" />
+    <link href="{{site.baseurl}}/css/style.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
@@ -87,22 +87,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="../../../pages/about-us.html"
-                >About Us</a
-              >
+              <a class="nav-link" href="{{site.baseurl}}/about-us">About Us</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="../../../pages/contact-us.html"
-                >CONTACT</a
-              >
+              <a class="nav-link" href="{{site.baseurl}}/contact-us">CONTACT</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="../../../pages/episodes.html"
-                >Episodes</a
-              >
+              <a class="nav-link" href="{{site.baseurl}}/episodes">Episodes</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="../../../pages/links.html">Links</a>
+              <a class="nav-link" href="{{site.baseurl}}/links">Links</a>
             </li>
           </ul>
           <a
@@ -144,7 +138,7 @@
                 margin-right: 1em;
               "
             />
-            <audio class="p-1 mt-4" controls>
+            <audio class="p-1 mt-4" controls preload="none">
               <source src="{{page.media}}" type="audio/mp3" />
             </audio>
             <p class="mt-4">
@@ -259,7 +253,7 @@
                   <div class="vstack gap-2">{{post.subtitle}}</div>
                 </div>
                 <div class="media-body col-md-2">
-                  <audio class="p-1" controls>
+                  <audio class="p-1" controls preload="none">
                     <source src="{{post.media}}" type="audio/mp3" />
                   </audio>
                 </div>
