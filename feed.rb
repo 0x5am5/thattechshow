@@ -30,16 +30,12 @@ feed.entries.each do |item|
         'duration'=> item.itunes_duration
 
         }
-
-    FileUtils.mkdir_p("episode")
-    File.open("episode/#{name}.html", "w") do |f|
-        f.puts header.to_yaml
-        f.puts "---\n\n"
-    end
     
     FileUtils.mkdir_p("_posts")
     File.open("_posts/#{name}.html", "w") do |f|
         f.puts header.to_yaml
         f.puts "---\n\n"
     end
+
+    FileUtils.cp_r '_posts/.', 'episode' 
 end
