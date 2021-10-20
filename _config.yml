@@ -33,3 +33,13 @@ defaults:
       path:            "pages/episode.html"
     values:
       sitemap:         false
+  -
+    scope:
+      path:            "404.html"
+    values:
+      sitemap:         false
+  -
+    scope:
+      path:            "admin/index.html"
+    values:
+      sitemap:         false
