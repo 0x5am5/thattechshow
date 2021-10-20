@@ -7,3 +7,4 @@ collections:
 url: "https://thattech.show"
 plugins:
   - jekyll-sitemap
+collections_dir: _posts
