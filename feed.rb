@@ -36,6 +36,4 @@ feed.entries.each do |item|
         f.puts header.to_yaml
         f.puts "---\n\n"
     end
-
-    FileUtils.cp_r '_posts/.', 'episode' 
 end
