@@ -30,7 +30,7 @@ feed.entries.each do |item|
         'duration'=> item.itunes_duration
 
         }
-    
+
     FileUtils.mkdir_p("_posts")
     File.open("_posts/#{name}.html", "w") do |f|
         f.puts header.to_yaml
