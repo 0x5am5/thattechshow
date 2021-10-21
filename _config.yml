@@ -3,7 +3,7 @@ liquid:
   strict_filters: true
 collections:
   posts:
-    permalink: episode/:title
+    permalink: episodes/:title
 url: "https://thattech.show"
 plugins:
   - jekyll-sitemap
