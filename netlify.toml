@@ -1,30 +1,215 @@
 [build]
   publish = "_site"
   command = "bundle exec ruby feed.rb && jekyll build"
-  
+
 [[plugins]]
   package = "netlify-plugin-submit-sitemap"
-  
-[[redirects]] 
-  from = "/sitemap.xml"    
+
+[[redirects]]
+  from = "/sitemap.xml"
   to = "/sitemap.xml"
   status = 200
-  
-[[redirects]] 
-  from = "/robots.txt"    
+
+[[redirects]]
+  from = "/robots.txt"
   to = "/robots.txt"
   status = 200
 
-[[redirects]] 
-  from = "/episode"    
+[[redirects]]
+  from = "/pages/episode.html?episode=615d884313071d0013c13be4"
+  to = "/episodes/36-the-modern-cto-and-code-in-space-with-rakesh-ravuri.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=615d86f1eb1d9500123aa449"
+  to = "/episodes/35-self-organising-teams-and-leading-from-the-middle-with-gill-bennet.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=6159c4ca2dade7001af0aebb"
+  to = "/episodes/34-digital-transformations-and-naked-wines-with-david-crawford.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=615035db9de1aa0013021c44"
+  to = "/episodes/33-codepen-css-tricks-and-other-nerdery-with-chris-coyier.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=61433f01c51d930013354b47"
+  to = "/episodes/32-intellectual-property-law-and-startups-with-devin-miller.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=613fa5bb77282e001287c4b4"
+  to = "/episodes/31-finding-your-smile-moldable-development-environments-with-tudor-girba.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=6136780ae190840019d208bc"
+  to = "/episodes/30-the-state-of-artificial-intelligence-unplanned-ice-cream-with-daniel-bashir.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=612d1da3a38d0b001af72116"
+  to = "/episodes/29-storytelling-and-the-product-protagonist-with-steve-coe.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=6123d7a3c971ba0013b4f053"
+  to = "/episodes/28-cryptowars-truecrime-and-curry-clubs-with-erica-stanford.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=611ad17a2ce03f0012d13e29"
+  to = "/episodes/27-living-a-nomadic-life-with-dean-kuchel.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=61118326988b6a001394b514"
+  to = "/episodes/26-the-data-scientist-with-stylianos-kampakis.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=6108457fe94b4f0013d9fa8e"
+  to = "/episodes/25-software-that-saves-lives-with-johannes-brodwall.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=60ff1ee75325140013175c31"
+  to = "/episodes/24-nano-small-coin-big-impact-with-george-coxon.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=60f5cf4db4f845001225ba47"
+  to = "/episodes/23-digitising-the-world-of-costa-coffee-with-steve-gleadall.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=60ec7f307d5e83001af5cd73"
+  to = "/episodes/22-and-she-can-with-antonia-walt.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=60d30078e251ac0019c4e5fb"
+  to = "/episodes/21-reclaiming-your-data-with-felix-h.-dahlke.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=60d3003c9328f300193cd36f"
+  to = "/episodes/20-the-agile-trojan-course-with-nigel-baker.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=60d0a277011c680012d1472b"
+  to = "/episodes/19-a-conversation-with-a-hacker-with-jay-prehn.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=60c7881578b75900137ee487"
+  to = "/episodes/18-the-lazy-project-manager-peter-taylor.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=60bdebefab57f7001988a496"
+  to = "/episodes/17-4-releases-a-year-to-1400-a-week-with-audun-f-strand.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=60b0df9dca7f9800126312d8"
+  to = "/episodes/16-business-development-sales-with-will-sargeant.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=60a27e8e23af8d7e308f140f"
+  to = "/episodes/15-graphic-design-extraordinaire-vladimir-grcic.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=609a4f6d20c12f6d1ac3ab90"
+  to = "/episodes/14-the-grandfather-of-microservices-fred-george.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=60900512fc9d6e4b04b8881b"
+  to = "/episodes/13-structured-thinking-for-product-people-with-lucy-spence.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=6086db7ed3be756c84355b2a"
+  to = "/episodes/12-inventing-on-demand-catch-up-tv-and-movies-at-the-bbc-with-ben-lavender.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=607d9c6d32ed6d274c5133e2"
+  to = "/episodes/11-f-in-sweet-webflow-websites-with-joe-krug.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=6073fc6d573fe727919ee91f"
+  to = "/episodes/10-nhs-test-trace-app-and-other-stories/.-with-alex-birtles.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=606ad83d83c675433a35a1f8"
+  to = "/episodes/9-army-captain-to-digital-leader-with-simon-holden.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=6060de4fe8c0a7409a31ccca"
+  to = "/episodes/8-technology-of-the-futur-with-ben-burns.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=6058d3bcf92f1c0a6fdc3247"
+  to = "/episodes/7-wtf-is-an-nft-with-tim-stu-matt.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=604f9e01b0b265701ec857a0"
+  to = "/episodes/6-scaling-startups-with-patrick-plaatje.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=604620f243d56d0f54a02425"
+  to = "/episodes/5-recruitment-is-relationships-with-aaron-hawthorne.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=603a777c96cdf6618b28c955"
+  to = "/episodes/4-captain-of-the-ship-with-simona-morockaite.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=60344362653119308e4b7b40"
+  to = "/episodes/3-break-the-(copywriting)-rules-with-alex-napier-holland.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=602aeb53e037700d6c5416f2"
+  to = "/episodes/2-changing-the-world-with-mamta-gera.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/episode.html?episode=602393ef65165f445a450303"
+  to = "/episodes/1-from-engineer-to-cto-with-oli-smit.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/*"
+  to = "/index.html"
+  status = 301
+
+[[redirects]]
+  from = "/episode.html"
   to = "/episodes.html"
-  status = 200
+  status = 301
 
 [[redirects]]
   from = "/*"
   to = "404.html"
   status = 404
-  
+
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
   for = "/*"
