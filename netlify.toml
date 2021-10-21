@@ -196,7 +196,7 @@
   status = 301
 
 [[redirects]]
-  from = "pages/episode.html"
+  from = "/pages/episode.html"
   to = "/episodes.html"
   status = 301
 
