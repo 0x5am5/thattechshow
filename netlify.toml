@@ -196,13 +196,28 @@
   status = 301
 
 [[redirects]]
-  from = "/pages/*"
-  to = "/index.html"
+  from = "pages/episode.html"
+  to = "/episodes.html"
   status = 301
 
 [[redirects]]
-  from = "/episode.html"
-  to = "/episodes.html"
+  from = "/pages/contact.html"
+  to = "/contact.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/about-us.html"
+  to = "/about-us.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/links.html"
+  to = "/links.html"
+  status = 301
+
+[[redirects]]
+  from = "/pages/*"
+  to = "/index.html"
   status = 301
 
 [[redirects]]
