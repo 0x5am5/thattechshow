@@ -1,7 +1,45 @@
 liquid:
   error_mode: strict
-  strict_variables: true
   strict_filters: true
 collections:
   posts:
     permalink: episodes/:title
+url: "https://thattech.show"
+plugins:
+  - jekyll-sitemap
+defaults:
+  -
+    scope:
+      path:            "confirmation.html"
+    values:
+      sitemap:         false
+  -
+    scope:
+      path:            "email-change.html"
+    values:
+      sitemap:         false
+  -
+    scope:
+      path:            "invitation.html"
+    values:
+      sitemap:         false
+  -
+    scope:
+      path:            "recovery.html"
+    values:
+      sitemap:         false
+  -
+    scope:
+      path:            "pages/episode.html"
+    values:
+      sitemap:         false
+  -
+    scope:
+      path:            "404.html"
+    values:
+      sitemap:         false
+  -
+    scope:
+      path:            "admin/index.html"
+    values:
+      sitemap:         false

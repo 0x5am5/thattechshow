@@ -12,10 +12,6 @@
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script>
-      window.RSS_URL =
-        'https://s8hdp1sdz5.execute-api.eu-west-2.amazonaws.com/latest/proxy/';
-    </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -183,50 +179,6 @@
       </div>
       <section class="episodes"></section>
     </main>
-    <script>
-      let episodeUrl = window.location.search
-        .split('&')
-        .filter((url) => url.match(/episode/));
-      if (!episodeUrl.length) {
-        window.location = window.location.origin;
-      }
-      episodeUrl = episodeUrl[0].split('=')[1];
-
-      fetch(window.RSS_URL)
-        .then((response) => response.text())
-        .then((str) => new window.DOMParser().parseFromString(str, 'text/xml'))
-        .then((data) => {
-          console.log(data);
-          const items = data.querySelectorAll('item');
-          let episodeData = null;
-          const html = Array.from(items).forEach((episode) => {
-            if (episode.querySelector('guid').innerHTML === episodeUrl) {
-              episodeData = {
-                title: episode.querySelector('title').innerHTML,
-                description: episode
-                  .querySelector('description')
-                  .innerHTML.replace('<![CDATA[', '')
-                  .replace(']]>', '')
-                  .replace(/Website: .+/, ''),
-                image: episode.querySelector('[href]').getAttribute('href'),
-              };
-            }
-          });
-          const latestEpisode = Array.from(items)[0]
-            .querySelector('link')
-            .innerHTML.replace(
-              'https://shows.acast.com',
-              'https://player.acast.com'
-            );
-          document.getElementById('image').src = episodeData.image;
-          document.getElementById('title').innerText = episodeData.title
-            .replace('<![CDATA[', '')
-            .replace(']]>', '');
-          document.getElementById('description').innerHTML =
-            episodeData.description.replace(']]>', '');
-          document.querySelector('meta[property="og:image"]');
-        });
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
   </body>
