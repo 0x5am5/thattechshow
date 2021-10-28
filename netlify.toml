@@ -18,9 +18,7 @@
 [[redirects]]
   from = "/episodes/%2037-zombies-emacs-and-getting-clojure-with-magnar-sveen"
   to = "/episodes/37-zombies-emacs-and-getting-clojure-with-magnar-sveen"
-  query = {episode = "615d884313071d0013c13be4"}
   status = 301
-  force = true
 
 [[redirects]]
   from = "/pages/episode.html"
