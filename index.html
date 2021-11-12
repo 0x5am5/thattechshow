@@ -198,20 +198,17 @@
         <div class="row">
           {% for post in site.posts %}
           <div class="col-sm-4">
-          <div class="card bg-dark text-white" >
-            <a href="{{post.url}}" >     
-            <img class="card-img-top" src="{{post.image}}" width="200px"/>
-          </a> 
-            <div class="card-body">
-              <small class="text-muted">Published: {{post.pubdate}}</small>
-              <h6 class="card-title mt-2" href="{{ post.url }}">{{ post.title }}</h6>
-              <p class="card-text">{{post.subtitle}}</p>
-              <audio class="p-1" controls preload="none">
-                <source src="{{post.media}}" type="audio/mp3" />
-              </audio>
-            </div>
-
-          </div>
+            <a href="{{post.url}}" class="card bg-dark text-white" aria-label="{{ post.title }}">     
+              <img class="card-img-top" src="{{post.image}}" width="200px"/>
+              <div class="card-body">
+                <small class="text-muted">Published: {{post.pubdate}}</small>
+                <h3 class="card-title mt-2" href="{{ post.url }}">{{ post.title }}</h3>
+                <p class="card-text">{{post.subtitle}}</p>
+                <audio class="p-1" controls preload="none">
+                  <source src="{{post.media}}" type="audio/mp3" />
+                </audio>
+              </div>
+            </a>
           </div>
           {% endfor %}
           </div>

@@ -90,7 +90,7 @@
               <a class="nav-link" href="{{site.baseurl}}/about-us">About Us</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="{{site.baseurl}}/contact-us">CONTACT</a>
+              <a class="nav-link" href="{{site.baseurl}}/contact-us">Contact</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="{{site.baseurl}}/episodes">Episodes</a>
@@ -223,11 +223,13 @@
           </div>
           <div class="col-md-7">
             <h1 class="hero-text text-uppercase">{{page.title}}</h1>
-            <h6>{{ page.subtitle }}</h6>
+            <h2>{{ page.subtitle }}</h2>
             <small class="text-muted vstack gap-2"
               >Published: {{page.pubdate}}</small
             >
             <p>{{ page.description }}</p>
+
+            <a href="{{}}">Learn more</a>
           </div>
         </section>
       </div>
@@ -237,16 +239,14 @@
           {% for post in site.posts %}
           <div class="row">
             <div class="col-md-12">
-              <div class="row media vstack gap-2">
+              <a href="{{post.url}}" class="row media vstack gap-2" aria-title="{{ post.title }}">
                 <div class="media-left col-md-2">
-                  <a href="{{post.url}}">
-                    <img class="media-object" src="{{post.image}}" alt="..." />
-                  </a>
+                  <img class="media-object" src="{{post.image}}" alt="..." />
                 </div>
                 <div class="media-body col-md-6">
-                  <h5 class="media-heading">
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                  </h5>
+                  <h3 class="media-heading">
+                    {{ post.title }}
+                  </h3>
                   <small class="text-muted vstack gap-2"
                     >Published: {{post.pubdate}}</small
                   >
@@ -257,6 +257,9 @@
                     <source src="{{post.media}}" type="audio/mp3" />
                   </audio>
                 </div>
+                <p>
+                  Learn more...
+                </p>
                 <hr />
               </div>
             </div>

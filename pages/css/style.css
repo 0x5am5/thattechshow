@@ -83,6 +83,15 @@ html {
   color: #f7f300;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     flex-direction: row;
