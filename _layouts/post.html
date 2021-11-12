@@ -224,12 +224,8 @@
           <div class="col-md-7">
             <h1 class="hero-text text-uppercase">{{page.title}}</h1>
             <h2>{{ page.subtitle }}</h2>
-            <small class="text-muted vstack gap-2"
-              >Published: {{page.pubdate}}</small
-            >
+            <small class="text-muted vstack gap-2">Published: {{page.pubdate}}</small>
             <p>{{ page.description }}</p>
-
-            <a href="{{}}">Learn more</a>
           </div>
         </section>
       </div>
@@ -239,7 +235,7 @@
           {% for post in site.posts %}
           <div class="row">
             <div class="col-md-12">
-              <a href="{{post.url}}" class="row media vstack gap-2" aria-title="{{ post.title }}">
+              <a href="{{post.url}}" class="row media vstack gap-2" aria-title="{{post.title}}">
                 <div class="media-left col-md-2">
                   <img class="media-object" src="{{post.image}}" alt="..." />
                 </div>
