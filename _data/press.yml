@@ -1,0 +1,9 @@
+press:
+  -
+    link: 'https://clojure.org/news/2021/10/29/deref'
+    text: 'Coljure.org'
+
+awards:
+  - 
+    link: 'https://www.podcastawards.com'
+    text: 'Podcast Awards (nominee) - This Week in Tech Category'
