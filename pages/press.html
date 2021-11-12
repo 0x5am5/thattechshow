@@ -145,8 +145,8 @@ permalink: :basename
         
         <h2>Awards</h2>
         <ul>
-          {% for awards in site.data.press.awards %}
-          <li><a href="{{press.link}}" target="_blank">{{press.text}}</a></li>
+          {% for award in site.data.press.awards %}
+          <li><a href="{{award.link}}" target="_blank">{{award.text}}</a></li>
           {% endfor %}
         </ul>
       </section>
