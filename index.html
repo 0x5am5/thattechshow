@@ -197,8 +197,8 @@
         <h2>Episodes</h2>
         <div class="row">
           {% for post in site.posts %}
-          <div class="col-sm-4">
-            <a href="{{post.url}}" class="card bg-dark text-white" style="text-decoration: none;" aria-label="{{ post.title }}">     
+          <div class="col-sm-4" style="padding-bottom: 1em;">
+            <a href="{{post.url}}" class="card bg-dark text-white episode-link-card" style="text-decoration: none;" aria-label="{{ post.title }}">     
               <img class="card-img-top" src="{{post.image}}" width="200px"/>
               <div class="card-body">
                 <small class="text-muted">Published: {{post.pubdate}}</small>
@@ -207,7 +207,6 @@
                 <audio class="p-1" controls preload="none">
                   <source src="{{post.media}}" type="audio/mp3" />
                 </audio>
-                <p>Learn more...</p>
               </div>
             </a>
           </div>

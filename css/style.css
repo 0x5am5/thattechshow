@@ -156,6 +156,14 @@ html {
   color: #fff;
 }
 
+.episode-link-card {
+  transition: background .3s ease-out;
+}
+
+.episode-link-card:hover, .episode-link-card:focus {
+  background: rgba(255s,255s,255s,0.1) !important;  
+}
+
 @media screen and (min-width: 768px) {
   .main {
     padding-left: 0;
