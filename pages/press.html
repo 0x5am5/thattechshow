@@ -137,16 +137,16 @@ permalink: :basename
           We're proud to be a part of the press. If you're interested in
           getting involved, please get in touch.</p>
 
-        <ul>
+        <ul style="list-style: disc">
           {% for press in site.data.press.press %}
-          <li><a href="{{press.link}}" target="_blank">{{press.text}}</a></li>
+          <li><a href="{{press.link}}" target="_blank" class="text-white" style="text-decoration: none;">{{press.text}}</a></li>
           {% endfor %}
         </ul>
         
         <h2>Awards</h2>
-        <ul>
+        <ul style="list-style: disc">
           {% for award in site.data.press.awards %}
-          <li><a href="{{award.link}}" target="_blank">{{award.text}}</a></li>
+          <li><a href="{{award.link}}" target="_blank" class="text-white" style="text-decoration: none;">{{award.text}}</a></li>
           {% endfor %}
         </ul>
       </section>

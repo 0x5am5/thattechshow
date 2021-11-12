@@ -198,7 +198,7 @@
         <div class="row">
           {% for post in site.posts %}
           <div class="col-sm-4" style="padding-bottom: 1em;">
-            <a href="{{post.url}}" class="card text-white episode-link-card" style="text-decoration: none; background: transparent" aria-label="{{ post.title }}">     
+            <a href="{{post.url}}" class="card text-white episode-link-card" style="text-decoration: none; background: transparent; height: 100%" aria-label="{{ post.title }}">     
               <img class="card-img-top" src="{{post.image}}" width="200px"/>
               <div class="card-body">
                 <small class="text-muted">Published: {{post.pubdate}}</small>
