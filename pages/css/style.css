@@ -83,6 +83,23 @@ html {
   color: #f7f300;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+.episode-link-card {
+  transition: background .3s ease-out;
+}
+
+.episode-link-card:hover, .episode-link-card:focus {
+  background: rgba(255,255,255,0.1) !important;  
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     flex-direction: row;

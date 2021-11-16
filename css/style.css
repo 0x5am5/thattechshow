@@ -200,7 +200,21 @@ h2 span {
   color: gold;
   background-color: gold;
 }
+
+.episode-link-card {
+  transition: background .3s ease-out;
+}
+
+.episode-link-card:hover, .episode-link-card:focus {
+  background: rgba(255,255,255,0.1) !important;  
+}
+
+.episode-link-card audio {
+  width: 100%;
+}
+
 .card-columns {
   @include media-breakpoint-only(lg) {
     column-count: 4;
   }
+}

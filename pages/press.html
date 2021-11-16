@@ -20,7 +20,7 @@ permalink: :basename
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>THAT TECH SHOW - Hosted by Chris Addams & Sam Gregory</title>
+    <title>Press: THAT TECH SHOW - Hosted by Chris Addams & Sam Gregory</title>
     <script
       src="https://kit.fontawesome.com/440cd2ca6e.js"
       crossorigin="anonymous"
@@ -64,11 +64,12 @@ permalink: :basename
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
     />
     <link
+      href="../bootstrap_theme/bootstrap.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      type="text/css"
     />
   </head>
-  <body style="padding-top: 0; margin: 0" class="bg-dark">
+  <body style="padding-top: 0; margin: 0">
     <header class="bg-dark header-wrap" data-pgc="tts.header">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand header-title hero-text" href="/"
@@ -127,45 +128,26 @@ permalink: :basename
       <hr class="hr-rule" />
     </header>
     <main
-      class="main p-3 mb-2 bg-dark text-white"
+      class="bg-dark h-full main mb-2 p-3 text-white"
       style="padding-left: 15px; padding-right: 15px"
     >
-      <section class="episodes">
-        <h1>Episodes</h1>
-        <div class="container">
-          {% for post in site.posts %}
-          <div class="row">
-            <div class="col-md-12">
-              <div class="row media vstack gap-2">
-                <div class="media-left col-md-2">
-                  <a href="{{post.url}}" >
-                    <img class="media-object" src="{{post.image}}" alt="..." />
-                  </a>
-                </div>
-                <div class="media-body col-md-6">
-                  <h2 class="media-heading">
-                    <a href="{{ post.url }}" class="text-white" style="font-size: .75em;text-decoration: none;">{{ post.title }}</a>
-                  </h2>
-                  <small class="text-muted vstack gap-2"
-                    >Published: {{post.pubdate}}</small
-                  >
-                  <div class="vstack gap-2">{{post.subtitle}}</div>
+      <section class="about-content h-full">
+        <h2>Press</h2>
+        <p>
+          We're on the lookout for mentions of the show and awards we win or get nominated for.</p>
 
-                  <p style="padding-top: 1em">
-                    <a href="{{post.url}}" class="text-white" style="text-decoration: none;">Learn more...</a>
-                  </p>
-                </div>
-                <div class="media-body col-md-2">
-                  <audio class="p-1" controls preload="none">
-                    <source src="{{post.media}}" type="audio/mp3" />
-                  </audio>
-                </div>
-                <hr />
-              </div>
-            </div>
-          </div>
+        <ul style="list-style: disc">
+          {% for press in site.data.press.press %}
+          <li><a href="{{press.link}}" target="_blank" class="text-white" style="text-decoration: none;">{{press.text}}</a></li>
           {% endfor %}
-        </div>
+        </ul>
+        
+        <h2>Awards</h2>
+        <ul style="list-style: disc">
+          {% for award in site.data.press.awards %}
+          <li><a href="{{award.link}}" target="_blank" class="text-white" style="text-decoration: none;">{{award.text}}</a></li>
+          {% endfor %}
+        </ul>
       </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

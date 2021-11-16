@@ -94,13 +94,16 @@
               <a class="nav-link" href="{{site.baseurl}}/about-us">About Us</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="{{site.baseurl}}/contact-us">CONTACT</a>
+              <a class="nav-link" href="{{site.baseurl}}/contact-us">Contact</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="{{site.baseurl}}/episodes">Episodes</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="{{site.baseurl}}/links">Links</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{{site.baseurl}}/press">Press</a>
             </li>
           </ul>
           <a
@@ -110,7 +113,7 @@
             class="button-link patreon-link"
           >
             <svg
-              style="vertical-align: middle"
+              style="vertical-align: middle;display: inline"
               viewBox="0 0 512 512"
               width="15"
               height="15"
@@ -142,7 +145,7 @@
             "
           />
           <div>
-            <p class="hero-text text-uppercase">That Tech Show</p>
+            <h1 class="hero-text text-uppercase">That Tech Show</h1>
             <p>{{ site.data.whatis.content }}</p>
             <ul class="list-reset podcast-list">
               <li class="list-item">
@@ -194,21 +197,18 @@
         <h2>Episodes</h2>
         <div class="row">
           {% for post in site.posts %}
-          <div class="col-sm-4">
-          <div class="card bg-dark text-white" >
-            <a href="{{post.url}}" >     
-            <img class="card-img-top" src="{{post.image}}" width="200px"/>
-          </a> 
-            <div class="card-body">
-              <small class="text-muted">Published: {{post.pubdate}}</small>
-              <h6 class="card-title mt-2" href="{{ post.url }}">{{ post.title }}</h6>
-              <p class="card-text">{{post.subtitle}}</p>
-              <audio class="p-1" controls preload="none">
-                <source src="{{post.media}}" type="audio/mp3" />
-              </audio>
-            </div>
-
-          </div>
+          <div class="col-sm-4" style="padding-bottom: 1em;">
+            <a href="{{post.url}}" class="card text-white episode-link-card" style="text-decoration: none; background: transparent; height: 100%" aria-label="{{ post.title }}">     
+              <img class="card-img-top" src="{{post.image}}" width="200px"/>
+              <div class="card-body">
+                <small class="text-muted">Published: {{post.pubdate}}</small>
+                <h3 class="card-title mt-2" href="{{ post.url }}" style="font-size: 1.3em">{{ post.title }}</h3>
+                <p class="card-text">{{post.subtitle}}</p>
+                <audio class="p-1" controls preload="none">
+                  <source src="{{post.media}}" type="audio/mp3" />
+                </audio>
+              </div>
+            </a>
           </div>
           {% endfor %}
           </div>
