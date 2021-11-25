@@ -229,6 +229,14 @@
             <h2 style="font-size: 1.2em">{{ page.subtitle }}</h2>
             <small class="text-muted vstack gap-2">Published: {{page.pubdate}}</small>
             <p>{{ page.description }}</p>
+
+            {% for episode in site.data.transcripts.transcripts %}
+              {% if episode.title == page.title %}
+                <h2>Transcript</h2>
+                
+                {{episode.transcript}}
+              {% endif %}
+            {% endfor %}
           </div>
         </section>
       </div>
