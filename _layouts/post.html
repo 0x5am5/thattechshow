@@ -131,120 +131,143 @@
     >
       <div class="hero-wrapper">
         <section class="hero col-md-12 hstack gap-5">
-          <div class="col-md-4">
-            <img
-              src="{{page.image}}"
-              style="
-                width: 300px;
-                border-radius: 10px;
-                box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
-                margin-right: 1em;
-              "
-            />
-            <audio class="p-1 mt-4" controls preload="none">
-              <source src="{{page.media}}" type="audio/mp3" />
-            </audio>
-            <p class="mt-4">
-              <i>Available where all good podcasts are downloaded</i>
-            </p>
-            <div class="row">
-              <a
-                href="{{ site.data.links.spotify.link }}"
-                aria-label="spotify"
-                class="col-2 btn m-1 p-2 text-white"
-              >
-                <i
-                  style="width: 30px; height: 30px"
-                  class="fa-spotify fab fa-2x"
-                ></i>
-              </a>
-              <p class="col-6 text-uppercase m-3">Spotify</p>
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="{{page.image}}"
+                style="
+                  width: 300px;
+                  border-radius: 10px;
+                  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+                  margin-right: 1em;
+                "
+              />
+              <audio class="p-1 mt-4" controls preload="none">
+                <source src="{{page.media}}" type="audio/mp3" />
+              </audio>
+              <p class="mt-4">
+                <i>Available where all good podcasts are downloaded</i>
+              </p>
+              <div class="row">
+                <a
+                  href="{{ site.data.links.spotify.link }}"
+                  aria-label="spotify"
+                  class="col-2 btn m-1 p-2 text-white"
+                >
+                  <i
+                    style="width: 30px; height: 30px"
+                    class="fa-spotify fab fa-2x"
+                  ></i>
+                </a>
+                <p class="col-6 text-uppercase m-3">Spotify</p>
+              </div>
+              <div class="row">
+                <a
+                  href="{{ site.data.links.apple.link }}"
+                  aria-label="apple"
+                  class="col-2 btn m-1 p-2 text-white"
+                >
+                  <i
+                    style="width: 30px; height: 30px"
+                    class="fa-apple fab fa-2x"
+                  ></i>
+                </a>
+                <p class="col-6 text-uppercase m-3">Apple</p>
+              </div>
+              <div class="row">
+                <a
+                  href="{{ site.data.links.stitcher.link }}"
+                  aria-label="stitcher"
+                  class="col-2 btn m-1 p-2 text-white"
+                  ><img
+                    class=""
+                    height="30px"
+                    width="30px"
+                    src="../../../images/icons/stitcher.svg"
+                /></a>
+                <p class="col-6 text-uppercase m-3">Stitcher</p>
+              </div>
+              <div class="row">
+                <a
+                  href="{{ site.data.links.tune-in.link }}"
+                  aria-label="tune-in"
+                  class="col-2 btn m-1 p-2 text-white"
+                  ><img
+                    height="30px"
+                    width="30px"
+                    src="../../../images/icons/tunein.svg"
+                /></a>
+                <p class="col-6 text-uppercase m-3">Tune-In</p>
+              </div>
+              <div class="row">
+                <a
+                  href="{{ site.data.links.podchaser.link }}"
+                  aria-label="podchaser"
+                  class="col-2 btn m-1 p-2 text-white"
+                  ><img
+                    height="30px"
+                    width="30px"
+                    src="../../../images/icons/podchaser.svg"
+                /></a>
+                <p class="col-6 text-uppercase m-3">Podchaser</p>
+              </div>
+              <div class="row">
+                <a
+                  href="{{ site.data.links.youtube.link }}"
+                  aria-label="YouTube"
+                  class="col-2 btn m-1 p-2 text-white"
+                >
+                  <i
+                    style="width: 40; height: 40"
+                    class="fa-youtube fab fa-2x"
+                  ></i>
+                </a>
+                <p class="col-6 text-uppercase m-3">YouTube</p>
+              </div>
             </div>
-            <div class="row">
-              <a
-                href="{{ site.data.links.apple.link }}"
-                aria-label="apple"
-                class="col-2 btn m-1 p-2 text-white"
-              >
-                <i
-                  style="width: 30px; height: 30px"
-                  class="fa-apple fab fa-2x"
-                ></i>
-              </a>
-              <p class="col-6 text-uppercase m-3">Apple</p>
-            </div>
-            <div class="row">
-              <a
-                href="{{ site.data.links.stitcher.link }}"
-                aria-label="stitcher"
-                class="col-2 btn m-1 p-2 text-white"
-                ><img
-                  class=""
-                  height="30px"
-                  width="30px"
-                  src="../../../images/icons/stitcher.svg"
-              /></a>
-              <p class="col-6 text-uppercase m-3">Stitcher</p>
-            </div>
-            <div class="row">
-              <a
-                href="{{ site.data.links.tune-in.link }}"
-                aria-label="tune-in"
-                class="col-2 btn m-1 p-2 text-white"
-                ><img
-                  height="30px"
-                  width="30px"
-                  src="../../../images/icons/tunein.svg"
-              /></a>
-              <p class="col-6 text-uppercase m-3">Tune-In</p>
-            </div>
-            <div class="row">
-              <a
-                href="{{ site.data.links.podchaser.link }}"
-                aria-label="podchaser"
-                class="col-2 btn m-1 p-2 text-white"
-                ><img
-                  height="30px"
-                  width="30px"
-                  src="../../../images/icons/podchaser.svg"
-              /></a>
-              <p class="col-6 text-uppercase m-3">Podchaser</p>
-            </div>
-            <div class="row">
-              <a
-                href="{{ site.data.links.youtube.link }}"
-                aria-label="YouTube"
-                class="col-2 btn m-1 p-2 text-white"
-              >
-                <i
-                  style="width: 40; height: 40"
-                  class="fa-youtube fab fa-2x"
-                ></i>
-              </a>
-              <p class="col-6 text-uppercase m-3">YouTube</p>
+            <div class="col-md-7">
+              <h1 class="hero-text text-uppercase">{{page.title}}</h1>
+              <h2 style="font-size: 1.2em">{{ page.subtitle }}</h2>
+              <small class="text-muted vstack gap-2">Published: {{page.pubdate}}</small>
+              <p>{{ page.description }}</p>
             </div>
           </div>
-          <div class="col-md-7">
-            <h1 class="hero-text text-uppercase">{{page.title}}</h1>
-            <h2 style="font-size: 1.2em">{{ page.subtitle }}</h2>
-            <small class="text-muted vstack gap-2">Published: {{page.pubdate}}</small>
-            <p>{{ page.description }}</p>
-
-            {% for episode in site.data.transcripts.transcripts %}
-              {% if episode.title == page.title %}
-                <h2>Transcript</h2>
-                
-                {{episode.transcript}}
+        </section>
+      </div>
+      <div class="row" style="max-width: 900px; margin: 0 auto">
+        <section>
+          {% for episode in site.data.transcripts %}
+            {% if episode.title == page.title %}
+              {% if episode.related %}
+                <h3>You might also enjoy...</h3>
+                <div class="row" style="margin-bottom: 2em;">
+                  {% for related in episode.related %}
+                    <a href="{{related.url}}" class="text-muted col-4">
+                      <img src="{{related.image}}" alt="{{related.title}}" style="display: block; margin-bottom: 1em" />
+                      <div style="color: white">{{related.title}}</div>
+                    </a>
+                  {% endfor %}
+                </div>
               {% endif %}
-            {% endfor %}
-          </div>
+
+              {% if episode.transcript %}
+                <div style="margin-bottom: 2em">
+                  <h3>Episode Transcript</h3>
+
+                    <div class="text-left">
+                      {{episode.transcript }}
+                    </div>
+                </div>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
         </section>
       </div>
       <section class="episodes">
         <h2>More Episodes</h2>
         <div class="container">
-          {% for post in site.posts %}
           <div class="row">
+            {% for post in site.posts %}
             <div class="col-md-12">
               <a href="{{post.url}}" class="row media vstack gap-2" aria-title="{{post.title}}">
                 <div class="media-left col-md-2">
@@ -254,9 +277,9 @@
                   <h3 class="media-heading">
                     {{ post.title }}
                   </h3>
-                  <small class="text-muted vstack gap-2"
-                    >Published: {{post.pubdate}}</small
-                  >
+                  <small class="text-muted vstack gap-2">
+                    Published: {{post.pubdate}}
+                  </small>
                   <div class="vstack gap-2">{{post.subtitle}}</div>
                 </div>
                 <div class="media-body col-md-2">
@@ -268,10 +291,10 @@
                   Learn more...
                 </p>
                 <hr />
-              </div>
+              </a>
             </div>
+            {% endfor %}
           </div>
-          {% endfor %}
         </div>
       </section>
     </main>
