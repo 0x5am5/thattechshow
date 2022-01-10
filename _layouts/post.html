@@ -235,8 +235,8 @@
       <section class="episodes">
         <h2>More Episodes</h2>
         <div class="container">
-          {% for post in site.posts %}
           <div class="row">
+          {% for post in site.posts %}
             <div class="col-md-12">
               <a href="{{post.url}}" class="row media vstack gap-2" aria-title="{{post.title}}">
                 <div class="media-left col-md-2">
@@ -260,11 +260,14 @@
                   Learn more...
                 </p>
                 <hr />
-              </div>
+              </a>
             </div>
-          </div>
           {% endfor %}
+          </div>
         </div>
+        <!-- Ezoic - bottom_of_page - bottom_of_page -->
+        <div id="ezoic-pub-ad-placeholder-102"> </div>
+        <!-- End Ezoic - bottom_of_page - bottom_of_page -->
       </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
