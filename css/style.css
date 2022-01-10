@@ -8,7 +8,7 @@ html {
 }
 
 .table {
-  color: white;
+  color: white !important;
 }
 
 .hero {
