@@ -131,11 +131,22 @@ permalink: :basename
       style="padding-left: 15px; padding-right: 15px"
     >
       <section class="episodes">
+        <!-- Ezoic - top_of_page - top_of_page -->
+        <div id="ezoic-pub-ad-placeholder-101"> </div>
+        <!-- End Ezoic - top_of_page - top_of_page -->
+        
         <h1>Episodes</h1>
         <div class="container">
-          {% for post in site.posts %}
           <div class="row">
-            <div class="col-md-12">
+          {% for post in site.posts %}
+            {% if forloop.index % 10 %}
+            <div class="col-12">
+              <!-- Ezoic - mid_content - mid_content -->
+              <div id="ezoic-pub-ad-placeholder-105"> </div>
+              <!-- End Ezoic - mid_content - mid_content -->
+            </div>
+            {% else %}
+            <div class="col-12">
               <div class="row media vstack gap-2">
                 <div class="media-left col-md-2">
                   <a href="{{post.url}}" >
@@ -163,8 +174,9 @@ permalink: :basename
                 <hr />
               </div>
             </div>
-          </div>
+            {% endif %}
           {% endfor %}
+          </div>
         </div>
       </section>
     </main>
