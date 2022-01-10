@@ -139,7 +139,8 @@ permalink: :basename
         <div class="container">
           <div class="row">
           {% for post in site.posts %}
-            {% if forloop.index % 10 %}
+            {% assign remainder = forloop.index | modulo: 10 %}
+            {% if remainder == 0 %}
             <div class="col-12">
               <!-- Ezoic - mid_content - mid_content -->
               <div id="ezoic-pub-ad-placeholder-105"> </div>
