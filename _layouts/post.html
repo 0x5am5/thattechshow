@@ -240,18 +240,26 @@
         <div class="container">
           <div class="row">
           {% for post in site.posts %}
-            <div class="col-md-12">
+            {% assign remainder = forloop.index | modulo: 10 %}
+              <div class="col-12">
+                <!-- Ezoic - mid_content - mid_content -->
+                <div id="ezoic-pub-ad-placeholder-105"> </div>
+                <!-- End Ezoic - mid_content - mid_content -->
+              </div>
+            {% if remainder == 0 %}
+            {% else %}
+            <div class="col-12">
               <a href="{{post.url}}" class="row media vstack gap-2" aria-title="{{post.title}}">
                 <div class="media-left col-md-2">
-                  <img class="media-object" src="{{post.image}}" alt="..." />
+                  <img class="media-object" src="{{post.image}}" alt="{{post.title}}" />
                 </div>
                 <div class="media-body col-md-6">
                   <h3 class="media-heading">
                     {{ post.title }}
                   </h3>
-                  <small class="text-muted vstack gap-2"
-                    >Published: {{post.pubdate}}</small
-                  >
+                  <small class="text-muted vstack gap-2">
+                    Published: {{post.pubdate}}
+                  </small>
                   <div class="vstack gap-2">{{post.subtitle}}</div>
                 </div>
                 <div class="media-body col-md-2">
@@ -265,6 +273,7 @@
                 <hr />
               </a>
             </div>
+            {% endif %}
           {% endfor %}
           </div>
         </div>
