@@ -108,8 +108,8 @@ html {
   padding-bottom: 2rem;
 }
 
-#ezoic-pub-ad-placeholder-101, #ezoic-pub-ad-placeholder-103 {
-  margin-bottom: 1em;
+[id^="ezoic-pub-ad"] {
+  margin: 3em 0;
 }
 
 .header-title {
