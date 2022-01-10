@@ -201,19 +201,27 @@
         <h2>Episodes</h2>
         <div class="row">
           {% for post in site.posts %}
-          <div class="col-sm-4" style="padding-bottom: 1em;">
-            <a href="{{post.url}}" class="card text-white episode-link-card" style="text-decoration: none; background: transparent; height: 100%" aria-label="{{ post.title }}">     
-              <img class="card-img-top" src="{{post.image}}" width="200px"/>
-              <div class="card-body">
-                <small class="text-muted">Published: {{post.pubdate}}</small>
-                <h3 class="card-title mt-2" href="{{ post.url }}" style="font-size: 1.3em">{{ post.title }}</h3>
-                <p class="card-text">{{post.subtitle}}</p>
-                <audio class="p-1" controls preload="none">
-                  <source src="{{post.media}}" type="audio/mp3" />
-                </audio>
+            {% assign remainder = forloop.index | modulo: 9 %}
+            {% if remainder == 0 %}
+              <div class="col-12">
+                <!-- Ezoic - mid_content - mid_content -->
+                <div id="ezoic-pub-ad-placeholder-105"> </div>
+                <!-- End Ezoic - mid_content - mid_content -->
               </div>
-            </a>
-          </div>
+            {% else %}          
+              <div class="col-sm-4" style="padding-bottom: 1em;">
+                <a href="{{post.url}}" class="card text-white episode-link-card" style="text-decoration: none; background: transparent; height: 100%" aria-label="{{ post.title }}">     
+                  <img class="card-img-top" src="{{post.image}}" width="200px"/>
+                  <div class="card-body">
+                    <small class="text-muted">Published: {{post.pubdate}}</small>
+                    <h3 class="card-title mt-2" href="{{ post.url }}" style="font-size: 1.3em">{{ post.title }}</h3>
+                    <p class="card-text">{{post.subtitle}}</p>
+                    <audio class="p-1" controls preload="none">
+                      <source src="{{post.media}}" type="audio/mp3" />
+                    </audio>
+                  </div>
+                </a>
+              </div>
           {% endfor %}
           </div>
           <!-- Ezoic - bottom_of_page - bottom_of_page -->
