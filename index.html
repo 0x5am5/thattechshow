@@ -201,7 +201,7 @@
         <h2>Episodes</h2>
         <div class="row">
           {% for post in site.posts %}
-            {% assign remainder = forloop.index | modulo: 9 %}
+            {% assign remainder = forloop.index | modulo: 10 %}
             {% if remainder == 0 %}
               <div class="col-12">
                 <!-- Ezoic - mid_content - mid_content -->
