@@ -101,9 +101,15 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  flex-direction: column;
+  max-width: 1024px;
+  margin: 0 auto;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+#ezoic-pub-ad-placeholder-101 {
+  margin-bottom: 1em;
 }
 
 .header-title {
