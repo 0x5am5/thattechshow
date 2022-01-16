@@ -7,10 +7,6 @@ html {
   color: white;
 }
 
-.table {
-  color: white !important;
-}
-
 .hero {
   max-width: 900px;
   display: flex;
@@ -216,6 +212,19 @@ h2 span {
 
 .episode-link-card audio {
   width: 100%;
+}
+
+.privacy h1 {
+  font-size: 2.5rem;
+}
+
+.privacy h2 {
+  font-size: 2rem;
+  margin: 1em 0;
+}
+
+.privacy p + p {
+  margin-top: 1em;
 }
 
 .card-columns {
