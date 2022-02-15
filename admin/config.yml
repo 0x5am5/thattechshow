@@ -98,3 +98,9 @@ collections:
         file: '_data/links/youtube.yaml'
         fields:
           - { label: 'Link', name: 'link', widget: 'markdown' }
+  - name: 'transcripts'
+    label: 'Transcripts'
+    create: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'text'}
+      - { label: 'Transcript', name: 'transcript', widget: 'markdown'}

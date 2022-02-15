@@ -12,3 +12,4 @@ gem "sanitize"
 gem "feedjira"
 gem "httparty"
 gem 'jekyll-sitemap'
+gem "webrick", "~> 1.7"

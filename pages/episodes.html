@@ -1,49 +1,27 @@
 ---
 permalink: :basename
 ---
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href="{{site.baseurl}}/favicon.jpeg" rel="icon" type="image/jpg" />
-    <meta charset="utf-8" />
-    <link href="{{site.baseurl}}/css/style.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/favicon.jpeg" rel="icon" type="image/jpg"/>
+    <meta charset="utf-8"/>
+    <link href="/css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script>
       window.RSS_URL =
         'https://s8hdp1sdz5.execute-api.eu-west-2.amazonaws.com/latest/proxy/';
     </script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
     <title>THAT TECH SHOW - Hosted by Chris Addams & Sam Gregory</title>
-    <script
-      src="https://kit.fontawesome.com/440cd2ca6e.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-TEM8PPB2T0"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/440cd2ca6e.js" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEM8PPB2T0"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="../assets/js/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="../bootstrap/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script>
       if (window.location.href.match(/thattech/)) {
         window.dataLayer = window.dataLayer || [];
@@ -55,84 +33,44 @@ permalink: :basename
         gtag('config', 'G-TEM8PPB2T0');
       }
     </script>
-    <script
-      src="https://kit.fontawesome.com/440cd2ca6e.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-    />
-    
+    <script src="https://kit.fontawesome.com/440cd2ca6e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"/>
+    <link href="../bootstrap_theme/bootstrap.css" rel="stylesheet" type="text/css"/>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8621956146036386"
      crossorigin="anonymous"></script>
   </head>
   <body style="padding-top: 0; margin: 0" class="bg-dark">
-    <header class="bg-dark header-wrap" data-pgc="tts.header">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand header-title hero-text" href="/"
-          >That Tech Show</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+    <header class="bg-dark header-wrap sticky-top" data-pgc-save-partial="_includes/header.html">
+      <nav class="bg-dark border-b-2 border-white navbar navbar-dark navbar-expand-lg">
+        <a class="navbar-brand header-title hero-text" href="/">That Tech Show</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="{{site.baseurl}}/about-us">About Us</a>
+              <a class="nav-link" href="/about-us">About Us</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="{{site.baseurl}}/contact-us">CONTACT</a>
+              <a class="nav-link" href="/contact-us">Contact</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="{{site.baseurl}}/episodes">Episodes</a>
+              <a class="nav-link" href="/episodes">Episodes</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="{{site.baseurl}}/links">Links</a>
+              <a class="nav-link" href="/links">Links</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="{{site.baseurl}}/press">Press</a>
+              <a class="nav-link" href="/press">Press</a>
             </li>
-          </ul>
-          <a
-            href="https://www.patreon.com/thattechshow"
-            target="_blank"
-            rel="noreferrer nofollow"
-            class="button-link patreon-link"
-          >
-            <svg
-              style="vertical-align: middle;display: inline"
-              viewBox="0 0 512 512"
-              width="15"
-              height="15"
-            >
-              <path
-                fill="white"
-                d="M512 194.8c0 101.3-82.4 183.8-183.8 183.8-101.7 0-184.4-82.4-184.4-183.8 0-101.6 82.7-184.3 184.4-184.3C429.6 10.5 512 93.2 512 194.8zM0 501.5h90v-491H0v491z"
-              ></path>
+          </ul><a href="https://www.patreon.com/thattechshow" target="_blank" rel="noreferrer nofollow" class="button-link patreon-link"> <svg style="vertical-align: middle;display: inline" viewBox="0 0 512 512" width="15" height="15">
+              <path fill="white" d="M512 194.8c0 101.3-82.4 183.8-183.8 183.8-101.7 0-184.4-82.4-184.4-183.8 0-101.6 82.7-184.3 184.4-184.3C429.6 10.5 512 93.2 512 194.8zM0 501.5h90v-491H0v491z"></path>
             </svg>
-            Buy us a coffee!
-          </a>
+            Buy us a coffee! </a>
         </div>
       </nav>
-      <hr class="hr-rule" />
     </header>
-    <main
-      class="main p-3 mb-2 bg-dark text-white"
-      style="padding-left: 15px; padding-right: 15px"
-    >
+    <main class="main p-3 mb-2 bg-dark text-white" style="padding-left: 15px; padding-right: 15px">
       <section class="episodes">
         <h1>Episodes</h1>
         <div class="container">
@@ -140,30 +78,19 @@ permalink: :basename
           <div class="row">
             <div class="col-md-12">
               <div class="row media vstack gap-2">
-                <div class="media-left col-md-2">
-                  <a href="{{post.url}}" >
-                    <img class="media-object" src="{{post.image}}" alt="..." />
-                  </a>
+                <div class="media-left col-md-2"><a href="{{post.url}}"> <img class="media-object" src="{{post.image}}" alt="..."/> </a>
                 </div>
                 <div class="media-body col-md-6">
-                  <h2 class="media-heading">
-                    <a href="{{ post.url }}" class="text-white" style="font-size: .75em;text-decoration: none;">{{ post.title }}</a>
-                  </h2>
-                  <small class="text-muted vstack gap-2"
-                    >Published: {{post.pubdate}}</small
-                  >
+                  <h2 class="media-heading"> <a href="{{ post.url }}" class="text-white" style="font-size: .75em;text-decoration: none;">{{ post.title }}</a> </h2><small class="text-muted vstack gap-2">Published: {{post.pubdate}}</small>
                   <div class="vstack gap-2">{{post.subtitle}}</div>
-
-                  <p style="padding-top: 1em">
-                    <a href="{{post.url}}" class="text-white" style="text-decoration: none;">Learn more...</a>
-                  </p>
+                  <p style="padding-top: 1em"> <a href="{{post.url}}" class="text-white" style="text-decoration: none;">Learn more...</a> </p>
                 </div>
                 <div class="media-body col-md-2">
                   <audio class="p-1" controls preload="none">
-                    <source src="{{post.media}}" type="audio/mp3" />
+                    <source src="{{post.media}}" type="audio/mp3"/>
                   </audio>
                 </div>
-                <hr />
+                <hr/>
               </div>
             </div>
           </div>
