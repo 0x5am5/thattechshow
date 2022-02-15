@@ -106,10 +106,12 @@
       </div>
       <div class="row" style="max-width: 900px; margin: 0 auto">
         <section>
+          {{ site.data }}
           {% for episode in site.data.transcripts %}
             {% assign episodeData = episode[1] %}
             {% assign pageTitle = page.title | slugify %}
             {% assign episodeTitle = episodeData.title | slugify %}
+
             {% if episodeTitle == pageTitle %}
               {% if episodeData.related %}
               <h3>You might also enjoy...</h3>
@@ -118,6 +120,8 @@
                 {% endfor %}
               </div>
               {% endif %}
+
+              {{episodeData.transcript}}
           {% if episodeData.transcript %}
           <div style="margin-bottom: 2em">
             <h3>Episode Transcript</h3>
