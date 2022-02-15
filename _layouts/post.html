@@ -107,19 +107,22 @@
       <div class="row" style="max-width: 900px; margin: 0 auto">
         <section>
           {% for episode in site.data.transcripts %}
-          {% if episode.title == page.title %}
-          {% if episode.related %}
-          <h3>You might also enjoy...</h3>
-          <div class="row" style="margin-bottom: 2em;">
-            {% for related in episode.related %}<a href="{{related.url}}" class="text-muted col-4"> <img src="{{related.image}}" alt="{{related.title}}" style="display: block; margin-bottom: 1em"/> <div style="color: white">{{related.title}}</div> </a>
-            {% endfor %}
-          </div>
-          {% endif %}
-          {% if episode.transcript %}
+            {% assign episodeData = episode[1] %}
+            {% assign pageTitle = page.title | slugify %}
+            {% assign episodeTitle = episodeData.title | slugify %}
+            {% if episodeTitle == pageTitle %}
+              {% if episodeData.related %}
+              <h3>You might also enjoy...</h3>
+              <div class="row" style="margin-bottom: 2em;">
+                {% for related in episodeData.related %}<a href="{{related.url}}" class="text-muted col-4"> <img src="{{related.image}}" alt="{{related.title}}" style="display: block; margin-bottom: 1em"/> <div style="color: white">{{related.title}}</div> </a>
+                {% endfor %}
+              </div>
+              {% endif %}
+          {% if episodeData.transcript %}
           <div style="margin-bottom: 2em">
             <h3>Episode Transcript</h3>
             <div class="text-left">
-              {{episode.transcript }}
+              {{episodeData.transcript }}
 </div>
           </div>
           {% endif %}
