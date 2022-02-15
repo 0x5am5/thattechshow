@@ -1,5 +1,5 @@
 ---
-title: Episode 45
+title: Episode 45 - With Stephanie Slocum
 transcript: >-
   **00:00**\
 
