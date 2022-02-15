@@ -10,36 +10,36 @@ plugins:
 defaults:
   -
     scope:
-      path:            "confirmation.html"
+      path: "confirmation.html"
     values:
-      sitemap:         false
+      sitemap: false
   -
     scope:
-      path:            "email-change.html"
+      path: "email-change.html"
     values:
-      sitemap:         false
+      sitemap: false
   -
     scope:
-      path:            "invitation.html"
+      path "invitation.html"
     values:
-      sitemap:         false
+      sitemap: false
   -
     scope:
-      path:            "recovery.html"
+      path: "recovery.html"
     values:
-      sitemap:         false
+      sitemap: false
   -
     scope:
-      path:            "pages/episode.html"
+      path: "pages/episode.html"
     values:
-      sitemap:         false
+      sitemap: false
   -
     scope:
-      path:            "404.html"
+      path: "404.html"
     values:
-      sitemap:         false
+      sitemap: false
   -
     scope:
-      path:            "admin/index.html"
+      path: "admin/index.html"
     values:
-      sitemap:         false
+      sitemap: false

@@ -101,6 +101,9 @@ collections:
   - name: 'transcripts'
     label: 'Transcripts'
     create: true
-    fields:
-      - { label: 'Title', name: 'title', widget: 'text'}
-      - { label: 'Transcript', name: 'transcript', widget: 'markdown'}
+    files:
+      - label: 'Title'
+        name: 'title'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'text'}
+          - { label: 'Transcript', name: 'transcript', widget: 'markdown'}
