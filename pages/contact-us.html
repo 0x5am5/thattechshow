@@ -4,9 +4,9 @@ permalink: :basename
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href="{{site.baseurl}}/favicon.jpeg" rel="icon" type="image/jpg"/>
+    <link href="/favicon.jpeg" rel="icon" type="image/jpg"/>
     <meta charset="utf-8"/>
-    <link href="{{site.baseurl}}/css/style.css" rel="stylesheet"/>
+    <link href="/css/style.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -31,35 +31,41 @@ permalink: :basename
     </script>
     <script src="https://kit.fontawesome.com/440cd2ca6e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"/>
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../bootstrap_theme/bootstrap.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="../blocks.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css"/>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
   </head>
   <body style="padding-top: 0; margin: 0" class="bg-dark">
-    <header class="bg-dark header-wrap" data-pgc="tts.header">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="navbar-brand header-title hero-text" href="/">That Tech Show</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+    <header class="bg-dark header-wrap sticky-top" data-pgc-save-partial="_includes/header.html" data-pgc="tts.header">
+      <nav class="bg-dark border-b-2 border-white navbar navbar-dark navbar-expand-lg"><a class="navbar-brand header-title hero-text" href="/">That Tech Show</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active"><a class="nav-link" href="{{site.baseurl}}/about-us">About Us</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="{{site.baseurl}}/about-us">About Us</a>
             </li>
-            <li class="nav-item active"><a class="nav-link" href="{{site.baseurl}}/contact-us">CONTACT</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="{{site.baseurl}}/contact-us">Contact</a>
             </li>
-            <li class="nav-item active"><a class="nav-link" href="{{site.baseurl}}/episodes">Episodes</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="{{site.baseurl}}/episodes">Episodes</a>
             </li>
-            <li class="nav-item active"><a class="nav-link" href="{{site.baseurl}}/links">Links</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="{{site.baseurl}}/links">Links</a>
             </li>
-            <li class="nav-item active"><a class="nav-link" href="{{site.baseurl}}/press">Press</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="{{site.baseurl}}/press">Press</a>
             </li>
-          </ul><a href="https://www.patreon.com/thattechshow" target="_blank" rel="noreferrer nofollow" class="button-link patreon-link"> <svg style="vertical-align: middle" viewBox="0 0 512 512" width="15" height="15">
+          </ul>
+          <a href="https://www.patreon.com/thattechshow" target="_blank" rel="noreferrer nofollow" class="button-link patreon-link"> <svg style="vertical-align: middle;display: inline" viewBox="0 0 512 512" width="15" height="15">
               <path fill="white" d="M512 194.8c0 101.3-82.4 183.8-183.8 183.8-101.7 0-184.4-82.4-184.4-183.8 0-101.6 82.7-184.3 184.4-184.3C429.6 10.5 512 93.2 512 194.8zM0 501.5h90v-491H0v491z"></path>
             </svg>
             Buy us a coffee! </a>
         </div>
       </nav>
-      <hr class="hr-rule"/>
     </header>
     <main class="main p-3 mb-2 bg-dark text-white" style="padding-left: 15px; padding-right: 15px">
       <div class="
