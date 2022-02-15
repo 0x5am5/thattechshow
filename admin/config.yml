@@ -102,8 +102,9 @@ collections:
     label: 'Transcripts'
     create: true
     files:
-      - label: 'Title'
-        name: 'title'
+      - label: 'Page'
+        name: 'page'
+        file: '_data/transcripts.yml'
         fields:
           - { label: 'Title', name: 'title', widget: 'text'}
           - { label: 'Transcript', name: 'transcript', widget: 'markdown'}
