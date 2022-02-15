@@ -1,9 +1,10 @@
 body,
 html {
-    height: 100%;
-    background: #212529;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+  height: 100%;
+  background: #212529;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: white;
 }
 
 .hero {
@@ -213,10 +214,17 @@ h2 span {
     width: 100%;
 }
 
-.card-columns {
-    @include media-breakpoint-only(lg) {
-        column-count: 4;
-    }
+.privacy h1 {
+  font-size: 2.5rem;
+}
+
+.privacy h2 {
+  font-size: 2rem;
+  margin: 1em 0;
+}
+
+.privacy p + p {
+  margin-top: 1em;
 }
 
 .inner-content {
@@ -224,3 +232,10 @@ h2 span {
     margin-left: auto;
     margin-right: auto;
 }
+
+.card-columns {
+    @include media-breakpoint-only(lg) {
+        column-count: 4;
+    }
+}
+
