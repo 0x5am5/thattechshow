@@ -20,7 +20,7 @@ defaults:
       sitemap: false
   -
     scope:
-      path "invitation.html"
+      path: "invitation.html"
     values:
       sitemap: false
   -
