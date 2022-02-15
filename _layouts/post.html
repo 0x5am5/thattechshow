@@ -106,7 +106,6 @@
       </div>
       <div class="row" style="max-width: 900px; margin: 0 auto">
         <section>
-          {{ site.data }}
           {% for episode in site.data.transcripts %}
             {% assign episodeData = episode[1] %}
             {% assign pageTitle = page.title | slugify %}
@@ -121,13 +120,15 @@
               </div>
               {% endif %}
 
-              {{episodeData.transcript}}
           {% if episodeData.transcript %}
           <div style="margin-bottom: 2em">
             <h3>Episode Transcript</h3>
-            <div class="text-left">
-              {{episodeData.transcript }}
-</div>
+            <div class="text-left" id="transcript">
+              <div id="preview">{{ episodeData.transcript | markdownify | truncatewords: 500 }}</div>              
+              <div id="full" style="display: none;">{{ episodeData.transcript | markdownify }}</div>              
+
+              <button type="button">View Transcript</button>
+            </div>
           </div>
           {% endif %}
           {% endif %}
@@ -162,5 +163,20 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(function() {
+        const transcript = $('#transcript');
+        const preview = $('#preview', transcript);
+        const full = $('#full', transcript);
+        const button = $('button', transcript);
+
+        button.on('click', () => {
+          preview.toggle();
+          full.toggle();
+
+          button.remove();
+        });
+      });
+    </script>
   </body>
 </html>
