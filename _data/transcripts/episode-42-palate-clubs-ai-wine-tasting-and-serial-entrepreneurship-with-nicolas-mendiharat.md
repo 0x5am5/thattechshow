@@ -1,6 +1,6 @@
 ---
-title: EPISODE 42 - PALATE CLUB'S AI WINE TASTING AND SERIAL ENTREPRENEURSHIP
-  WITH NICOLAS MENDIHARAT
+title: Episode 42 - Palate Club's AI Wine Tasting and Serial Entrepreneurship
+  with Nicolas Mendiharat
 transcript: >-
   **06:14**\
 
