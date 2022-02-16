@@ -14,7 +14,11 @@
   from = "/robots.txt"
   to = "/robots.txt"
   status = 200
-
+  
+[[redirects]]
+  from = "/ads.txt"
+  to = "/ads.txt"
+  status = 200
 
 [[redirects]]
   from = "/episodes/episode-37-zombies-emacs-and-getting-clojure-with-magnar-sveen"
