@@ -1,0 +1,999 @@
+title: Episode 39 - Technical Agile Coaching and the Samman Method with Emily Bache
+transcript: >-
+  Emily\
+
+  My name is Emily Beach. I'm a technical agile coach with pro agile and I live in Sweden. 
+
+
+  \
+
+  Chris\
+
+  Cool. So what exactly is pro agile? Cause I don't think I've heard of that before. 
+
+
+  \
+
+  Emily\
+
+  It's the company I work for. We're a bunch of agile coaches basically, and my focus is much more on that, the code and the developers and how to make that happen in the best way, 
+
+
+  \
+
+  Chris\
+
+  Or you quite a large consultancy or a small consultancy, 
+
+
+  \
+
+  Emily\
+
+  There's like 15 of us or something, but it's a really skilled a bunch of people. I really appreciate, cause I learned stuff about organizational coaching and process coaching and professional coaching because my colleagues are really good at those things, but really my focus is on the code and the technical side of software developments and making that effective. 
+
+
+  \
+
+  Chris\
+
+  I think we've got relatively similar backgrounds to a degree then because one of my previous roles was working for an agile consultancy, a small one about 15 people in the UK. I tended to focus more on the technical side as well. What's your perspective of a technical agile coach in this instance? 
+
+
+  \
+
+  Emily\
+
+  Well, I kind of feel that it's often overlooked a lot of organizations when they realize their software development needs to be more agile. They'll focus a lot on the process in the organization and the, like the, what the teams are supposed to do in terms of meetings and how they plan work and stuff. As far as I'm concerned that the really difficult and important part is the way you write code needs to change as well. I was quite an early adopter, I guess, of things like test driven development and refactoring. I've always found that to be the most interesting part, really. That's the part that I tend to focus on more. 
+
+
+  \
+
+  Chris\
+
+  Did you start picking up blank test driven development and things like that and when you did, where you were aware that was part of agile at the time, I mean, how did you come into it? You come in from a developer route, is that right? 
+
+
+  \
+
+  Emily\
+
+  I've been a software developer since 98 and I was very lucky actually in 2000 they landed on a project where somebody had heard of extreme programming and suggested that we should, you should use that. The people on my team were very much more experienced and skilled than I was. We picked up like writing unit tests quite quickly and quite easily on that project. From then on, I was hooked basically. 
+
+
+  \
+
+  Chris\
+
+  Back in 2000, what's the languages were you writing in and how extreme did extreme programming feel in 2000? Oh yeah, 
+
+
+  \
+
+  Emily\
+
+  This, this was extremely well, it was, everything was new for me because I just moved to Sweden. It was my first job in Sweden in 2000 and it was a startup and it was, were using Java actually, although I'd been doing Java before and just this kind of idea of these really short iterations and delivering stuff and getting feedback from, we didn't have a, a real customer, I guess, cause were a startup. We didn't have any customers. 
+
+
+  \
+
+  Chris\
+
+  Know that feeling. Yes. 
+
+
+  \
+
+  Emily\
+
+  We had, we had a proxy customer who looked at what we did and gave us feedback and that, I think the main parts of XP were doing was the program of practices and the planning. That all felt pretty radical compared with what I was doing. Well, then my previous job had been much more kind of ad hoc developments and the job before that had been very much big process, a shelf full of binders, showing what the process was, so XP was very different from anything I'd done. 
+
+
+  \
+
+  Chris\
+
+  How quickly did you get on board with things like doing test driven development? That you started that at the same time that was, or was it just pad programming and things like that? 
+
+
+  \
+
+  Emily\
+
+  Yeah, it was per programming. I learned so much in the pair programming just from pairing with Israeli experienced developers, but I mean the word test, your environment wasn't really invented at the time. I mean that Kent's book test your investment, like example. I think it came out in 2002, something like that. It was just unit testing when I started and because it was Greenfield developments, new product, actually, because were building testable from the start. It actually was not as difficult because I think that's the thing that I've been battling with ever since, basically when you're working with a code base that hasn't been built with tests, it's quite difficult to have them off. 
+
+
+  \
+
+  Chris\
+
+  Yeah. The retrofitting is a little bit cumbersome. Yeah. 
+
+
+  \
+
+  Emily\
+
+  It's more challenging than building them in the first place. I think I had quite an easy route into it. 
+
+
+  \
+
+  Chris\
+
+  You mentioned that the timeline, I suppose with 2002 been the naming of TDD, I suppose it's, I think it's 2001 when scrum and things like that came or the agile manifesto came out. Did things change for you then if you'd been exposed to that way of working, like a lot of the stuff you're talking about is a lot of the stuff that we associate, I think with agile. You heard about agile for the first time, did it solidify things for you or was it like, oh, I've already been doing that because I've been doing XP. 
+
+
+  \
+
+  Emily\
+
+  Yeah. Well, it was exciting of course that suddenly all these people who I had read their books and I was like, wow, they've come up with this thing. This is important, the manifesto. I'm like, yeah, I agree with all of this. This is great. This is how it should be done. Actually it was a year later XP, 2002, I went to this conference in Sardinia and I met Kent Beck and Martin Fowler and Michael feathers and the pop-in DX and a bunch of all these people who'd been there and written the manifesto. And, and there was a, I remember keynote with Ken Schreiber who was saying, oh, we're going to take over the world. I was sitting there thinking, wow, he's ambitious. He did go with the world. I was like, wow. Yeah, it was very exciting to be in that sphere. I mean, I was kind of on the fringes, I just read some books and I met a few people at the conference, but it was very exciting to be there and to see the start of something really big and new and our industry. 
+
+
+  \
+
+  Emily\
+
+  Yeah. It made a big impression on me. 
+
+
+  \
+
+  Chris\
+
+  That's really interesting though. Cause if you thought, I can imagine someone coming out with something entirely new like that and being that it must've seemed quite ambitious to use your exact word that they wanted to take over the world. Did you think that you have any idea that they were going to do it? Do you think it was that powerful. 
+
+
+  \
+
+  Emily\
+
+  I really didn't. I was like, wow, this guy, I mean, he gave him very good keynote. He was very enthusiastic and convincing. I was like, well, I guess maybe he'll do this. At the time it was such a small thing, agile. I mean, there was like this conference with 150 200 people. My experience of doing the unit testing and the refactoring and the pair programming and all of that said to me, this is a much better way of developing software than anything I did before. This has got to be the way forward, but I've kind of, it was hard to at the time believe that this was going to be the future of the industry. Of course the scrum took over so much that th all these technical practices just didn't get talked about to the same extent. Yeah. 
+
+
+  \
+
+  Chris\
+
+  Yeah. Do you think though, with XB having existed before that it needed to have more of a process management transformation type approach to it for the software engineering to kind of come along with it? If you know what I mean? 
+
+
+  \
+
+  Emily\
+
+  Yeah. I think there's a lot of reasons XP didn't make it a big time. I think there's been a lot of analysis of that. I just, I mean, it's a shame, but that it hasn't been more popular because it's so needed. You, you can't do agile without the technical practices. Not long-term at least because you just, the code quality just degrades. If you, if you don't pay attention to it. I think one mistake XP made, of course, everyone talks about the name of it being a bit, it attracts early adopters, but it turns off mainstream people. And, and also the fact, the role of the manager in XP is kind of basically buying food and asking everyone if they are okay. Whereas, it's managers, you've got to actually embrace this stuff as well. 
+
+
+  \
+
+  Chris\
+
+  That's not to do too dissimilar from the role of a scrum master though. Having played that role, having played that role, I went away for a week, I think once in one of my early teams, when I was a scrum master and I came back and there was an empty plate of cake and a white board lined up against my desk. He said, oh, we thought we could replace you with a cake and a white book. Cause that's all you're doing is that you're providing morale and organization. Great. Thanks for that guys. Much appreciated. 
+
+
+  \
+
+  Emily\
+
+  Oh, maybe, but I think scrum was a lot better at talking to managers about their role and realizing that was important. That should be, 
+
+
+  \
+
+  Chris\
+
+  Yeah. Well, I think that's probably what's driven it, isn't it that proliferation of scrum and agile is probably everybody kind of knows what it is I suppose now, because it's, you don't have to be technical to understand how to develop the software so much. I think the teams, I mean, I'm only thinking of over my career, which isn't, as long as yours that, it feels like the management teams these days are more involved, at least in the successful organizations, more involved in the technical side than they ever used to be. I think it used to feel as this thing that sat on the side that did a thing that we didn't quite understand. Now it feels like it's certainly more integrated in at least some of the successful companies. Have you seen similar or. 
+
+
+  \
+
+  Emily\
+
+  Yeah. Yeah. I recognize that, the companies that are doing well with this realize that software is the business so much larger extent than it was before. You've got to, you've got an integrated with the business. 
+
+
+  \
+
+  Chris\
+
+  In your role where you're being a technical coach are usually brought in, when a transformation is all already started, it's been sold or are you actually coming in to do some of the due diligence and try and figure out, is this a thing that we can sell it's needed, et cetera? 
+
+
+  \
+
+  Emily\
+
+  No, I think it's the consulting I've been doing is mostly where companies have already got an agile initiative. They've, they've done scrum training. They've, they've organized themselves into teams. They're doing all the planning stuff. They've realized that you need the technical side. That actually the code quality is important and developers need skills in writing tests and doing refactoring and all this stuff. So, so that's where I come in, basically. 
+
+
+  \
+
+  Chris\
+
+  I mean, it's often a bit of a gap. I think that's left behind isn't it, the organization will start trying to change its process. I think actually having done it before they will get some benefit from the process to your point just before, but they will run out of room if they start cutting corners. Cause I do think if it's implemented incorrectly, like an agile transformation, you can let yourself lend yourself to, you're just going to cut corners all the time. You're just going to check in stuff that doesn't have as high. A quality is your day-to-day fixing agile processes. That, is that what you spend most of your time going? Well, you've probably caught a couple of corners here and we need to put the corners back on. 
+
+
+  \
+
+  Emily\
+
+  Well, it's not so much the process that I go in. I talk to the developers. I know that as a developer, my life is so much happier when the code is well-designed and I can understand it and it has tests. I get quick feedback when I make changes that makes the development is so much more fun in that situation. That's usually the starting point with developers. Like, are you having fun in your code? Are you getting, are you feeling productive? Are you able to make the changes you need to make and not being, finding bugs all the time and cause fixing bugs is not half as fun as building new stuff. 
+
+
+  \
+
+  Chris\
+
+  And how often is the answer? Yes, I'm humping from. 
+
+
+  \
+
+  Emily\
+
+  Occasionally. I mean, I do meet teams like that and then my job is basically to encourage them to carry on doing what they're doing and write more tests. A lot of the teams I go to it's like, yeah, our build takes 20 minutes or, we get bug reports all the time and we keep people shouting at us, ? So, so it's much more than it's my, okay. Right. Let me show you some things. Let's see if we can speed up this bill. Let's see if we can add a few tests here. Let's see if we can rewrite these tests that are too slow and don't support refactoring. It's a part of it is just kind of find out where the team is, what the biggest problems are and working out, which of all the technical practices I know would be most useful for these, this team and then trying to train them to use them. 
+
+
+  \
+
+  Chris\
+
+  How often does it feel like a, an open door to those conversations and how often do you have to work at? 
+
+
+  \
+
+  Emily\
+
+  I'll definitely have to work at it. I mean, every team is different in some, at some level. Every team has, I mean, people that have experienced, they've been at the organization for many years and it can be difficult for people to admit that they need to learn new things or that they've got into trouble, that they can't get themselves out off. There's a lot of other technical coach role is just really trying to be, have empathy with the developers and understand where they're coming from and have a productive discussion with them to try and persuade them that actually you can't change things. You can't learn new things, this would be useful to you and make your life better. There's a lot of that as part of the role. 
+
+
+  \
+
+  Chris\
+
+  It's interesting that you saying you were saying about starting with, are you having fun, in terms of then getting to like some metrics that underpin all of that, I I've come across a lot of teams, so they have, you say, well, how much test coverage have you got any answers? Oh, some, because they actually, haven't got a number and they maybe don't have any other metrics of like how well their system is performing or how slow the builders, or fast they don't necessarily know. Do you, is that where you go next after fund to go after metrics or do you take a different route? 
+
+
+  \
+
+  Emily\
+
+  I'm not very good at metrics. I know it's important. I know that it's the, I probably should pay more attention to that. I, there are useful metrics that you can come up with. I mean, bill time is one of the ones I have used actually. The four key metrics in the accelerate book ones that I would encourage the organization to go after, because I think they're hard to gain more for it with them at once. I think that there should be metrics. I'm just not really paying attention to them. It's something I probably need to better at because it's the kind of thing managers like to see when you've gone in and done some coaching. They want to see it's made a difference. I think there's a lot of those metrics or trailing effects. It's a long time after you've done something that you actually see an impact on the, some measurable difference in the number of bugs comes a bit later than the efforts to improve the code quality. 
+
+
+  \
+
+  Chris\
+
+  If it's not after, if the first thing is fun, then w where is the next bit that you go, where do you is it, do you go to the builds? Do you go to the CIPS or do you go in looking for tests? I mean, where'd you start? 
+
+
+  \
+
+  Emily\
+
+  I go to the, so then when I first meet a team, I asked them to show me that some samples of test code that they are proud of or production code that you're proud of. Some Tesco that they're less proud of and some production code they're less proud of. I always usually start with a code review and talking through with them what I see in that code. I also ask them about the build time as well. Cause that's so important if you're trying to do refactoring, you need a quick build and if it's slow, then I have to look at that first. I also talked to them more generally about what problems they're seeing in their life. Often we get, we throw out problems around the process and the way tasks are being given to them and lack of access to the customer and those things. 
+
+
+  \
+
+  Emily\
+
+  I'm like, yeah, these are all important, but I'll go and talk to their scrum master or their process coach about that, because that's so much better at that, and I can do code, I can do a test and design and talk to developers, but the whole organization stuff, I'd like to leave that to someone with a better sense for that. 
+
+
+  \
+
+  Chris\
+
+  I think this is what you need. Cause I think that the technical agile coaches they got is the role that's probably most often forgotten actually. Yeah. There's a agile coaches, some of which are probably listening. Hello, your Tanner, penny. It there's loads of you, but it's the technical people that, and that relationship with the technical person, I've known, I know from having been an agile coach and not necessarily focusing on the technical side at that particular moment in time, you've got to go and try and find the technical person who might be able to help you with this journey who might know a bit more about the code. I think if you've got a dedicated role, like what you're doing, I think that's critical really to having a successful transformation. I would say. 
+
+
+  \
+
+  Emily\
+
+  I'm so glad you said that. I totally agree. 
+
+
+  \
+
+  Chris\
+
+  Well, I think it makes the most sense. I mean, because even the things that you're saying about like the developer not having access to the customer, I mean, that really resonates because one of the things developers really do need to know is what they're building for and their customer experience. I think if you're focusing on the customer experience, then you're going to deliver a better product because you have to think about how it's going to behave, perhaps going to be used. Yeah. 
+
+
+  \
+
+  Emily\
+
+  You have to feel that your job is worthwhile. I mean, that's why I asked developers what makes their job fun. One of the top things always comes out is, I feel it's fun when I feel I'm building something that matters to the users, something that's important and that's what you get from contact with the actual people using your software is finding out that it actually does matter for, I do a good job. And that really motivates the, 
+
+
+  \
+
+  Chris\
+
+  When you, when you've done a good job, when you feel like you've had the, you've got the developers to where you want them to be. I mean, what does that look like for you? Because I mean, you've got your blog as well, which is code is like cooking.info, which is great. There's lots of stuff on that. Like, are you on how much of that stuff that you, that great stuff that you've got in there? Are you wanting to see developers embodying? 
+
+
+  \
+
+  Emily\
+
+  Oh, wow. Well, when I've done some coaching, I'm expecting that they'll rights. They'll be much more confident writing, good unit tests or component tests. Sometimes the you're working in a situation where unit tests aren't the right choice and it's better to have slightly bigger, more component tests. I'm expecting them to commit code more often. I try and give them a culture of committing code every few minutes, at least once an hour, that they're committing some code and pushing it so that there's a constant stream of small changes coming into the wider code base. I'm expecting them to be more confident, refactoring to make less mistakes refactoring and more of a healthy attitude of let's do a little and often refactoring. Oh yeah. Just the collaboration techniques and the team. I usually work with teams rather than individuals and because I get more bang for my buck, if I were kind of working with the whole team, rather than just per programming one person at a time. 
+
+
+  \
+
+  Emily\
+
+  In order to collaborate with a whole team programming together, there's a number of communication techniques and things that I would hope that they learn to make that effective. 
+
+
+  \
+
+  Chris\
+
+  How do you do that then to do like collaboration across the whole team? Do you, do you mean like, have you, I presume you've done like training sessions then when you've got all of the developers together for a team, is that. 
+
+
+  \
+
+  Emily\
+
+  This idea of ensemble working or it's also called mob programming where you have some roles, you have one person at the keyboard, who's the typist. This role of navigator, who's communicating in an effective way with the typist to explain what COTA right. The rotating, the roles and what to do when you're not the type of, navigator and how to support them. There's a whole body of knowledge now about how to do that effectively. What he's all was one of the initial pioneers in this area. There's a lot more people since have also followed this up. And yeah. That's a technique I use a lot when I'm cooking. 
+
+
+  \
+
+  Chris\
+
+  Yeah. I've never done that. I wouldn't know. I, I don't know if I'd know where to start with more than like one or two people. How well do people adapt to that process? Cause that must be a little daunting for people. Cause, cause also as well are so often like, no, this is my homework and you're not gonna see it until I've checked it in and I'm ready for a pull request. Or sometimes you're just never going to say it. Right. 
+
+
+  \
+
+  Emily\
+
+  No, it's true. It's, it's very different from the way program has generally worked before, unless they've done a lot of pair programming. It's usually easier if people have done some bad programming, so I've tried various ways to introduce it to teams. What I'm trying at the moment is a more kind of formal program where I, teach the skills and explain what the skills are. We go and do some practice on an exercise. We come back and talk about how it went and what communication patterns we saw and how we can improve them and kind of iterate. That's a, more of a training course that I'm trying at the moment before that I just would try and launch into it and just be the facilitator and try and explain to you went along and I had some success with that, but I think probably setting this up as a training might work better. 
+
+
+  \
+
+  Emily\
+
+  I know a lot of teams that have just tried, it just got all together in a meeting room or a virtual meeting room and she's tried it and I've had quite mixed reports about how well that's gone. 
+
+
+  \
+
+  Chris\
+
+  What was the, what was the successful one? And what was the worst one? If we picked the extremes from the. 
+
+
+  \
+
+  Emily\
+
+  Also the worst cases are when, the teams got no, somebody read some blog posts or other and the rest of the team has no idea what they're doing. Somebody is basically typing and no one's saying anything. Occasionally a timer rings and they're like, oh, we have to swap now. It doesn't really, you don't capture the spirit of what it's supposed to be. 
+
+
+  \
+
+  Chris\
+
+  You like, it sounds like a bad game of twister or something. 
+
+
+  \
+
+  Emily\
+
+  Yeah. I think if you're going to try it, you should really at least read up on it a bit and try and get some advice. It preferably find someone who knows what they're doing to facilitate. I think the best experiences I've had is when the team has already really gel, they know each other very well and they already have done some pair programming. I'm thinking of one particular team I came in and they took to it so quickly. I just had to kind of prompt them and explain them the roles. It didn't take more than a few days before. Right. You know, they were having fun. It was coping produced and they were learning stuff from one another. It can work without much input from. 
+
+
+  \
+
+  Chris\
+
+  When, when you start that, do you pick a program, a problem that the organization actually has, or do you pick up with like some defined problem, like a Carter or something like that? 
+
+
+  \
+
+  Emily\
+
+  What I'm doing now with a training in ensemble, working as we're doing Carters, just to take off the table at that difficulty of understanding the problem and what coach writes, cause Kolkatta is generally a very straightforward piece of code to write. What I've been trying to do is take a problem from that organization. Because that's the coaching I do, I try and do a combination of teaching with code Carters and hands-on in their code with the ensemble and I get them to pick something from their backlog. I tell them it has to be, has to involve writing code or tests or both. It can't just be kind of investigating or writing documents or something. 
+
+
+  \
+
+  Chris\
+
+  That would be very boring. Wouldn't it? Well, yeah, we just do a die. We're all going to write a document together. Actually, I have done that. I have done that. It's not fun. 
+
+
+  \
+
+  Emily\
+
+  It could be a good use of an ensemble, but it's not really my first choice, at least. We try and pick something from the backlog that actually might is involving writing some code, developing something and isn't too urgent so that the product owner, isn't going to be breathing down their necks to get it done quickly so that we can actually spend some time on it and work through learning about the ensemble and I'll try and walk them through, okay, let's do this task with TDD. Or if it's not feasible to do TDD, it's like, okay, let's do some refactoring and try and get this code to a state where we could write some tests, let's try and learn something about safe refactorings that we can do here just in your, on the compiler or on whatever test they've got, 
+
+
+  \
+
+  Chris\
+
+  You know, with the cats as well. I just want to return back to that for a second. For people who don't know, that's a, well actually, do you want to describe to us what your interpretation of a catalyst? 
+
+
+  \
+
+  Emily\
+
+  Right. It's a term that was coined by Dave Thomas, watching his son practicing karate and the way that they do these kinds of sequence of moves to learn a form, get the muscle memory. He was like, well, we can, we should do that with code as well. There's some certain, coding problems that everyone should know how to solve that have a standard. It's not so much the solution you come up with. It's the way you solve it in small steps with tasks. That's what you should be practicing the form that the movements to get to the, not so much the end result. A cut is usually a description of a small coding problem that you could probably code in an hour or two or three. You repeat it and each time you do it, you try and focus on how you're solving it. Not, not the solution so much you're coming up with. 
+
+
+  \
+
+  Chris\
+
+  Obviously you're going to be using them for training people, but like, do you actually just, take yourself to one side and do a counter? 
+
+
+  \
+
+  Emily\
+
+  Yeah. Yeah. Although having said that often, I mean, I've got a certain, a few, two or three, four cutters that I really come back to a lot and I'm also using the same ones in my training, but the ones that I were like, okay, let's do this. I need to do this in a different programming language, or I need to learn about this refactoring technique. I think this would be a good Carter to practice that on. You know, that, 
+
+
+  \
+
+  Chris\
+
+  That's interesting that you talk about the refactoring technique. Do you do cutters where you basically undo things? 
+
+
+  \
+
+  Emily\
+
+  The classic form of a cart is building up something from scratch. 
+
+
+  \
+
+  Chris\
+
+  That's what I'm familiar with. Yeah. Yeah. 
+
+
+  \
+
+  Emily\
+
+  That's a refactoring, Carter's where you start with some horrible looking code and you have to make it possible to add new features to it. I've, and that's, if you look on my get hub page, I've got a lot of refactoring Carters that yeah. Some of which I've designed and some of which I've just found from place, 
+
+
+  \
+
+  Chris\
+
+  Well, I was going to say, where'd you get the horrible looking? 
+
+
+  \
+
+  Emily\
+
+  Yeah, well, it varies. Some people just put these things out there and say, look, and they do them as demos at a conference or whatever, or in their training materials. And you can practice on them. Some of them have been inspired by real horrible code. I've worked on where I've looked at this, real horrible code where I've had to work on it and not being satisfied that I've had the techniques I needed to really tackle it. I've kind of tried to design an exercise with some of the same features so I can try and do better. 
+
+
+  \
+
+  Chris\
+
+  Because I've always aspired to, I love the idea of a catheter and I've used them for training as well, but not, I don't think nearly as extensively as you've done clearly and I'd never done the refactoring one, but I think what I've tried to do is every now and again, I'll go out, I'll try and I'll just do that problem again. I've not done as many problems as I should do. I would love to get into a position where you do it, like, a martial arts cutter where, it's the start of your session. If I could get to like a little 15 minute segment that I could do in the morning, just as a, a little routine, but I haven't necessarily found anything yet that I can do. That is a complete thing rather than a segment. If you know what I mean? Like I'd like to do a little small complete thing in like 15 minutes, there's a warmup almost. 
+
+
+  \
+
+  Chris\
+
+  Have you ever done anything like that? 
+
+
+  \
+
+  Emily\
+
+  Yeah. I mean, I'm thinking about that. I mean, I demo TDD a lot or using code cutters and, there are so like leap years that is a Cartier you can TDD in just a few minutes. It's quite small. The piece of code you end up with is like one line of code and four tests. That's the one that I I've had to do a lot of times because each team I meet practically is using a different programming language. I have to learn to do that cartoon and to download TJ in a different language. That's something that I do quite a lot. And, and the next one up is fizzbuzz, 
+
+
+  \
+
+  Chris\
+
+  Is art and many Facebooks. Well, I tried to do that one in different styles to solve it in different ways. I think I put something up on my get hub where I think I'd done fisbos in about five different ways and I wrote it in node and I wrote it in C-sharp and actually had time isn't it. I could see which one was faster. Yeah. And do the comparisons between them. I don't think I've done that exactly as a Kathy yet, but I've done it a lot of times just to try and tweak it and see if I can get a certain thing faster or not just actually to see, which was a more effective programming language for what I was trying to do. Obviously fisbos is just an example, but I wanted to see which one was actually going to be genuinely faster. 
+
+
+  \
+
+  Emily\
+
+  Yeah. I mean, that sounds exactly like how you should use a code cutter. 
+
+
+  \
+
+  Chris\
+
+  Maybe I just need to put some tests around it. 
+
+
+  \
+
+  Emily\
+
+  Oh yeah. I just had some tests. Definitely. 
+
+
+  \
+
+  Chris\
+
+  While I was going off Fred George's advice that if you're writing like 10 lines of code and it doesn't work, then you shouldn't be writing code. 
+
+
+  \
+
+  Emily\
+
+  Yeah. No, I mean, there's some truth in that, but of course, the reason I'm doing it is to practice TDD most of the time. Just by taking a problem that is so easy that you could solve it without TDD, then you're learning how to do TDD rather than learning how to solve. 
+
+
+  \
+
+  Chris\
+
+  Well, I think that's the important thing. Isn't it learning how to do TDD? Because so often I come across organizations that say they do teach TDD and they're not actually doing TDD. They're throwing the tests in at the end or they're not really writing the tests first. They found some way around it. 
+
+
+  \
+
+  Emily\
+
+  Yeah. Although, I mean, to be fair, I think I, I'm not one of these peoples or you're not doing TDD. You didn't write the test first. It's a discipline that when you're first learning TDD, you should absolutely write the test first and you should write all the tasks and make sure you have tests for everything. Once you've learnt what it is, TDD is giving you, then you can be more flexible and you can probably get that without being quite so strict turns into, fast feedback loops and being aware of the testability of your design at all times and what state you're in, whether you're refactoring or whether you're adding functionality. I, I dunno, I don't like that kind of being judgmental and going in and saying, you're not doing 2d. It's like, 
+
+
+  \
+
+  Chris\
+
+  Well, it's interesting. Cause I think, if you take like the front end, so I think it's really important to obviously have like, a huge amount of tests on the front end. If you're, if you've got the web browser open and you're writing your code and you're hitting it, or you've got like a hot reload or you're at least refreshing wherever it is that you're writing and then you're immediately testing it in the actual web browser or, android device or an iPhone emulator or whatever it is then you're kind of are doing some test driven development. The thing that we want to have at the end is some artifact that we could repeatedly run. 
+
+
+  \
+
+  Emily\
+
+  Exactly. No that's, it's fulfilling your need for feedback at the time while you're developing. That's great means you can work in small steps and yeah, but you do need that artifact as well afterwards that gives you the regression tests, safety, how you fit that into that process. It, it's to fit into that process. You need to not just kind of, oh, I'm done now and oh, I haven't read the test notes. It's got to be part of what you're building as well, the test and the code. 
+
+
+  \
+
+  Chris\
+
+  Do you try and have like build the tests up so that they can be used in a wider context, like, for when we're talking about like how you would then have them as a regression pack or for integration tests or for all those things, like, do you try have a cascading size of tests? 
+
+
+  \
+
+  Emily\
+
+  Oh, so you're talking test strategy here. What kinds of tests, how big, how much code do they test? What tools do you use? Yeah. Oh, that, I mean, it depends classic consultant answer. Of course it depends, but yeah, you need to try and find a good trade off between the test being fast and being cheap to maintain and also testing something that is significance preferably related to what the user would be interested in. A unit tests are very good on the fast and cheap access usually, but they're often so small that they don't really find the kind of things the customer cares about. I quite often go for a slightly larger unit where I can, I often use a technical approval testing as well, which is, it's also known as golden master testing or characterization testing. It's often used with legacy code or, but I find it still is useful with new developments. 
+
+
+  \
+
+  Emily\
+
+  A lot of people disagree with me that, but I think it's useful technique for new demands. 
+
+
+  \
+
+  Chris\
+
+  Well, we'll talk to us about golden master testing then. So what is that? How do you define it and why. 
+
+
+  \
+
+  Emily\
+
+  I prefer to call it approval testing? Because I think that's more descriptive of what it is. It's, it's where you have the, you write a piece of code that triggers your application to do something that exercises a unit. You still have to do the arrangement act part of a test. It has to identify a piece of code exercise it, but instead of then making some assertion upfront about what it should do, you just try and gather what it's done or trigger it to print what it's done in some kind of text format. Preferably. If you're testing a function that produces an API that produces a rest document or a bit of XML or something, that's already producing a kind of a text representation, but if it's producing some kind of object, you might need to write a printer that would print that object, print the state of the unit, and you use that as a basis for, okay. 
+
+
+  \
+
+  Emily\
+
+  I'll, I'll look at that. Does that text represents all the aspects of what that thing did that I'm interested in? Does it show all the important outputs? If it does and the outputs look correct, then you approve that, say, okay, this is what I want to see. You preserve that as a, in a file. The next time you run that test, it we'll just compare the output against that recorded, approved version of that text. As long as it matches the test passes, you approval. Part of it is the crucial part. I have to read it and check it looks right. 
+
+
+  \
+
+  Chris\
+
+  Mm. I see. Why do people, why do you think some people were against that then? 
+
+
+  \
+
+  Emily\
+
+  Because you can't define it before you upfront. With test-driven development, you're supposed to write the test first and then do the implementation. Because your approval test is always based on actual outputs, you don't calculate output in advance. You, you can't complete the test until the code is finished in some way, 
+
+
+  \
+
+  Chris\
+
+  I think that's to the point of actually satisfying the user, isn't it? That you can't be necessarily pure about all of these things, I guess. 
+
+
+  \
+
+  Emily\
+
+  Yeah. The other thing about the approval test is usually the units are a bit larger than in classic TDD and the output is similar between tests. What happens in normal unit tests is that each test has like a handful of assertions, maybe one. When you've got 10 tests, some it goes wrong. One fails because they're so targeted with an approval testing approach for start your units bigger. You might only have one test instead of 10. And, but if you did have more than one test, they might all fail together. Particularly if they use the same based on the same output or the same object state, they're more coupled. People, some people see that it's anti-pattern that the tests are more coupled and they tend to fail together. In my experience, that is not a problem. So. 
+
+
+  \
+
+  Chris\
+
+  I think that's really interesting, cause I mean, I'm doing some work with the client at the moment. It has multiple brands. They basically have a white label almost that they produce and it gets configured to become, a different brand. It feels like you could, if you're feeding something with configuration, your approval testing can almost go, well, I've now got the six brands that I've created from this one thing that I have built and it is well tested. Now what I actually want to do is test the, all of the brands, meet all of their conflict. That seems like a potentially good application for approval testing. 
+
+
+  \
+
+  Emily\
+
+  Yeah. If it's, Well, I don't know all the details of this, how once you've taken your white. You, it sounds like a function though, pure function where you take a white label version, you apply the customer conflict and you get a customer configure version that looks different. Yeah. As long as it looks the same after you've refactored, what's in the middle, then you're good. Yeah. That sounds like you could do that with an approval test one for each of the six brands and then possibly multiplied by however many different configuration options you have. 
+
+
+  \
+
+  Chris\
+
+  Yeah. Well, I think that's the challenge with, a challenge like that, where you are producing a white label, it can be configured many times you could, your tests increase not exponentially, but they do increase pretty rapidly depending on how many brands you're going to add and how many configuration options you've got. So, you've got to find a clever way of scaling that testing. Yeah. 
+
+
+  \
+
+  Emily\
+
+  The approval testing ways perhaps to have a lot of tests that look very similar, they're just tweak a few configuration options. Whereas the unit test would be like, okay, I'm just going to tweak that configuration option and check that one thing changes. They're much more targeted, but it gives just a different trade off the unit tests. If you change this configuration option, they'll assert that thing changes, but they might miss all the other five things that changes unexpectedly. Whereas your approval tests would find that because it would be testing everything. I find that a good trade off that I'm more likely to find bugs for the approval tasks. I have ways to manage the fact. I have tools that help me manage the fact that I get multiple failures whenever I change something. 
+
+
+  \
+
+  Chris\
+
+  Do you have any particular tools that you recommend, or do you have to skip between the tools depending on what languages that you're using? 
+
+
+  \
+
+  Emily\
+
+  I used two main tools that I prefer. One is approval tests.com, which has got implementations in many different programming languages have the same framework. The one on Falco who invented the approvals frameworks is still an active maintainer of most of those. I've been involved in a few of them. I'm one of the open source maintainers for some of those. The other tool that I use a lot is called text to test, which was originally developed by my husband. I've been using it for the past 20 years maybe. And that was language agnostic. You can test a program written in any language, as long as it can produce plain text. 
+
+
+  \
+
+  Chris\
+
+  Cool. I think I'm going to have to go and check those out as should the listeners. You're skipping between languages though, I mean, how easy or difficult do you find that? 
+
+
+  \
+
+  Emily\
+
+  Well, I like programming in different languages because I mean, I started out with C plus and then very quickly went to Java and Python and over the years I've done some scholar in anger. I just find that with that just between Python and Java as a background, I have enough different ways of thinking about programming that new languages. I don't know. I seem to pick them up quite easily. So I enjoy it. 
+
+
+  \
+
+  Chris\
+
+  We've developed a favor over time or actually I'm going to ask you this question both ways. Have you developed a favorite and have you developed a hatred for one in particular? 
+
+
+  \
+
+  Emily\
+
+  Oh, well, my favorite is has been for ever since I picked it up, basically. I just find it so straightforward to understand, but yet, you keep digging in there's more to it and you can write things really eloquently and concisely, but it's still accessible to beginners. So yeah, I really liked Python things. I've hate. I thought I was going to hate. See, but then I started doing some more, see, lately I've done it. I've been coaching several teams and actually there is an elegance to it and it's simplicity to it. I quite I'm getting quite fond of, 
+
+
+  \
+
+  Chris\
+
+  There isn't one that you actually hate. You will quite happily go in any language pretty. 
+
+
+  \
+
+  Emily\
+
+  Much. I'm having trouble thinking of anything. I would. 
+
+
+  \
+
+  Chris\
+
+  Hate. How'd you feel about PHP or some antagonizing the listeners now. 
+
+
+  \
+
+  Emily\
+
+  I know she gets a lot of bad rap. I have to say I haven't a lot myself, but I have a colleague who I really respect and he did a lot of PHP and has explained to me that you can do all the great stuff in PHP and he's a fantastic program. I wouldn't rule it out that I would like PHP to. 
+
+
+  \
+
+  Samuel\
+
+  There you go. I went to talk to you about your book that you've released recently, fairly recently, right. And. 
+
+
+  \
+
+  Emily\
+
+  I'm glad you brought. 
+
+
+  \
+
+  Samuel\
+
+  That up. Yeah. There you go. Well, talk to us about that. That's on the same vein as technical project management, but the salmon style. 
+
+
+  \
+
+  Emily\
+
+  The title of the book is technical agile coaching with a summon method. It's about the method I use for technical coaching. It's encouraging people to think, well, if you're a software developer who, this stuff and you want to spread it, this is some coaching techniques you could use. That's what the book is about basically. And this is what works for me. This is why I think it works. And you should try this. 
+
+
+  \
+
+  Samuel\
+
+  Obviously summon method is probably I I'm it's the first time I'm hearing it. Obviously we've learned a tremendous about a bit about it today. There's obviously going to be some coverage of the salmon method. How are you, how are you then differentiating that within your book? Are you coming at it from a slight different perspective? Are you introducing other aspects of things you've learned along the way? Like w w where is your, where's your angle on it? 
+
+
+  \
+
+  Emily\
+
+  Well, I mean, I came up with the name Simon, so yeah, so it's a Swedish word that means together. I wanted to name my coaching method, something that would, you could search for on the internet, and that would distinguish it from other ways of doing technical coaching. I mean, there's this, every technical coach has their own way of doing things really. And, and a lot of technical coaches combine it with more general agile coaching, but I realized that what I was doing was a bit different. I, I try and stay on points with the developers and leave the rest of the coaching to someone who's better at that. I mean, I guess it just kind of Springs from the observation that for developers, who I know who are really good at TDD and technical practices, generally, they've learnt that through either pair programming with someone who knows that and usually combined with practicing on code cutters. 
+
+
+  \
+
+  Emily\
+
+  Those two aspects seem to be there in most of the successful practitioners that I know. The summon method is basically trying to scale that up to, okay, can we help the whole team to learn these tactical practices? Okay, well, we're scale up pepper coming to ensemble working and we'll scale up individual practice on code Carter's too. Let's have more formal learning sessions, teaching sessions, where we have targeted cutters. We talk about techniques and try and learn those things more effectively. That's the basis of it. 
+
+
+  \
+
+  Samuel\
+
+  That's very exciting because off the top of the head, I can think of tons of people who would from this. If, I mean, Chris, you seem to express this similar thought around technical, agile coaches being needed. It sounds like an invaluable resource. It's a, it'll be interesting to see how that pans out and stuff. You were saying everything we've spoken about almost up until this point has been this salmon method, right? Yeah. 
+
+
+  \
+
+  Emily\
+
+  Basically, it's my name for what I do. It's certain, the book describes it in a lot of detail and there's a website as well. I mean, you mentioned my blog earlier. I haven't written a lot on my blog, like the. 
+
+
+  \
+
+  Samuel\
+
+  Busy writing a book, 
+
+
+  \
+
+  Emily\
+
+  Someone coaching.org is the website that goes with the book. If you are interested in doing technical coaching or perhaps you're already doing it, there's resources there that you can find code cutters and exercises. And yeah, 
+
+
+  \
+
+  Chris\
+
+  I haven't got the book yet, but I will think it looks really good because I think there's, it, for me is someone who's done, a technical, agile coach role. Certainly don't think as deep as you've gone, it looks like it will fill in a lot of gaps for me. I think, that would be a really great thing to provide a more rounded experience. If there's anyone out there that's doing something similar than this looks like it's going to give you a lot more tools for your toolbox, because agile is all about tools for the toolbox, I think. Yeah. 
+
+
+  \
+
+  Emily\
+
+  Yeah. And making them your own as well. Yeah. Oh yeah. 
+
+
+  \
+
+  Samuel\
+
+  Who do you think his book is more tailored towards? Are you trying to empower like managers or CEOs to see it, or is it for the developers to actually empower themselves? If that makes sense. 
+
+
+  \
+
+  Emily\
+
+  I'm, I don't expect this book to be read by managers. I mean, they might read the first chapter to find out what it is that's all about, but no I've written it for people who are software developers, people who perhaps are at some kind of tech lead or architect or technical leader. I want to promote better technical practices, better culture of writing tests and so on in their organization, or, and also for consultants who worked with a lot of organizations and need effective ways to promote. 
+
+
+  \
+
+  Samuel\
+
+  Actually, to be fair. Those are the people that came into my mind when I saw the book and what it was about is like, it will be great for more agile coaches to embrace that and spread it because it lose to probably your first question that you asked Chris around, how do people take to this? Essentially being told to do something new or do something different, it's a touchy subject. If there were more softer ways to introduce that and more, 
+
+
+  \
+
+  Chris\
+
+  Well, we can be a stubborn bunch, can't we as development. 
+
+
+  \
+
+  Samuel\
+
+  Yeah. With the book like this, they read it in their own time. They can, they can really form film, relate, these ideas in their head and come to accept it rather than the kind of being told, like someone towering over them. So, 
+
+
+  \
+
+  Emily\
+
+  Oh yeah, don't do that. No, 
+
+
+  \
+
+  Samuel\
+
+  Of course. It can feel like that, and where that stubbornness probably comes from is that defensive guard. 
+
+
+  \
+
+  Emily\
+
+  Yeah. I mean, developers are very highly educated and very opinionated, but also intelligent enough to realize that if someone shows you a better way to do something and you realize that it is a better way to do something and you could learn that and, developers will learn that. 
+
+
+  \
+
+  Chris\
+
+  Even if it's sometimes takes them a day to process come back the following day, go. Yeah. I've thought about what you said and you are right, but those are a few too few occasions. 
+
+
+  \
+
+  Samuel\
+
+  This giving you the bug of writing a book and exploring this methodology more, as it has writing the book, even taught you about your methods and you've got some new ideas that you want to improve on or anything like that. 
+
+
+  \
+
+  Emily\
+
+  Cool. So, I mean, writing the book forced me to really think through what it is I do and why I do it. Of course, the way I'm working also involves. Some of the things I wrote in the book about, what I do, I've already started to change. Some there's, it's always a work in process of learning better ways to help people and to promote to good technical culture. But I do enjoy writing. I realized now that what were talking about before with the approval testing, I've written a bit about that, but it's still, it's a technique which is not known enough. I think a book about that would probably help. That's kind of on my horizon that I think I do want to write a book about that at some point, 
+
+
+  \
+
+  Samuel\
+
+  There you go. Stay tuned for that one. 
+
+
+  \
+
+  Emily\
+
+  Yeah. Although it's going to take me a few years, I think. So. 
+
+
+  \
+
+  Samuel\
+
+  Anything more that you wanted to chat about Emily before we wrap up? 
+
+
+  \
+
+  Emily\
+
+  Oh, that's very kind of you to ask. I we've already talked about my book and the website that goes with it. Someone coaching.org. I also wanted to mention, I am actually starting up a new training course in approval testing in the new year with O'Reilly in case anyone's interested to try that out. 
+
+
+  \
+
+  Samuel\
+
+  That an in-person course or is that cause I notice you've done some you've written some mute, is it you to me or some training platform there? This an in-person one or an online course? 
+
+
+  \
+
+  Emily\
+
+  Oh, it's an online course. So, so I did Pluralsight's, there's a course on unit testing and Python. It's a few years old now, but it's, I think it's still good for now a writing course. It's just half a day online so far, and I've got a longer version of it that I also offer, not through my writing, but yeah, I'm doing basically everything remote these days. 
+
+
+  \
+
+  Samuel\
+
+  It's the only way. Anyway, and sorry, is that written and you're waiting just to publish it or is it already published. 
+
+
+  \
+
+  Emily\
+
+  So it's an interactive training. The first date is in January, but I don't think they've put it up on the website yet because I only just signed the contract. 
+
+
+  \
+
+  Samuel\
+
+  So look for that in January then. That's amazing. Thank you for your. 
+
+
+  \
+
+  Chris\
+
+  Time, Emily. Yeah, 
+
+
+  \
+
+  Emily\
+
+  It's been great conversation.
