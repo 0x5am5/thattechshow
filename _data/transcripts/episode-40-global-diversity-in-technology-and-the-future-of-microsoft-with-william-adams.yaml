@@ -1,0 +1,1091 @@
+title: Episode 40 - Global Diversity in Technology and the Future of Microsoft
+  with William Adams
+transcript: >-
+  William\
+
+  My name is William Adams. What, it's a hard to describe what I do, but I'm a technical advisor at Microsoft. What that means is essentially I've been there for 24 years. I helped set up the office of the current office of the CTO with Kevin Scott a few years back. The technical advisor is in a position to advise the CTO and other people around the company where technology is going. We look at a bunch of stuff. We synthesize a lot of stuff and we help us get towards a future that the CTO believes is where we should be going based on all factors. We just spread the goodness across the company. 
+
+
+  \
+
+  Chris\
+
+  That's pretty incredible role. You started at Microsoft, what role did you start in? 
+
+
+  \
+
+  William\
+
+  So 1998, I've been here a while. The thing that drew me to Microsoft was a friend of mine was working on this thing called XML and XML was back then. I, these is the equivalent as it's five HTML, right? It's just this fundamental thing, but you don't really think about too much, but I joined the company to work on this thing called XML. And I took it as a mission. I eventually became the manager of the group and, big dev manager, development manager, all that stuff. My mission was to make XML ubiquitous to the point where you just don't think about it, just like you don't think about ASCII today, right? It's like, oh yeah. ASCII. I mean, sure. It's, it's baked in. Everyone uses it, but no one uses it. Right. You don't walk around saying I've used ASCII today. 
+
+
+  \
+
+  Chris\
+
+  Right. Unless you've done some SKL I guess, 
+
+
+  \
+
+  William\
+
+  Unless you've done some ASCII art, so we worked for a few years on that and now XML hasn't disappeared, but from a programming language perspective, if you're using our stuff, like the CLR C sharp, it's just part of the language. And we even incorporated the SQL. Sequel was just kind of part of our language run times. That was stuff that a team of mine did back in 2005 ish. I started with XML, I managed to a large set of people that did all sorts of things related to XML. That was the beginning. 
+
+
+  \
+
+  Chris\
+
+  I mean, just to jump in there. I mean, that's incredible, isn't it really to do it the way you're talking about it as well as though, like, oh, there's this thing called XML and you talked about how you wanted to make it ubiquitous. I think you achieved that. I think you got the goal. 
+
+
+  \
+
+  William\
+
+  Yeah, it did. I mean, it was really funny. It started out and just, I E internet Explorer as a part of that, and then it shipped with everything. Now it's part of the, it's just there. Yeah, that was my original mission was to just make XML this ubiquitous thing. 
+
+
+  \
+
+  Chris\
+
+  I love the idea that we get to have these conversations about, how you created something like that, because it's one of those things that has just all as far as long as I've been part of, doing it, studying computer science, for example, and been involved in development. It's just one of those things it's always been there, for me, it's incredible. 
+
+
+  \
+
+  William\
+
+  Yeah. Well, and it also tells you something of my age, right? It's like, it's always been there. It's like, it was like last week, wasn't it? 
+
+
+  \
+
+  Chris\
+
+  Well, I mean, I started studying computer science in 2004. Right. So it was already there. Right. For, for you to get from 98 to 2004, that's. 
+
+
+  \
+
+  William\
+
+  Already baked in by that. 
+
+
+  \
+
+  Chris\
+
+  Point. Yeah. Six, six years is a long time in software, I guess. Yeah. Sorry, Sam, you were going to say something. Yeah. 
+
+
+  \
+
+  Samuel\
+
+  Why did you want to make it ubiquitous? What was it like had just a, a vanity project? Was it just, did you see a future in it? Like what drove that desire? 
+
+
+  \
+
+  William\
+
+  Yeah. Why the heck? So, I've been in computers since way back then, 1984. That's how ancient I am. I've been doing computers professionally for a very long time, and I only joined Microsoft in 98, and I had a long string of things I had done even before that were kind of groundbreaking at the time. But as a software engineer. Yeah. I mean, there's kind of nothing more satisfying than saying I did this thing and everyone in the world uses it. I can even brag that to business day, the XML and the data stuff that we did still exist in the C sharp language in the C plus for in time to the state 20 years later. And there's very few things. Do you ever do as a soccer engineer that lasts that long? Right. Like Chris says like, well, the pace of change in software is so fast. 
+
+
+  \
+
+  William\
+
+  You forget more than you ever learn. Right. It's so fast that these things disappear, but XML, and there's a system that data stuff that we did, it's still there today. Cause it was just that important. It's the, it's the drive to ubiquity, that's the ultimate, 
+
+
+  \
+
+  Chris\
+
+  Let's just go back then. Starting in 84, what are the career highlights then between, starting your professional career, 84 and ending up at Microsoft in 98 and then we'll go into Microsoft in a bit more detail in a bit. 
+
+
+  \
+
+  William\
+
+  Yeah. The, in 84, my brother and I have this company that we created called animation. 
+
+
+  \
+
+  Chris\
+
+  They got a bit of the name, their surname into it that, well, 
+
+
+  \
+
+  William\
+
+  He was like, we sat in a classroom for hours on end trying to come up with a name. And it dawned on us. We were trying to do like animation and automation and blah. I was like automation, you know? 
+
+
+  \
+
+  Chris\
+
+  Well, we've always share a surname. Right. I've been trying to think about how I can work it in. I think though, I never sprung to mind. I feel like an idiot now anyway. No, no. 
+
+
+  \
+
+  William\
+
+  It was hours and hours, but the brightest minds in tech. Absolutely. We worked on custom software at the, in the very beginning. This is even more ancient history, turbo Pascal. That was our first language that we've worked with to create like a program that did mailing labels, and a mail merge. We worked with companies like next computers when they started and were doing sales calls with Steve jobs, some of their biggest enterprise customers. We helped them when I am in the very beginning. 
+
+
+  \
+
+  Chris\
+
+  Yeah. I was going to say a Steve jobs from after he was fired from apple, wasn't it. 
+
+
+  \
+
+  William\
+
+  From apple, he said, I'll show you. He went off and did next and created a buzz in the industry. They didn't hit commercial success, but then they went and bought apple. 
+
+
+  \
+
+  Chris\
+
+  Well, some of that's forgotten history. I think isn't it. I don't think many people really remember next. If I remember rightly I think all of the early, was it the early Pixar stuff was done using next machines because they were that powerful. 
+
+
+  \
+
+  William\
+
+  Yeah. Pixar was doing the render farms to Steve jobs, so happened to buy Pixar and they use next computers because they had an instance of render man on them and they would do these render farms using next computers. So, yeah. They had DSP processors and wonder of wonders, this thing called an optical drive. It was slow as molasses, but it was unique at the time, these big old 250 megabytes cartridges that you seconded the thing. Yeah, we did Teligent, which was another thing. It was a joint between apple IBM and HP. At the end of it was a joint venture where they were trying to create an operating system was called pink at the time initially. We had developed a lot of technologies while we're on the next computers. Things like today, you use instant messenger of all varieties, right? Back then is what about 19 90. 
+
+
+  \
+
+  William\
+
+  We had this thing called live wire, which was this technology that enabled you to do anything collaborative. If you went into to do a chat program like we do today, pick your instant messenger. We had that and we had developed it for these alarm to now real estate company. They would have someone at the front desk answer a phone, and then they would route to the agents back in the office and they would do it by doing instant message with them. They would click on the thing and type, Hey, so-and-so's on the phone. Do you want to connect with them? They would be able to talk back, while they're still on the phone saying, no, take a message or whatever. Right. We had instant messenger stuff going on. Like that back then. 
+
+
+  \
+
+  Chris\
+
+  Was that as well, adopted back then where people into it at the time, or was it like, this is never going to catch on? 
+
+
+  \
+
+  William\
+
+  No, it wasn't. Well, it was a novelty at that time. Right. Because we didn't have the broad internet remember. This was within the office that were doing it. 10 base T co-ax networking, it was precursor to, I mean, we had the internet, but it was nothing like it is now. Right. Just think back to 1990s internet, it was literally documents at universities. The last thing we had of that was the collaborative thing where you could edit a word document, if you will. It wasn't word, it was our own editor and multiple people could edit at the same time. Oh, 
+
+
+  \
+
+  Chris\
+
+  Wow. That's quite groundbreaking at the time. Yeah. It was, 
+
+
+  \
+
+  William\
+
+  We even, I got a patent for it and there's a bunch of subsequent patents that Microsoft and other people got, but I'll refer back to this patent, that's yeah. It's the early nineties and the subsequent patents, if you look them up for Microsoft is like 1994. It's been, Microsoft did a lot of admins, but at that time there was like a Olivetti NCR. For some reason, these cash register companies were trying to do this. There are a couple of other big companies that had this. There was me and I got this patent and this is what Teligent actually bought from us, was the ability to put this collaborative capability into the us. Any application you created in this Teligent environment had this collaborative capability and what this is? Yeah. 19 early 1990s. No one did anything with that because they just, didn't 30 years later and now everyone's doing that, right. 
+
+
+  \
+
+  William\
+
+  I mean, we're doing this thing across the internet. We're doing collaborative computing, blah. That was 30 years ago. Yo. 
+
+
+  \
+
+  Chris\
+
+  The times, yeah, that patent, have you ever tried, do you do anything with that? It just the knowledge that you've got the patent or do you try and enforce it in any way, shape or form? Or is there anything you can do with it? 
+
+
+  \
+
+  William\
+
+  No, no. That patent got assigned to Teligent when they bought our technology. That's how religion and it's gone nowhere. I think apple is the current holder of it, but it's expired by now. It's whatever, I wasn't big enough on my own to do anything major with that. The timing was not right. I wasn't financially flush enough to try and go and enforce that. Assigned to Teligent give me my few hundred thousand dollars for this contract. We're done. 
+
+
+  \
+
+  Chris\
+
+  That's the funny thing about patents, I suppose. The benefit of having them and how you can enforce them and all of that stuff. 
+
+
+  \
+
+  William\
+
+  Yeah. I mean, you really, you have to look at patents and how they're used. I mean, mostly patents are used by larger corporations to just kind of as a defense of front, right? It's like, you want to do something you work with IBM and you say, look, I've got these hundred patents, you've got those hundred patents. Let's just put them all on the table and let's collaborate. And that's how really, how use it. Right. Sometimes you use it in licensed deals. I think Microsoft, I used to teach this and we would make like a billion dollars a year off patent licensing that was like 15, 20 years ago. But yeah, it's like that. The little guy, patenting something and then make striking it rich more than likely a bigger guy is going to come along. Just something slightly different and created patent and then crush you with your own technology. 
+
+
+  \
+
+  William\
+
+  So, it's a tricky game, those patents. 
+
+
+  \
+
+  Chris\
+
+  So, I mean, that's again, another incredible ubiquitous thing that you managed to create around instant messaging and collaborative documents. 
+
+
+  \
+
+  William\
+
+  It's funny because it's like, you and I were sitting here, we joking along and it's like, oh, this guy really come on. Seriously. No, really we had this 30 years ago, I got off my lawn. 
+
+
+  \
+
+  Chris\
+
+  When, when we set out to do this podcast, it was for, it was to have these conversations, with the people that, people don't necessarily know who you are necessarily. There's not going to be that many people in the world who were aware that you created all of these things or you've been involved in all of these things. This is why we wanted to have the conversations because so many people in technology go unsung, ? 
+
+
+  \
+
+  William\
+
+  Yeah. I would be remiss in saying like, I did not invent XML. I worked on the team that for Microsoft that made it ubiquitous. My manager was this guy named John police who was actually an author on the original XML spec with the W3C. So, it's a team sport, but yeah, that patent on collaboration was me. 
+
+
+  \
+
+  Chris\
+
+  I think that's better than XML. In my opinion. 
+
+
+  \
+
+  William\
+
+  I thought it was clever. I was smarter when I was younger. Now I'm so dumb. 
+
+
+  \
+
+  Chris\
+
+  I mean, I use collaborative stuff every day. I remember, even just a decade ago, how frustrating it was to not have that functionality in like Microsoft word, for example, obviously Google was the thing that brought, all the really wide open collaborative documents. These days we've got brilliant technology like Miro and stuff, but it's amazing to think that was invented as a proof of concept 30 years ago. That's insane what a development of history that is. 
+
+
+  \
+
+  William\
+
+  Yeah. The key aspect to it was the key thing that dawned on me for the collaborations was this distributed locking mechanism that I came up with nowadays, we have lots of things that do this, and we have blockchain, for example, that do in order execution of things, it's just a thing now, right. There's plenty of science around it, but at that time there wasn't, so it was just coming up with, how are you going to do distributed? We also did things like I have these real estate offices and nowadays we have Zillow you online or Redfin or any of those real estate things. You look up properties. No, 
+
+
+  \
+
+  Chris\
+
+  Yeah. Of like Zoopla, I think don't we in the UK, Sam and I, filling your own one wherever you're listening in the world, 
+
+
+  \
+
+  William\
+
+  Right. Roll back the clock 30 years. We didn't have, we had what we call the MLS multiple listing service. It was like a database online and you had to have a subscription, all of this stuff. Went to have a local cache of all that information so that the agents wouldn't have to go through the interface. It was really clunky. They wouldn't have to go through that interface. We could have a locally sourced fast. So looking at properties was instantaneous, right. We'd just add a list and you would just type in your criteria. The way we did that was we essentially copied the database. We had to synchronize it across these five different real estate offices not having live internet really is like, okay, how are we going to do this? We synchronized by batching up a transaction log from each office. At night we would email it back log to the other four offices. 
+
+
+  \
+
+  William\
+
+  They would locally all reconcile those logs against the local database and bring them all up to date. By the morning they were all in sync again. Right. In the meantime, you're caching locally, and then you do this every night. It's like, yeah, we actually did log based database synchronization over email, automated. This. 
+
+
+  \
+
+  Chris\
+
+  Is like eventual consistency, 
+
+
+  \
+
+  William\
+
+  Eventual consistency. And that was exactly the thing. It's like, young man, you've been reading a lot of books like, yeah, now I'm going to go implement this thing that I just read about. 
+
+
+  \
+
+  Chris\
+
+  Well, eventual consistency, via email. I love that. 
+
+
+  \
+
+  William\
+
+  Yes. That's what trained me on that whole concept of eventual consistency. It's like, yeah. Okay. Even if you get down to the millisecond, there's still eventual consistency. There's no such thing as absolute concurrency. Right. Nothing happens exactly. At the same time in our world. It's always a nanosecond later one or the other, all you have to do is make sure that nanosecond later is the same for everybody. Right. The timescale doesn't matter, but the technology or the technique of how you do the synchronization is the thing that really matters. So. 
+
+
+  \
+
+  Chris\
+
+  When you came up with that solution for how you were gonna, I mean, I realized that were focusing quite heavily on like 30 years ago here, but honestly I'm finding it fascinating. When you came up with the idea of how you were going to solve this problem of like document collaboration, I mean, how did you come up with that idea that you were going to, how you were going to be able to, well, keep things in sync. 
+
+
+  \
+
+  William\
+
+  Yeah, well, it was a problem driven. So, like I said, with the real estate agency, we had this actual problem where we have these databases and you had to be able to sit in any office and see in a relatively updated version of that database. Right. Because we're keeping it offline. We were saying that you don't need to go online. We'll have the machine go online and download stuff from the elemental last, but then we have to keep everything cash and up-to-date locally. There was an actual problem that our customer had is to keep these databases up to date across these five offices. Nowadays, I would just send messages over the internet live. I wouldn't even have to do this batch update thing, but this is what I had to work with. So I just thought about it. And, and in my younger days, I was quite into, I would get into a state where I would program essentially in my head. 
+
+
+  \
+
+  William\
+
+  I would literally stand in my office against a wall, maybe a foot from a wall and just kind of stare up, because I was trying to block out also to stuff. So, I would just get into a space and I would literally take problems to sleep. And I would, I actively did. I did Suffolk gnosis. I did active dreaming. I did all sorts of visualizations and the stuff would just come to me in a dream and I would solve a problem. Wouldn't remember how I solved it, but I would remember that I knew how to solve it. I could go back to the keyboard and go, I know how to solve this. Let me just start typing until it gets solved. Right. So it would just be like that. I would just kind of sit back and go, this is solvable. I know it's solvable. 
+
+
+  \
+
+  William\
+
+  Now let me just figure it out. It's just a matter of language at that point. 
+
+
+  \
+
+  Samuel\
+
+  Yeah. In hindsight, are you able to trace back where certain influences came from or whether there are any subtle nudges from, I don't know, existing technologies or anything like that you can pinpoint? Or is it completely just blue sky? Just kind of pinching that, nothing like this exist. Oh, 
+
+
+  \
+
+  William\
+
+  It's not, yeah. It's not total blue sky. There's two things that exist. First of all, I had read a biography of Nikola Tesla, one of the, if not the world's best inventor ever, this practice of visualizing, I actually borrowed or Nick from him. I read it about him, but this is how he did was a lot of visualization in his head. I was like, that seems like a good technique. So let me borrow that. As far as the technology itself, you're very often not standing on your own. I read tons of stuff about operating system design and language and also of stuff of the day. Just keep in mind that this is all modern and current. At that time, you could actually go and pick up books on current subjects. Nowadays, it's harder to find if you don't find it on Reddit, it doesn't exist. 
+
+
+  \
+
+  William\
+
+  I read a lot and I would extrapolate from those things and come up with my own solutions. Like there's no book that says, this is how you synchronize databases across email systems. Right. It didn't exist. But the word eventual consistency is existed. Extrapolate and say, okay, that's the methodology. Now, what's the practical implementation. Given the set of constraints that I have, right? This is where invention comes. Can I give you another example? Oh, 
+
+
+  \
+
+  Chris\
+
+  Definitely. We've got the time. So. 
+
+
+  \
+
+  William\
+
+  Another example we had was again with the real estate office. I like this one because it's still kind of unique for even today, each agent and in an office there's maybe 30 agents, 30 desks, not all the agents that there at the same time 30 desks and each one of them needs to be able to go out, dial up the various services through their computer. They had modems for the, we didn't want to have 30 modems throughout the office. Cause that's just a bit much, you need 30 phone lines. Right. We wanted to say, okay, we're only gonna have five modems, all right. I'm not going to tick the modem up, move it over to someone else's desk saying, okay, now you can go dial the internet. Okay. Now you can go dial. Okay. Now, so what we did was we said, all right, let's have five modems and put them on five machines. 
+
+
+  \
+
+  William\
+
+  We'll when you need something that needs to go out to be internet. The app will essentially go to the modem pool and say, I need a connection. One of those five machines, if they're not busy already, we'll say, okay, I'll connect you. They'll do a TCP IP connection between those two machines within the office. That one machine that's actually connected to the modem. We'll go out and talk to whatever it's talking to the internet. We had this thing, a modem pool that was locally served over TCP IP. It would do things like, well, if there's not a modem available, then it'll pop up and say, well, I can't make that connection right now. Just like if I couldn't make a regular teeth PIP connection. So that was the novelty. And again, it comes from I'm constrained. I need 30 people to be able to get to the internet, but I don't have 30 connections, 
+
+
+  \
+
+  Chris\
+
+  It sounds like this is drawing on, how you would connect a phone line. It's going through a telephone exchange and someone's going, hello? How can I connect you? You know? 
+
+
+  \
+
+  William\
+
+  We essentially created an internet exchange if you will. That, I mean, nowadays you think why is this interesting at all? You just stick a switch in your thing. You look at the cable modem. You're good. It's like, no, we didn't have that. 
+
+
+  \
+
+  Chris\
+
+  It is that magic that sits underneath it, or because these things still exist. In a different way, like this is now just like taken for granted, pass a library, probably in something, this just happens, 
+
+
+  \
+
+  William\
+
+  Right? You don't even have to worry about it. You plug in your cable modem and then you stick your router in your house. Now you can have 50, a hundred, 200 people connected to the internet from their cell phones. We didn't have that. Just think of this. Those kinds of routers did exist. We didn't have Nat. We didn't have Nat behind a firewall on a router. Right. Didn't exist. We had dial up modems 300 bod or 1200 bod, whatever it was, 
+
+
+  \
+
+  Chris\
+
+  I was going to ask, like you're talking about stuffs that you developed in 1990, like pre-internet did the onset of the internet, obviously created a whole load of new problems for you to solve, but did it help you think differently about stuff? Did it affect the solutions that you were designing? 
+
+
+  \
+
+  William\
+
+  Yeah, let's say what's the first I'm trying to think of. What's the first internet stale thing that I've really dealt with at Microsoft. There was the XML stuff that didn't have to do with the internet other than we shipped quickly. I think the latest stuff, I was part of the creation of the earliest services on Azure. We're skipping around here. If you want to get the complete history, the computer history museum in Silicon valley actually did a story on me and my brother awhile ago. That's kind of out there now. 
+
+
+  \
+
+  Chris\
+
+  We'll have to put a link in the show notes. 
+
+
+  \
+
+  William\
+
+  Yeah. I'll, I'll find a link, but there's a distinct called Azure. Back in 2011 ish, the very first services on that thing was this one called access control service, ACS numbing something else. Then it was the access control service. This was basically your identity on Azure, right? There was this other thing called service plus, which was the basic thing that had an activity so that you could have and do message passing from your application. These are the first two services on Azure, besides the core of Azure, which was, I can get a VM, I have storage and I have basic networking. That was the core of Azure. These were the first two actual services on top of Azure. ACS became what we now call Azure active directory. A B and service bus has been superseded by other things like this thing called event hub and whatnot and service bus itself is now kind of deprecated. 
+
+
+  \
+
+  William\
+
+  These were the first services where we said, oh, internet scale services. There's something different about this than your classic on premises software, right on premises. Meaning, at your actual company, that's just kind of easy because there's only a few thousand users at most, right. Maybe a hundred thousand at the outside and they're spread all over the place. Now you're doing world scale services, you've got millions or hundreds of billions of users. You have issues to answer your question, you have issues like, okay, telemetry. You're doing ACS, it's tokens, you're issuing tokens. Like someone tries to log in and you're issuing, you are person. And then they're applying that token. You're checking to see, is this token valid for this service and blah. There's a lot of transactional things related to identity at first. We're like, okay, how are we going to build for this? Right? 
+
+
+  \
+
+  William\
+
+  Do we bill per transaction per token per what do we bill for? Right. In order to build something, you have to measure it. You have to keep track of the fact that this user got this token and we validated it against this service. That's a lot of data. There's more data in trying to track this thing. Then there is the actual thing, right? You've got a terabyte of log data for a gigabyte of actual transaction information. You ran up against stuff like that, where it's like, okay, maybe this thing is so fundamental. We're not going to charge for it at all because it costs us more money to track how it's being used. We're actually going to get in revenue. So let's make it free. How you debug things is different when you have live site issues, meaning, oh my God, a customer's having a problem. 
+
+
+  \
+
+  William\
+
+  It's tricky because not only are the servers not accessible, they're in the cloud somewhere, but I can't even access the servers directly from my machine because who w what machine is that w that's not a secure machine and you can't really look at the customer data because it's customer data. Don't don't, you dare download that data to you, local machine, right? You had to invent a whole process of all right. If you're going to service, if you're going to deal with live site, as we call it, you have to have a whole mechanisms for how, and when you can actually access data, the channels through which you can do that we have these machines that are highly secure, that you have to do it through all these sorts of things. And then debugging. It's like, you're going into bugs. Something that happened five hours ago. 
+
+
+  \
+
+  William\
+
+  You don't just jump in and attached to the bugger and say, oh, there's the bug right there. Then, you're trying to debug something that happened five hours ago. All you have is maybe a crash dump, maybe some log information. We got a lot better about how do you instrument your software, such that you can debug it five hours later and not actually touch any of the processes that were involved and do not bring down the services while you're monkeying around. 
+
+
+  \
+
+  Chris\
+
+  See, I, I remember around 2010 time or whatever. I was working for a company in the UK called love, film and love film eventually became prime video from Amazon. We actually had a few ex Microsoft people came over from the Silverlight team and joined us, Amazon, actually, 
+
+
+  \
+
+  William\
+
+  Look at that, 
+
+
+  \
+
+  Chris\
+
+  There was this, there was a Seattle love in between Microsoft and Amazon at one point. Definitely. The, the thing I was thinking about was one of the projects that I led was to do the migration from LoveFilm servers, which, were in a data warehouse or data center, let's say in the UK. And were moving them to AWS. That was a big shift for that company, because we'd never done data center to cloud stuff because you're trying to work out. Okay, well, to your point, how do I see that server? Like, we could take the data, how are we going to get the data from this data center to Dublin, for example, in an AWS data center. Cause we'd had conversations about how do you migrate data? How's this going to happen? One of the guys had even said, oh, we know we had an issue where the database crashed at one point, okay. 
+
+
+  \
+
+  Chris\
+
+  The database crashed in the move. Yeah. It was in the back of a taxi and the taxi crashed and okay, well, that's a different story altogether, but you're trying to have a conversation about like, well, if we took the data to two AWS, like you're never going to be able to find which server is, that's actually serving your data. Cause it's a massive, great warehouse full of servers. Like it's such a mindset shift from on-prem to the cloud concept. I was wondering from your side, how did you deal with like Microsoft at the time? I suppose it was still very much in that selling licenses to software and it was, on premise installations and all that stuff. You talked about the, trying to find the price point, but like, how did you find the scale? Because you're expecting to have so many more customers hit the system than the thousand, as you mentioned, that might be in a building. 
+
+
+  \
+
+  William\
+
+  And, and you're responsible for it, right. You're not really responsible. They have their own, it department and they deal with their own servers and all that stuff. Now suddenly it's us, and it's kind of a throwback to the mainframe days, right. Where it's like centrally operated by IBM and don't you worry your pretty little head. So yeah, there's a lot. And we're still learning. I mean, all of us are still learning. I don't think it's, I don't think we've cracked it for everything. I mean, newer customers, bigger customers, different workloads are coming online all the time. This past year with COVID proved to everybody. It's like, you thought you had this nailed, but not at this scale, and we instrument things and we have automated machine learning models that will predict a usage so that we can provision because you've got to get machines months in advance. 
+
+
+  \
+
+  William\
+
+  You can't suddenly say, oh, we need a hundred thousand new servers. We'll get in line, buddy. There's not enough servers in the world to service your needs. So you better plan ahead. Yeah, it's a whole basket full new challenges and they're keep emerging every day. Right. Yeah, we've, we just keep on adapting and moving and learning and growing, 
+
+
+  \
+
+  Chris\
+
+  Which was the, cause the price point is a really interesting one, but like, which was the hardest part to try and solve. Was it, was it that, how are we going to charge for it? Or was it the, how are we going to deal with the scale? Or because I suppose at that time that you're talking about like 2010 or whatever, you probably had your eye on what AWS were doing. Cause obviously they were the first in the marketplace. I think Azure has always been second, I suppose, in terms of, for a long time, at least. 
+
+
+  \
+
+  William\
+
+  Yeah. I think the initial things that were concerned about, weren't quite about scale or about feature set. Back then the only features for anybody was VMs storage and network. That was it. Right. We had our various things, we had two or three different storage things that went through and now sequel server is a thing on, in the cloud and it wasn't initially, and there was actually fights about that within the company about why do you have this stupid store thing? We've already got sequel servers. Yeah. But that's not scalable. It wasn't, it's like, oh, we can handle terabytes. Like, yeah. Well how about petabytes? So, there was a lot to be learned and you even had things like, oh, Linnex get out of here. It's all windows. Like, no, it's not the customers want when X and now we're all going to next. So there was a lot to learn. 
+
+
+  \
+
+  William\
+
+  There's a lot to learn. The challenges were certainly, like you said, there's technical challenges. Like how do you make a service that is distributed you now have I had to learn things like, oh, what's that, level three and all these other, and how do you distribute your front ends and how do you have concentrators and how do you fan out and how do you scale up and, single points of failure and all that stuff, all the technical stuff. You get down to what does the service actually do, right? Yeah, there's a lot to learn and all of that stuff, and it was completely new. The kinds of people that you need to program that stuff is also different. You're worried a lot more backend stuff than you are front end stuff. We're probably much more front end loaded before. A lot of new skill sets, whereas in the past I would hire people who were doing backend. 
+
+
+  \
+
+  William\
+
+  It's like key feature is, how to do windows kernel, debugger. Right. Now it's like, well, you're never going touch the Colonel. What you really need to know is about fault tolerance, scale and scale units and all this other sorts of things. Right. That's more interesting. 
+
+
+  \
+
+  Chris\
+
+  So, I mean, we've skipped around so let's take a little whistle-stop tour through your Microsoft history then. Starting in 98, then with the XML stuff up to the present day. Okay. 
+
+
+  \
+
+  William\
+
+  Have you got some of that tea? Yeah, 98 I did the XML thing and I helped grow a group for a few years. I had an engineering team at the biggest, it was like 64 engineers. At some point we said, oh, I want to do a special project. My boss said, all right, you can take the pick of the top six engineers and go off and do a thing. Right. The thing that we did, we worked with one of our best language guys in the company under his house, Berg. He was the inventor of C-sharp. Before that Delphi and terrible Pascal, famous dude, and we worked with him on what eventually we called it zen@thetimeandeventuallybecameknownassystem.link. L I N Q language integrated query. This was the whole ubiquitous thing of making XML and sequel baked into the language. It actually took us seven years to fully from first whiteboard to it's in all the products it's just baked in. 
+
+
+  \
+
+  William\
+
+  We did that because were trying to compete against Java at the time. The mandate was do something that Java can't do easily. We eventually landed on this language integrated query stuff. And now it's just, there it is. All right. That was like 2005 ish is when I left that and it had a few more years to bake before it got into all of our language runtimes. I went to India, I joined a group called engineering excellence. Why did I go to the engineering excellence? Well, I had a path to take it's like, I was some big engineering manager as like, you can become a product unit manager or do something else. I took the other path because I wanted to learn how to teach engineers, how to better engineers. Why? Because at that time we had the internet scale viruses. Things like code red slammer, these are things that took down via internet, and caused us a billion dollars of lost sales. 
+
+
+  \
+
+  William\
+
+  This was the birth of what we now call trustworthy computing because we had to re-establish that you could trust us. Right? So the internet became ubiquitous. Microsoft was on every desktop and most servers. A virus on us could do things like take out the internet, right? So, and at that time, weren't the best at like keeping track of how we built our systems was our build process, even repeatable, could we pinpoint fix a bug? Did we have unit tests? Did we even do code reviews at that time? The answer was code reviews. Why would we do that? We do the code, we throw it over the fence and the test is find the bugs. That was the attitude. That was the industry attitude, unless you worked at NASA. 
+
+
+  \
+
+  Chris\
+
+  Well, we've covered that in a previous episode as it happens. But. 
+
+
+  \
+
+  William\
+
+  At that time I shifted to engineering excellence, which was all about teaching our engineers, how to be a better engineers. I taught everyone from newbies, like new to role, like fresh out of college. What is the role? What do you do? Design techniques, blah, all the way up to architects. Like what's the role of an architect? How do you best service your organization as an architect, right? Even how to be an engineering first-line manager, second line manager, all that. And so it was part of that. I said, oh, they're growing india. We had a development center in Hyderabad. I thought, I want to go either Hyderabad or China. I went to both. The guys in Hyderabad said, we really want you to come here because we have this problem where we hire all these college hires every summer. Within a year they're gone because we can't absorb them fast enough. 
+
+
+  \
+
+  William\
+
+  They leave and they go across the street to V pro or Satya or Tata and they pay them 15% more in there. They're gone. Right? 
+
+
+  \
+
+  Chris\
+
+  Yeah. We actually had the same, exactly the same problem when I worked at Tesco as well. Like they were great at bringing people into Bangalore. We were keeping them, yeah. They bring them in, give them a load of knowledge and they go and get more money. 
+
+
+  \
+
+  William\
+
+  Exactly. Yeah. I went to India and I taught for three years and I built these classrooms with blade servers and desk PCs and cameras as well as stuff. I did that for three years and I processed through about a thousand new college hires in that timeframe. I created this, oh, this'll be good. I created this problem and call it beep engineering acceleration program. The intention was to stop the revolving door of the college hires. Right. They came to me for five weeks before they went to their actual engineering teams. We had three cohorts during the summer. Each one was like a hundred, 120. And I would just train them up. We got into like a bootcamp, five weeks of bootcamp with me. There's a woman who was in the test discipline and she would touch them about test stuff. I teach them about all the writing code stuff. 
+
+
+  \
+
+  William\
+
+  We have PMs coming in and stuff like that. Fun time once we did that, people didn't leave. Right. Because we said, oh, well you need a cohort because you need a buddy. People were leaving because they're like, I don't know I'm alone. Right. When you bring them in cohorts, it's like, oh look, no, there's seven other people sitting at your table and there's a cohort of a hundred. You now have friends. People didn't leave anymore other than, oh, I'm going to go off and get my PhD. Or I got married, I got to move or whatever, but they just didn't, they didn't leave after that. I came back from India, just got in under the door in 2010, as were hitting that recession hard. The door was closed, was like, we're not no hires, no transfers. That could have been stuck india or without a job. 
+
+
+  \
+
+  William\
+
+  But I got back. That's when I started with the group that was doing that ACS and service bus on Azure stuff. Right. I did that for a while. I floated into identity and did some stuff. I joined a group briefly that was Linux on Azure, which was fun. That was at a time where it was like, Steve bomber was still in charge of the companies like windows, it's like, yeah, but in this cloud game, if you don't have Linux, you're just going to lose the customers. That's all there is to it. The world has changed. Kubernetes is king, all that windows only stuff just isn't going to cut it anymore. We got to, you have to have, 
+
+
+  \
+
+  Chris\
+
+  Because this is around the time of the most recent it's almost a bit like a revival, I suppose, for Microsoft, isn't it in this transition to Lennox. 
+
+
+  \
+
+  William\
+
+  During this time was okay. Bombers there at the beginning. By, within a year, he's the sunset and Satya is now in charge. Right. Satya is like, all right, let's reset. He wrote a book. It reset. Right. How we do things matters, growth mindset. Yeah, that whole, we within this scope within the space of about three years, went from, we only have two products, windows and office two, you windows guys, you now report to the Azure guys and office. That's just an online service of Azure. It's like, we've completely changed the footing of the company in this, in a short amount of time. And it's all been under Satya's tenure. Right? So things changed dramatically. So Linux on Azure. While I was in that group, I, I, for some reason I kind of took a step back and I went to one of our CVPs and I said, what's one of your biggest business challenges. 
+
+
+  \
+
+  William\
+
+  What's. 
+
+
+  \
+
+  Chris\
+
+  The CDP, sorry, 
+
+
+  \
+
+  William\
+
+  DVP corporate, vice-president sorry, 
+
+
+  \
+
+  Chris\
+
+  CVP, 
+
+
+  \
+
+  William\
+
+  CVP. I spoke too quickly. I said, what's one of your biggest challenges. He said, well, there's this whole diversity thing. Now, in case you haven't noticed, I'm a black guy in America. Our listeners. 
+
+
+  \
+
+  Chris\
+
+  Might not know that. 
+
+
+  \
+
+  William\
+
+  I am an African American. I was born that way. And so I said, oh, diversity. Yeah, that's a thing. Keep in mind that when I joined in 98, there are 2.6% African-Americans in tech roles. I'm very specific about tech roles, not sales, not janitors, not data centers, tech roles, 2.6%. I knew this because there was a lawsuit at the time by a sales guy who left the company and said, you guys are discriminatory. At that time I was like, I don't know. I was new to the company. It's like, eh, maybe it was your situation who knows, but no 2.6%. At the time that I had this conversation with my CVP, were at a whopping 3.6%, 20 years later, we had grown a whopping 1%. 
+
+
+  \
+
+  Chris\
+
+  All right. It's not, it's not just for black people. Or was that for like, and of any of the rest ethnicity. 
+
+
+  \
+
+  William\
+
+  They're low across the board. We're still, we're making a lot of progress. I'd say the industry as a whole has gotten woke, but we're, but at that time that was Hispanics have typically been slightly better, but not by much at that time. Now I think they're, they've accelerated more women. Percentage of women in technical roles was pretty low. It's a lot better now. I'm sure we've released our recent diversity report. I won't quote the numbers there, but I know for blacks because I've tracked this one is 2.6 to 3.6 and we're kind of hovering, it goes up, but it's okay for me because it's like, well, I've told our leadership, including SATA. It's like these numbers are pathetic. We're trying to grow by little incrementally because it's safe. We have to double the number. You know? Leap was, I created this thing called leap and I did it with, I have a co-creator her name is June. 
+
+
+  \
+
+  William\
+
+  She came from HR. The human resources side of things, I come from engineering and I said, well, the problem is, we're just not looking in the right places for women and minorities. We think that we're going to go to MIT, Stanford, Berkeley, and just get more of them. It's like, well, there's not more to be had there. This is where people back up and say, it's a pipeline problem. You know, there's just not enough. What am I supposed to do? It's like, well, look in other places, right? We said, well, where are the women? Because I know there's a lot of women who have CS degrees and they drop out of tech because they're going to raise a family and they have no avenue to come back. Right. A hiring manager who looks at a woman's resume. It's like, oh, I have a PhD in CS from MIT. 
+
+
+  \
+
+  William\
+
+  From seven years ago, I dropped out to raise my family Belgium into the dustbin. We won't even consider it. And I thought, isn't that dumb? That seems kind of silly. I mean, someone who's got a PhD in CS and raised children, oh my God, they're. 
+
+
+  \
+
+  Chris\
+
+  Going to be great at managing an engineering team, 
+
+
+  \
+
+  William\
+
+  Managing engineers. Why don't we have them in here? So, we just took a different approach. I said, all right, now it was probably because I've done this stuff india. It's like, well, the same formula applies. You have to cohort people in, you need a boot camp because this is what missing. When we normally hire people, you get them from college, right. College interns. If you don't come from college, get industry. Industry is like minimum 10 years of experience. Otherwise, why am I looking at you? Right. College and industry, those are the two. If you're one of these people who is either a career switcher, or you were in tech and you dropped out and you're coming back or whatever, you don't fall into either of those categories. You never get in, you send your resume in and no one to look at it. So Lee says, no, hold on. 
+
+
+  \
+
+  William\
+
+  Now, these are awesome. People. Let us show you. We just flip the script and really leap was about training the engineering, the hiring managers, how to look at people differently, stop doing those stupid whiteboard interviews. It's like, let's figure out how to interview people for their problem solving for real and their character and their ability to collaborate. My favorite example is this woman who was a barista and she was a darn good baristas. It's like, don't you think she knows how to do customer service? Don't she think she has good empathy. You can teach them a code. They went to the coding academy, they stuck it out for a year on their own dime. That's actually better than the person who kind of floated through MIT. Right? 
+
+
+  \
+
+  Chris\
+
+  Yeah, no, I have to say, I really agree with you on this. I mean, I've been part of helping organizations to design, interviewing processes for developers and things like that. I was recently observing a, an interview process in a client that I work with. I'd say it was a very good technical interview in the sense of getting people to code. I'm also not sure whether it was asking the right question. 
+
+
+  \
+
+  William\
+
+  Exactly. It's like, what did you learn? Okay. They wrote the B3, but so what, 
+
+
+  \
+
+  Chris\
+
+  Yeah. It's the subsequent questions that go along with it. Like, what does this particular function in this particular language do like, well, they might not know that, but they can look it up. Like. 
+
+
+  \
+
+  William\
+
+  We have the internet. 
+
+
+  \
+
+  Chris\
+
+  Now. Yeah. Well, it would be different for 30 years ago. Like, now it's mostly stack overflow driven development. As far as I'm concerned, 
+
+
+  \
+
+  William\
+
+  I look everything up. That's that's no longer interesting. What's interesting is how they translate domain knowledge or how they work with a team to solve a problem. It's the problem solving. It's not the specifics of how you talk on a keyboard. It's like, yeah, whatever, that's going to be automated soon anyway. So, 
+
+
+  \
+
+  Chris\
+
+  Well actually you guys are working on that. Oh, were looking at, I think salmon, I signed up for a vs code copilot, but Cole. 
+
+
+  \
+
+  William\
+
+  Pirate. Yeah, man. Oh my God. I tried that out there, 
+
+
+  \
+
+  Chris\
+
+  We haven't had our invite through yet. So I'm wondering if you have, 
+
+
+  \
+
+  William\
+
+  Oh man, you better get coding your, it will change your life. It's to change your life. Well, I'm hoping you got to build a hook me up with that Willie. I know some people, so let me finish out my history before we run out of time. Yeah, I did that whole, the leap creation thing, and this is very important for, w what are you doing now? I did leap, and while I was two years into that, I got an email, Hey, with the office of the CTO, Kevin Scott, we'd like you to talk to you about joining the office of the CTO. That's like, Kevin, who's that, I didn't even know we had a CTO, but we had just bought LinkedIn. Kevin was part of that package because he was a VP of engineering. And they said, oh, it's Kevin. We want you to be the CTO. 
+
+
+  \
+
+  William\
+
+  We didn't have an office of the CTO at that time. We've had one and not had one over the years, but at that time we didn't have one. I talked to him and it's like, oh yeah. Okay, sure. I can, I can, playing that game, by the way, I got this thing called leap, and I don't think it's ready to die. So can I bring it with me? He said, yes, which was great because that kind of elevated it to a corporate executive vice president level. So Kevin reports directly to Saki. That gave us great visibility and that allowed leap to spread across the entire company. Two years later, leap gets purchased if you will, by the HR department. And now it's a full HR function. This is just the way Microsoft. I won't say it's the only way. This is the way that we do our apprenticeship program is this leap thing. 
+
+
+  \
+
+  William\
+
+  That's fantastic. It's now federally accredited, worldwide and blah. Only a couple more tidbits. So leap is going awesome. It becomes a big giant thing. Now, while I was in the office of the CTO, I worked on a number of issues and challenges. One of them was, Hey, my badge says, empower every person on the planet to achieve more passing my eye on Africa. We have zero engineering in Africa. Literally the continent of Africa has zero engineering for 1.2 billion people. Well, that doesn't sound like I'm trying to empower anybody over there. That's like a big chunk of the planet in terms of landmass. Let's get to it. I took a trip to Kenya, Nigeria, and I came back and said, we're going to put engineers there. And I did. I just hired some people. I said, office, you guys went in on this Microsoft research. 
+
+
+  \
+
+  William\
+
+  You want to end on this? I had friends, and they go, yeah. You know, up with people. Within a year, suddenly here comes the rest of the company, the windows team. Yeah. We got this. Now move aside, and now there's hundreds of engineers there. Now Africa for us as a company where like Africa, that's a future, that's a growth place, that's it? You know, because it is incredible. So I did that. I'm. 
+
+
+  \
+
+  Chris\
+
+  Not sure what's more incredible how quickly you've managed to pull that together, or the fact that it's well late 2010s and it didn't exist. 
+
+
+  \
+
+  William\
+
+  Why weren't we there? Because we don't have the proper view of the world. We're very Redmond centric. We think that we're the smartest people on the planet. We don't look outside our ivory tower sometimes. This is true of a lot of tech companies that came later, like Google are probably better at spreading themselves around because they were born in the cloud. Right. We weren't, 
+
+
+  \
+
+  Chris\
+
+  That's changed in with the pandemic with a lot of people going to remote working. 
+
+
+  \
+
+  William\
+
+  Oh, absolutely. Which brings us to the Caribbean, my latest trick. Yeah, I think that as soon as went home, back in, what was it April? I think my first thought was, first of all, this is not going to be six weeks. Like people were saying my kid's school. It's like, oh, we'll be out for six weeks and we'll be back. Like, I don't think so unless you have a vaccine, if you're sending us now, because there's no vaccine, we're not coming back to those vaccine, at least. 
+
+
+  \
+
+  Chris\
+
+  Well, I think, at the very least everybody needed to go home across the world and just wait inside until it had gone away. 
+
+
+  \
+
+  William\
+
+  Of course it was lumpy and we didn't quite get there, but, we tried. I thought, okay, we're going to be home for a while. It kept dragging on idea and it's dragged along that. I thought this is a perfect time to push the distributed development model. Right. Cause we're all going to be home. So it doesn't matter where you are. You don't have to be in Redmond. All you have to do is synchronize, time zones or whatever. I was in a position to say, okay, how are we going to hire people? How are we going to train them? How are we going to onboard them? And where can they work? They can work anywhere. Let's push on that. So, nine months ago I had an opportunity to go to the Caribbean us Virgin islands and say, well, why can't we do engineering here? Why can't we do it in Atlanta? 
+
+
+  \
+
+  William\
+
+  Why can't we do it in Detroit? Why can't we do it anywhere in the world? Malaysia, Cambodia, Laos, Micronesia, wherever, because talent's everywhere and we can no longer just pool them to Redmond. That's a silly model, right? In the face of what we've now proven that we can operate not by doing that. Right. How do we get better at actually doing the, not just remote work, air quotes? How do we do distributed work? Because then you get a maximize the talent all over the planet and not only the talent, but even the thinking and the product development in terms of what products should I develop. If I have engineers in Kenya who were thinking about an influenced by the local market, they'll come up with products that are different than the engineers who are sitting in Redmond. And I want them to do that. I don't want all the thoughts just to come from Redmond because that's too constraining. 
+
+
+  \
+
+  William\
+
+  The world is much bigger than that. So, so yeah, there you go. That kind of brings you up to date. 
+
+
+  \
+
+  Samuel\
+
+  I mean, you mentioned, your advisor to Microsoft at the moment with, really thinking about the future of technology and stuff like that. I just want to dig into all that and how you stay relevant and how you generally, how are you finding that role? Is that something that gives you anxiety? Cause that's, it's like a lot of pressure being placed in. 
+
+
+  \
+
+  William\
+
+  No, not really for, I mean, just look at my inventive past, and I'm not trying to say I'm some big a keg, but I've always been on the cutting edge of tech. In some cases I've actually been creating the cutting edge and people have been following. So, but what you do realize that is that if you get locked into any one particular thing for too long, like for, I was a C plus expert back in the day, and then I left C plus as C C sharp came along, then I became a C sharp expert for years, while C sharp was not really kicking butt. You come back to it later. It's like, oh my God, this language has completely changed. What I do to keep kind of relevant is first of all, I read a lot, right? Like anybody there's a few sites that I always look at like a Y Combinator, they have a great, a lot of great stuff shows up there with links off to other technologies. 
+
+
+  \
+
+  William\
+
+  You can stay kind of current with stuff like that. It's I don't read books as much because they're not producing as many deep tech books as we used to. I've kind of ran out of interesting books to read in that way, but I'll read the occasional paper on some new technique, like, okay, what's the latest concurrent distributed concern, current currency algorithm, it used to be Paxos. The raft thing came along and then whatever. So I do spot reading like that. I write code, I constantly write code, like I said in the beginning, it's like, I was writing code till 4:00 AM last night. Because there's nothing like writing code to stay current with the state of the CPU. The CPU is like, oh, the latest Mac book pro yeah, it's got a CPU has got a GPU. Now there's these neural P use machine learning nuggets. 
+
+
+  \
+
+  William\
+
+  It's like, well, that didn't exist 20 years ago. What's that about? I better go write some code. Right? So I'm constantly writing code. I'm constantly reading other people's code on GitHub, of course, because that's how you can see. Well, what's the, I mean, I remember the algorithms and the data structures that were relevant 20, 30 years ago, maybe 10 years ago, maybe 15 years ago, what's relevant today because Beech trees were interesting when we had slow disc drives, because it was a balance between what was cached in memory and what was on drive because the drives are slow. You don't want to hit them very often. Various structures were born of that era. Once you have SSDs, your disc drives and no longer slow, you don't even have disc drives. Right. It's all Ram for the most part. That changes the algorithms and the data structures that are more relevant today. 
+
+
+  \
+
+  William\
+
+  You come along with machine learning models, that's like, oh, we thought that double precision floating point numbers were super important. It turns out they're not floats are 16 bit art. Tesla has proven that you can specialize even further when you're doing machine learning with their dojo chips and all that. I'm not overwhelmed because I there's a couple of things that I do. One is that I'm as intelligent as anyone else is the first thing. It's not like the stuff comes from Mars. It's like, oh my God, we've never seen that before. It all builds. The other realization is that I don't have to know everything. Right? Nobody knows everything. I don't care who you are. I don't care how smart you are. Nobody knows everything. The third part is just wait and it'll change again. I might be kicking myself because in the eighties, actually I learned backpropagation and neural networks and all that stuff. 
+
+
+  \
+
+  William\
+
+  I left that and now here it is again, it's like, just wait, GPT three is inciting today. Just wait two years. That's not going to be the algorithm of choice. It's going to be something else. That machine learning thing or that AI or something Tesla does is going to invent a new process. Let's just roll back a few years. This statistical model based AI, wasn't a thing until Google divot before that it was a different model now. Okay. We're all as like statistics, that's great at predicting the past. It's not good at it. It's kind of good at looking forward, but only to the experiences that it's already seen, right? It's not good at intuition, right? Something else is going to come along and it's going to use less data, less compute power to do the training in the first place. Those neural chips are going to be baked into our cell phones and all that. 
+
+
+  \
+
+  William\
+
+  It's going to shift what the algorithms are again. So that's how I do it. It's not a daunting thing to me. You just look at something and you have a way to synthesize it and turn it into plain English, and then hand it to someone who's also very intelligent and say, this is what I think. 
+
+
+  \
+
+  Samuel\
+
+  Yeah. W what's your roadmap then if you got like, I mean, do you have some milestones that you want to reach and places you want to hit to grow leap and to have that impact? Have you got a clear vision on that? 
+
+
+  \
+
+  William\
+
+  Yeah, no. L separate from me because leap is now a corporate thing. So I burst it. It's now it's been sold within the corporation. It's it's its own child now. I don't have anything further on leap itself, but I have this thing that I call tech equity. I'll just explain what that is always. 
+
+
+  \
+
+  Chris\
+
+  Good with the namings. 
+
+
+  \
+
+  William\
+
+  Tech witty XML. What was the. 
+
+
+  \
+
+  Chris\
+
+  Automation Died right there. Cool. Back to the beginning of the show. 
+
+
+  \
+
+  William\
+
+  Yeah. Tegrity is about just looking in the world and saying, all right, who are the biggest influencers in the, and I don't mean Tik TOK influencers. I mean, who are the people that drive the planet? They're all tech billionaires, right? If you look at the top 10, 15 draw tech billionaires that tells us that the planet right now is giving all value to technology. If you do not have an equity share in technology, you do not have an equity share in the future. Owning an iPhone is not an equity share in technology, right? You're just a consumer having a job at apple where you get apple stock is an equity share in technology as apple rises as IBM as Microsoft rises, as Google rises. Those who own shares in those companies also rise rising tide lifts all boats. If you don't have a boat, you drown. 
+
+
+  \
+
+  William\
+
+  Tech equity is about helping people, women, and minorities, primarily around the world create boats using technology, right? Because the rising tide is going to lift them up. If I don't do that. I'm not the only one, but if I don't apply myself towards that, I'm just going to watch a bunch of people drown on the shore. As I get richer, right? I got mine, I got my boat. I want to help the other people create their boats so that they can rise up as well. My roadmap is essentially do all the things I can to help spread tech equity. That means getting people hired into legacy companies like Microsoft, helping them start up their own companies, helping them seeing the rise of technologies, using my crystal ball capabilities from the CTO days, helping them see why is crypto relevant and how should they play in that? 
+
+
+  \
+
+  William\
+
+  Why are NFTs? What is that about? And what can their role be? Why are drones interesting? How can you turn that into a VR business? Because meta is coming, right? This is equity is like, Hey, you don't have to go to MIT and get a PhD in blah. You like flying drones. Don't you create a VR landscape of your island, because then you can sell that to be tourism department and you can make money and we'll buy your company. This is tech. This is my roadmap is to do. And, and unfortunately, I don't want to say I'm super old, but I'm in the latter half of my years, probably at this point. There's only so much energy I have, I wish I could do more, but that's, my roadmap is do as much as I can to get people into an equity position in technology. 
+
+
+  \
+
+  Chris\
+
+  Nice. What? It sounds ambitious. 
+
+
+  \
+
+  William\
+
+  Yeah, absolutely. It's like, come on, go bigger, go home. Right? It's like, I've been on the world stage. I know how to operate because of Microsoft. I know how to operate on a world scale and I'm not going to do local. I'm going to do world. It's like, come on now. You can do it. So, yeah, that's my roadmap. 
+
+
+  \
+
+  Chris\
+
+  I was listening to a marketing influencer who runs 10 X the other day saying, it's not go big or go home. It's go big or go bigger. It sounds like that's what you're doing with going for this global presence here. 
+
+
+  \
+
+  William\
+
+  Yeah. Because it's like, what do you have to lose? Why wouldn't you? You know what I mean? It's like, you might as well try because even if you hit half the mark, you got halfway there. That's better than no way there. There's no, there's no point to me to rest. You can rest when you're dead. There's plenty of time to rest in the hereafter. You can rest all you want, but today, as long as you have breath and energy and desire and passion and vision go for it, man. Right. That's, that's how I feel. 
+
+
+  \
+
+  Chris\
+
+  I think that's a really noble goal. I think we've probably covered it. Have. 
+
+
+  \
+
+  William\
+
+  We covered it? You think. 
+
+
+  \
+
+  Chris\
+
+  We got it? I think we got it. 
+
+
+  \
+
+  William\
+
+  Now. Let's write some code together. 
+
+
+  \
+
+  Chris\
+
+  Great. Okay. Well we're all off to go and do some paired programming. Thanks for joining Sam. Have you got any last thoughts? No. No. That was a that's incredible. That's really cool. This has been great. Thank you very much for your time, William. We very much appreciated. All right, you're. 
+
+
+  \
+
+  William\
+
+  Welcome. That's fine.
