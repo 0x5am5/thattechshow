@@ -1,0 +1,1739 @@
+title: Episode 14 - The Grandfather of Microservices, Fred George
+related:
+  - title: Episode 17 - 4 Releases a Year to 1400 a Week with Audun F Strand
+    url: https://thattech.show/episodes/17-4-releases-a-year-to-1400-a-week-with-audun-f-strand
+    image: https://assets.pippa.io/shows/6012fcea40e3fd5f183effd9/1623055410023-bbde630393b0bd5f0608411f87415bd3.jpeg
+  - title: Episode 21 - Reclaiming Your Data with Felix H. Dahlke
+    image: https://assets.pippa.io/shows/6012fcea40e3fd5f183effd9/1625488761370-33ce0af164f2b0fdc3421b019725f241.jpeg
+    url: https://thattech.show/episodes/21-reclaiming-your-data-with-felix-h-dahlke
+  - title: Episode 31 - Finding your Smile & Moldable Development Environments with
+      Tudor Girba
+    url: https://thattech.show/episodes/31-finding-your-smile-moldable-development-environments-with-tudor-girba
+    image: https://assets.pippa.io/shows/6012fcea40e3fd5f183effd9/1631561094582-81ac170d8029547c9bccd94df5a5d889.jpeg
+transcript: >-
+  How you doing Fred? 
+
+
+  \
+
+  Not bad, not bad. Got my second coronavirus shot Wednesday. So. 
+
+
+  \
+
+  Cool. party time,. 
+
+
+  \
+
+  Few more days, but yes, it's like sense of freedom and safety. 
+
+
+  \
+
+  Mm. I bet. 
+
+
+  \
+
+  Vegas is getting an influx of visitors like crazy right now. 
+
+
+  \
+
+  Is it. 
+
+
+  \
+
+  Cold? Cold winter and yeah, we're casinos going to pitch capacity from 35%, but it looks like people are ignoring that just going Paul hoed. So, 
+
+
+  \
+
+  Wow. Do, do you spend a lot of time in the casinos, Fred, or do you avoid them? 
+
+
+  \
+
+  I, I actually spend a lot of time in them, but I don't gamble. 
+
+
+  \
+
+  Oh. 
+
+
+  \
+
+  Really? Just, I just walk through them, 
+
+
+  \
+
+  But just observing people. 
+
+
+  \
+
+  Yeah. It, it turns out Vegas reminds me of when I lived in London. 
+
+
+  \
+
+  Oh, really? Of. 
+
+
+  \
+
+  All of all things. It's the people watching is amazing in both places. You have amazing theater. I mean, we got six standing circuit shows in Vegas. 
+
+
+  \
+
+  Oh, good. 
+
+
+  \
+
+  It goes, all the performers come through and then the restaurants are just unbelievable. I mean, Gordon Ramsey has six restaurants alone. 
+
+
+  \
+
+  Wow. 
+
+
+  \
+
+  If you want entertainment, if you want great food, you want interesting people to see. I think CES is my favorite time. Cause that's when about 200,000 geeks show up. 
+
+
+  \
+
+  Yeah. 
+
+
+  \
+
+  All of sudden the town looks like it looks like we're Silicon valley for a week. The, I think it's the black hat guys come in. Same time the adult video awards come in. You can tell the difference between the two. 
+
+
+  \
+
+  Nice, nice. 
+
+
+  \
+
+  Yeah. The whole town transforms when these events happen. It's makes it kinda interesting to see, 
+
+
+  \
+
+  We'd like to start off with, what's your name and where'd you come from and then we'll go from there if that's possible. 
+
+
+  \
+
+  Oh, Fred George programmer, where I come from east coast of United States originally is where I was born and raised. And, but I wrote my first code in 1968. 
+
+
+  \
+
+  Wow. 
+
+
+  \
+
+  We are not gonna, we're gonna skip most of the resume here. 
+
+
+  \
+
+  Well, we know you had a long history with IBM. I think that's how you got started really well, probably where you got a, a lot of your experience. I imagine. 
+
+
+  \
+
+  Yeah. 17 years at IBM, which was actually really formative experience. First of all, it's a, I worked in the development side. In building the operating systems, so extremely bright people, great mentors, great training. As a side effect I figured out later is I learned how to work with big companies and be effective. Cause big companies at some level, all large companies are really bright despite what we think, but you have to understand what it motivates the company. I kinda learned how to do that in IBM. It was a bit of a shock when I started working for somebody who wasn't IBM, cause it turned out it not, I not everybody's IBM. 
+
+
+  \
+
+  I had the same experience when I left Amazon. Actually it was, again, you move out of a company where you've got like a comfort blanket of all sorts of things, and then you realize other places don't have those things. 
+
+
+  \
+
+  Yeah. I, IBM was a very strong decision culture. It was easy to get decisions made. Mm, wound up in a consultant, say where situation, where it was a consensus culture. The positive thing was when everybody agrees, it's kind of easy to get things done, but it turns out everybody agreed on the wrong thing. It's almost impossible to get it to change. 
+
+
+  \
+
+  Mm. 
+
+
+  \
+
+  I ran across the decid on the wrong thing too often. All my decision, culture stuff didn't work. And I sense, 
+
+
+  \
+
+  Did it take you a long time to rebuild that ability to make decisions when you don't have necessarily the political alignment that you need? 
+
+
+  \
+
+  No, I'm pretty much type a, so I'm always gonna get my way at some level. Being type a you're pretty ad agile about how you figure out how to do this. If this trick doesn't work about this trick, and then now I'm at this trick, 
+
+
+  \
+
+  Yeah, I've heard you refer to as a hand grenade before. 
+
+
+  \
+
+  That that was, yeah, that was a direct quote from a CTO. I, I worked for in the daily mail. I was described as the hand grenade swing into development, which is a good job description as you can get it because it, there are no rules for hand grenades. 
+
+
+  \
+
+  Yeah. I, I, I remember meeting you briefly, I guess, probably about six years ago. This was at a project in, that was in London and you'd been brought in to kind of shake things up by making all of the developers and everybody around them probably feel sick that they didn't really know what on earth they were doing with their careers. I was in a position as a consultant where we would pick the pieces up after the, how grade had gone off. 
+
+
+  \
+
+  Yeah. To some degree that was an engagement where I was brought in explicitly to do that. I mean, I was, my job was to be disruptive. I was like, okay, I can do that. And that's not hard specialty. And, and so basically you change everything. You, you change people sit, you change the type of death they have, they change the program language you using, you change their titles. You do everything to upset the apple cart to then have a reform again, cuz the alternative was just fire the whole group of them and start over again somewhere else, take the whole thing offshore for example. 
+
+
+  \
+
+  How did from leaving IBM and lose losing that decision culture and having that way of working, how did you get from that to being the hand grenade, is there a whistle stop version of how you got from those two between those two points? 
+
+
+  \
+
+  I even at IBM I was a bit of a hand grenade. I, I it's interesting cuz even though you consider I IBM to be a relatively state organization, their culture was, we believe in our wild ducks. We like our wild ducks. I, I kind of was always kind of in the wild duck category and my, I think my managers appreciated it. They'd always throw me into a situation that was basically broken and had me fix it. What they began to realize is after I fix things well, fixing things is kind of fun. I'll break it again just for the fun. They would move me to another job where it was a priority broker and leave behind something that was something like you've ed do clean up after me, but it's much easier to clean up me after I already made the change necessary. 
+
+
+  \
+
+  So. 
+
+
+  \
+
+  For, for example, that is, I was, I'm the grandfather of eclipse, the editor. I basically brought objects into my team and IBM and we, we started doing things a little strange way, relatively strange doing entrepre programming, built up a nice structure, flattened the organization out, empowered the managers. They moved me out cause everything was working fine. My predecessors, the one that, finished it up and put, clip out the door. 
+
+
+  \
+
+  Wow. Okay. So, I mean, I know you as the grandfather of microservices, so there is a, there's a list of other products before that I guess like eclipse. 
+
+
+  \
+
+  Well, even that, but you also, if you're running on a window system and you see the little dropdowns, you have the consistent spelling, little red X in the corner, that's some of my work back then at IBM. 
+
+
+  \
+
+  Wow. 
+
+
+  \
+
+  If you ever heard of the net biased interface there, the net buoy associated with it, that's something the work I did when I was working on land when it was brand new. 
+
+
+  \
+
+  Wow. If you got, what else can we add to the list then Fred? 
+
+
+  \
+
+  Well, I, I own the user interface architecture between Microsoft and IBM for a while. Right when we knew us two days put out the first telecommunication software that let two computers talk to each other. I could log onto one computer and run an app on a different computer. Wow. The first computer networking was some of my early projects. 
+
+
+  \
+
+  What era are we talking about when we're talking about, getting computers to talk to one another, 
+
+
+  \
+
+  We're talking about the seventies with the networking stuff. Land is the mid eighties. 
+
+
+  \
+
+  How does that compare to like the stuff that you're doing today? Because obviously, on a daily basis, speaking of microservices, particularly we're spinning up Docker containers here, there, and everywhere and getting them to talk to one another and actually frankly, that can be a pain in the us as well. So I mean, how is that? How, how, how have things differed from doing that work on a daily basis today to when you were doing that for the first time in the seventies? 
+
+
+  \
+
+  Well, I, I think every, I think overall I'm always kind of looking for that edge technology. I'm kind of the first guy that try to says, let's see if I can make this thing, do something interesting. So that was the case of lands. I didn't invent the concept of local area network, but I put it out the door, Actually the first land versions of stuff. I didn't, I didn't necessarily invent go interfaces, but I brought it to IBM. 
+
+
+  \
+
+  Yeah. How, how complex was it working in that I mean, how long did these projects take? Cause obviously we're talking, I mentioned the Docker containers, you can do that in a couple of hours on your machine or, a few minutes to be honest, depending on how good you are at it. How long was that taking you in the seventies and the eighties? 
+
+
+  \
+
+  Well, I, I think everything always took longer than I wanted it to, but you could, I trans technology transformation is a 25 year process. 
+
+
+  \
+
+  Yeah. 
+
+
+  \
+
+  I'm in that first five years where there's very few adopt, we've got in that early stage, the brave use olds doing things. For example, and you're not selling to everybody in that environment, you're selling to a very specific crowd, the crowd, that fears that technology is edge. 
+
+
+  \
+
+  Mm. 
+
+
+  \
+
+  If you're getting into objects, you're getting into object and programing languages. You're probably working with a lot of the wall street banks, which are extremely competitive about having the best software to figure out the best reasons to do everything. 
+
+
+  \
+
+  Mm. 
+
+
+  \
+
+  You'll find those bleeding edge cans that know that technology is competitive advantage. 
+
+
+  \
+
+  Oh, and is that still the case on wall street? Cuz I don't necessarily know if that would be the case in the city in London. 
+
+
+  \
+
+  Is definitely the case in wall street. You'll see it more in the day traders. 
+
+
+  \
+
+  Yeah. 
+
+
+  \
+
+  Day trading is where you do it, not the traditional banking, the, moving money around and stuff like that. The day traders are always, looking for that edge and those are the ones where you see the new languages pop up. 
+
+
+  \
+
+  Yeah. 
+
+
+  \
+
+  Those new things come in. You'll you'll see the guys that have the six giant screens. These are the guys that do that work. Yet where you won't see us say in big banks, you'll see that some of the private equity firms, the ones that are investing their own money, which don't have as many rules. Yeah, you always wanna find these guys who figure technologies to pay advantage. Yeah. When I seek out clients, that's what I'm looking for. People who figure it's not a matter of, should I, if I'm a hotel change, should I buy more bacon for, or should I use some techn buy some technology? Those guys are looking for the cost to benefit, trade off. They don't, they aren't gonna bet on anything. They're too conservative. You're looking for the guys to say I'm opening a new hotel chain. I want people to walk through and not even stop with the registration desk. 
+
+
+  \
+
+  I want them go to write to a room and swipe their, swipe, their credit card and walk in the door. You looks for that sort of client. 
+
+
+  \
+
+  And, and how close are we to that? Or is that just to Fred George? I do. 
+
+
+  \
+
+  Oh no, that we're. We have people that can do that now really general hotel change can do that. You just kinda get a text message on your phone when you're getting close to the hotel that says, oh yeah, you are, here's your room number, go walk in, going to the elevator and use your R F I D card to walk in. 
+
+
+  \
+
+  To your point that you mentioned before about being fi you are in working within that first five years, is this technology that we expect to be commonplace in five years or at least starting to break through in the next five years. You know where we at? I, 
+
+
+  \
+
+  It here in some degree in already, the question is when does it get to be like 20% penetrated? That's in the five to 15 year timeframe. 
+
+
+  \
+
+  Yeah. 
+
+
+  \
+
+  When it gets to be 20 to 25 years, that's when everybody's gonna do it or else you get fired. For example, you can't find a CIO today who doesn't claim. They do agile. 
+
+
+  \
+
+  Yes. You. 
+
+
+  \
+
+  Don't say, if you don't say you do agile, you can't get hired. Now what agile goes back to 19 95, 19 97. So count 25 years from there. Where are we now? 
+
+
+  \
+
+  Yeah, fair enough. I mean, I think we've we've come across one or two that are still not necessarily in that bracket, but there's always gonna be a few dinosaurs, I guess, are gonna. 
+
+
+  \
+
+  Only have a few dinosaurs, a few guys and still for your buggy, whips are gonna be a big industry. 
+
+
+  \
+
+  One thing I wanted to ask you is because I've seen a lot of your talks and the, you tend to talk about what you talk a lot about microservices obviously, and we'll get to that in a bit more detail, but you also talk a lot of about processes and methodologies and having started in waterfall and moved into agile and then there's some things beyond that I'll let you talk about, but where does your time tend to split? What are you most passionate about? It the technology or is it the process and how do those things work together for you? 
+
+
+  \
+
+  I, I think I'm most passionate about getting code out the door. Mm. I'm looking for, I go walk into a client. I'm trying to figure out what's it gonna keep me from getting to code out the door. Sometimes it's gonna be process. Sometimes it's gonna be technology. Sometimes it's just gonna be business attitudes. How does the business treat the, treat the system. We treat the programmers as a giant spreadsheet that they can just play with. You're kinda looking, I'm looking for, what's gonna keep me from being successful And because of my broad background for all way, from lots of management, IBM and management training there a business degree as well as obviously some technology background. And, and I, I, run an organization of over 200 programmers at IBM. So I run large organizations. I'm walking in with no biases about what needs to be done, but with an eye to what I can do. 
+
+
+  \
+
+  And there's a lots of possibilities. 
+
+
+  \
+
+  How do you decide where you're gonna go first? How do you find what the bottleneck is? 
+
+
+  \
+
+  It's usually within a couple of few minutes, actually, usually within a few hours of showing up with a client, having that first conversation, and you always wanna kind of start with a person who's spending the money. You figure out what are they trying to accomplish because what the it manager says and what the sponsor says, sometimes it's radically different. 
+
+
+  \
+
+  It always one thing or is it always a combination of those three that you have to change in an organization to make it. 
+
+
+  \
+
+  You're always gonna be touching all three. It's just a matter to what extent you need to hammer on all three. When, when I walked into some of my engagements in Norway, turns out the talent level was fabulous. The, the team, the people they had were motivated, they were very strong. Technically they knew how to work together, all that collaboration stuff. I didn't needed to do any work there that was already done. My focus was I on process, which they had not. I, I put the process in place. They were already were using Kotlin as their language. That was really good, but they weren't using Kotlin as an object language, they were using Kotlin as cobalt. 
+
+
+  \
+
+  Right. OK. 
+
+
+  \
+
+  First of all, you had to teach 'em what Kotlin is an object language looks like. So what OBjects looked like? It turned out it was a very applications, so we didn't need microservices. They were like, we should need microservices. No, no, you don't. You're very traditional application. You have a set of rules you're trying to implement. It's nothing fuzzy about this problem. 
+
+
+  \
+
+  I was gonna ask you about that because the, what the latest talk that I've seen you do is on don't do microservices or don't why you don't use microservices and obvious for the man who's known as being the grandfather of microservices. Could you tell us more on the, on this show, particularly why you don't use microservices in certain circumstances? 
+
+
+  \
+
+  I guess my favorite model is the conne model from Dave snot, which is a model of how you classify problems, 
+
+
+  \
+
+  Right? 
+
+
+  \
+
+  You have to look at problems and decide whether they're very traditional. In other words, it's the rules associated with what the answer has to be like. This is the way trades have to be settled. This is the way bank balances are calculated. This is how salaries, this is how you get tech calculation tax rates. Those are very traditional applications versus ones in a nail call, fuzzy, which are problems that don't have precise answers. Like which stock should I buy? Should I loan you money? Is this a fraudulent transaction? These are fuzzy problems. So it turns out for fuzzy problem. You have competitive advantage in that space. If you're able to try ideas out aggressively. The faster I can try something out the better off am I often in a fuzzy environment. If I'm solving a fuzzy problem, I want to be able to have a loosely coupled system, because I wanna be able to bright it, put something out there that doesn't necessarily impact anything else I've done. 
+
+
+  \
+
+  Just to try an idea out. I don't wanna have to schedule it, think about it, make sure it doesn't impact anybody else. Do a three month dance or six month dance to get it out the door. I want to try something in minutes. Again, you look at various environments like day traders. This is their world. There are a giant foot is a problem. And they have competitive advantage. If they can put the little things out all the time, not wait for the big it guys to say, now's the time for when you ship it. 
+
+
+  \
+
+  That, so it's in those fuzzy problems. That's the, that's the place to use microservices. 
+
+
+  \
+
+  Yeah, because microservices right now is, are hard thinking about loosely come system. When you've been used to doing step one, step two, step three, to step four. Now it's about, let's do all four steps in parallel. We can't get our heads around that. Cause we haven't been trained to think that way. It's not how we get business requirements from our customer. He says, this is how you do it. Here's the steps we do. Here's our checklist. It's very laid out and has to be a fuzzy problem. That checklist is pretty much useless. Mm. He doesn't, and the business guy doesn't understand that he doesn't understand he's in a fuzzy problem. He's looking for precise answers, but nevertheless, you wanna be fuzzy, but microservices is hard to get your head around. It's a developer. Don't, I recommend don't do that unless you're experience in doing it already, I can solve traditional problems with microservices. 
+
+
+  \
+
+  That's very doable, but you don't wanna do that unless you have experience in microservices. 
+
+
+  \
+
+  Cause there is quite a lot of set of work to get that working as an organization, having built a few microservices, architectures myself, it is a big learning curve for developers. Who've not done it before. 
+
+
+  \
+
+  Oh yeah. And I, I completely underestimated that originally. 
+
+
+  \
+
+  Oh really? Oh yeah. This from the mail online or from before that? 
+
+
+  \
+
+  Oh, well before that, my first microservice project was in 2005, 
+
+
+  \
+
+  Right. 
+
+
+  \
+
+  When I was doing some work for one of the big manufacturing firms in the us. And, and basically I was, had to play with the concept of services and some engagements I had in China hung with some of the, some of the great mentors in that space. Were kind of always asking question, well, how big is a service? I was like, okay, well here's a chance to play. Let me make a service really small. I, I did that and we had a very successful project. We had a project that was estimated to take 18 months and we delivered it in nine weeks. 
+
+
+  \
+
+  Wow. That is fast comparison to the original estimate. 
+
+
+  \
+
+  Yeah. And, and so, yeah, and so I, and one level was wildly successful, but at, when I rolled off it kind of stopped. They stopped building bigger and bigger services. They stopped focusing on building small services. It was easier just to build bigger ones. 
+
+
+  \
+
+  Yeah. At this time we, what, 2005, what language are we talking in and how big are we talking? The services? 
+
+
+  \
+
+  We, were writing Java and were writing services that probably a couple hundred lines of code. 
+
+
+  \
+
+  Yeah. Okay. 
+
+
+  \
+
+  This was what I call a pinball architecture. We were basically trying to fill in an information gap. We had a, this record of information we needed to collect. You could figure out one piece of information if you had two other pieces, but I didn't have one of those other pieces. Well, in order to get that piece, I had to get the other information from somewhere else. We built little services that I would take two pieces of information and generate the third. We basically took this little message and we ping ponged it around the services, trying to fill it in. If it's missing something, you send it to somebody who helped you out. Well, if he couldn't help you out, he sent it to somebody who could help you out. 
+
+
+  \
+
+  So what was the inspiration for this? Was it actually pinball machine? 
+
+
+  \
+
+  No, but it was my was kind of the best metaphor for it when you got there. Yeah. I think it was a matter of just trying to break things down into very small classes. So remember I I'm object trained. Sure. I, I was trained in objects from about 19 86, 19 87. We got to this, were, I was trained in small talk. We're all about very tiny classes that are very, single responsibility classes. So I put that into my microservices. Let's, let's make every service do one thing. If you describe a service or use the word hand, it must be two services, break it apart. 
+
+
+  \
+
+  I see. That makes sense. In terms of how you were getting these service is to talk to one another, there are there's this, obviously there's several ways to implement services and get these services to talk to one another. Right. You could have it via an API, you could have it via events and you could have it via service discovery. Now I know that this has been quite a point of contention in terms of what is the best microservices architecture, and I know which camp you fall into, but I'd like you to explain that to us, to us on the call. Where, where did you start out and did you start out with that straight away and, has your theory about how you do this changed over time? 
+
+
+  \
+
+  Yeah. Theory has changed. I, I think we go back to the pinball, my pinball architecture, every service in which other service they go to get, get it piece of information. Okay. It's kinda like every service was kind of registered as being the service and knows how to get, get you this piece of information. It turned out that, that created, it, obviously it solved the problem very nicely. There's a lot of other things about that project that went extremely well. Again, I, I had an absolute stellar team. I had the guy who created the concept of bill process, ? 
+
+
+  \
+
+  Wow. Okay. 
+
+
+  \
+
+  I, I had probably one of the finest program would ever worked with he'd rejoin me on that team. So it was not near average team. This was, this was, a team of superstars. That being said, we did run across some problems. Like all of a sudden we'd drop a message. We'd drop this ball into the pinball machine and it wouldn't come out. Sometimes it was just running around and around in circles because we had an infinite loop that we didn't realize. Sometimes the ball would just kind of disappear. We began to worry about how do you detect these other situations? One of the problems about loosely coupled system is when things go wrong, you don't have a lot of clues about what went wrong. I, I, I began searching for other architectures that helped us address that. I was in, when I was in London, working with a group, this was the early days of Kafka showing up. 
+
+
+  \
+
+  Some of my guys got into the Kafka bus and I'm looking at that event bus. I'm like, wow, this is kind of cool because it's a permanent history of everything that went wrong. If you have a permanent history where anything went on, when something goes wrong, I can go back and reconstruct it. Mm. In fact, to some degree, you think about an event bus, well in traditional system, when I'm trying to debug a problem, and I got lots of components that are working in various ways, the first thing I do is reconstruct the timeline of what went wrong. So you're pulling logs from here. Are you pulling logs from there? You try to rebuild that timeline of what works. If you're building on an event bus, you have the timeline already that works done. 
+
+
+  \
+
+  Yeah, yeah, absolutely. 
+
+
+  \
+
+  Especially if you use an event bus, as I recommend that you have put everything on the event, bus, make it a rapids, don't try to segregate it. Cuz that means you have to put it together again and put the timeline, skip that step, put everything on the same event bus, because if everything was on the same event, bus debugging is a dream. 
+
+
+  \
+
+  How does your cause you have a concept obviously of using several event buses. How does that, if, how, if you've got that approach of putting everything on the main event bus, how does that work with the additional buses that are slower moving, 
+
+
+  \
+
+  To some degree, as long as they pull, the only pull long as you only publish to the rapids, the key event bus, then you can pull off to some event. Bus is all you want to, but there's nobody who says the key event bus doesn't have something on it. 
+
+
+  \
+
+  Right. 
+
+
+  \
+
+  And the other thing is driving this. Again, I, I credit some of my right colleagues in London about this was that we borrowed this concept from Google that says, don't worry about who may need the information, collect it anyway. 
+
+
+  \
+
+  That's, Google's whole company policy, I think though, isn't it? Yeah. 
+
+
+  \
+
+  And, and it turned out it served them extremely well. And, and so to some degree, the KACO bus allowed us to do that. As long as we put everything on the same event bus, I can now write myself a little application that pulls from two radically different things. Here's some weather information, here's some sales information I can see if the weather and the sales information influences each other. I can write a little service that does that analysis, but I don't have to go into this. Each of these two groups and negotiate a new API, all the data's already there for me to try this. Mm. Now I can try things now I'm into experimentation. You wanna organize myself to exper to allow experimentation. Back to your point about how your trouble of getting microservices going, first of all, you need to be able to deploy rapidly Cause deploy, developing things really quickly and then waiting for three months to deploy them is not rapid response. 
+
+
+  \
+
+  Absolutely. 
+
+
+  \
+
+  I think most good clients that I that know have been successful, start out by saying, we're gotta do continuous deployment. Let's get that fixed. Let's rest control from this it group, the deployment, the guys, the dev guys, the ops guys, and make it, make the DevOps happen. Do what it takes to get that, whether it's, and a lot of that's gonna be political, some of it's gonna be technical. Certainly some of it's gonna be training of training and developers to let them actually do deployments and feel comfortable doing that stuff. 
+
+
+  \
+
+  Yeah. I've got, I mean, there's several questions I could several route. I could go in off this, I guess, but in terms of, actually getting continuous delivery into places that in my experience that's been one of the hardest things to sell people on. Would you agree, or have you found a better way of telling people how to do that? 
+
+
+  \
+
+  No, I, in general, I, I probably open a client. It doesn't, hasn't already reached that. 
+
+
+  \
+
+  Really. Okay. 
+
+
+  \
+
+  Cause they're not ready for my stuff. I mean, 
+
+
+  \
+
+  If they're not ready to do that. Yeah. 
+
+
+  \
+
+  Okay. Certain not ready for my microservices version stuff. I, I can do traditional applications and more traditional shops, But not, not, not the microservices. 
+
+
+  \
+
+  And, and so in terms of the develop then, cuz this is another thing I wanna ask you about in terms of getting the developer more familiar with continuous delivery and some of the other aspects, that not just writing in a particular language, knocking out a service, knocking out an application, but understanding how Kafka works, understanding how to debug things when you're using Kafka, this starts to leaders in the direction of a full stack developer. This something that, how have you seen that evolve over the last 20 years? I guess. 
+
+
+  \
+
+  I've always been a fan of, of a programmer who doesn't put any adjectives in front of their name. 
+
+
+  \
+
+  Sure. So is that just a developer then? 
+
+
+  \
+
+  Just a developer. Yeah. It's you just don't wanna be, you wanna hire somebody who says I'm a Java developer or I'm a lead Java developer. I mean the more adjectives you put in front of the more suspicious I get. You wanna be bring people on who, couple of traits. The two traits I'm always looking for when I hire somebody is I want somebody who is a self learner. So show me your getup account. Tell, tell me what, open source you participate in, tell me what languages you're playing with. Show me that you're a self learner. Cause we are in a field that requires always learning. The second thing is, show me, you like delivery. Show me that you have a passion for getting code out the door. It's not just the technology you wanna get, you wanna ship things. Cause you have those two traits. 
+
+
+  \
+
+  I can teach you all the rest. 
+
+
+  \
+
+  Mm. Are we looking for a polyglot here? Someone who knows all the languages or someone who is just happy to pick up a language and do something more, 
+
+
+  \
+
+  More the latter, but just some degree if I have like 60% of my team is poly skilled. I like to call it. Yeah. Somebody could do more than take more than one role in at least six. I can probably optimize my team to whatever the problem is today. 
+
+
+  \
+
+  Yeah. Okay. Going back to like the, the Kafka side of things, obviously we talked about there being several D ways of implementing stuff. The community in microservices solidifying one way of implementing them or not? This still, is this still a bone of contention? 
+
+
+  \
+
+  I think it's still a great area of experimentation. 
+
+
+  \
+
+  Right. Okay. 
+
+
+  \
+
+  When, when somebody says they're a microservices expert, I say, you, there is no such thing. It's just too new of technology to say, we actually have good knowledge of this. Mm. I think we're getting to the point where we could probably say for a certain class of applications, these techniques work very well. If I go into a day trading atmosphere where you have lots of events streaming in all the time, a bus oriented architecture is probably the right way to go. And you humbling. You get much debate about that, but in a lot of other spaces where we're getting to move into other fuzzy areas, and again, it's all the inference engines and AI stuff where it comes back, how all of that stuff fits in. We don't know yet. 
+
+
+  \
+
+  Just in terms of that in, it will understanding that microservices architecture on a big scale, do you ever introduce any element of workflow to that as well? Or, how do you, because there's a number of things popping up a, around the internet about how you get microservices coordinating with one another, obviously even with KAF in place, there's certain companies, introduc element of workflow. What's your thoughts on that? 
+
+
+  \
+
+  Well, again, nobody has a lot of experience in this space, but so the trend I have seen when I've done microservices at that are event best based is little, the little communities that microservices that form. There's a set community, a little Southern of microservices that work really closely together and then reach some overall conclusion that they pass on to another cluster of microservices. 
+
+
+  \
+
+  Sure. 
+
+
+  \
+
+  That these services kind of cluster very nicely the same way that modules tend to cluster and traditional systems that there's a natural clustering of these problems that occurs. It's not that every service know about every other service know more than every other API needs to know about every other function API in the entire system, in a million lines of code. There there's modules that form. There's levels of encapsulation of this, that occur. In my world, I like to take a team and say, okay, you're responsible for this level of functionality and you're gonna implement this in microservices. It may be 20, maybe 50 microservices, but you guys own these services. You can change any of these services. You want to, whenever you want to, if you want to change the message formats among these services, it's all your world to do that. One of the things you need to define is what's that message that you're gonna tell the rest of the world mm. 
+
+
+  \
+
+  That they're gonna trigger on. That one you need to sit down and probably fixing concrete a little more, that becomes a little less flexible. 
+
+
+  \
+
+  You've got these clusters of services, then is that where the rapids rivers and ponds analogy comes in the, do they cluster around a smaller river or a smaller pond? 
+
+
+  \
+
+  They turn the cluster around rivers. Yeah. Yeah. Ponds tend to be my acknowledgement that it entities are important. Mm. It, isn't nice to know what your current address is, but that's pond stuff. And, and by the way, SQL is a great place for it's great technology for ponds. 
+
+
+  \
+
+  Right. Okay. Basically. 
+
+
+  \
+
+  What you wanna do with a pond is build reports. You SQL will the reports get along really well. 
+
+
+  \
+
+  Yeah. I was gonna ask you where you go with databases actually. What your, what is your a approach to implementing databases within microservices? 
+
+
+  \
+
+  Well, I, I think every micro, since every microservice is completely a world of its own, every microservice, if it needs persistent data get, makes, it gets to make its own choice. Mm. A lot of times are you doing is basically re pulling reference information together. You're getting a fee from somebody that maybe it's the frequent renter status, for example. Well, that's something you're pulling outta the data warehouse every night. You're just matching up some employer, customer ID to some level of status. So that's a little straightforward table. Key value store is all you need. I don't need a big relational database. Thank you very much. I can make that choice with my little microservice, but I don't wanna throw a sequel out either because, if my job is to build reports, my database probably should be SQL. Cause that performs extremely well for that. The nice thing is just because I need a transactional database somewhere, doesn't force everybody to have to use Oracle in all their services. 
+
+
+  \
+
+  It doesn't have to be one database fits all. And sometimes you get the argument. It says, well, but I wanna be able to back these things up and say, I don't need a backup for the key value store for frequent renters. I can pull, I can just pull off the data warehouse again. I don't need you to save my database. Sometimes they don't, you get this blanket answer. I gotta, I gotta save all my database permanently. Cause that's the rule. Well, anytime you use the word rule, I'm I get little gleam in my eyes. Cause now here's something I can change. Here's. 
+
+
+  \
+
+  Chaos. 
+
+
+  \
+
+  Cause you don't know the real answer. Obviously you think it's a rule. That's not the real reason. 
+
+
+  \
+
+  Well going into those, into those rule side of things, in terms of that process side, you've been known for programer anarchy as a process. How tell us about programer anarchy and what does that mean in comparison to agile? 
+
+
+  \
+
+  So, so first of all, program anarchy was basically a marketing term, 
+
+
+  \
+
+  Right? 
+
+
+  \
+
+  Well, they slapped onto our process, just gain attention and it seemed to work really well. What it really reflects is self-organizing teams. That's what we're really trying to say is that the team itself knows how to organize itself. It turns out were working in fuzzy domains. Were looking for a high degree of experimentation. We were having this clustering and microservices up approach working for at this time. In fact, I would say that team, that team basically discovered this clustering phenomena themselves, right? So it turned out. I don't need a manager in a fuzzy environment when the team knows what they're trying to accomplish at a gross level, some KPI they're trying to meet, you don't really need a manager to tell you KPI is cuz it's well known and we're measuring it on a daily basis. Because it's a fuzzy problem, they're no experts so that your job's not to tell me the requirements are, cuz you can't tell me it's a fuzzy problem. 
+
+
+  \
+
+  You can't tell me how it's supposed to work because you don't know either. That's the date, a fuzzy problem. You can't tell me what will guarantee he, somebody will pay the loan back. You can't guarantee me that this is always gonna detect charge only transactions. There's no guarantees there. You decide that you don't, there are no experts and all of a sudden the business analysts die out. When you tell me there's nothing that you could tell me to manage my time terms of innovation and how fast I should try I do is out manager's role goes away. You, and if you're actually developing and pushing code out as fast as we are, you don't have a dedicated QA team. You're you're testing your coach yourself. You're putting it into very, user friendly, deployment, friendly environments that are self-monitoring. This dedicated in a QA team, this idea that we have to roll this thing out in stages that goes away as well. 
+
+
+  \
+
+  You start eliminating those roles, you wind up with having all this resource that you could apply to programmers. Instead of having, five programmers and five people to make sure the programmers do the right things by feeding the right requirements, I'm in a world where I can have 10 programmers and 10 programmers can run more experiments than five programmers can run. Even if the half the experiments fail you're way ahead of the game. 
+
+
+  \
+
+  In this instance, you are clustering around problems, I guess, rather than clustering around domains. Is that, is that right? 
+
+
+  \
+
+  Pretty much. Yeah. Yeah. Cause you're trying to solve something and that's why I like people who like to deliver solutions. You want bragging rights to go to the people who come in and say, look how many things I sold yesterday? My, with my clever change and your partner is coming in and saying that to show off with their colleagues, you've won. 
+
+
+  \
+
+  How, how difficult is it to get an organization to adopt this approach? Cause I, I don't imagine that you're going into organizations that already have this approach. This has gotta be something you've you're selling to people. 
+
+
+  \
+
+  Well, it turns out it's not hard for the developers. Developers will play whatever game you give them. 
+
+
+  \
+
+  Oh yeah. That wasn't that wasn't the thing. The people I were trying to, I was trying to, 
+
+
+  \
+
+  Right. So, so it's not hard for the programmers to get excited about business metrics. If you tell 'em that's the game you want them to fly, what are a few cycles of that? All of a sudden you're showing the business guys what these programmers are coming up with. They're like, well, and literally I, I had this happen. They're like, how do they come up with this idea? I'm saying the programmers, the problem solvers, this is what they do for a living is solve, is figuring out how lever algorithms we just told 'em what your problem is. And now they're motivated. 
+
+
+  \
+
+  I suppose in that case, in the case that they've brought you in to solve this problem, they've already created the space to say, look, Fred is gonna come in and try some stuff for us. And that's one of your solutions. I presume. How would somebody who wants to implement a Fred George solution go about doing that in your opinion? 
+
+
+  \
+
+  Well, I think your first thing is you gotta make sure you can, you have access to the high level executive is paying the bills. Cause you can't get to see this guy really understand what the motivation is. You're in trouble. The other thing is you gotta tell him what you're gonna be doing. That you're gonna be making a organizational transformation. You're not talking about agile. You're not talking about TD. You're not talking about prayer programming. You're talking about organizational transformation. You're trying to get the organization to a point where they can try an idea out aggressively with minimal consequences. If it turns out to be a bad idea, making them more competitive and you're gonna be creating some, basically some social chaos in this process. Are they okay with this? Because you can't have that conversation with that executive and get him to nod his head. 
+
+
+  \
+
+  You may succeed in the short term, you will fire be fired in the long term. 
+
+
+  \
+
+  If they're gonna give you the space to do this, how long in your experience do you need to be able to show enough of a win that you can then carry on. 
+
+
+  \
+
+  Two months, 
+
+
+  \
+
+  Two months? 
+
+
+  \
+
+  Yep. 
+
+
+  \
+
+  That's a lot shorter than I thought you were gonna say. Well, 
+
+
+  \
+
+  I was gonna say two weeks, cuz most of the time I can get in two weeks, but I give myself good. Look at two, say two months. 
+
+
+  \
+
+  Right? Okay. Okay. 
+
+
+  \
+
+  I can have a significant impact in the team itself within two weeks. 
+
+
+  \
+
+  I suppose that depends on the size of the team that you're gonna be taking on in that case. 
+
+
+  \
+
+  Well, obviously I will start with a small team cause that's the first mistake you make is if you start with 50 people and try to some that something's different, you need to start with four. 
+
+
+  \
+
+  Mm. 
+
+
+  \
+
+  We got these four people on board. You can bring in another four pair with those guys. Basically you can probably basically double the team size every two months. 
+
+
+  \
+
+  Okay. 
+
+
+  \
+
+  Which doesn't take you long to go through, get to 50 people. 
+
+
+  \
+
+  Cuz that's another thing as well that, we've talked with a few startup owners on this show and we talk about how you scale a team pretty quickly in terms of scaling a startup. That the same approach that you would take? Cuz most of the stuff that we've talked about so far is doing this in an enterprise. 
+
+
+  \
+
+  I think you do it with a startup as well. Startups tend to be more aggressive about willing to change and try technology. And, and frankly startups are basically almost always full stack developers. 
+
+
+  \
+
+  Yeah. 
+
+
+  \
+
+  They're guys who are thinking about the bigger picture and their options and marketing success and how to marketing words and UI and development and backend security. I mean they're full developers to start with. You're starting out in a great spot and they're also willing to pivot. They're, that's where you're trying to figure out which what's actually gonna make you the money. What, what idea actually does work. They're all about experimentation to start with the key is to make sure you stay in that experimentation world. One of the things we did at a startup in month, the first one I worked in London is startup. We, I started out, there were 35 people and we had one fulltime manager who was basically doing management fulltime. We grew to 320 people. We had two full-time managers. 
+
+
+  \
+
+  Wow. How long did it take you to get to 300? Many? 
+
+
+  \
+
+  I would say we grew it that to four years from 35 to 320 and four years. 
+
+
+  \
+
+  And was that the right pace? Could you have gone faster? Could, should you have gone slower? 
+
+
+  \
+
+  I think we probably would've as fast as we possibly have gone. 
+
+
+  \
+
+  Yeah. 
+
+
+  \
+
+  I think we could've, we it's possibly, we could have gone faster, but were very reluctant to take any outside cow. We were basically spending our own money. 
+
+
+  \
+
+  It more of a capital concern rather than a cause the thing I'm curious about is, 
+
+
+  \
+
+  We were doubling revenue. We were doubling revenue every eight to 12 months. 
+
+
+  \
+
+  Yeah. Yeah. 
+
+
+  \
+
+  We, were printing money, frankly. I mean we had 50 people, we had, we had 50 people, we made 50 million pounds that year. 
+
+
+  \
+
+  Wow. Well we all need to find out what, what we all need to figure out what project is doing that for us. I mean, that's definitely a goal that everybody has to try and achieve at some point. 
+
+
+  \
+
+  So, so there are a lot of unique things I learned about that environment that played in a program energy. Like I, walking into that environment, I was a very traditional agile thinker. We had, card walls, we had, some role for business analysts, some role for testing. We walking into that environment, walking, watching how successful they were. I realized that a lot of these roles aren't necessary primarily because were in a fuzzy problem domain. That's where I saw programming anarchy and working before I actually named it. It, it wasn't something we decided were gonna build. It's something we observed. 
+
+
+  \
+
+  I see. It's something that you I guess you learning as you're going along, your, you, you have an open mind clearly in the way you approach these things. You, is that where inspect and adapt comes in for you, but on a minute by minute basis, 
+
+
+  \
+
+  Basically. I mean, I'm, I was fine. I tend to be in bleeding edge technology because I know that's going to, feed into other interesting things as well, whether it be processing, how you approach problems, how you deliver solutions, new architectures, new, new technologies tend to drive that. 
+
+
+  \
+
+  I was gonna ask you about being on the bleeding edge, cuz you are obviously always on the bleeding edge. How often do you hit blockers with the bleeding edge? 
+
+
+  \
+
+  Well, basically I, I gotta make sure I'm reinventing myself at least every five years. 
+
+
+  \
+
+  Okay. 
+
+
+  \
+
+  Cause otherwise I I'll miss the next train that's coming along. 
+
+
+  \
+
+  Right. 
+
+
+  \
+
+  And, and to some degree you always kinda looking for what the next train is, for instance, right now I'm not in containers at all. Containers are kind of dead in my work. 
+
+
+  \
+
+  Okay. Where, where should we all be looking Fred? Where are we going now on. 
+
+
+  \
+
+  Serverless? 
+
+
+  \
+
+  Serverless. Okay. So I functions because. 
+
+
+  \
+
+  I don't, why should I worry about Kubernetes and Docker and all this other stuff, but I just have to put my code out there, figure out how to scale itself. 
+
+
+  \
+
+  Okay. So functions everywhere. That's where we're going. 
+
+
+  \
+
+  Yeah. Why not? Okay. I mean, lamb seem to be the right way to go. 
+
+
+  \
+
+  So, when you are talking about, okay, functions is where we should all be heading and we should give up on containers. If how big are we talking in terms of our services now using Lambda, cuz were talking about Java and a couple of hundred lines of code. Where are we now? 
+
+
+  \
+
+  Well, I, I, I would say for me, I'm in the same size, I'm still talking about service rooms in that same size. It's just, they're purely functional services now. You, and you wanna pick a bus, Kafka unfortunately is kinda like first generation web technology. You wanna pick a bus that's kind of has the auto scaling built into it as well. Once you sort of pick those technologies. Yeah. I, I think you build great systems on that basis. The other thing I'm looking at in terms of X five year trains is virtual reality. 
+
+
+  \
+
+  Okay, cool. Well, let's do virtual reality then tell us more about that. 
+
+
+  \
+
+  So, so to go back, I was part of the generation that went from green screens to go interfaces. I, I was, I, I have sharp that transaction through. Cause I remember arguing at IBM is like, well, what's wrong with my green screen? I can only do one thing at a time. Why would want multiple windows? You have to say, well look, you could have your email up and your calendar at the same time. You can do some of things like this and then you get into lands. Well, why do I need anything more than a text speed? Because I just putting to exo might screen, well maybe you'd like to have audio on your computer. Maybe you'd like to have video on your computer. I mean, I'm making these things up in 1985. Yeah. Trying to explain why you wanna land. One of the things I observed was the first goos that came out first, people are using windows basically would take the entire screen and you exactly what would be on the green screen. 
+
+
+  \
+
+  Now it's in color. There's no concept of having multiple windows. 
+
+
+  \
+
+  Cause why would you want that? 
+
+
+  \
+
+  It took quite a while for people to understand that when you got enough real estate, you want to have multiple windows up. You don't really wanna. Again, browsers went through the same thing. Every browser screen was like, have a whole window. I can't have bulk pains in my browser. That would be, that would be wrong. 
+
+
+  \
+
+  Well, I remember Tams being revolutionary. Yeah, 
+
+
+  \
+
+  Exactly. So, so now you go into VR. Now we're into a technology, that's three dimensional. The first thing you see is every ball of the VR, the layouts are, here's a giant green, that's 360 degrees, but it's a set of screens. It's not taking advantage of the motion. It's taking advantage of the fact that I can travel through this space. It's not, I should be moving through this space. And I hear something around behind me. I turn my head and there's my Twitter feed. And something's happened on Twitter. I'm not taking advantage of the fact that the UI experience associated with Dr. Needs to be 3d reality experience. Now you've seen right now is 2d. 
+
+
+  \
+
+  How, how far away do you think we are before this stuff starts to take off? Because I mean, we do a new section of the front of this show and we've just, we covered Google killing off Google cardboard. We've covered Microsoft ignite conference where they basically repackaged a load of VR stuff and sold it as a different product. It doesn't seem to be a huge amount of development, except that we're all getting excited about what apple might do. What direction do you think it's going to go in and what steps are we gonna see over the next few years? 
+
+
+  \
+
+  Well, I think you'll see business being, of course the place that can afford the high end headsets and the software development for it. I think you're going to basic, see, again, people like day traders putting the VR headsets on to look at all the data trends They can look at and again, navigate through that space, looking for what's going on, hearing noises. Using sound and stuff like that, effectively 3d sound to say, what's going on. You know, here's a noise over here. Oh, that's, at and T is trading like crazy right now, what the hell is going on? 
+
+
+  \
+
+  To become like a heads up display for us to be able to take in more information, I guess. 
+
+
+  \
+
+  Yes, because basically to some degree, we are still, we have 3d vision. We just still live in mostly a 2d world. I mean, we walk on the ground. We don't fly. 
+
+
+  \
+
+  Yes. 
+
+
+  \
+
+  Yeah. Yes. Unless you're having to be a, I guess I've seen gymnasts being amazingly 3d, more 3d people. Yes. Scuba dive, scuba dives live in a 3d world, but the rest of us are basically 2d worlds with 3d vision, but we aren't using the 3d vision yet. 
+
+
+  \
+
+  With the onset of the pandemic, everybody's moved to almost fully the remote working globally. Does this, I was gonna ask you before, do you see VR being a whole of people sat in an office with headsets, but presumably now that it'll be sat at home, a headset with headsets on, is that a direction we can imagine virtual offices using VR. 
+
+
+  \
+
+  Maybe, but I don't see the winning app there yet. 
+
+
+  \
+
+  No, 
+
+
+  \
+
+  It may be nice to be able to move from one zoom room to another, without having to do that. I, I try to teach one of my classes using zoom rooms. Cause I like to break people off into pairs and good work and I go help each pair. 
+
+
+  \
+
+  Right. Yeah. 
+
+
+  \
+
+  In a big classroom, I can look around the classroom and I can see who's struggling and I go help them first in zoom rooms. I can't see that. 
+
+
+  \
+
+  Yeah. I guess in, if you headed that direction, you could do that with VR. Couldn't you? 
+
+
+  \
+
+  You could, I, I could see, if not nothing else I could see, who's actually talking to each other who seems to be stuck. 
+
+
+  \
+
+  Yeah. I think that's really interesting cuz that gives you the opportunity to do a whole load of things that you would normally you in a physical place, but you've actually removed the barriers for the world then really, which I, I was actually watching a little video earlier on about Arthur C. Clark talking about an, a doctor being able to be in London or in Edburg. I think he said specifically in working on a patient in New Zealand, actually the combination of VR and remote working, that's pretty much on the cusp of reality, I guess. 
+
+
+  \
+
+  Yeah. I think, I think we're getting there. 
+
+
+  \
+
+  I've seen you talk a bit about I T as well, is that still an area that you are exploring and the automated home? 
+
+
+  \
+
+  Yeah. I, and I it's kind of also, cause I think it has actually interesting application of microservices cause your home is full of events. 
+
+
+  \
+
+  It is you. 
+
+
+  \
+
+  Almost one like this little home event, bus of your own, something that can say here's the current temperature, here's what, you're where the sunlight's streaming in. Here's what, here's, what appliances are on here's who's moving around in your house right now. Here's at your front door. There's really just a whole chain of events. You want your IOT devices to react to that. It's a chance to develop a, a, a relative secure IOT event bus in to the house. 
+
+
+  \
+
+  Well, you're actually describing my house exactly at this point in time, cuz I've been on a renovation for the last three years and obviously you've inspired me enough, Fred, that I do have exactly that in my house, it runs on a mosquito event bus. It's exactly, but that's probably not a conversation specifically for the podcast. That's something for geeking out later. How far have you taken the, this in your own home and how do you see that being adopted as technology that everybody has? 
+
+
+  \
+
+  Well, basically it's kind of came to a giant standstill here because it's September of 2019. I went to Norway to work for a little while and I just got back to this January where, 
+
+
+  \
+
+  Right. Okay. There's been of a, a gap there. 
+
+
+  \
+
+  It's been more than a little gap. Yeah. I I've had a massive gap in my home project stuff. Now I'm just beginning to scan the technology space to see what's out there now. Cause 18 months ago it was one thing and now it's like, whoa, there's some new stuff out there. I gotta try. 
+
+
+  \
+
+  New toys. 
+
+
+  \
+
+  A lot of new toys to play with. Yeah. My newest tour is my quest headset. I got to quest two headset and so it's hard to tear myself away from beginning to think about playing with VR rather than play with my I O T. 
+
+
+  \
+
+  I see, 
+
+
+  \
+
+  I, I'm not gonna lack of choice. I also have some new, some grandkids are getting to the age where I could turn 'em loose with some custom iOS apps I might wanna develop. So. 
+
+
+  \
+
+  Oh, nice. So you're building your own development team. 
+
+
+  \
+
+  Yeah. It, it actually worked out well, you, my son's a programmer for ThoughtWorks since it's been there for like actually longer than I worked for IB. Yeah. He's been there before that. Wow. It stuck with at least one of them. Maybe I should start the next generation off. Right. Started him off with a PC junior. Yeah. So, 
+
+
+  \
+
+  What they all starting out with these days. If you're gonna go and teach your kid to program, what should, what should you start out with in your opinion? Well, probably. 
+
+
+  \
+
+  An I iPad with that. Some of that swift building toys on it. 
+
+
+  \
+
+  Mm. Yeah. They're pretty cool. They're pretty cool. 
+
+
+  \
+
+  It seems to be a good place to start. Plus you can ruggedize your iPads and it survives kids. 
+
+
+  \
+
+  That's true. You can get those great big rubber things, can't you to make sure that you yeah. 
+
+
+  \
+
+  Make it waterproof, snow proof, whatever it is, you can make them industrial. Either the military or children, either one. 
+
+
+  \
+
+  On the IOT side, then what do you see as making IOT in the home ubiquitous like to get to the stage where everybody has it or everybody wants it? What do you think would be the trigger? 
+
+
+  \
+
+  Well, I, I think first of all, it's gonna be start almost automatically in new home builds. Mm. All the new homes will basically be wired for fiber bill. People will worry about their excess points for their wifi. They'll all they'll be built into the, into your walls and stuff. There's no reason that you wanna put in copper wire where you can use remote switches for everything. It's actually cheaper not to use copper wire. 
+
+
+  \
+
+  Oh yeah, absolutely. 
+
+
+  \
+
+  Yeah. Have a friend in California who, built a high end house, many years ago, but he didn't pull any copper in his house. It's all done with remote switches. I think new houses will be wired this way. And it's so many new apartment buildings. We, we wire it this way. Mm. I think you're probably already beginning to see that in, in say Hong Kong and in Singapore and places like that when we're putting new construction and that's the way they're doing it, 
+
+
+  \
+
+  Do you see the retrofit happening? I mean, I'm sat in a house that's 120 years old. Right. So, do we expect that is the people are people gonna be doing the retrofit? If they are, that's gonna be quite expensive, cuz it can require new wiring and all sorts of stuff. Like what would be the trigger that makes a customer have to have that? 
+
+
+  \
+
+  Well, I, I don't think it, I, I think first of all, it's gonna be a desire first. It's the 5% it's gonna be that early adopters. They're gonna be the nerds like yourself. 
+
+
+  \
+
+  Yes I'm. 
+
+
+  \
+
+  And do it anyway. 
+
+
+  \
+
+  Yeah. 
+
+
+  \
+
+  I, I pulled a cat five cable in my 110 year old house in north, in the states when I had a house like that, It turns out there's going down in the crawl space beneath it. I saw two generations of telephone wiring technology. As well. Yeah, I think it's gonna be the nerds doing it, but you can do this almost all wireless thing. Now you can do wireless hubs and wireless switches and basically you just need power outlets that are just put the wireless adopters in there. You're gonna find that people like yourself are gonna be able to do that in general. It's gonna, after a while it's gonna, here's some installers that will do it for you. You gotta come in, fix your kitchen up, fixing new bathroom up. The other guy will come in and say, well, you wanted me to do this fancy wiring for you. 
+
+
+  \
+
+  Yeah. 
+
+
+  \
+
+  I, I gave my daughter and her husband, this is my daughter who's nerd. Did this nerd not a tech nerd, put some few lights in their put house so they could turn on some few lights in the baby's room and around on television and now they're hooked. 
+
+
+  \
+
+  Yeah. Yeah. 
+
+
+  \
+
+  It's kinda like once you have a taste of it, you can't do without it. 
+
+
+  \
+
+  Yeah. I think it's just getting to that stage where they become properly useful because a lot of these lights where, it's in the bulb, as soon as you turn it off of the wall, it's rendered useless. You can't do anything with it. So, it's getting to the stage where that's not the case and it's still being useful enough. Do you, I mean, you talk, you've, you've been on the bleeding edge of all of this technology over your career. Do you have any concerns for this personal aspect of this? We're in a world now where we've got all of these smart speakers in our house, I'm sure, I, I mean, I, as a kid growing up in the eighties, I remember, people being terrified that someone might be listening in, on your telephone, on your landline, and now we've got, we've got like that exact bug is sat on our desks, ? 
+
+
+  \
+
+  That's obviously changed people's attitudes, but what, how have you thought about that over the years? 
+
+
+  \
+
+  Well, certainly talking, if you see my Iott present, one of the things I talk about is putting it on its own land. Let's build my own little wireless network that has all my devices in my house. I'll put a, a, a GAteway bridge to the outside world from there. I think it's gonna be important to set up your own little network. 
+
+
+  \
+
+  Yeah, yeah. 
+
+
+  \
+
+  Secure network that way of yourselves. Again, I think once it gets be commodity, that's what will be by default. These guys are installing your new wireless system, as well as your new kitchen, as well as your new bathroom. These guys will install a secure, a holy, secure system. The thing is frankly, the current generation doesn't care about privacy is the way you and I may. 
+
+
+  \
+
+  Yeah. Should I, 
+
+
+  \
+
+  No, to some degree I, I was raised, I, I was in the I system in London. Yeah. So just get into London faster. I put myself into the, rental skin system. I didn't, that didn't bother me cause I got a benefit from it. I kinda go back to if, if a massage went you dead, you'll be dead. 
+
+
+  \
+
+  Well, I think this is an interesting thing when it comes to security, because I think, we probably don't necessarily need to be as concerned as individuals. I mean, the thing is you potentially on the internet, you become a commodity, right. They're trying to stick you into a cohort so they can sell you more advertising. I have lot of these speakers turned off cuz I'm sick of Facebook recommending me things that I've spoken about, ? So, but in terms of them actually coming after me as a person, I probably don't need to care about that. Would you agree with that? 
+
+
+  \
+
+  Oh, I, I agree. 
+
+
+  \
+
+  Yeah. 
+
+
+  \
+
+  So yeah. I, I tend to opt out of all the, targeted ad stuff myself, but then you have enough. I mean they know everything about me already. 
+
+
+  \
+
+  Well, there's plenty of, yeah. There's plenty of talks that everyone knows what you think. I think, 
+
+
+  \
+
+  Oh yeah. I think there's no hiding that. To some degree, again, I I'm not, I, I kind of believe in the sunshine thing. I tend not, sunshine principle don't do anything. You don't want to be shown in a broad day light. So. 
+
+
+  \
+
+  That makes sense. 
+
+
+  \
+
+  I try to live by that. I think the more that we dump privacy is a primary concern. Now, if I was Q and not I'd care about privacy. 
+
+
+  \
+
+  Yes. Well that's a whole nother topic. 
+
+
+  \
+
+  Yes. So, so I, I, I'm always a little suspicious of people that are maybe trying to be overly private. Suspicious not to say it's not to say wrong, but it's a little suspicious when you're saying what are you really trying to hide? 
+
+
+  \
+
+  Yeah, absolutely. There are a few other things, a few other points that as we've gone through this, I've made made notes as we've gone through. There's a, I realize we're jumping back into conversations we've already had, but there's a couple of things I don't wanna let you go without finding out about, so your approach to testing, you've talked about moving away from not having QA and things like that. I think I've heard you I'm pretty sure I would be quoting you if I said, I have heard you say that if you can't write a few lines of code and make it work, then you shouldn't be writing code in the first place. In terms of testing, how is your approach to that taken off and what is, well, what is your approach to testing now? What do you use any particular tools? Do you, do you still feel like that about QA? 
+
+
+  \
+
+  I, I definitely feel that about QA. Some parts of the world has QA define. India, QA is defined as being basically process wizards. They really are. You really are associated with thinking about processes more than code itself. I grew up in an environment where if you weren't smart enough to write code, then you were a tester. And that those days are gone. The testing tools themselves or programming tools, whether it's Cucu or, or mercury, so mercury tools or other stuff like that, or Seleniums the programming oriented tools and generally in systems we're building now, you can't really be test the test, the code unless you understand systems architecture overall. Let see you're an architect, how to write code. What's the differe between you and a good programmer. The skill distinction is gone. So first of all, you get acknowledge. There's no skill distinction now between those two roles. 
+
+
+  \
+
+  So now it just becomes a label. I, I haven't had a QA team and any been known for the last decade. 
+
+
+  \
+
+  Right. 
+
+
+  \
+
+  Now. That's because I, I tend to be on bleeding edge projects, but it also tends to say that in those environments, you obviously, you're not gonna have fast response. You don't, you can't do a continuous deployment and have a QA team. Now what we discovered in, again, I've credited the team in London for discovering this. I just, I just report it. One of the things we discovered is we put monitoring into our event bus. We built our event bus with testing, built into the bus itself. We're constantly testing our own software on our own event, bus, into live system. It's not that we're not doing system integration testing, we're doing active monitoring of the real system the same way. We're probably spending just as much money, just as much talented resource as we would in the QA team doing system test. We're now doing it by deploying active tools and live environments. 
+
+
+  \
+
+  I was gonna ask you about TDD and whether that is a practice that you follow as a developer, but it sounds like you're also building that into the, the deployments. 
+
+
+  \
+
+  Yeah. It's two levels of testing. It's certainly TDD is kind of the unit testing, I believe in TDD for unit testing for lots of reasons. One of which is it requires me to be lazy about how much I write. Cause I can't over-engineer things under TD rules. 
+
+
+  \
+
+  Was that a strange practice for you to pick up like learning to TDD? Or is that something you've always done in a way? 
+
+
+  \
+
+  Well, not always. Cause I, it wasn't until, I, I saw the Kent Beck and ward cutting and briefing about this stuff. One of the oops list even before thep book was out that it was like, write the test. I, I was actually in an environment were writing in small talk mostly, and then people write the code and then I'd go home that night and I'd review that code and write some tests for it. I was testing it the evening and evening. I write test for the code, my guys read during the day. They said, write the test before you write the code. It was like, you idiot. Of course. 
+
+
+  \
+
+  It was an obvious that it was an obvious thing for you as soon. It. 
+
+
+  \
+
+  Was obvious once you having written small talk for like, oh, almost 10 years before agile came along, agile is basically just saying, this is the practice you should use small talk. It was once you, once you've been a small talk program or everything you said was like obvious. It was like, why I didn't see it before is just, I'm an idiot. That was the, that's the beauty of guys, like, ward Cunningham and Ken bank, they see it and they recognize it and they can talk about it. So, big kudos to people who realize that stuff. And, and they guys like Dave S Snowden says they're fuzzy problems and their traditional problems. Mm they're like, oh, and by the way, you organize yourself differently for those two types of problems. It's like, as soon as he says this, it's obvious. 
+
+
+  \
+
+  Yeah, absolutely. You just, you have to have the first person that makes the connection. 
+
+
+  \
+
+  Dave Snowden, for example, when he said that, I realized why I could not put a so right call center. Cause there's nothing about a call center. That's not, that's anywhere traditional or complicated. It's a simple problem. You don't need agile for simple problems. Cause the requirements are not changing. 
+
+
+  \
+
+  Makes sense. Makes sense. We, we've not really talked about frontend too much. Are you, is micro front end something you've explored or is that the wrong direction for us to be heading in? 
+
+
+  \
+
+  I haven't played with it, obviously with my UI background. Yes. I'm kind a, I'm kinda a front end designer from the ancient days from the rich client world. It turns out all that translated really well to the web world. It looks like is that play with so far, all that translates right. Is a mobile world. So, so the gooey paradigm is pretty much the same with all those devices and all those technologies. I would like to see my I'd like to have an event bus on my iPhone. 
+
+
+  \
+
+  Nice. I. 
+
+
+  \
+
+  Would, I would like to turn my iPhone experience into a set of UI things that are driven from an event bus. 
+
+
+  \
+
+  What would be the benefit of having that, do you think. 
+
+
+  \
+
+  Experimentation and being able to do micro deployments to that environment? Mm. Imagine, I think about my watch, my apple watch has got this really amazing set of I guess they call 'em notions or it's kind of they're UI elements. Right. I can put, I have like one, two, I have seven different UI elements on my apple watch and I find 'em all very useful. It'd be nice to be, take my iPad and put, 50 of my own personal little things on there that things I care about. Yeah. 
+
+
+  \
+
+  I can do that. 
+
+
+  \
+
+  If I had an event bus and write little micro apps and just do exactly what I want. 
+
+
+  \
+
+  Yeah. I get it. That makes sense. Maybe that's another direction for the next five years then? 
+
+
+  \
+
+  Well, I think it's taking some of the technology. We know works really well, event buss and moving into other platforms. 
+
+
+  \
+
+  I must admit, from having worked in microservices for a good five years now that does feel like this. That's the thing that's missing on the front end. You know, we don't quite have that. Same. It feel, everything feels distinctly monolithic when you're working on microservices as the back end. 
+
+
+  \
+
+  Yeah. I mean the front end guys, they've struggled to get into agile. Obviously one of that is they rooted in print media. A lot of 'em have been trained in print media, which is extremely static and they were trained to, put your 45 levels of grade scale in there and make it look really good. They haven't been trained interacting with that. The interaction with that, as you read, read your copy, your eye is drawn to this point, you read that copy. Mm it's not about clicking and dragging. That other stuff is not part of their education. Hence the UX guys have it now emerge people who are thinking more about the experience, but may not be able to draw the prettiest icons. Now you wanna center your group around the UX guys, not the UI guys. 
+
+
+  \
+
+  Yeah. 
+
+
+  \
+
+  Now you think about the experience from that perspective. Even those guys are, want to almost understand they wanna have all the requirements they've been trained. Give me all the requirements. I'll come up with a great experience and we'll build the product. That's wonderful. You have to tell them, I don't need, you don't need to tell me exactly all the flows of stuff. Just gimme a hint, give a starting point. Let's try it out and see how it looks. Let me play with it. What I really wanna do is I wanna take these UI guys. I wanna train them how to build, use my UI building tools. I want them to build their own HTML. I want them to build their own CSS, by the way, when they get hooked into that, I want them to build their own Java script. And now what's happened. Now they're programmers, And now they understand how to play with things and try things out. 
+
+
+  \
+
+  Now they begin to understand how I can be granular with this. My first step, when I run into UI people is first of all, wanna sit them in the team they're working with. Mm. Stop working, sit together with the UI, the L UI guys spread yourself out. This comes from basically one of the principles I talk about, which I picked up in grad school. And that's three reasons. People talk to each other. One is we say, I have the same hobbies. Kids go to the, in daycare. We both are our soul supporters, but frankly, as a management team, you don't have any control over that. The second reason people talk to each other, they have the same manager. Managers tend to be people who pull people together and require the conversations. The third reason, this is the guy got tear MIT for this, the chance that you and I community various inversely with a square of distances between our chairs. 
+
+
+  \
+
+  If you and I are sitting close to each other, we're talking and we double the distance. It's one chance. Four of us talking, you doubled again, as one chance of 16, he measured the intellectual distance of a staircase. It's a hundred meters square. That number you might will be in Bangalor if he's downstairs. 
+
+
+  \
+
+  Yeah. I've, I've experienced that. 
+
+
+  \
+
+  Exactly. I don't want the UI people sitting. I want them sitting with the team they're working with. Cause I want communication between them and the team. I know they're gonna talk to the other UI guys cause it's a UI manager. One of the first things I do in terms of senior arrangements is I change the seat arrangements and organizations to create the square distance between the chairs, minimize that for the people who I want to talk. I want the, I want the business requirements guy. I want the man team manager. I want the customer, I want the UI guy and the developers front in the backend, all city as close as possibly other. 
+
+
+  \
+
+  I suppose that's in the, that's that same model that Spotify defined as well. Isn't it of having that slice of a team. 
+
+
+  \
+
+  Yeah. And all comes from the same guy. This is Tom Allen from MIT who basically recognized this. 
+
+
+  \
+
+  When was this? Cause I'm curious as the origins of this model. 
+
+
+  \
+
+  Yeah. Basically again, a guy's name is Tom Allen. He's first emeritus. Now at MIT, the Sloan school at MIT he's basically came up with the square of distances between the chairs. So, and he, he, he measured, he measured that over many studies and he has the concept of, gatekeepers, people who information flow through, which has nothing to do with your title. 
+
+
+  \
+
+  What, what year are we talking here? Fred? 
+
+
+  \
+
+  I, I had the course from him in 1986. 
+
+
+  \
+
+  Right. 
+
+
+  \
+
+  His, his book came out. He had a book came out shortly thereafter about that timeframe, which you could still get hold of. 
+
+
+  \
+
+  Well, we'll put that on the recommended reading list on the show notes then. I mean like that's the origin of the Spotify model right there, I guess. 
+
+
+  \
+
+  Yeah. I mean, he's the one that talked about that. Obviously it was being done cause he actually studied it. I mean, people had indications of this, but he's the one that kind of formalized it and called it out. And, and I used his techniques almost immediately after walking outta school and every time I tried it worked amazing. 
+
+
+  \
+
+  Wow. One of the last things I want to cover with you just because I've heard you say this. I wanna know your, your feelings on it in more detail. I've heard you say 80% of microservices implementations are wrong. So why is that? 
+
+
+  \
+
+  I, I, I think people say I'm gonna do microservices cause it's cool. They immediately, they draw boundaries around mostly entities. So they're like, here's my customer service. Here's my order service. Here's my inventory service. These aren't these aren't functional services. They're data services. 
+
+
+  \
+
+  Yeah. 
+
+
+  \
+
+  So they're not making any decisions. They're actually just data. You're still having some other service. That's pulling information from these services and having to make the decisions. So you haven't really accomplished. 
+
+
+  \
+
+  Anything. That's just service oriented design really isn't it that's domain design to break things up like that. I guess. 
+
+
+  \
+
+  You're breaking up, but you're breaking on boundaries that are basically entity based rather than functional base, which you're I'd rather do is break along functional lines. Imagine that you had an inventory and a customer database, it's the join tables that have the interesting behavior, cuz that's where orders come in. That's where returns associated with that. It's it's these joint tables that have the interest behavior. You wanna build your services around the join tables. Having access to these two tables, you build your services around functions that manipulate these two tables and they tend to be functioning in that case. So again, most people build microservices. First of all, they're gonna be thousands and thousand lines of codes gonna take a team of five people to who must build it. Obviously it's not micro in any sense of the word. Mm. But they like the term. It sounds efficient. 
+
+
+  \
+
+  Yeah. 
+
+
+  \
+
+  Yeah. So they call it micro. You, so you kill that part of it. You have people doing that, calling microservices, aren't micro. You have the guys who are breaking on entity outreach, which are in gonna be wrong on and it winds up having no benefit in the long run. All you're trying to do is joins across databases now. 
+
+
+  \
+
+  Yeah. Yeah. 
+
+
+  \
+
+  Joints work really well inside databases, not outside databases and that's kind of why. You have people that are taking traditional problems and trying to solve with microservices. They have gone through the learning curve necessary to be efficient and to do that, to handle the, the pinball being lost or pinball going around in circles forever. 
+
+
+  \
+
+  That brings us back to the fuzzy conversation about before. 
+
+
+  \
+
+  That says, yeah, I don't try to bite this off unless you got a fuzzy problem. If you have a fuzzy problem, it's worth learning it. You haven't got a fuzzy problem. Now's not the time to get into microservices. 
+
+
+  \
+
+  Okay. I mean, thanks for your time, Fred, it's been a pleasure to talk to you. I've been excited about speaking to you for quite some time. Thank you for taking this time early morning in Las Vegas to join us. 
+
+
+  \
+
+  Well, thank you. Thank you for the opportunity.
