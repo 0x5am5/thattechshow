@@ -1,0 +1,1380 @@
+title: Episode 17 - 4 Releases a Year to 1400 a Week with Audun F Strand
+related:
+  - title: Episode 14 - The Grandfather of Microservices, Fred George
+    image: https://assets.pippa.io/shows/6012fcea40e3fd5f183effd9/1620725535954-47f39816c75603fa6c28830067e4533b.jpeg
+    url: https://thattech.show/episodes/14-the-grandfather-of-microservices-fred-george
+  - title: Episode 21 - Reclaiming Your Data with Felix H. Dahlke
+    url: https://thattech.show/episodes/21-reclaiming-your-data-with-felix-h-dahlke
+    image: https://assets.pippa.io/shows/6012fcea40e3fd5f183effd9/1625488761370-33ce0af164f2b0fdc3421b019725f241.jpeg
+  - title: Episode 25 - Software that Saves Lives with Johannes Brodwall
+    url: https://thattech.show/episodes/25-software-that-saves-lives-with-johannes-brodwall
+    image: https://assets.pippa.io/shows/6012fcea40e3fd5f183effd9/1627931382142-9a6b880a8d238863c9c2932b91ff6b2d.jpeg
+transcript: >-
+  Audun\
+
+  My name is Audun Fauchald Strand. I'm Norwegian. Of course, I think I worked in software for like 20 years now used to be a consultant, multiple places. My standard joke is a twice a consultancy company sent me to the company I work for now, but it was so bad that I quit the consultancy company both times. I started working for fin, which is the biggest website in Norway and like proper agile, proper development, culture, and everything. That's where I kind of, I learned lots of what I think is smart now. And then I worked there for four years and then I started working for Nav the biggest government agency in Norway. Kind of been a part of a big transformation there for the last four years. 
+
+
+  \
+
+  Chris\
+
+  Let's just talk about the scale as well. Cause obviously we have a little catch up before the call. So, give me of an interpretation or give the listeners an interpretation of how big we're talking in terms of where you are now. 
+
+
+  \
+
+  Audun\
+
+  Basically it is one politician and 2006 or something said, we need to merge a few different agencies in Oso. They basically merge everything to do with health and everything to do with work into one big agency. I haven't said this in detail, but apparently we do the same as like 20, 30 different agencies in the U S so we basically have everything Bayer for the welfare state pensions. We pay out about a third of the national budget in Norway is sped up to us and they handle everything from parenting benefits to sickness benefits, to pensions, to getting people jobs and everything. It's basically a one stop shop for most of this stuff, except for the tax part is a separate. So we don't take money. We just pay up front and help you, 
+
+
+  \
+
+  Chris\
+
+  Which is nice. It's sort of like the Robin hood. So just giving all the money away. That's true. In terms of the total amount, then it's a third of the budget. What, what sort of figure is. 
+
+
+  \
+
+  Audun\
+
+  I think it's about, and I'm struggling with, to the English American thing, 400 billion Norwegian kroner about 40 billion pounds and probably, wow. 
+
+
+  \
+
+  Chris\
+
+  Wow. So 40 billion pounds. I don't know how much that is in dollars. American listeners can do the conversion. It's a bit of a, it's an activity podcast for you. You can go and look that up, which is quite an incredible amount. Isn't it really it's a huge amount. And, and also when we were talking about the, the, the total number of users you have, which is the entirety of Norway. 
+
+
+  \
+
+  Audun\
+
+  Well, at least in theory, I think all Norwegians go to get some money from now because you get all your parents, at least get to a child. You have, when you get a kid or to get sick, or when you lose a job or the last, and you cannot, if you don't have the money we can pay for your funeral. There's this saying, we support you from all the way from a born, till the die basically. Of course the pension part is for everybody gets a pension. We have a relationship with every Norwich. We also say we have, well, w w w it's not important for us to get more customers because we can't, we have, they have the Norwest population on the. 
+
+
+  \
+
+  Chris\
+
+  Captive audience, 
+
+
+  \
+
+  Audun\
+
+  We get organic growth from their user base built kind of a nine month warning. When you get new users, 
+
+
+  \
+
+  Chris\
+
+  Organic growth is literally organic growth, isn't it really actually growing new humans. So that's, I mean, that's pretty incredible. Really the, you are serving the entirety of the country and the amount of the amount that you're dealing with in terms of how much you've got to pay out. Obviously we, we've talked about this very briefly that our introduction came via Fred George, who was a guest on the, on the show recently. As you mentioned, just before a big name in tech, and so you've gone through a massive transformation in recent years. Talk us through where that started and where you've got to now. 
+
+
+  \
+
+  Audun\
+
+  Well, first of all, we can say that novice, even though were kind of a merchant 2006, the things that were merged on my shoulders. Our older system is like, it's about exactly my age. It's 42 years old. It's a big mainframe handling all the sickness benefits, but, and then after 2006, we had this strategic decision of not having any developers. We don't have like architects and product managers and testers and everything, but no developers that was done by consultants, but you've got a new CIO in 2016, I think. He said, well, we need to have, we need to own our tactical future, basically. We, he always said, you need to be smart to buy smart. He said, we need to hire developers. We started that in 2016, I was number eight or something. Well, this sounds like a startup, but this is in the middle of 20,000 people, big organization, and an it department of several hundreds, even though they didn't have developers. 
+
+
+  \
+
+  Chris\
+
+  Well, it's quite incredible as well to think about the fact that this is happening, this scale up from zero developers or zero permanent developers at the very least, this is happening in the midst of the M the captive audience that we've previously spoken about and the amount of money that's getting paid out like this transformation whilst maintaining that stability is incredible. 
+
+
+  \
+
+  Audun\
+
+  It's a big challenge on the real, isn't an option to not work. 
+
+
+  \
+
+  Chris\
+
+  Yeah, absolutely. I mean, if your system starts to fail and the whole country has problems. 
+
+
+  \
+
+  Audun\
+
+  Yeah. Now we're about 200 developers, 300, I think if you count data engineers as developers, and sometimes we do. We are still trying to go further because even though we have this many internal developers, we still have a few hundred consultants as well. We want to, we don't want to get rid of all consultants, but there's still room for more developed spirits. Hiring people isn't necessarily the easiest thing in the world, because we also want to keep kind of the quality of who we hire. 
+
+
+  \
+
+  Chris\
+
+  Yeah, absolutely. So, I mean, how do you get through that process then? So, I mean, you talked about, you met Fred in 2015, we talked about this just as were setting up the podcast, but talk to us about how that came about. 
+
+
+  \
+
+  Audun\
+
+  Well, I met the fed in 2015, I think, because I wanted to go to, well, me and a few friends, we wanted to go to a great restaurant and we found no mind Copenhagen. We needed to find a software conference that made us, made it possible for us to also eat at MoMA. Went to go to Copenhagen and we had the Fred George's incredible microservice workshop. Another fun detail is we actually had Eric Evans, the author of the domain-driven design book. He was, he was one of the participants in the workshop. It was of, it was really cool after that. We got, I hadn't had to do that workshop for Finn at the time. Later we had an abnormal smell because the workshop is really great at teaching asynchronous programming, basic and Microsoft. We had that a few times, and then Fred, all of a sudden sends an email saying, can I come and work for you? 
+
+
+  \
+
+  Audun\
+
+  So we said, yes, of course. He moved from Las Vegas to Oslo, and he went straight into the biggest product we have had, or were developing at the time, the one for replacing the sickness benefit, the big mainframe. And so basically we started doing that. We, after a while the team went all in, on kind of the rapids. River's a thing that Fred has developed, I think with basically having it's when you first hear about that kind of architecture is quite strange, which sounds strange because they have basically have this big Kafka or other message skew in the middle. Every, all the Microsoft's is everything as a message on Kafka. You kind of have the other microservices listening to the rapid and filtering out and only caring about the few of the messages and that field three is kind of the rivers. You, when they do something nice and send it back to the rapid. 
+
+
+  \
+
+  Audun\
+
+  We basically have this loop or messages just going through and through, and you just add new microservices on, and you can just, you read new messages. Kind of a big view of that. We have the applications coming in to the rapid and we do a lot of processing. We have the decisions if people get money or how much money and stuff coming out. I think that calf got our biggest, like multiple terabytes, because there's so much data coming in and every little step adds a new message to the rapid topic. 
+
+
+  \
+
+  Chris\
+
+  Was the plan with this replacement of that mainframe. This is the same age as she was the plan always to go with microservices, following on, from meeting with Fred, or was it really Fred's joining you at the company that spurred you to go in that direction? 
+
+
+  \
+
+  Audun\
+
+  Well, I would say the microservice part was quite given. I think we worked for a coffee or before he came in as well, doing a big mammoth wasn't really on the card at any time. But. 
+
+
+  \
+
+  Chris\
+
+  Yeah, because I think when we talked to Fred, we did talk about the, when to not use microservices. Cause I know some of his more recent talks or when to not use microservices and actually the, if it is a known entity and you're not trying to figure things out, then that is a time to not use microservices. It sounds like what you've actually ended up with there is a blend between the stuff that is more unknown and has to happen very quickly, lots of computation versus the actual, okay, this is the implementation of the law and that's not going to change. There's no real reason to have microservices there because the idea of microservices I suppose, is that they're, they have quite short half-life I suppose, don't they, they get changed quite quickly and quite frequently as you improve and, and modify them. I guess in that instance, the law isn't moving that fast and acetate necessarily necessitate that being microservices. 
+
+
+  \
+
+  Audun\
+
+  Nope. For instance, we have smaller components that do like a replay or applications onto the topic to see, to do statistics and stuff. You make smaller components deducted the bigger part, more complete, the more complicated stuff. It goes into the bigger application. So, 
+
+
+  \
+
+  Chris\
+
+  One of our other, in one of our earlier talks, we've had conversation with some of the people who've been involved in the UK government, in a NHS test and trace for example. Obviously we've, we're all coming out of having well, I, I, a crazy year and a bit, I suppose, of, of pandemic world and our government was not necessarily known for being that forward thinking in terms of its transitions to more modern technology. How did you manage to get the buy-in for introducing microservices in the government? 
+
+
+  \
+
+  Audun\
+
+  The sounds and the center, we just did it basically. 
+
+
+  \
+
+  Chris\
+
+  Just forgiveness rather than permission. 
+
+
+  \
+
+  Audun\
+
+  Also we was, well, we had actually, there was one discussion early on in this specific where whether we want to do reuse a bigger components from an older product or not, but we find that at least my experience, that's something that seems similar when you, when you started the new, quite at one part and you want to go to the second part, it feels like the second part is going to be similar to the first. When you dive into the details, it's almost never the case that it's as useful as you think the redo we used. We also think that having the ownership and the domain knowledge and the knowledge of the code is more important because that's going to serve you for a longer time than some kind of initial boost to get just by reusing something from the start you need to, because this, these are systems we're not in a competitive situation, this is software that is going to, or at least an organization that's going to handle a problem for 40 more years. 
+
+
+  \
+
+  Audun\
+
+  There's being quicker to the first quicker in the first three months. It's not as important as actually having the ability to change the system in 10 years time. You need to, it's more important to build a team and organization that most their coldness. 
+
+
+  \
+
+  Chris\
+
+  Yeah. How bought in is the, is the organization, the government, how bought in is the government in the idea that this is, now this is now product development and this is going to be continuously developed. 
+
+
+  \
+
+  Audun\
+
+  Well, it's getting there. We are still kind of the costs we have. We have these big modernization programs and that means we need to ask for extra money from the finance department and they have their processes for giving up extra money is the same. Whether we want to build software or a b\*\**h. Of course, building a software and building a bridge. Isn't the same. You actually, when you go into how you want to run a big chunk of work building software, you need to think about it differently. You need to, for instance, you need to have much more focused on learning. I think I'm trying to see progress in software development can be measured in different ways. If you build a bridge, you can say, we build something that you're not going to use anymore, but you will learn a lot. So it's still progress. 
+
+
+  \
+
+  Audun\
+
+  I'm trying to get that into the process because the people that gives us money and they want to have some kind of checks along the way, if you are spending the money wisely and it's not easy. I think to explain to someone who's not experienced in software, how you can actually have progress without great, or while still throwing away all the code you have just written. It still feels like progress because when you learn it rewriting everything, isn't the problem. When you're going to know the domain, 
+
+
+  \
+
+  Chris\
+
+  How far through are you in this transformation? Have you still got any of that mainframe left? 
+
+
+  \
+
+  Audun\
+
+  Yes, we are kind of also we have multiple memberships or at least for some definition of mainframe, we are more than halfway to, I think the big men fan. The next big thing they're going to do is this incredibly strange Oracle architecture thing from it's not for this is on the 20 years old, but it was made just before JTE, eh, happened. Nobody knew how to do application servers and IBM had themselves. Oracle had this thing, which I can't really remember what they called it anymore, where you put everything and literally everything inside the database. It sounds like stored procedures, but it's not really stored procedures. It is like Java running inside the Oracle database. Every instance of a Java object has their kind of their cell in a table, in an Oracle database. 
+
+
+  \
+
+  Chris\
+
+  So the opposite of distributed computing. 
+
+
+  \
+
+  Audun\
+
+  Developers for kind of to do local development, you have an instance of an Oracle database. It's never funny to have an instance of an Oracle database and a laptop. 
+
+
+  \
+
+  Chris\
+
+  No, I can't imagine that's going to be particularly efficient. 
+
+
+  \
+
+  Audun\
+
+  They have this kind of a front end tool as well called SQL forms. I think. 
+
+
+  \
+
+  Chris\
+
+  Everybody loves SQL. 
+
+
+  \
+
+  Audun\
+
+  Phones. It's actually the funniest thing about that system is the front-end. They have this development mode where there's a frame around the GUI, which is used only for development, and this is disabled in a production, but that means they can't change the size of the window in production because that breaks the kind of the disabling of the debug information. This system is so old, it's built for six 80 times, 600 times 4 8, 2 screens. 
+
+
+  \
+
+  Chris\
+
+  Yeah. Well, this is this is the the system that you're used to seeing in banks and insurance companies. When you finally get the chance to peek over the shoulder of someone who's operating one of those windows and it's all squashed up into a corner. And yeah, 
+
+
+  \
+
+  Audun\
+
+  That's the thing because the gooey is like its own. I can, it's like one man heading that direction means do something I'm faced that. You mean something else. It's basically impossible zip because it's small window in the corner of your screen. You don't the icon. They have to use like magnifying glasses to use the system sometimes. That's the next one we're going to do something about, or we've just started now, 
+
+
+  \
+
+  Chris\
+
+  You said that this is only 20 years old, which is probably older than some of our listeners. I know it's older than some of our listeners because we have statistics. You know, guys, 
+
+
+  \
+
+  Audun\
+
+  Well, we actually haven't even older systems or we had, but they're kind of out now. We had one, we had one database, so old earning information because you need that to calculate pensions. I'm not country member the specific details, but going need kind of the earning information of the lost of the spouses on people until everybody's dead, basically. So, but this database is now in a read only mode and it, we took this strange file and put some job on top. It's easier to, it's easy to run. We can actually run that in doctrine given at this, but the date they actually file is like 40, 50, 60 years old or 45 years old or something. 
+
+
+  \
+
+  Chris\
+
+  That's a case of archiving it then rather than actually migrating it. Yeah. 
+
+
+  \
+
+  Audun\
+
+  Basically we took the data and put some more modern stuff around it, but the data is still there because we can't, they can't remove that we need today. 
+
+
+  \
+
+  Chris\
+
+  There's no plan really to migrate that into your current system now. 
+
+
+  \
+
+  Audun\
+
+  No, I, I, there doesn't feel like there's a need for that because we have an okay way of getting that data. 
+
+
+  \
+
+  Chris\
+
+  Before you started on this transformation, I mean, I presume there was probably wasn't very much change that had happened really within the system over the previous years. I mean, how frequently were you changing this? How frequently were you doing releases? 
+
+
+  \
+
+  Audun\
+
+  Well, we had up until 2016, I think, or 14, we had something like four releases a year, and then we kind of had this ongoing improvement. Actually the talk we're having a developer sent by somebody it's called from, for Elisa Sierra to once every other minute, because right in 2000 and wow, or in 2021, we are doing 1,350 approximately releases a week. 
+
+
+  \
+
+  Chris\
+
+  A week. 
+
+
+  \
+
+  Audun\
+
+  If you put the normal Norwegian work, we can deduct, you can kind of get that into once every other minute. That sounds even funnier than 1300 a week. Right now we have something like 1200 applications and that the amount of the diplomas, but we still have some deployments to stand for a much bigger share. Now some applications stand for much bigger share of deployments and others of course, 
+
+
+  \
+
+  Chris\
+
+  Near as dammit, 1400 deployments a week. That's incredible. How big are those? How big are those deployments? What what's in a deployment. 
+
+
+  \
+
+  Audun\
+
+  It's no easy answer that question. Some of them are basically just bumping. If sneaked houses, you need to bump the libraries. That's one deployment. Sometimes it's much bigger. So it's everything from smaller to bigger. Actually it's one of the funniest things we have this basically some the recruitment portal for now, but on the bottom part of that web page, there's like this aggregated view of all the commits we're doing on a GitHub organization, because most of us, at least not most, yeah, most of our stuff is open source. Just watching all the commits, coming to you and you see something is like adding this field to this form or changing this rule and something is just bumping dependencies or doing everything else, or probably also there's a bit of people deploy to see if their deployment pipeline works now. 
+
+
+  \
+
+  Chris\
+
+  As the T that's a tiny, tiny releases then essentially. Yeah. This all how's this all wrapped up then? This wrapped up in a continuous delivery model? How, how have you got from formerly w w would eating into your talk ? We don't want to, oh, that's no problem. We want people to go to your talk and listen to your talk as well, but, give us a flavor. How do you get from four releases to 1400 a week, actually four releases a year to 1400 a week? How many is that a year? Have you added that up. 
+
+
+  \
+
+  Audun\
+
+  Now? Well, 
+
+
+  \
+
+  Chris\
+
+  Some quick sound bring a calculus by 52. 
+
+
+  \
+
+  Audun\
+
+  Well, not 32 because Norway has good vacation. They have like nothing more than an Eastern, a winter vacation and the Christmas, some of those, like maybe for two weeks or something. 
+
+
+  \
+
+  Chris\
+
+  Yeah. We should all move to Norway. 
+
+
+  \
+
+  Audun\
+
+  The back, the question is like, there's a big technical part. Of course, we built this application platform called the mice, which is what I consider kind of the normal thing. Now with Kubernetes, a normal cloud native foundation, kind of architecture with committees and everything. That, and that takes a lot of the difficult out of doing kind of the technical, the releases you can deploy without having downtown. You can basically deploy during daytime and that makes it safer. We have gone to almost all a deployment pipeline software known to man. We had this big, we started a Jenkins is running on Linux, washing machines locally. We had this Travis period and then the Travis thing happened and then had this circle CIP period and then get the action came about because we used to get for storing the code. It's easier to basically talk in wise, it's much easier to get to security setup when you have the code stored and get them onto your skit of actions. 
+
+
+  \
+
+  Audun\
+
+  The nice platform has this home-built action, and you basically just use that and you pay paste some tokens into your repo, and then you have this nice of this deployment descriptor that you send into the costume. And everything happens by magic after that. Kind of the deployment pipeline has become really good dry. Now I would say it's, I really liked it of actions. It feels like the perfect kind of abstraction and for reuse and making appointments. 
+
+
+  \
+
+  Chris\
+
+  How'd you actually manage, if you've got all these microservices and they're all in all Kubernetes deployments, how are you actually managing the coordination of all of those Kubernetes containers then? Because some of that can be relatively complex. The last time I was working some of that, we used Terraform to be able to control and give us an indication of state management, because we have w were really struggling at the time of not knowing which version of a given application was actually running in Kubernetes. D is, have you figured something out with that? Or are you just deploying that many things that quickly, that it doesn't really matter? Well, 
+
+
+  \
+
+  Audun\
+
+  First of all, we want, we want to split it up. There, our goal is for no one to need to have the kind of the overview of everything you shouldn't, you should know your team stuff. The strongest concept in all our platforms is basically the team has their applications and it's into their namespace and you don't need to consider everything, but the team stuff. We use, we only use Terraform for like infrastructure stuff, like setting up the cluster. Other than that, we have this simplified deployment descriptor basically saying, giving you some song choices in how you want to set up this and Kubernetes, but we're taking a lot of the choices away from you. We don't need to consider how to do log bouncing and just done. The pattern we'd gone for is we have basically having several or multiple operators in the costumes. If you want alerts, for instance, you put out a different Jamo file saying what from meteor square language statements, you want a lotto, and that sent it to the cluster. 
+
+
+  \
+
+  Audun\
+
+  We have a piece of software that we've written that transforms that into unprecedented parameters, alert manager. You get alerts on in the configured slack channel or on SMS. We use, we tried to use as much as possible time building the infrastructure as well as software, because it's easier to test them and maintain Gokul than Terraform code when you need to do somewhat complex stuff. 
+
+
+  \
+
+  Chris\
+
+  Most of the, it sounds like the control then is largely around namespaces then. Each of the teams manages their own namespace. Then that's relatively straightforward. They can look after that, the controllers that, 
+
+
+  \
+
+  Audun\
+
+  When we moved to the cloud, we also have like, when you register your team to get the namespace in the cluster and they get a separate project in the GSP. Then, so if you, for instance, great, when you say you want the database to get the database in your own project, and then we use some Google magic to kind of have a secure connection between the app and the cluster and a database in a pod. 
+
+
+  \
+
+  Chris\
+
+  Okay, cool. How does that work with testing as well then? Do you, do you have any, I mean, what levels of testing have you implemented in that? 
+
+
+  \
+
+  Audun\
+
+  I do focus a lot on testing. There's this incredible article on Martin faldo.com, not written by him, but someone else about microservice testing strategies, which kind of says, you need to test your own thing in isolation, because when everything moves at different speeds, you can't really depend on a shared environment, because even though you have like your dependencies are your dependencies on the cost, you don't know if the same version of dependency are in a test and in production. So, so basically we need, you need to test your code in isolation and rather have good monitoring and stuff to make sure that you pick up if something happens in production. I always say we chart out kind of a normal test pyramid with loads of unit tests and some integration and test. Basically the top level is the component test, which is what you're going to deploy. 
+
+
+  \
+
+  Audun\
+
+  The new mock out the dependencies, instead of at least aim for two Mako, depends is instead of, depending on someone else's code in the shed testing mom. 
+
+
+  \
+
+  Chris\
+
+  Do you do any sorts of integration testing then where it's, whether it's a shared environment or do you, are you purely relying on, on those sorts of mocks? I mean, cause at the same, there's so much to community coordinate here, there. 
+
+
+  \
+
+  Audun\
+
+  Yeah. Most of them Oxford a pattern in that article. I mentioned that we haven't, we try to do is kind of have some other tests that basically test your assumptions about the dependencies. If you depend on the service instead of having your code or your app, depending on that test, you create a separate test that calls the code you want to depend on and see if that behaves as you think, then it kind of, you isolated your assumptions about the other code into a separate test, and then you can also do stuff like consumer driven contracts, which is where it can have your test running in the other person's repository. There's loads of techniques I think you can use without actually having a shared test environment. 
+
+
+  \
+
+  Chris\
+
+  Yeah. That's really interesting. That something, is that, how, how did you come to that conclusion? How did you develop that? 
+
+
+  \
+
+  Audun\
+
+  Well, I think it kind of came over time because we saw the same at fin. We started with multiple test environments, but when you have that many applications and you still have some dependencies, you see that the shared test environment with everything it's, it takes so much time to coordinate having a shared test environment that actually works. Basically it's more work than it's gained. You realize you have to do other, you have to test it in other ways. At least if you can isolate your team stuff. You test everything, you have a test environment for your teams applications, and then the mock up the stuff from the other teams, that's a big help because at least at Finley, we had this rule that you can't complain about other people's applications in a test environment, just not being stable because it's a test environment, then you can't really expect them to be stabled because that's production. 
+
+
+  \
+
+  Audun\
+
+  Maybe you should try to, for instance, you speak toggling or something to get their code into production and see if it works there and stuff. If it's. 
+
+
+  \
+
+  Chris\
+
+  Yeah. Speaking about the production side of things, do you do any coordinated load testing and if so, what sorts of environment would that be? 
+
+
+  \
+
+  Audun\
+
+  No, we have very low testing, but low drill. Isn't a big problem for us. I am a bit when I worked for Finley I'd like, which is of course now Noah's biggest website we have of traffic and nob doesn't really have that much traffic. So the traffic part isn't as important. We have, we have some, I think some teams do some local load testing as a signal that I've made new apps and stuff, but it's nothing big coordinated on the load. 
+
+
+  \
+
+  Chris\
+
+  Side. Most of the traffic where you're talking with Finn, 
+
+
+  \
+
+  Audun\
+
+  I'm not sure I have the numbers in my head, but it's nothing even close to. Like at fin we have several hundred page views a day or several hundred million pages of it. And there's nothing calls up now. I I'm, I shouldn't have the numbers in my head, but I know, 
+
+
+  \
+
+  Chris\
+
+  Well, weren't necessarily going to talk about fin that much where we, so you're excused for not having the numbers to hand, but in that environment, was that something where you did have to prepare for low tests and if so, how did you deal with obviously your thinking has evolved over time, but I think there's still a certain small pocket within our industry, which wants to have a scaled test environment. I'm curious as to what your thoughts are on that from based on the journey that you've gone through. 
+
+
+  \
+
+  Audun\
+
+  Well, the problem we find is also, it's incredibly difficult to get the proper load test on a big environment. I think because you need to have, you basically need to replicate their production environment completely. Some you need to have the data set up in the correct way as well. Yeah. I've never really seen that really work I've done. Like I said, I've done some smaller node tests, I think on some, on a few applications, but then I'm, haven't done much. I haven't really seen a big value of that either because, well, of course it's difficult that they're still broken in production sometimes because a load, because it's really difficult to understand how to load test. If you can move fast, it's often easier to either roll back or try some kind of staggered release so you can see if it works. 
+
+
+  \
+
+  Chris\
+
+  Where are you where you're at now then? I mean, we talked a bit, or you mentioned briefly about Promethease, so presumably you've then shifted your focus to making sure that you've got really good monitoring and alerting it's instead. That presumably, and I suppose if you can release it as fast as you can release, that gives you a, probably quite a reactive way of dealing with any issues as us. 
+
+
+  \
+
+  Audun\
+
+  Yeah. Of course there's not people strategies based on what kind of systems that if you have kind of the big logic applications, where if you have an error, people either get the wrong amount of money or no money. We have done more tests, but on kind of, we focus a lot on making the systems able to handle errors and also do really good observability on them. The last platform has this kind of default, the Grafana dashboard we get from communities because the interconnection between permit is incubators is really good. It's easy to set up kind of a standard dashboard that shows all the normal things. If you use two correct Java tools, you can get lots of Java or Kotlin, or at least JVM metrics as well into your dashboard really easily. Just having that as a starting point, makes it easy for the teams to see how they can build better monitoring after they see them kind of what you get for free. 
+
+
+  \
+
+  Audun\
+
+  Of course the goal is to make the look on the res abstraction layer on the monitoring. You, after a while, they start to more do business level monitoring, not instead of the interest department as a compliment. That's a much better way to see if it actually works because of the dynamicity of a Cubanetis environment is it's difficult to save something works on a person infrastructure because it's kind of self healing in a way as well. 
+
+
+  \
+
+  Chris\
+
+  Yeah, of course. In terms of like the number of books and actual issues that you have, is that a high count that you're dealing with? Is it a low count? 
+
+
+  \
+
+  Audun\
+
+  What do you mean issues? 
+
+
+  \
+
+  Chris\
+
+  Well, I mean, as well, that probably answers my question actually, but in terms of the number of books that you have with this amount of, of deployments, I mean, are you seeing a high count of them? You're seeing a low count, how many do you have to be to react to? 
+
+
+  \
+
+  Audun\
+
+  Well, we don't really have a aggregated view of that. That's one of the things we really, we're kind of really inspired by the accelerate book. We would love to have kind of the four key metrics from accelerate, but I, we do deployment frequency. I'm going to adjust about the release measurements for lead time. The difficult part is the one that actually has to do with errors because it's much harder. At least I find it's much harder to do an uniform way of detecting errors in an application. It's, if you want to measure meantime to recovery, you have to kind of see when this error occur and we haven't found a good way of doing that uniform the for applications. We don't really have a really good number for like Ben sprints. It's not an aggregated level. 
+
+
+  \
+
+  Chris\
+
+  So that's the next step is yeah, 
+
+
+  \
+
+  Audun\
+
+  We hope so. We just need to figure out a good way of doing it. 
+
+
+  \
+
+  Chris\
+
+  Interesting. I mean, one of the things that I want to go back to here is, you've gone, you've gone from zero developers to two to 300, depending on which developers you're counting. How do you go about finding developers for an organization that's never had any, or never had any permanent ones? I mean, how do talk to me about like, how'd you find the right developers? How did you find the first one? How'd you find the, to get the quality up there? 
+
+
+  \
+
+  Audun\
+
+  Well, I would say there's kind of two different ways. We had to basically invent the process of interviewing developers and we've gone for something which I think is I always thought that kind of the, at least for the big tech companies, the way they do it with kind of an algorithmic based, a smaller code task, isn't really that doesn't really tell you too much about how that person would work in a normal environment. First of all, because most of the tasks given doesn't match what they're doing. It's not like you pick these four tables from a database up on a webpage, which is like 80% of what everybody does. We have a, we do a co-taught, but developers can do it at home. It's basically more of an object-oriented modeling thing than kind of a complicated problem to solve. Of course the most important part of that thing is the discussion we have afterwards. 
+
+
+  \
+
+  Audun\
+
+  We focus a lot on talking about the choices you've done and why you've chosen these objects and not based on the volume of it like that. The only part how to get the people in this. We have this one big advantage, first of all, because now we're so big and we have so many consultants over time. Everybody knew, everybody knew about now. To be Frank, most people knew that working at Marvel as a software developer was quite bad. 
+
+
+  \
+
+  Chris\
+
+  Yeah. How did you convince them otherwise then how did you change that? That view that people might have our. 
+
+
+  \
+
+  Audun\
+
+  Big advantage. It was because everybody knew how bad it was just going out and saying normal things made them understand how much better it became. When we actually did some properly good stuff, like the application platform, which is really good, it's even a bigger surprise, but just saying, we want to reduce projects and focus on products and hire on developers. That's like, that was almost enough to get the word spread. Of course, being a public company, wages is always a problem. We can't pay as much as the people we hire as consultants, which is always difficult. On the other hand, it means that we have this thing. We say that people had worked for now that we, they choose to work for novel almost every week. Because the review, if you're on LinkedIn, you get calls every week. You basically have to say, well, no, I'm not. 
+
+
+  \
+
+  Audun\
+
+  I'm still happy where I am. And, and that makes for a really enthusiastic and motivated workforce. They will, they've chosen to work for now and they want to work for something that's at a good cost and not work for people. They don't know big coming richer. 
+
+
+  \
+
+  Chris\
+
+  Are you, or are all of your developers from Norway or the all Norwegian or do you have. 
+
+
+  \
+
+  Audun\
+
+  No, they're on the nose. I'm actually, I'm not sure if we can. Well, they're not all from the, but they'll live in another. 
+
+
+  \
+
+  Chris\
+
+  Right. Okay. So you do recruit globally then. 
+
+
+  \
+
+  Audun\
+
+  Well, we haven't fed that this will never had ads outside Norway, but the people that moved into Norway and that worked for us, and we worked because when it's this, all the laws are in Norwegian and mastering the line, which is important. We even call this kind of a mix of English. I'm a region, which is really strange, but it has to be that way because you can't really translate some of the, like the structure of the municipalities and stuff in Norway, you can't translate that into English. They go into the English, certified the mobile. You have, if you're using this app to have this list of what the words actually mean in the weeds, and then you can just to talk with no instance where no words straight into the code, that's it took me at least a year to get used to writing Norwegian words in the code. 
+
+
+  \
+
+  Chris\
+
+  That's interesting that let's, I want to know more about that. Norwegian words in the code, what extent are we talking here? We're talking a variables and comments, or, how far does it go? 
+
+
+  \
+
+  Audun\
+
+  I am variables and class names and everything that kind of comes from the domain. We've had, we have this discussion regularly because everybody, when there's new people coming in, I think poly con put Norwegian word in the code, but then they realized when they into that, you have really no choice, even though it feels strange. 
+
+
+  \
+
+  Chris\
+
+  'cause I was too, I was talking to some guys just this morning who w one Polish, one Ukrainian. Were talking about how most, most code is written in English, like, globally. I think that's probably because, all of the, all of the syntax is English, ? You're talking about norwegian in the code, you're still talking about, a vast percentage of that code is going to read like English because it's, Java or Kotlin or whatever it is. 
+
+
+  \
+
+  Audun\
+
+  And, and the strangest part is when you, for at least in like normal Java code, you have all these problems. Like when you do a factor, did you say a factor? Do you use the Norwegian version factor when you're referring to the taxiway pattern or the builder? We tend to have used English words for that. That like, and the reason word builder. Even you have mixed languages inside the same costumes, which is even stranger, and you really have to get used to it, to read it and understand it right away, 
+
+
+  \
+
+  Sam\
+
+  Kind of internal rules, then that you've all kind of agreed to that suggests like, okay, these types of things, we're going to write in the region and we're going to leave this stuff in English, or is it just. 
+
+
+  \
+
+  Audun\
+
+  Not global roof, but like team rules, at least. I get with two big jobs, like globals, for instance, the application platform is clear English because there is norwegian domain when it comes to deployments, stuff like that. We've had some, there's always someone who wants to have like this global rules and they try, and then it doesn't work. 
+
+
+  \
+
+  Sam\
+
+  Yeah. I was going to say as well, because I'm all right. I'm right. In understanding that actually this, a lot of this code was, is probably legacy code from consultants, different consultants coming in. Maybe there's a bit of, there's a lot to refactor there in terms of, okay, what do these different consultancies, how have they written code versus how do we want to write code and then how do you, well, yeah, I mean, it just sounds like a lot to try and get straight. 
+
+
+  \
+
+  Audun\
+
+  One of the strange smells they have in the code is sometimes you see like imports with consultancy company names in them, 
+
+
+  \
+
+  Sam\
+
+  And yes, 
+
+
+  \
+
+  Audun\
+
+  It probably made sense at the time, but it feels strange when they want to insource to kind of have be based on libraries from the consultancy companies, which are there in the more, or at least not in the same capacity or position. 
+
+
+  \
+
+  Sam\
+
+  What was so hard around what is so hard, sorry, around trying to align things globally with whether it's, whether you use English or Norwegian, but even simple patterns or whatever. What's have you attempted that. What's been so hard to make it not worthwhile. 
+
+
+  \
+
+  Audun\
+
+  I think we really, we valued the autonomy of the team because of the size, we have like a hundred teams. With, we really think that the best ways for team to create a good solution for problem is if they have like, not just developers, but to have all the different disciplines into the team. When you manage to describe a problem and for themselves to design the solution, that's when they get the good teams and the good solutions. So, but at the same time, we have this, as you say, there's a value in alignment as well. The, even though not necessarily on all the levels you can think of, I don't really care that everybody chooses the same programming language. That's something that should be a team, that team decision. I think so we have basically two things that to handle the alignment, to have their internal Tegretol. 
+
+
+  \
+
+  Audun\
+
+  We kind of say that dual is everything is allowed as long as you publish it. You can basically take whatever decisions you want technically, but you have to put it in the tech radar because then people will see it. If they think it's a bad decision, it's their responsibility to say so, and maybe they've tried this thing before or something. We have a, and one of the guy we're kind of the principal engineers with a fancy title, and we have this presentation, we'd go around talking to the teams about what we thinks are good patterns are good directions. We want the team to go to, but it's really important for us to say, this is our opinion with novice really had to Dennis, we can't really say everybody should do this. We can say, this is a good direction to go in. We can have a discussion with the team if that's appropriate or smart for them to do. 
+
+
+  \
+
+  Audun\
+
+  It's, so it's really interesting to balance the alignment and the autonomy. It's incredibly difficult, but also kind of fun. 
+
+
+  \
+
+  Chris\
+
+  I think this flavors of that you seen the likes of Netflix and Spotify as well. Cause obviously Spotify talk about that in their model, don't they with the high lineman side of things, and then Netflix have that same principle of context versus control where, there are some standard protocols that are supposedly followed with the Netflix, but they will allow you to go out as an engineer and pick a new language, pick a new tool and bring it back in and introduce that back to the base of the organization. It's a similar method that you guys have adopted them. Yeah, 
+
+
+  \
+
+  Audun\
+
+  I think, and it's probably easiest to describe it in terms of the application platform. I think Goldman, Spotfire also called it the golden path. Instead of saying, everybody should do this, you just make it easy to do it one way. You say to the teams, you can choose to do whatever, but if you do it like this, it's easy. If it go the other way, you have to do everything yourself. 
+
+
+  \
+
+  Chris\
+
+  You actually started on this journey, how did you go about, you're going from really a legacy stuff. How did you go about choosing the languages? You would start working with them. Cause obviously you've allowed that to drift over time, but when did you, how did you pick where you were going to start? 
+
+
+  \
+
+  Audun\
+
+  I'm not sure if this is a Norwegian thing or kind of a global thing, but in Northern most companies are kind of divided into the JVM or.net. 
+
+
+  \
+
+  Chris\
+
+  That's thing. 
+
+
+  \
+
+  Audun\
+
+  We we're basically the JVM camp, right? We had up until 2016, almost everything except for the mainframe Oracle things was Java. We had, we basically had what you described. We had some people who was really interested in Kotlin and they tried it on smaller parts and systems and it kind of grew organically. I would say now we write mostly Copland, but we still have most of the Java. 
+
+
+  \
+
+  Chris\
+
+  You didn't have any bursts of Scarlet for awhile. Cause that was very popular for a brief period of time. 
+
+
+  \
+
+  Audun\
+
+  Never Scott Scalise, Carla is kind of the only thing everybody agrees on. They don't want to, we can have good discussions. There's two things I can say. I'm in terms like the middle, they start discussions. That's either spring or not spring versus Grady. W we can, we basically, that's where we given up on the line, people just. 
+
+
+  \
+
+  Chris\
+
+  Which sides does, does the whole organization tend to fall on in terms of spring or not spring or versus moving? Just out of curiosity, this. 
+
+
+  \
+
+  Audun\
+
+  Spring thing is most that's kind of even 50, I think probably more, the more Caughlin friendly or the less spring friendly or, but there are teams doing spring and Copland together and on the Melvin gravy thing, I think it's very evenly matched as I I'm proudly in the grand cap. 
+
+
+  \
+
+  Chris\
+
+  Yeah. Where'd you sit on the spring fence? 
+
+
+  \
+
+  Audun\
+
+  Outside the spring. 
+
+
+  \
+
+  Chris\
+
+  Oh, okay. So you're outside of the spring camp. 
+
+
+  \
+
+  Audun\
+
+  I, I actually think it's not my decision to make for teams what to do because it depends on what they know, what they want to use. I think I've never had, I used to be a Java developer and I've never had an as easy translation into new lines. As I had the coupler Java is a really easy transition. I've had, I written some gold ones on Python lately, and that's a bigger step than going from Java to Kotlin. Well, if you have Java code on your clipboard, you can just paste it into intelligent and it kind of translates it into Copland. So it companies in that, 
+
+
+  \
+
+  Chris\
+
+  Yeah. I'm starting to get the impression cause I've been doing a bit of Kotlin development recently as well. I'm starting to get the impression that you need to have intelligence to do it properly. Cause I'm banging my head against a brick wall trying to do it in vs code. 
+
+
+  \
+
+  Audun\
+
+  Yeah, no, you probably, well, they didn't want to create to the language. So it's from easiest to do that. 
+
+
+  \
+
+  Chris\
+
+  Exactly. It seems like that, like every time I'm going through some of these tutorials and I hit the things where it's like, and now you just do this little thing intelligent. Well, okay. How do It? 
+
+
+  \
+
+  Audun\
+
+  There are still times when I've coupling that I think I've written good cotton. I meet some other like the proper Copland people. I realize I'm just writing somewhat strangely kind of Java instead of writing. 
+
+
+  \
+
+  Chris\
+
+  Yeah. Well I can write mediocre code in any language. So you know, 
+
+
+  \
+
+  Audun\
+
+  The easy, easiest language directly Dr. Cordon is go like, I think Golang is made for making mediocre. 
+
+
+  \
+
+  Chris\
+
+  Right? Okay. Well that's what I'm cracking out this afternoon then. Great. So, I mean, on the front end side, where do you, where do you guys sit? 
+
+
+  \
+
+  Audun\
+
+  Well, I, this is far out of my comfort zone. I, we do a lot of react I think. I also heard some teams do more view, but I'm not allowed to do fountain Colton. That's one global decision actually. 
+
+
+  \
+
+  Chris\
+
+  What did you do that ended up? What, what did you do that ended up with you being banned from Rosie? 
+
+
+  \
+
+  Audun\
+
+  Did this even happen? Before I started working at NAHB, I basically traveled down the, I used to be a backend developer. I turned into angry, bitter, backend developer. Going from that platform, developers kind of a natural transition because then you want to solve all the problems you've had during your career. 
+
+
+  \
+
+  Chris\
+
+  That makes sense. 
+
+
+  \
+
+  Audun\
+
+  I did some front themselves really . I have no talent and I'm, I have no it's it feels like I'm almost blind because the visual part of anything doesn't trust, I don't respond to that at all. It's impossible for me to say, if something looks good or if something's not alive, it just doesn't work. There's no point in me doing that and also do the front end stuff is also often kind of made you need to understand normal people and I'm not, I'm good at understanding developers. I'm not good at understanding normal people. 
+
+
+  \
+
+  Sam\
+
+  That's an interesting interpretation. That's a, yeah, I'll think about that. Whenever I meet someone who says their front end or back end. 
+
+
+  \
+
+  Chris\
+
+  This is probably why I fall more on the backend side and Samuel falls more on the front end side. I think maybe Sam's better understand them normal people than I am. 
+
+
+  \
+
+  Sam\
+
+  I think we've spoken about it before though. I think with react and with view, there is a lot of backend developers and a lot of backend kind of logical mentalities becoming front end developers because I know a lot of front end developers who are terrible at the design aspect. They still need someone to come in and help with things, but there's a lot more logic obviously now in the front end. So, you might want to try your hand at it and see how you get, 
+
+
+  \
+
+  Audun\
+
+  I saw I think something on Twitter or I can't remember, but they said instead of the full stack developer talking about the full stack team and that kind of makes more sense that you could have kind of this specialized role into where you work in a stack, but you need to have, you need a team to be able to handle everything. 
+
+
+  \
+
+  Sam\
+
+  As long as it's JavaScript and node. Yeah, 
+
+
+  \
+
+  Chris\
+
+  Well that was what I was going to mention actually, because obviously the front end stuff is crept into the backend in terms of being full stack, but it is largely with things like node. I think, there's Ruby as well, which arguably tries to play a fine line between being frontend and backend and then Python. I suppose with those three languages, they tend to bridge the gap. I think between more classically front-end things like pure JavaScript stuff or, where we came from with things like jQuery, I suppose, as frameworks and now react and Vue and angular and those things versus the backend, which has always been either hardcore JVM or.net as you mentioned, but what, where do you guys fit on? Well, actually, w from a personal opinion, where do you w what do you think of that those sorts of languages that sit in the middle, I suppose, node and Ruby and Python amongst others. 
+
+
+  \
+
+  Audun\
+
+  I don't have that much experience, cause I've never really crossed the divide into front-end too much in the last 10 years, but I feel that we hadn't since knew some people who really want to use like full stack node, but I, at least I've never seen that many of them. It's not been a big thing where I work and Ruby I've never worked anywhere where animals wanted to ride hardly. I knew Ruby. I have no experience with that Python, all this seems to come in from some kind of a group of people outside the main part now that they really want to pipe in family thing know. 
+
+
+  \
+
+  Chris\
+
+  Yeah. Yeah. Well, there's a lot, it's used a lot for scripting, isn't it? Especially in the world where you start to bring in a lot of data manipulation and obviously your data engineers and machine learning side of things, is that something that your teams are experimenting with? 
+
+
+  \
+
+  Audun\
+
+  Yes. We have new buildings, the things around the gypsy, Netflix, which is for me, it was kind of a big, I really struggled when I saw them at first, because it feels like kind of playground programming, but when you understand the thought processes behind it and understand why having this showing the data in the steps is really good for like ad hoc analytical work. For instance, it makes more sense, but I still think there's a divide there between having that for kind of exploratory stuff and then have to translate it into proper code when they want to have something running in production for awhile, because then you need kind of the robustness and the monitoring and the, 
+
+
+  \
+
+  Chris\
+
+  Well also the computational speed as well. I mean, there is a massive difference in terms of, I D I haven't done much benchmarking recently with the JVM, but on the.net side, those languages are so much faster than the, the, some of these, some of the more hybrid languages or the processing languages like node and Ruby and Python. 
+
+
+  \
+
+  Audun\
+
+  I really think there's a good, it's going to be a lot of development in kind of the intersection between backend programming and data programming, where you have kind of the, because I think the brains of the data people are really interesting. They're good at looking at the data and the problems in a different way, but they haven't had the same development in the tooling that the back end development has had been lost. The nurse. Now it's nobody ever makes an application without continuous delivery, for instance, or monitoring. You need to have, get into that for the data part as well, to get kind of the full value of everything that's happened in the software world for the last five. 
+
+
+  \
+
+  Chris\
+
+  Well, I think this is where you were heading before with the full stack team idea, isn't it? I mean, I think you probably have to, well, you still have to have the depth in one of those areas, really. You need to have a team that is made up of people who have that depth in, in the, in the right areas. As a collective team, the team more power than a team of just generalists. 
+
+
+  \
+
+  Audun\
+
+  Yeah. I think having analytical power in the full stack teams is an incredible strength because then it, can you get those mindsets into figuring out and making, being more data-driven basic in your decisions from day to day and that's something teams often forget, I think, 
+
+
+  \
+
+  Chris\
+
+  That something you've built into that we talked about the interviewing process briefly, is that something that you've built into the interviewing and hiring process as well, to make sure that you are building those full stack teams? 
+
+
+  \
+
+  Audun\
+
+  No, but that's actually a really good idea to have more of the data part. Also in the backend into some kind of merged those more together. We still have different interview styles for front-end and back-end sprints. 
+
+
+  \
+
+  Chris\
+
+  Well, you heard it here first. We'll have a, we'll have you back then to let us know how that went. You're talking about different interviewing processes though. I mean, how, I mean, I'm curious, cause I've been through a few rounds of transformation around hiring recently. How long does it take you to find somebody interviewed them and then actually return an offer to them? 
+
+
+  \
+
+  Audun\
+
+  Well, we're kind of there's laws in Norway about how the government can hire, which kind of slows us down a bit. But I think were talking a weeks. I think we gone from months to weeks, but realized when in the current market, when it do months, you just lose everybody because no one ever only have one offer, they have multiple offers and they normally can't wait for too long. So, so we have to do it. 
+
+
+  \
+
+  Chris\
+
+  Slimming down that coding test as well. Makes perfect sense. Because I think, again, some of that stuff, I've done extensive coding tests as, as a, as a someone who's hiring before. I don't think it really adds much at all. I think you probably, I don't know how it works for you guys in the government and we'd love to learn more about that, but I think you're probably better having a longer probation period and seeing how somebody behaves with unfit gels into a team and starts delivering stuff. I found that to be a better measure than can somebody solve an algorithmic problem, as you mentioned before in an interview, 
+
+
+  \
+
+  Audun\
+
+  I, I really think I, although I, I'm curious to see if kind of, because I've never done the algorithmic part kind of into, so be curious to see how that much is, how they code. Normally you don't have to balance a binary tree, which I've never actually done a professionally. 
+
+
+  \
+
+  Chris\
+
+  No, I don't think anyone ever has. One of my, one of my favorite questions was to, I like to do a lot of search related questions. I had a search question, which was, if you've got a bag of three different balls, can you sort that in a single pass or as close to a single pass as possible and seeing how people would go through it and I've done it. I have the last one of the last places I worked. I, I asked the questions to the developers that we actually had on the team. Funnily enough, the only person who could actually solve it was the product manager who so happens to be a, a PhD in mathematics. And, and he wasn't very good at coding and the, but the developers, it was interesting to see how they thoughts and how that actually interact, cause they were working full stack. 
+
+
+  \
+
+  Chris\
+
+  They were doing a similar microservices architecture to what you've got to what Fred designed cause I'm a big fan of that stuff as well. With dotnet instead of JVM, it didn't really have any impact on how they thought about stuff and how they programmed. 
+
+
+  \
+
+  Audun\
+
+  I have two different coding tasks to one smaller one, which is basically connecting to a number of APIs and showing the data. 'cause I always find that integration code is important. That's something almost at least back in developers, you have to do some kind of issues to be called at some point. And then yeah. The other part is a bit bigger than I've actually stolen this from some kind of guardian the newspaper called CAPA thing and get the it's like it's something to do with blackjack, the card game where you kind of have this small description of an algorithm for the blackjack game. We basically wanted to call that and then you have to model, you have to have the card and the player and the hand and the game. Normally it turns out into four or five different classes and testing everything I've done, just talking to the people about why did you choose this model instead of that, then what would happen if it did this instead of that. 
+
+
+  \
+
+  Audun\
+
+  Also the other thing is how will the people who go far overboard in complexity, which is more interesting than the other part. I think. 
+
+
+  \
+
+  Chris\
+
+  I presume that's the one that you give them a bit more time to respond to the, 
+
+
+  \
+
+  Audun\
+
+  This is like when they, we see three or four hours, I think of clothing in that. The important part then is how they talk about it. Also for instance, how they react to constructive criticism of the code to see if they can go into, if they go into defense or if they want to just say, well, this is a good option opportunity for learning because I feel that we need, when you work in a team, if you say this is my code, that's never going to work in a team setting, you have to kind of have our code and then you have to understand that other people might have better ideas than you. 
+
+
+  \
+
+  Chris\
+
+  I think it's quite a good idea, I suppose, to pick something quite, it's a standard, a game like blackjack where, even if you don't know it intimately. Yeah. The idea and the concept of it because that's very similar to the bowling Carto, which is that it's an uncle Bob one, I think isn't it for teaching unit tests. Yeah, I think that's, again, that's quite a good one to go through, but I think you're, you're absolutely right. I tend to focus more on a design question these days, because I like, as you're saying that, I like to see how people think about things and see how that, how they're responding to stuff. Also given new information, how they then change their design or you throw an additional problem at them saying, like, okay, say this, this thing that we've built, that we've designed as a website may be an e-commerce site. 
+
+
+  \
+
+  Chris\
+
+  What are we going to do? If we are all of a sudden receiving 10 times the amount of traffic, how are we going to modify it? Where are the bottlenecks going to be? I found that to be much more effective in terms of, determining whether someone thinks in the right way. 
+
+
+  \
+
+  Audun\
+
+  For senior people, they haven't somewhat like something like that as well. That's not a, that's something you just get into, you're kind of giving these requirements. What, what boxes do you want to do? Draw on your architecture diagram and why? Yeah, because that's kind of, so it's, I feel that's a very different skill, basically. 
+
+
+  \
+
+  Chris\
+
+  There's. 
+
+
+  \
+
+  Audun\
+
+  Not that much correlation between who does the one thing do then the other thing good. 
+
+
+  \
+
+  Chris\
+
+  Mm mm. Yeah. I think it's you from asking that question, you kind of know you, it allows you to place them in a, as, as to how senior they are because you, cause it's quite a good question because you can either go deep into the code or you can come out and be more abstract. Anyway, that's of a side story. Whilst we're on the idea of interviewing, like actually one of the hard things is interviewing people remotely. Cause were all, we're all remote at the moment. I presume you guys are still all remote as well. 
+
+
+  \
+
+  Audun\
+
+  Yes. We've been, we built a new office in 2019 or 2020. He was willing to open in the summer of 20, 
+
+
+  \
+
+  Chris\
+
+  20 hardly anyone. 
+
+
+  \
+
+  Audun\
+
+  Has ever been there, but we work almost exclusively remotely since 12th of March last year. 
+
+
+  \
+
+  Chris\
+
+  How have you managed to be able to do that remote working, especially with all of the XP type practices that I'm sure Fred brought along? 
+
+
+  \
+
+  Audun\
+
+  Actually, my biggest learning from all this is that pair from programming is better and more than in the office because some of the things that at least for me, I think for those people is tired. Somebody performing comes from the physical closeness and the fact that you can't even look at something else, it feels like you're kind of disappointing your partner, but when you have this, we didn't have it remotely and is share a screen. For instance, we mostly, you assume for this, it like it's, you can last longer pair from programming when you sit at home on you just share screen. Also it's easy to do like more programming. We do quite a lot of more than two people together as well. 
+
+
+  \
+
+  Chris\
+
+  Okay. You're actually moving up from pastor triplets, I guess. And, 
+
+
+  \
+
+  Audun\
+
+  Sometimes, and it's kind of, it's probably often correlates with where we are in the problem solving process when they're kind of early, you want more people in because then they understand the boundaries of the problem. It's easy to say, well, you to go to that and you to go to the, that, and then we meet again when they've kind of had a shared understanding on the base. 
+
+
+  \
+
+  Chris\
+
+  How do you coordinate that then? I presume you all start with a standup in the morning and then where does it go from there? 
+
+
+  \
+
+  Audun\
+
+  Yeah. Another really cool pattern I've seen is that we have, we use soon and we have this, what we call the lobby for the team that is one Subaru. There's someone responsibility to make a lot of breakout rooms every morning. Everybody meet in a big breakout room in a big disown room. They go into the different breakout rooms during the day and then come back for lunch. Normally they either to just continue with the left of the day before, or they have some kind of standup either, I think we've actually going to be, at least some teams have more like a weekly thing than a daily thing and a right. 
+
+
+  \
+
+  Chris\
+
+  Okay. They're still connecting, but they're still connecting each day to, 
+
+
+  \
+
+  Audun\
+
+  They kind of have three or four different things they work on during the week. This is not the bigger groups that probably would, you would call multiple teams. You could probably say they have like a weekly thing altogether. They have almost continuous coordination in the smaller group where they do load some mob programming. Instead, they don't really need to stand that to discuss what you're all going to do to get through after the standard. You can just start doing it and then you split out into pairs and you need to, 
+
+
+  \
+
+  Chris\
+
+  That's interesting. That a, that's an interesting evolution of the agile way of working then. That something else that's come from Mr. George? Or is that something that you guys have worked towards? 
+
+
+  \
+
+  Audun\
+
+  Did this actually come more naturally after we gone fill them out? I think we have more of a patient of parenthood programming remote than we did before we did pair programming, but this was more pure pair programming when Fred was there, when he kind of said, well, basically were rotated Paris everyday and at least did TMC see where, but I think we kind of gone from a far more different model after that. The funny thing is this model less spread into multiple teams, but I kind of do it the same way with the assume rooms and the mobile pay program. 
+
+
+  \
+
+  Chris\
+
+  Did that evolve naturally or was that a suggestion across the organization? 
+
+
+  \
+
+  Audun\
+
+  Quite natural, I think had that the other few people saying, well, we did this and this is smarter than some other people. Some other teams tried it. The only thing I'm worried about this disc kind of place this gun, the assume licensing model, it doesn't, this is a very cheap way of using Sims. Assuming someone is going to change this model at some point, because then you basically have 10 20 people using one license because they're all in one swim room with Becca. 
+
+
+  \
+
+  Chris\
+
+  Oh, we weren't telling to him, but I, I mean, I'm sure someone else will come along with a cheaper model that will work for this, because if this is a, I think maybe we are due a different way of working as agile is defined as 20 years old. Actually there's plenty of practices as we discussed, I think with Fred didn't, we sound leading into that. There was, there was plenty of agile like practices leading in, but obviously this is a new world we're in now. We're maybe doing a different iteration and the way that we work together in software. The one thing that stands out to me though, is if you're this flexible in your working and as long as the work is getting done, that's great. How do you measure the progress on that? How does that get reported back? 
+
+
+  \
+
+  Audun\
+
+  Well, this is one of the big problems, of course, because I've always found measuring progress is difficult in software. This it's difficult to say what you measure against it because normally want to measure against the plan. Made beforehand, but that plan stopped being sensible the day you started coding normally. You can, of course you can reiterate on the plan, but then you're just reiterating based on the knowledge you get whilst coding, but we have this external pressure might fit to be a word, but to have this external thing of the governmental waste and the processes for we get all this money and I need to make sure that we're spending it wisely and we will have load some troubled discussions on figuring out how to do the continuous improvement on the product model in a world where we also have external requirements on reporting progress. 
+
+
+  \
+
+  Audun\
+
+  It feels like sometimes it's, we haven't found a really good solution. I would say, I really liked this. This is quote from an Italian software, the guy behind event storming. It says that a cracking software is a learning exercise. The functioning code is just a side effect. 
+
+
+  \
+
+  Chris\
+
+  I like that. 
+
+
+  \
+
+  Audun\
+
+  If you really take that into heart, what does that mean for how you work? Because then you should really start to measure the learning, not the code because the learning is the difficult part. It's incredibly difficult to give an external measure on how much have we learned about this domain? It's, it's much easier to say, well, we're, we managed to handle 50% of all the applications for instance, but that might be the easy part or that might be the, all the difficult parts and you've done all the important learning. I think one of the things is you need to reduce the distance between the people who care about the progress and the team, and basically try to get, if the team are responsible, then athlete least in theory, you don't need anything outside the team caring because the team is actually the responsible party here. 
+
+
+  \
+
+  Audun\
+
+  Of course this is somewhat utopian and not easy to implement. 
+
+
+  \
+
+  Chris\
+
+  Well. Yeah, and I think it's also very difficult because if you've got commercial requirements, as well of this thing needs to be shipped by a certain date, or, say you're working with a client who was expecting a delivery on a certain date, then you're always going to have to return to estimates. I totally agree with you in terms of, it is a learning activity. The plans are off as soon as you start coding. That's I think that's where you kind of still have to be good at estimating or refining those estimates or giving enough of a, a window. I suppose the, we think we can do it within this time. The closer we get to the finish, the more accurate we will be able to tell you when it's going to finish, 
+
+
+  \
+
+  Audun\
+
+  You kind of have to do this from the start saying, this is an estimate, but read all these books about how estimates doesn't work before you get them again. 
+
+
+  \
+
+  Chris\
+
+  Well, half the half, the problem is explaining what an estimate is, I suppose, isn't it to the business. And it is an estimate. It is not a guarantee. 
+
+
+  \
+
+  Audun\
+
+  It's normally a banner that doesn't mean you can just say the earliest date is when the team has promised to deliver, which is kind of what it feels like. People hear all the time. Those, I think it's, there's still, this is probably the most difficult thing we do right now to figure out how to do agile product development in a world where we have external parties that doesn't really understand what that means yet, but they still have this processes they need to fulfill. 
+
+
+  \
+
+  Chris\
+
+  Absolutely. I think that's probably the next challenge, but not one that we're probably going to answer today. I think we're probably coming to the end now because I think we've, we've used it more than enough of your time. Thank you very much for, for spending the time to talk with us today. It's been a really interesting conversation and hopefully at some point when travel restrictions are lifted, we might actually be able to see each other in person at some point, which would be nice. 
+
+
+  \
+
+  Audun\
+
+  Thanks for having me as well.
