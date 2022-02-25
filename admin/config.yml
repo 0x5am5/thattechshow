@@ -107,10 +107,11 @@ collections:
     identifier_field: title
     fields:
       - { label: 'Title', name: 'title', widget: 'text'}
-      # - label: 'Related'
-      #   name: 'related'
-      #   fields:
-      #     - {label: 'Title', name: 'title', widget: 'text' }
-      #     - {label: 'URL', name: 'url', widget: 'text' }
-      #     - {label: 'Image URL', name: 'image', widget: 'text' }
+      - label: 'Related'
+        name: 'related'
+        widget: 'list'
+        fields:
+          - {label: 'Title', name: 'title', widget: 'string' }
+          - {label: 'URL', name: 'url', widget: 'string' }
+          - {label: 'Image URL', name: 'image', widget: 'string' }
       - { label: 'Transcript', name: 'transcript', widget: 'markdown'}
