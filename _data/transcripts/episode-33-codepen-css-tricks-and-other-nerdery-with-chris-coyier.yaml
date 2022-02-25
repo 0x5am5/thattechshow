@@ -1,0 +1,1097 @@
+title: Episode 33 - Codepen, CSS Tricks and Other Nerdery with Chris Coyier
+transcript: >-
+  Chris Coyier\
+
+  Hello. I am Chris Coyier co-founder of a social development environment. We call code pen and I've been writing about web design and development for a long time. CSS tricks is a kind of a blog and video site, kind of a community site around all that stuff that I've been running for a long time. I have a podcast myself as well called shop talk show. 
+
+
+  \
+
+  Samuel\
+
+  Nice. We'll get into all that. As you've rightfully said, you've been in it for a long time. Our job here is to try and talk about some stuff that you haven't spoken about, or they haven't delve into within the world of development. So let's try. Are you ready, Chris? 
+
+
+  \
+
+  Chris Coyier\
+
+  Yeah. I'm so I'm so ready. It sounds like you all come from a, like a do agency work more than I have. That's a, always a fun one to think about is I don't, I never really lived in that world. 
+
+
+  \
+
+  Samuel\
+
+  Chris and I, we we've done agency work and we've run our own companies all the rest of it. So let's just see how that goes. But, but my first question, I wanted to go, right, for the jokey though, with this one, how is CSS still relevant today? 
+
+
+  \
+
+  Chris Coyier\
+
+  Well, I mean, I can take it at the surface level and that it's relevant because there are no alternatives. It's the only way to style things on websites. There's not even anything gunning for it really. I mean, there is things gunning for the web as a whole, there's a kind of an eternal battle between like, we'll native platforms when, because certainly you can make apps for mobile devices that don't use any web technology. They use, the proprietary tech behind those platforms. That's an interesting battle, but if you're talking about building something for the web, that's literally the only language for styling things is CSS. You kind of have no choice to learn it. There's abstractions, there's tooling on top of it, but it all ends up in the browser as CSS. And that's kind of cool. I lucked out in a way having a website that's has that in the name, although, the site CSS tricks is in a sense terribly named. 
+
+
+  \
+
+  Chris Coyier\
+
+  It's not, I like to write about CSS tricks, don't get me wrong. Like I've a good old CSS trick, all, get me going for sure. It's been long since that's all we do. It's really just a site that just talks about building websites and the world around building websites, mostly from a front end perspective, although these days that's, what does that even mean? The lines are getting pretty blurry in the world of what's front end and backend and what anymore, but yeah, CSS, the language is entirely relevant. 
+
+
+  \
+
+  Samuel\
+
+  Yeah, I totally agree. I guess I've met a lot of engineers and developers. Who've had a weird, strange relationship with CSS. A lot of them don't like it, people, they don't like CSS and which is kind of weird and probably get into this idea of front end, being a very UI designery type of thing, way back when in the nineties, in some more of an engineering role now. I find a lot of engineers that they're resorting to using things like tailwind and bootstrap and all these libraries that basically inevitably help them avoid writing CSS. And I'm just super curious. One, if you've experienced that yourself and where this has come from, really this idea that I just know tons of people who just do not like writing CSS. 
+
+
+  \
+
+  Chris Coyier\
+
+  I mean, certainly if you are on Twitter, you've heard those battles. I mean, if it's probably the top front end development battle is, or the thing that bubbles up to the surface so often is exactly how you put it. People just one little tweet about somebody not liking CSS and it can turn into a, to a whole ball of worms with them getting dunked on for even having that opinion, which feels silly. It feels like there's a lot of, for lack of a better word, sensitivity on both sides of that, that it's, it feels silly to me after you've seen that fight play out 15 times, but there's the squabbling. And then there's like reality. Like there is a lot of, like, as you say, there's people that, for example, reach for tailwind, and I think you put it as a way to avoid learning CSS. 
+
+
+  \
+
+  Chris Coyier\
+
+  I think there's a little, some truth to that, but that you're useless in tailwind if you ha if you don't understand CSS at all, but what I think it offers is some guard rails that CSS doesn't, I think I heard somebody describe tailwind specifically as, or in the, like the utility library approach as like bumper bowling for styling websites. Cause you get, there's predetermined sizes, there's predetermined colors. There's predetermined layouts. You pick from these, whereas CSS has no guardrails at all. You do whatever you want. Right. I think the appeal of it is that like, if I use these predetermined things, how that page is going to end up is maybe pretty nice. It's going to feel cohesive with the rest of the thing that I'm building and that's appealing. It's almost more about those guard rails than it is about the syntax and usage of the tool that you've picked. 
+
+
+  \
+
+  Chris\
+
+  W why is it you think that nothing's challenged CSS? Cause I'm, I mean, this might be a silly question. Cause like you could ask the same question about HTML wise, nothing challenged HTML, but again, it all compiles down to that, but why is the not being any challenges in the last what, 30 years almost. 
+
+
+  \
+
+  Chris Coyier\
+
+  Yeah. A long time. Isn't it? Wouldn't it be cool to see, but yeah, not even a whiff of one, I don't think. In fact, the rare glimpses of a whiff I've of them, they're almost like comedically bad. I think part of it is because it's a super, super hard problem that there's no incentive to do much about like what we have, especially lately has gotten so good. That's like, it's not worth throwing away. Especially once you've gotten to kind of dig into the details, like what could you do better here? I think it would be hard to do better than CSS is already doing. Like, it's a pretty good language. It's pretty powerful. You can do a lot of stuff with it. What's the incentive for doing it. It's almost like the browser itself. It's like, why aren't there browser start-ups, there's forks of existing browsers. 
+
+
+  \
+
+  Chris Coyier\
+
+  I mean, you can look at stuff like brave or whatever. That's like a, basically a fork of Chrome that adds additional features on top of it. I think that kind of thing is make, has potential to be a business, but to write a browser from ground up, why there's none, that's like the what's the business model they're already all open source, so your model could be closed source, but then like you're not benefiting then from this big open source model and browsers are so complicated and the security is so paramount to the it's just like, there's no incentive to do it. There's no incentive, it doesn't get done. 
+
+
+  \
+
+  Chris\
+
+  Settled down a bit as an it really, since Chrome came out, I guess, there were browser wars for a long time, but I think everything started to settle down. Don't you think it's crazy that there's, were still using all of these languages 30 years on, I mean, I know there's frameworks and things that are, that have been around, but those languages were written really quickly. Like wasn't Java script written in like nine days. 
+
+
+  \
+
+  Chris Coyier\
+
+  No, I think that's the legend. Yeah. I don't know all the details, but they haven't just stayed how they were though. I mean, certainly there's some things that are, have lasted the time, but I would think the JavaScript and HTML and CSS, their very first iteration bare little resemblance to what we do in C today. Although I say that and it doesn't mean that the code written then is broken. That's the webs, perhaps one of its best strengths is that it's rarely to things break the backwards compatibility of the web is incredible. It's way better than any library. That they've just introduced, breaking changes all the time. That's the incredible power of the web is that it's been taken so seriously throughout those 30 years about not breaking old stuff. That's why, when things come up that do potentially break things, people get mad, I get mad. 
+
+
+  \
+
+  Chris Coyier\
+
+  I'm like, what, there was Kurt Buffalo, just the other week of Chrome and that they were just leading the charge on it, but everybody agreed to it. By everybody, I mean the different browser vendors that they were going to deprecate, alert and confirm and prompt and JavaScript, you see that. Yeah. And, and it was, they just rolled it out, but they rolled it out for cross origin. I frames, which is a very, it's kind of a different thing than just deprecating the functions themselves. To me, it affected my life just because code pen works through cross origin, NY frames. My opinion on it was wider than just code pen. It was like, holy cow, this isn't just, there was like no communication behind it. It literally breaks things because like, for example, confirm when you call that function in JavaScript, depending on what button the user clicks, it returns true or false. 
+
+
+  \
+
+  Chris Coyier\
+
+  That's a logical gate and software. You can write software that does different things based on the result of what gets returned from that function. If that function just does nothing and throws up a console warning that says, sorry, that thing doesn't exist anymore. You've literally broken that software. Google themselves has all kinds of examples in Google software that require a confirm to do things, saving settings, deleting things and niche software. It's like, you're literally breaking the web. If you do that. Part of the conversation, it only became unearth later that the intention of all this is literally to deprecate them entirely, not just for cross origin iframes, but to do. It's just, the communication was bad, but whatever that is, like, I feel like people should, could, should would whatever, be up in arms about this, be like this needs to be a much more nuanced, larger communication, a lunch, slower time frame. 
+
+
+  \
+
+  Chris Coyier\
+
+  It just should be handled a lot more because of that, because you can't just break the web. If we start behaving like that, where the web literally just throw it away. We've, we've lost then if that's how we're going to treat the web, , 
+
+
+  \
+
+  Samuel\
+
+  Why do you think people struggle with CSS? Because we've spoken, from my experience, I've mentioned that a lot of people resort to these frameworks and things like that because they don't want to write CSS and maybe they don't understand enough about it because you can write center, align class or whatever that is. All of a sudden it's got flex and justify and align content all the rest of it. Why do you think people do struggle with CSS? It, is it a paradigm of the way it's scoped or anything like that? 
+
+
+  \
+
+  Chris Coyier\
+
+  It's probably part of it when you think I like that way of framing it, that it's the scope. There is no real scoping and CSS. Not yet. Not really. If you type P and open curly brace, closed curly brackets, it's going to select every single P on your entire website. No, you know, no exceptions, really. It's like that global nature of every single selector is global. The only scoping and scoping you bring to it by writing selectors, that match less of what you want. I think that can be perhaps the paradigm was your word there. That that's different than a lot of other languages where we're scope is very much like part of the game. Like you have a function scope and Java script and all those variables, they just stay in there, and CSS doesn't have that. There's also this really visual nature to it. 
+
+
+  \
+
+  Chris Coyier\
+
+  It's almost like, are you, I'm a little afraid of painting. I can't just go up to a canvas with literal oil paints and make something happen. I just don't have any aptitude for that at the moment. I think maybe that's similar to CSS. I happen to know those tools well enough so that I can approach a blank canvas in CSS, but only through lots of practice. Does it feel good using those tools to kind of paint a screen? There's, there's some aspect of that, it's different levels too. I think the F absolutely from scratch CSS work is a little different, can you that, like that type of CSS work, that's like, here's the comp in Figma, check it out. You have nothing. You have no HTML, you have no CSS, nothing make that happen. That can be like extra daunting that's like, I don't even know where to start. 
+
+
+  \
+
+  Chris Coyier\
+
+  How do I even think about this? Like that is different than theirs. Now it's done. It's been in production for two years. What I really need to do is make like a variation of this card component. I think that's easier that there's already this existing structure and tooling setup, and I can kind of copy and paste a few things or change some existing settings that type of CSS work is like less hard, but you're right. It is interesting to dig into that. Like, what is, what makes people feel so viscerally against it? There's like a joke, a Twitter joke. Thomas Fuchs, I think did it first where I want to CSS walks into a bar and kicks over a bar and the bar stool falls over in another bar or something. Oh, I just slaughtered the joke. The idea was that you write, you write one line of CSS and it has these consequences that you just had. 
+
+
+  \
+
+  Chris Coyier\
+
+  You just were like, why did that happen? Oh my God, it feels so illogical. That era we'll simmer down over a while. It used to be, it would be more understandable. The Hayden CSS, because of how many like hacks there are for it and the hacks where the right word you're doing things that you just had to do, even though that's not why it was designed. You're using whatever clear fix hacks and stuff, just so that some columns didn't collapse on each other. Whoa, that's just, you just had to know that you had to just be taught this really weird thing. It's like, it's like, oh, you gotta go over to the jute box and hit it with your hand in order to make it work. Is that kind of crap. CSS has evolved a long time since then. I am most developers entering the field. 
+
+
+  \
+
+  Chris Coyier\
+
+  Now aren't floating columns next to each other to make it they're using Flexbox and grid and stuff, because that stuff is universally supported these days. And it's much more learnable. It's like, it has evolved the system of like, you can teach this and it makes sense as a sensical system. And it gets better all the time. I mean the much newer than things like Flexbox and grid are logical properties that these ideas that this is the top of the box. It's called block start, and this is the bottom of the box and it's called block end. And those things don't change. When, for example, the writing mode changes left, doesn't turn to right. It's still just the end of the block. Like these types of logical things that have happened, that if you didn't come up with them might feel a little weird and they do to me still. 
+
+
+  \
+
+  Chris Coyier\
+
+  If you learned that from scratch as part of the system, you'd be like, oh, that makes sense. 
+
+
+  \
+
+  Samuel\
+
+  I, when you said CSS tricks, I was like, it hacks as the first word that kind of came up and probably has Nick and Chris's questionnaires. Was that the kind of impetus behind CSS tricks is this idea that you wanted to showcase these hacks or help people because it was a lot of hacking around, do ? 
+
+
+  \
+
+  Chris Coyier\
+
+  Right. I don't think I was afraid of hacks like that. Would've been a good post is to be like, this is how you do, but I think I was more interested in and still am the outcome. This is what you need to get done. This is what you got to do it. I'm not on purpose, focusing on the hack. In fact, I'd prefer to show somebody how to do something with no hacks. Just like this is how you do the thing, because there is plenty in CSS just doing things the right way. That's still very weird that you just need to know. I mean, just you just yesterday, I was working on a blog post about custom properties, which are relatively new in CSS. It's like a variable, you set these variables with two dashes in CSS, and then they can become whatever value you want to give it. 
+
+
+  \
+
+  Chris Coyier\
+
+  And it's interesting. There's lots of things you can do with it, but there, I think it's still shaking out how best to leverage them in systems. I think right when they came out, I was like, oh, I'll, I'll put all my colors in this. Then, and that means I don't have to use SAS for my cause. That's all we are using Salesforce colors or something like that. That's like level one stuff. Right. And then it gets more complicated. Like what can I do with media queries with these things and how can I use them to like leverage variations of my components and best practices of authorizing and then there's, there's quirks. So what I was working on yesterday is I noticed, people running into this problem with custom properties of how and where they're declared and it was in, it was just, it doesn't, it kind of breaks your brain, how cause variables can have dependencies of other variables and it all gets complicated rather quickly. 
+
+
+  \
+
+  Chris Coyier\
+
+  And so I just wrote that up. That's like a prototypical post for CSS tricks and the blog, but it's not even out yet. It might not be up for weeks, but it was, I called it like the big gotcha. With CSS custom properties. That's a perfect post for my site. Cause it's like, it's not really a trick. It's just something you need to know about CSS. Yeah. 
+
+
+  \
+
+  Samuel\
+
+  With, I mean, you mentioned it's not just CSS tricks, you do tons and tons of stuff on the web, basically. How are you, how are you staying on top of things when it comes to cause obviously a lot of people would look to CSS tricks to be the first one to really cover some of the latest stuff that's going on. How do you stay on top of things? Is it through Twitter? Is it just experimentation or. 
+
+
+  \
+
+  Chris Coyier\
+
+  Yeah, , and just the fact that I have the site puts me at kind of a conversational center around this stuff. Sometimes it was having to get emails from people asking questions about stuff and guest authors, trying to write about new topics and stuff. I, it's a hobby of mine anyway. I stay on top of it cause I find it entertaining to do so. I subscribed to a ton of RSS feeds from other people's sites. I wouldn't say that we're on the cutting edge. We're not like breaking news for web dev stuff. If anything, we're, we're quite slow behind. I, it takes me a minute to wrap my head around what the thing is and whether it's worth covering or not, and finding an author to write about it and all that. We're not certainly not cutting edge and nor do I care to be. 
+
+
+  \
+
+  Chris Coyier\
+
+  It's not even the most important aspect of my career really. In a way it's just a big grownup side project. 
+
+
+  \
+
+  Chris\
+
+  I was going to ask how, how important it was because your site comes at the top of the list when you're just trying to work your way through a web project. I think generally that it could be on any topic it's not necessarily going to be on the cutting edges. It's usually going to be some technology that's three or four or five years old. Really. 
+
+
+  \
+
+  Chris Coyier\
+
+  Yeah. We're really lucked out that way. The, a lot of this content through not for, not necessarily planning it to do that, what ends up kind of evergreen because the web is kind of evergreen, it doesn't change all that much that some five-year-old article about how to do something on the web. That's still how you do something on the web, less. With articles that are heavy on frameworks, if we had a, I'm sure we have some articles that like use MooTools or whatever on CSS-Tricks to those are the, those have value to developers anymore. Not really. 
+
+
+  \
+
+  Chris\
+
+  To the people dealing with legacy. I'm sure it does, but you, your science is definitely up there with, stack overflow, I suppose as well, in terms of like, in fact, actually there's links across the web between CSS tricks and stack overflow and code pad actually, ? I think you were kind of in there in the developer resources you kind of right in right front and center. Yeah. 
+
+
+  \
+
+  Chris Coyier\
+
+  I mean, that's nice that stack overflow has, this is just a side, but the, sometimes you'll answer a question on stack overflow and the best answer is like, can you show me, can you like prove it? Like how do you format this date in a certain way or something, the answer that you need is code, but it's more satisfying to see the code actually working than it is to see code that you have to copy and paste and then hope it works or something, or test it yourself to see if it works. That, I think that's what you mean is that there's answers in stack overflow that are just a link to a pen and then they banned it is the side. They said, you can't do that anymore. They really, yeah. Well, Hey, they built their own little thing. If you need to execute some Java script in there, which is fine, like it's not a full featured app, like code pen is, it's just a little thing to like execute your code. 
+
+
+  \
+
+  Chris Coyier\
+
+  You can do it in that. Or you can just use your words with the answer and linked to code pen. It just can't be just a code pen link. That's like, that's, what's been, 
+
+
+  \
+
+  Samuel\
+
+  Why is that? Is it a security thing? Or just, they just want to use their own. 
+
+
+  \
+
+  Chris Coyier\
+
+  I think that the content is what matters to them and rightfully so, like they need their what's valuable to them is this massive database of actual answers. If the answer is there is no answer when it's just a link to a third party website, like what if code pen goes offline? What if it's a sold to somebody that they consider a, uncouth or a gnarly competitor or something like that? Now the answer is gone from them. And the answer is, yeah. I just think they want to own that answer, which is fine. Like I'm not, I didn't bring this up because I'm salty about it. I think it's, it's interesting. And it's valuable for us. I mean, the fact that anybody would use our app to answer a question on some other website is just cool. I'm down with that, was that the. 
+
+
+  \
+
+  Chris\
+
+  Plan when you started out? I mean, is it. 
+
+
+  \
+
+  Chris Coyier\
+
+  Evolved into that? I mean kind of, yeah. Cause that's what makes the elevator pitch for CoBank kind of hard is that's, that's a thing that you can do. Code pen can be a little place to write some code to answer somebody's question, but that's like not good enough, like that's not really a particularly ambitious startup investing worthy plan. I don't think so, but that's not the reason if you build an online editor, that's one way that you can use it another way you can use it. As let's say, you're an artist, you're a code artist and you just want to use it because, you just whatever, prefer the social features of code pen, for example, because we, when you build something on code pen, it's all like any other social network, people can comment on it and like it, and we track the views on it and clicks and stuff on it. 
+
+
+  \
+
+  Chris Coyier\
+
+  We can make it part of the grand algorithm of code pen and make sure that it's surfaced higher in search results and things like that. So, so if you're an artist, why wouldn't you use this? Because then you get some of that, whatever that dopamine available to having your work be provably seen by others. That's fun, but is that enough to, those are two very different things, but other people, coworkers use it to pair program together to suss out a problems. They like the little isolated environment or people use it to literally build little websites and deploy them as we have that as a feature. There's all these little things like once you have a code editor in the browser, as we do the equation of what people want to do with that is a little wider in scope. And I think that's fun. Cool. 
+
+
+  \
+
+  Chris\
+
+  That was the plan when you came up with initially, like, was it all of those things or did was it a small idea that's turned into this big thing, 
+
+
+  \
+
+  Chris Coyier\
+
+  Mostly that it was, I already had CSS tricks and like stack overflow. What's satisfying when you're reading something about tech, like how do I do X? The most satisfying answer is to see it be done. How do I do tabs in react or whatever. I want to see an actual example of it. I'm not just going to like trust your code dump, right? The way that I did this from day one for many, many years, was to author demos locally on my computer, just an HTML file. I'm just going to make the demo. I FTP it up to the server that serves CSS tricks and I put them all at slash examples. It would be like slash examples slash rounded tabs or something. I would link you to that HTML file to see the demo, which was kind of just tell you did things back then and be like, here's the demo. 
+
+
+  \
+
+  Chris Coyier\
+
+  I can from the blog post could link to that demo and you could see it for real. Maybe I could even, I frame it like throw a little eye frame in the blog post that has the example in it. That way I don't have to like embed the raw HTML on the blog post, which probably isn't going to age well. There's some, some issues with that type of CSS scoping to bring it back to the original conversation. Anyway, what I wanted was ways to put those demos in a less jenky experience, because I also wanted to like put Google analytics on them. Cause I wanted to track how well they're doing. I wanted to put some branding on the demos to say, this is a demo by CSS tricks and maybe even a footer or something. What I ultimately did was do with PHP, each demo was like demo dot PHB so that I could have includes at the top. 
+
+
+  \
+
+  Chris Coyier\
+
+  My, 2000 demos on the site could all have, if I needed to update the logo, I update it in one place kind of thing. I was slowly building like my own little demo app, but just terribly, and then there's other apps that came along that predate code pen, like JS fiddle and JS bin that are similar to code, been their hot little online editors for making a little thing. I was like, these are freaking great. This is the way you should do that because they, then you can link over to it. You're doing this thing that seems obvious today, but wasn't at the time, whereas you're looking at the code and the demo at the same time, like that was new at one time, that concept of let me look at the code and the output together and those apps kind of innovated it. I was like, I want in on that. 
+
+
+  \
+
+  Chris Coyier\
+
+  So, so I had this kind of moment where I was like, should I move all my demos to one of those? Should I pick one, just move all the demos over to it because not only can I link to that and it's a more satisfying experience for all the readers because they see the demo better, but they also have a feature where you can embed it right in the blog post. And, but, or maybe they didn't learn it, maybe that came later or something. My big idea was it feels like a lot to trust one of these editors that have no discernible business model for one thing, to put all my stuff, because what if I move thousands of demos and do all that labor and they close or something like, f\*\*k, like that's no good. I was like, I'm going to build my own. 
+
+
+  \
+
+  Chris Coyier\
+
+  Like, especially at the time I'm a front end guy, mostly I don't think I've ever once hand architected the data model of a, my SQL database, like ever. Like, it's just not my thing. I can think about it. I could probably participate in a meeting and, be part of a team that thinks about those things, but that's not my expertise really. I rope in some friends to do it, like how hard can this be? At the time Ruby on rails was the hot framework and it was known for being able to spin up crap like that really fast, y'all, you need a little credit thing sure. Credit up. They helped me spin up that and we do pretty simple processing. We, we, we put a code editor one side that, in what we wanted to offer of course is some above and beyond just writing HTML, CSS and JavaScript. 
+
+
+  \
+
+  Chris Coyier\
+
+  SAS is of course a very popular CSS. Pre-processor, it'd be nice to be able to write in the SAS, wouldn't it and see the result of that SAS. There was some pipelines for code processing behind the scenes, but ultimately we smash it all together. We plop it in an I-frame and we show it to you. I just wanted to build the simplest version of that app so that I could put all my demos on it, know that I can trust it because it's mine. And then put those on CSS-Tricks. We called a code pen from day one. It was, were thinking maybe it's just like an open source thing that you install wherever. It'd be like CSS tricks.com/code pen or something would be it's little local install, but other people could install it as well. But there was like enough challenges. I can't remember exactly why we didn't do that, but we ended up, or maybe were planning on it, but we put like the canonical1@codepen.io, just like, Hey, we'll put, we'll put a demo installation of it here, but then it had a login system and all the, we started adding features to this thing and it started to feel like this should just, we should just have this be the app. 
+
+
+  \
+
+  Chris Coyier\
+
+  Like that's how web apps work. Right. The, where it became what it is today, even though, there's been a lot, a lot of journeys since then was this idea that we make it available. Anybody can sign in and do it. They were building stuff, but we didn't display what they're building. Anybody else. It wasn't exactly social. Yet. We built our own internal dashboard. That was like just a chronological list of every single thing that anybody made. It became fun for us to just hang out there, refreshing that page essentially, and seeing what people would do. And you're like, this is cool. You know? At some point we just like made that the homepage. Instead of it being this admin tool, be like, Hey, why don't you just have a list essentially, of what people are making, be the homepage, rather than the editor be the homepage, you click onto these to see what other people are doing. 
+
+
+  \
+
+  Chris Coyier\
+
+  Once that's the case, it's like, wow, we should add a love button. We'll know what popular ones are. It's like, oh, we should track views. Cause that's an interesting metric too. Hey, we should put a fork button. If you want your own copy of somebody else's code, then you just click the fork button and then you got one, you just start adding features like that. Pretty soon you got a little social network for code. 
+
+
+  \
+
+  Samuel\
+
+  Cool. I'm fascinated about Copane from a product perspective. Do you find that's how a lot of these features are coming around through just, Hey, we want a very organic way or are you a large team that has, user reviews use it? I I'm trying to figure out what the next feature is or is it very organic process? 
+
+
+  \
+
+  Chris Coyier\
+
+  Well, it was a very poor process for a long time. We even joked that it was, we did Twitter driven development for awhile. Somebody would, somebody would just be like, it would be cool this and be like, yeah, that would be cool. We just build it and we didn't, or one of us would build it. We wouldn't even really talk about it with each other and that it was fun for a while and not a huge problem. As an app gets older and you start basically questioning your life because you're like, this has been a significant piece of my literal life as a human being like these technical debt decisions, because somebody just put in a feature, they thought it was cool. Now I have to support for the rest of my life is these are like not, they're not a joke anymore. They're real things. 
+
+
+  \
+
+  Chris Coyier\
+
+  You have to like start treating them more seriously. You have to go through re architectures and, endless meetings of what can we do here to simplify this? It possible to kill this feature and what features have actual business value? They're not just little things and what features are obvious, but what features are really future forward-looking that changed the game. It was good. Ben, it's been around a while and there's, well, I think funny enough, those original apps like JS bin and JS fiddle, they're still around. They still do what they do. They're not that different than code pen, really. Although I think we do a lot of things cooler and better. They're not, world's different and it, but along the journey, there's been next gen code editors that can do things that code pen totally can't do. I don't think we're like the coolest kids on the block anymore. 
+
+
+  \
+
+  Chris Coyier\
+
+  As far as all the things that we can support. I like to think we do it fast. We're super reliable. We actually have a business model. We have a dedicated team. We have fast support. We have all kinds of like things going for us, but there are some, some hot kids on the block doing cool things. We need to be thinking about like, well, that's not cool. Like, can we, how can we, re leapfrog things, we're not interested in just sitting around being what we are forever. We have to make decisions about what's what works for us. What can, how can we take our experience and bring things to the next level? That kind of thing. Yeah, there's been plenty of bad choices along the way, and just have been painfully. 
+
+
+  \
+
+  Chris\
+
+  At what point did it start maturing then at what point did you start going, okay, actually we need to be a bit more serious and grown up about this and decide and prioritize those so features, 
+
+
+  \
+
+  Chris Coyier\
+
+  Right. Well, certain realities hit you in the face sometimes. For example, there was a, this is a number of years ago, but we could look at our revenue because we, code pen has a pro plan as, and we've had other minor business bottles, we've got a job board we've we run advertising, we sell merch, there's little pieces of the pie that make up the whole, but the biggest one is our pro plans thing. That always felt like the right way to go. Like I want to just make good software. I want to have a price for the software. People pay the price if they want it. That's the business model, that's the most kind of attractive business model to me for these things. We run ads partially because everything is public on code pen, and most usage of code pen is free. There's a lot of traffic for it. 
+
+
+  \
+
+  Chris Coyier\
+
+  Like you said, it's, it shows up in search results a lot. To like earn nothing from a free user, doesn't feel as right as running of advertising on the site and capitalizing on the high traffic that we have. That's nice maybe in a perfect world, we wouldn't do that because we'd be doing so well otherwise. Anyway, so we can look at our revenue, of course we can, we're a business, right. We can look at all the numbers and it's, I don't think anybody would salivate at the code Penn's trajectory over the years. I mean, just to be quite Frank, I'm proud of what we've done. We have a, a team of 10 now or nine, I guess, as of today, that's that was sorry. We didn't fire anybody or anything. So it's not weird. We actually gained one and we gained two nine, not 10, which is great. 
+
+
+  \
+
+  Chris Coyier\
+
+  We're hiring yay. But, but years and years ago, the problem I was alluding to is we could look at that in an generally it ticked up words and that's absolutely what it's doing now and feel great about that. There's a point where it not only got flat, but because of costs and fluctuation month to month, it kind of looked like if things are going down and when things are going down, things look that's bleak in a business like ours, that's, those are bad conversations because you can't run your coffers dry at a company. Right. Just be like, oh, sorry, we can't make payroll turning off the servers by like, you're ruining your career after that. Like, you'd be, you've lost trust you. Like you that's just extreme mismanagement and miss running of a company. So you can't do that. Right. Nor do we have any desire to do that, like we've always said that, should we screw up code pens so badly that it can't operate as a business owner? 
+
+
+  \
+
+  Chris Coyier\
+
+  We'd still find some way to never kill those URLs. We'd find some kind of static way of hosting them. That's cheap or find some sponsors, oh, we're not going to like turn code pen off ever, even if we really ruin it. Right. You're in that situation of things are going down, then you're like, what does disaster planning look like? How can we cut costs? How can we, how can we right this ship? That we're either going up again or that we've, we've slashed enough from this, that we've done enough disaster planning and acted on enough stuff that we're okay. Our runway is back to infinite runaways, where I like to be, we're making more money than we're losing. We're not a startup in that way. I'm not the, I'm not like hiring 15 people just to, just to burn through it super fast and either fail or we don't, it's just not my style. 
+
+
+  \
+
+  Chris Coyier\
+
+  Anyway, that's when things got real, that's when things are like, so when we're sitting around doing disaster planning, that's a sobering moment. That's when you need to turn things around or not, and that's been it's, I, I don't think we're unique in that a lot of companies have faced that and we've gotten through it a couple of times and our latest round, it's just been really positive. It's been a lot of we're really tech focused. Maybe to our detriment, sometimes we don't like solve problems with like, maybe if we did better marketing, that's like almost never what we do. We do, like let's change the product, in a way I feel okay about that. Just because of how high our traffic is. Anyway, like we have a crap load of people sign up for code pen every day. It's all over the place. We have these embeds, like I talked about, that's why we built code pens. 
+
+
+  \
+
+  Chris Coyier\
+
+  You put these embeds on CSS tricks, but Google uses it, the react docs use it. The view docs use it. Smashing magazine uses the MDN. You has it in places. It's like people see code pen. We don't have a lack of awareness of what code pen is. We have a lack of people that sign up for code pen, and then never choose to go pro. So to me, it's a product problem. To us, it's like, let's fix the product. Let's make sure that technical debt is at a minimum. Let's have a vision of where we want to take this thing and we'll get there fixing it along the way. And that's where we're at now. I feel just like this compared to three, four years ago, I've like have a happy ban when it goes, 
+
+
+  \
+
+  Chris\
+
+  I used on, react docs or view or design I've looked at recently as well. Use use Copen. D do they pay for that functionality as well? Or is that part of the freebie. 
+
+
+  \
+
+  Chris Coyier\
+
+  Pretty much? Isn't that sad? The problem is, we face certain competitions. Like they might use us because it's free. If it wasn't, there's so many code pen competitors that are, that would, they would just use one of those. It's one of those things where it's hard to, like it did come up. I mean, Google has this new course. They launched what it was a couple months ago now, maybe not quite, but it's called learn CSS. Now, if you type, learn CSS and the browser, you can go right to that Google course super well done. High five to the team that did that. There's over a, what was it? 200, 300 code pen embeds in the thing, guess who's got more money than God Google guests who should have probably paid, like it doesn't, it seem like I would think an adult looking at the situation would be like, what did you earn from that code pen? 
+
+
+  \
+
+  Chris Coyier\
+
+  Oh, it's nothing. Are you crazy? If I'm sure if weren't, if were like, I'm sorry, Google, that's going to be a hundred thousand dollars for you to use our service for that. They'd be like, well, we're going to use the free one then, I don't know. It's tricky. I don't, I don't know how to confront that. That's on our mind, believe me, but I'd like to make it that they choose us and pay for it because it's so good that it's the only choice to use. Whereas right now, I don't think that's the case. 
+
+
+  \
+
+  Samuel\
+
+  There not a way of, it's obviously having an effect on your server, the fact that they're embedding this code and is there a way of. 
+
+
+  \
+
+  Chris Coyier\
+
+  Yeah. Charge them for the bandwidth or what. 
+
+
+  \
+
+  Samuel\
+
+  Exactly is it? I mean, that seems like a logical way to go. If you will, if you're incurring costs because of the amount of traffic to their website. 
+
+
+  \
+
+  Chris Coyier\
+
+  That's exactly right. That's my favorite take on this is that there should probably be something in our terms of service or whatever that say like, yes, this is free accounts are fine. Put some caps on various things. We're not trying to limit how much you make when but we know there's already some limits there's limits of how much code you can put in one pen, because there's just some database constraints that make it, like, make it seem like that's fair play. That, I think there's like a two megabyte limit for any one particular file. It's the same kind of limits, but why not limits on bandwidth? We don't have one of those, you could put all kinds of bad. I mean, people that make fonts and sell them under different thing. They, they use it page views as a metric. I've seen a recent one where in their ULA thing was how many employees your company has. 
+
+
+  \
+
+  Chris Coyier\
+
+  That's how much you pay for the font. It scales up pretty high from that. Yeah, I mean, that would be smart. I mean, I just, at the moment I look at it as like, that's not, there's other lovers. I want to pull first. If they fail because of course we measure everything like businesses do, then it's not like we're out of levers to pull. There's still more, 
+
+
+  \
+
+  Samuel\
+
+  I was going to ask, like, you must get a lot of traffic from the react docs and various things like that anyway, to put a, to sweeten the blower when it comes to the effect that is having the, and all the rest of it. So it's. 
+
+
+  \
+
+  Chris Coyier\
+
+  Sure. And they're backed by Facebook. Yeah. Great. Another company that's not exactly poor, where we get a lot from them though is free code camp, which is a really cool organization that has this kind of open-source free code curriculum thing. They have a couple of moments during that curriculum, that point people over to code pen as part of their journey, which is great. We, and they just, I think the freeness of their thing, they just get a, just a ton of students rolling through that program. And that's great for us, 
+
+
+  \
+
+  Samuel\
+
+  Speaking of the future, then not just the moneymakers, but have you got any as co pen guy, any exciting features or anything lined up that we can expect and in the near future? 
+
+
+  \
+
+  Chris Coyier\
+
+  Hell yeah. You'd yeah. I mean, in a way we're kind of rearchitecting the world under the hood and it's going to take us a while to do it, but for the first time we have like a really what I think is a really cool, strong vision of what next gen code pen is like, and it's just going to do more, be more everything and be a bit more pro focused too. We're not in any way neutering what you get today for free on code pen, but there's going to be a lot more compelling and obvious reasons why you would want to go pro and that's the biggest, biggest thing in my mind is that there's just not a lot of like moments when you're using code pen where you're like, oh, I obviously should pay for this because I need this moment. There's just not enough of those. 
+
+
+  \
+
+  Chris Coyier\
+
+  That was kind of our big failing. So, and we're not failing we're, like I say that, cause I run the ship and I want us to be doing better and I want to grow and I have big dreams, but we're a profitable, happy functioning company. When I say failing, I just mean, what could we have done a lot better over time? I think is to have a lot more of those pro moments, honed in, on moments in the Software where it's like, oh, I, I can't do this. I have to upgrade to pro to do it. Oh, I'm happy too. That delivers me so much value that I'm happy to pay for it. I think the apps that do that really well, I have so much envy for, I came from one of the startups I worked at was called Wu Fu was an online form builder. 
+
+
+  \
+
+  Chris Coyier\
+
+  I was always so kind of proud of how that product came together. Cause it, the moment that you need to pay for it is so obvious. It's like, I need to make a form and the form can have X submissions and it has these X other features. Do you need more submissions than that than pay for pro? I always felt like a very fair cutoff point and it was so the value proposition was just clear as day. They got bought by survey monkey. So I went there for a while. It's the same way survey monkey is amazing and that they're there in every single vertical, like everybody in the world needs to make a survey, real estate and education and healthcare and everything. That's why it's such a, that's why they're fricking publicly traded. You're like, are you kidding me? This survey tool is publicly traded. 
+
+
+  \
+
+  Chris Coyier\
+
+  Indeed it is. Their value per position was so clear too. I think we just, we don't have that as much. There's a few uncode Penn today that I think are pretty cool. There's the, like, I need to upload an image cause I'm, I'm coding some front end stuff and I need a background image or something. I have it right here. Where do I put it? I need a URL to it. We make that process really easy, but it's only available for pro people. The, we made the kind of the workflow really smooth. You need to do that upgrade quick. Now you got it. Rock and roll. That works out pretty good for us, but it isn't, I'd re I want to have a dozen of those moments. 
+
+
+  \
+
+  Chris\
+
+  I think therefore having this conversation, I hadn't really even thought about the commercial aspect to the things that your you're running, both CSS tricks and code pen, because they just want to have those things that, as I mentioned before are kind of ubiquitous they're available across the web. They're probably more akin to the, the ideas that the web was founded on in a way where it's like, here's some thing I created that you can also do to, it's more about that sharing side of things. It feels a bit more like closer to that ethos of why the web has started really information sharing. 
+
+
+  \
+
+  Chris Coyier\
+
+  Yeah. Yeah. Well, I liked that. I liked that most of it is free that it's very sharing based and I'm not trying to lock too much behind walls and stuff. I like open APIs. I like URLs that don't change. I like those early web ethos things, but I'm also like a person with a house with a mortgage. 
+
+
+  \
+
+  Chris\
+
+  It's very cool. There a grand plan for all of the code? Because there's so much stuff there like, is that is like, that's feels like a mind for machine-learning surely that we can, , 
+
+
+  \
+
+  Chris Coyier\
+
+  Where do we do it? We do some machine learning stuff, just a little cause I don't, I don't, whatever, it's a little above my pay grade. I feel like. For example, these days, when you log into code pen and you're like a user of it, cause there's kind of a minimum threshold of like activity before this kicks in. Cause otherwise we just know so little about you. Cause we don't, this should go without saying I have no interest in like gathering data and selling it about you. Like that's not only gross, but like I wouldn't be able to sleep at like also nobody comes knocking for that. I feel like you have to be kind of hat to begin with to even begin to engage with that crap. We do gather some data in that metrics. For example, you're logged in and you're engaging with code pen, you're clicking on stuff. 
+
+
+  \
+
+  Chris Coyier\
+
+  You're Harding stuff, you're leaving comments. You're part of the community. That stuff goes into one of those crazy ML boxes and the end result of it, all it is, it gets used for one thing. It's to show when you go to the trending tab, which is, you'll see if you're logged in to cope and it attempts to show you stuff that's entirely personalized to you that the guests is that you're going to like it based on things that you do and like on code pen. I could see there's probably people that draw the line. Even before that they're like, I don't like, I don't want to box deciding what I like. And I mean, that's fair, but sorry. That's what we do. You know? 
+
+
+  \
+
+  Chris\
+
+  No, I've had exactly that experience just today as a matter of fact, because I'm starting by home automation business and found out that basically we're putting these home automation things in like Airbnb type places. We installed one last week and a guest moved in and ripped them all out because they thought they were being monitored. 
+
+
+  \
+
+  Chris Coyier\
+
+  Jesus. Oh my God. What is the answer to that better communication or better hiding? 
+
+
+  \
+
+  Chris\
+
+  I don't know. I think is probably better communication cause actually we're not listening to them or spying on them. Like it's just so they can turn the lights on and off and the heating and we know if they're, if they go over a certain volume, but yeah. That, I mean, I don't want us to make this about me cause I can easily do that. I think, but I think in terms of that people feel like they're being intruded upon or spied upon, I can totally get, 
+
+
+  \
+
+  Chris Coyier\
+
+  Oh yeah. I've had, I've had a cleaner come by the house or have people watch the house and came back and there was like rags over the Google home devices we have, just cause they're like, whatever I'm watching your house, you don't get to watch me. You know? I didn't even think about it cause I'm just a jerk like that, I guess. You know, but it does. It absolutely makes people uncomfortable when they see a little camera lens just pointing in the kitchen while they're making a sandwich, ? 
+
+
+  \
+
+  Chris\
+
+  Yeah. It is a bit of a weird thing though. Isn't it? Cause I mean, I suppose, years and years ago, you'd worry that maybe your phone had been bugged for whatever reason. Now we've invited the books into our house and we placed them quite proudly on our desks. 
+
+
+  \
+
+  Chris Coyier\
+
+  Yes. The feature of it is we're listening. Yeah. 
+
+
+  \
+
+  Samuel\
+
+  I've heard about it. At least they're honest. 
+
+
+  \
+
+  Chris Coyier\
+
+  Right, right. I just, I don't know how I feel about it. I put them in my house. I asked them to set timers. I ask what the weather is for my day-to-day life. I like it. I D and I've experienced zero downside to it from excited from the occasional, like when they pipe up, when you're watching TV, trying to like answer a question from CSI Miami or whatever. That's about the biggest downside I've ever had. Not that I blame people for being a little concerned about having big brother listening to them. Like if that's how you roll, no shade. I get it. It's not like these companies are particularly well renowned for their honesty. 
+
+
+  \
+
+  Samuel\
+
+  Yeah. I'm reading a I robot at the moment. There's a paragraph right at the beginning that says it's joking around or saying something around, what would we use these robots for? They actually say asking what the weather is and saying timers in that book or something to that effect. It's just so funny how we've just carried that food. I forget when this book was written or whatever, but it's a, I do exactly the same thing is just my timer. Unfortunately, 
+
+
+  \
+
+  Chris Coyier\
+
+  That was the number one. One I use is, and I can't do, it's not just listening on my phone. I have the, I have an iPhone, so I have to hold the button down or whatever, but I go reminded me when I get home to go get the mail or whatever. It does the geo-fencing thing too, or it knows when you arrive home and it gives you the message then. Oh God. That's so cool. 
+
+
+  \
+
+  Samuel\
+
+  Yeah. It's just take, just take some nefarious people to twist that into something. Cause apple have released the thing. Now they're going to be looking at your images to cross-reference them with a CCM or something like that. Now that's the next thing that's called ruffling a few feathers. Cause that in essence means they're scanning all your photos just to check. 
+
+
+  \
+
+  Chris Coyier\
+
+  I tried to read up on this as best as I can. I'm going to, and it seemed like fine to me, which I, I, and then I caught some, not criticism from other people, but people are like, you shouldn't think this is fine. Like you can, you can learn about this and come down on the side that it's worth doing. To just blanketly say, this is absolutely perfectly fine as like an under nuanced opinion about this, ? It looked like they, they, aren't looking at the actual photos, they're just hashes of the photos and they appear some threshold and something it's like, and it's like, of course at the very high surface level, if you have these kinds of pictures on the phone, I think we all know what we're talking about here. Very, very illegal, very immoral, very uncool. I kind of want those people caught. 
+
+
+  \
+
+  Chris Coyier\
+
+  So yeah, 
+
+
+  \
+
+  Samuel\
+
+  That's that's difficulty, but it's just, where does it stop? It now another, just this might seem, okay. This might seem fair, which you're absolutely right. I don't think anyone's going to argue with that because it's absolutely. 
+
+
+  \
+
+  Chris Coyier\
+
+  Yeah. And then what's the next step. Yeah. Cause everybody's already worried. You, you have a conversation about you wake up and you're like, oh, maybe I need a new mattress. The very next ad UC is like, Casper mattresses, love mattresses, ? And it feels a little uncanny. It's like, if you're looking at my photos, I think the chances of that getting even more uncanny are really high. 
+
+
+  \
+
+  Chris\
+
+  And they're getting really close as well. Aren't they like, I mean, I always having a conversation with, with my wife about a friend I had to used to live on a canal boat, opened a Facebook and the next advert was like, here's a canal boat for sale on eBay. I was like this literally the only time I've mentioned LA, like, how is that doing that? That's and so now I don't have Facebook anymore. 
+
+
+  \
+
+  Chris Coyier\
+
+  Yeah. The, I feel like the prescient question, I was like, where's your brain just primed to be watching for that coincidence because it was already in your brain, ? You would have saw on that ad before and you would have just scrolled right past it and then not thought about it. Because you were talking about canal boats. Yeah. 
+
+
+  \
+
+  Chris\
+
+  That's very true. That's very true. I've got a question on the, the home assistant side of things. These things don't have interfaces. How does, how does that feel for you as a front end developer? 
+
+
+  \
+
+  Chris Coyier\
+
+  Yeah. Interesting. Right. I mean, I certainly know front end developers who have caught the bug for other nerdery I'm sure y'all have, you're into home, but like, like, oh, I got really into making, I didn't, I'm just saying, I know somebody who got into making, what does, Amazon's called there. They have little special apps for their, what is Amazon Alexa apps or whatever. You can code them in like node, ? Like if some JavaScript, they kind of opened the door for making, are they skills? 
+
+
+  \
+
+  Chris\
+
+  Yeah. The skills aren't there. I was trying to think of what they were myself. Yeah. Because you can run them on a AWS. They just sit on Lambdas down there. I think. 
+
+
+  \
+
+  Chris Coyier\
+
+  Yeah. Which, how cool is that in front end development is like Lambdas are taken over yo. Yeah. We run everything on Lambdas. They're great. Totally changed the game. The fact that you can then leverage that skill for this other thing, Hey, why not give it a shot? Just like people get into mechanical keyboards. People get into raspberry pies. People get into super Mario builder. All of us nerds have a whole spectrum of things we choose to geek out on. And that's kind of cool. Probably will keep us employable. 
+
+
+  \
+
+  Chris\
+
+  Have you heard my mechanical keyboard clicking whilst we've been talking, have you, what have you got? Oh, I've got this. This do dear God thing. 
+
+
+  \
+
+  Chris Coyier\
+
+  Oh yeah. That's great. Classy. Kick-ass what'd you go with the cherry reds? 
+
+
+  \
+
+  Chris\
+
+  I think they are cherry red. Yeah. I think it was a difficult, I nearly bought the thing off Amazon that was like, here is a little sample of all of your different. Have you got one? 
+
+
+  \
+
+  Chris Coyier\
+
+  I got that because I'm not into this. I'm in I'm that's I'm trying to observe other people's so every time I try to dip my toe, it's too deep. I'm like, Nope, Nope, Nope. Nope. It's a luck. You can't just buy it. You can't be like, oh, I, I like the whatever. They're not cherry reds, but they make one that are silent. Cause I would just prefer that. I think. I tried the other ones and I have some choices, but as far as I can tell, there's no website. You can go and just be like, I want these key caps with these switches and this chassis and this it's like, no, I feel like it's intentionally not available. They're like, no, here's your soldering iron. 
+
+
+  \
+
+  Chris\
+
+  Yeah. They've sat. They've set a pretty high bar for it. You know? There's a, a nerd bar that's been set. 
+
+
+  \
+
+  Chris Coyier\
+
+  Yeah. They don't want to cross. Yeah. Which is fine. Here I am bumbling away on my old Microsoft ergonomic and it's fine. I love it. 
+
+
+  \
+
+  Chris\
+
+  Oh, is that one of the ones that's split into two? 
+
+
+  \
+
+  Chris Coyier\
+
+  We need that. It's I don't know why. I just, I can't go back. I haven't. 
+
+
+  \
+
+  Chris\
+
+  Seen one of them in a long time. 
+
+
+  \
+
+  Chris Coyier\
+
+  Yeah. They're not. It's it's there physically connected, but I've seen plenty of mechanical keyboards that are literally split in two, they're like two different chords. Anyway. That is nerdery. Wow. 
+
+
+  \
+
+  Chris\
+
+  I had a question. 
+
+
+  \
+
+  Samuel\
+
+  I wanted to talk to you about, because it's something I've been thinking about for many years. I forgotten what I heard you talking about it. You mentioned it and it wasn't really elaborated on, but I'd love to get your insight and it's around. On this idea of front end development and these kinds of two roles, and this is not going to be a new idea. Absolutely. Cause I think this is like 2018, 2019. I heard you speaking about it as these two ideas of, one spectrum of front end developers really going heavy on this engineering group. Another side of it being, as we spoke about right at the beginning of the kind of UI design, I call them engineers and UI developers and this kind of distinct separation of the two and how it's really quite a difficult or hard thing to navigate when it comes to hiring. 
+
+
+  \
+
+  Samuel\
+
+  Perhaps that you've been speaking about this for, for a long time. I'm wondering if you had ever got any anything's progressed with that or if you got any thoughts that you'd like to elaborate on with that, into why it might be there where it might be going or anything like that. 
+
+
+  \
+
+  Chris Coyier\
+
+  Yeah. I mean, that was definitely a big part of my brains for a couple of years there because I, on my show shop, talk show, we did, it started kind of with a series where I was like, we named the series, how to think like a front end developer and then interviewed lots of people and said, w w how do you think about this job? Do you self identify as this way? Like, kind of, if so, what does that mean to you? Got lots of answers about what it is, and that kind of turned into a talk and then more and more, I got to this this feeling that there's front-end people, which the word front end to me still, that feels fairly well-defined. I'm like, not that worried about that as a term, because it largely just means the browser and that back end developers means like the server. 
+
+
+  \
+
+  Chris Coyier\
+
+  And that's like, okay, distinction. You can specialize in those places, but the browser has just gotten so powerful as a tool that what you are doing there is like too much for one specialty. It's just too much. That when kind of modern JavaScript arrived, which is like post ESX, like the big frameworks have fallen upon us, the react and the view and the angular and the Emirates that those became so big, they're big individually and combined they're everywhere that they took over in this way. That there, that JavaScript is not optional, right? Like you have to dig into that framework. That framework is JavaScript based, but that can be your whole life as a front end developer. You can know nothing but that, and have everything that, revolve around that world. There's all these people that kind of existed in front of development roles before that happened and had no occasion to learn that stuff like they were successfully employed. 
+
+
+  \
+
+  Chris Coyier\
+
+  They were making money, they were making their clients happy. They were kicking out WordPress sites. They were making craft sites, toss some jQuery on top of it. They were making their little slider plugin that just doing great all the while this other world was rising and just taking over. All of a sudden they're like, oh my God, what happens? I'm looking for a job as a front end developer. It's absolutely required that I know react. It's like, why what's what happened there? So that just was a weird divide. The other way that played out is that you could look at some of these new devs that sometimes very literally only know, react that's it. And it's not their fault. It's just, they went to bootcamp decided that's how you get a job. They taught just that. That's all they know that wasn't necessarily taught comprehensively in the way that developers were taught before, which is like use a button. 
+
+
+  \
+
+  Chris Coyier\
+
+  And the section element is semantically cement. There's just, they just had a different way of coming on to the web, thus the friction, thus the, the old timers waving fists at the new kids being like, you're not doing it right. The new kids being like, who's got a job me or so I paint, I tried to paint that picture somewhat in that, in an essay called the great divide. Cause that's what I felt like was going on. It was kind of my thoughts, but I tried to like mostly quote other people from the podcast series we did on this and what their thinking was and, and stuff. It wasn't just like, this is what I'm saying. This is like what everybody's saying. It seemed to resonate with a lot of people. What's what I, I'm not sure if regret is the right word, but maybe it is that like the other sides are mutually exclusive or don't care about each other or that, you have to kind of pick one or the other, like if you're a react person, you don't care about accessibility. 
+
+
+  \
+
+  Chris Coyier\
+
+  That's sucks. If that's what you took from that. That's like not a picture I wanted to paint. Like that's not okay. Like they can co-exist and in fact that's pretty cool. In fact, the, one of the fun phrases that came out of this was the interview I did with Brad frost, who kind offhandedly called his work, the front of the front. He then also, by virtue of calling it that there was the back of the front end, which meant things like the person who deals with the Webpack and the deployment processes and stuff, which can all, can also kind of end up being a front-end developers concern, but not Brad's concern, but Brad wasn't saying I don't like that kind of work. I don't think it's important. He's saying what I want is to sit right next to that person at my job. I want us both to be right there and we can both be front-end developers, but stuff and I know stuff, and we'll, Vultron it out and be together. 
+
+
+  \
+
+  Chris Coyier\
+
+  That's what I think is cool here is that there's too much to know. Let's, let's try to split up and we can continue to grow throughout our career. And I hope that you do. I had this kind of imagery of like a tree, like a, like a, like a literal tree, like a trunk, and then the branches branching out from it that like, we start out with some foundational skills. Like all of us basically need to know what HTML is. Even if you're writing JSX, you're still writing HTML, and then our interests branch out heavily from there that any two people have all kinds of different branches of what they know. Some people can be, can go really deep on performance. They're reading those dev tools, charts, and waterfalls, and figuring all that stuff out and just cause you don't, doesn't make you any less of a front end developer because chances are, you're, more about image optimization or popular interaction patterns or nuanced accessibility concerns and stuff. 
+
+
+  \
+
+  Chris Coyier\
+
+  It's just, that's where we're at. I think I don't think that's changing. 
+
+
+  \
+
+  Samuel\
+
+  Yeah. I think I within my sphere of influence, I think I came to a similar conclusion, really. It comes down to ultimately it just comes down to respect and while it's not completely ignoring it because that's not my job or that's not my role or whatever it is, understanding where those people fit in and exactly that they, these people working alongside each other and respecting each other's role and know where they all kind of fit in together. For the individuals to recognize that within themselves to know just like you said, there is so much to learn that it's I was going to say, it's not your responsibility to learn, or don't quite mean that or that it's just don't feel overwhelmed and know that there is, there are strengths because I know plenty of amazing. Again, I used the term that I concluded, which was front end engineers, which they work heavily with the logic and the Webpack and all the rest of it. 
+
+
+  \
+
+  Samuel\
+
+  They, they oftentimes they suck at CSS, which brings us full circle to my original question around this idea around CSS, being this to this side of front end engineers, it's kind of not dying a death, but they just don't really want touch CSS or find someone who is more interested in that side of things and let them take over the kind of the stylistic side, the interface side rather than the logic side. Is, yeah, I think I came to the same conclusion as what I was getting up. 
+
+
+  \
+
+  Chris\
+
+  The interesting though. Cause I, I was wondering, do you have a, an interpretation of how the industry feels about this? Because going back away, I, I was Amazon, I think I left in 2012, some wetland somewhere around then, Weber developers was seen as a different job category to a software development engineer at the time. I'm not sure whether it still is, but there was obviously a lot more respect put on backend engineers versus front-end engineers. Do you think that's still the case because that front end is a lot more complicated now, 
+
+
+  \
+
+  Chris Coyier\
+
+  Right? Maybe that'll smooth out because of the, just amount of responsibility that's, let's put on the front end developers and how productive they can be to the point where like, I think there can be like a solo entrepreneur front end developer who builds an entire app database and all by themselves, which was trickier to pull off in the past. Let's say, you need to build some credit app these days. You got it, just some very basic data skills and you're off to go. That's a, that's a big deal that more of that kind of data responsibility is moved over to the front end. I think that's a big deal. Just by virtue of that, like, this is sad that it had to come to this, but then that thus gets more respect and closer equal pay. I have no data on this though. I can't speak about it particularly in a way that matters because I think what matters is, in just actual analysis of what's happening in the industry and things. 
+
+
+  \
+
+  Chris Coyier\
+
+  I do think that really like deeply skilled, important back end people that's not like unseated yet. That's the, that's the big money, the most kind of dev clout in organizations that's probably going to hang on for quite awhile. This is probably somewhat of an unpopular opinion in front end development, but I don't have like a huge problem with that because in my career, sometimes those really deep back end people are doing work that is kind of inherently a bigger, they face bigger problems than I face. Like I'll get a ticket and I'll be like, oh, the alignment of that icon on that button is totally wrong and I'll fix it. Nobody cares, like it's better for it. There's Polish, it's like important. I like that work and it's interesting to me. Back end developers will be like, I don't know, like we're losing 15% of our server power and it diminishes over time. 
+
+
+  \
+
+  Chris Coyier\
+
+  And, we found out through detailed log analysis that, whatever these things that are like, they're not just my lack of understanding that makes them sound complicated. They are more complicated. There's big, deep, architectural problems that are just a big deal. That are kind of at the heart of what large scale businesses do. Like, I kind of don't mind that if you're solving those problems that you get paid more than captain me button a liner does. 
+
+
+  \
+
+  Chris\
+
+  Well before we go, I have a little quick pop quiz that I'd like to ask you. Oh, these are just some, some things I've thought of. I'd like to know your opinion, which is best angular view react or something else. 
+
+
+  \
+
+  Chris Coyier\
+
+  That's, that's hilarious. Like I have any idea. I've never written a angular app. I have no idea I've only dabbled in view, but I'm very compelled by the view feature set, how positive the view community is, how the leadership of use has its head screwed on straight and its direction looks good. I'm very compelled by view, but I've met some, there's nice people in on all these things, but I'll say that I just, I think react is kinda, oh, G on the, the that's just was such a tremendously good idea at the right time and did a lot of the right things. I like how kind of unprescriptive it is about certain things. And I I'm a fan. I just like react. 
+
+
+  \
+
+  Chris\
+
+  Cool. So react wins then. 
+
+
+  \
+
+  Chris Coyier\
+
+  Yeah. Reacts to the best one. Okay. 
+
+
+  \
+
+  Chris\
+
+  Right. Which is best Squarespace web flow WordPress or something else, 
+
+
+  \
+
+  Chris Coyier\
+
+  WordPress, for sure. I'm a huge WordPress fan. So, so wild though. Yeah. Webflow is a wholly different category of stuff. And so it's yeah. Wow. That's fun. WordPress. Best one. 
+
+
+  \
+
+  Samuel\
+
+  Yeah. I had a whole, I mean, we're, we're coming to end now, but I had a whole thing about WordPress, as I mentioned on email, like WordPress web flow thing, and the no code revolution. I mean, do you have any thoughts around the no code thing at all? Is that something you. 
+
+
+  \
+
+  Chris Coyier\
+
+  It's gets a little above? My understanding. I mean, I get the concept is build stuff and don't have to code it. I think the way that manifests is super different in different, sometimes it's like, can I build a, a process for my data without coding. It that's very different than can I build a brochure website without coding it. Those are like two different categories of products. I think web flow is really cool and compelling. I mean, it's incredible what they're able to do with that software. I've seen endless cool demos have used it a bit, not super deeply, but even played with their database features and stuff. Super cool. Also like they don't shy away from like the, like what CSS is they? Like, they try to represent actual CSS in the product. Like it's called margin, it's called grid layout. It's called key frame animation. 
+
+
+  \
+
+  Chris Coyier\
+
+  It's like, you'd be helping yourself to know actual CSS to use their tool. I don't think you absolutely have to, but it's like, they're not like avoiding the knowing of code necessarily. You know? 
+
+
+  \
+
+  Samuel\
+
+  I get it. Yeah, totally. Yeah, completely. 
+
+
+  \
+
+  Chris\
+
+  Right. I've got one more, which is best less SAS or pure CSS or something else. 
+
+
+  \
+
+  Chris Coyier\
+
+  I like SAS with CSS modules. That's the best. That's the best combo for me. Cause. 
+
+
+  \
+
+  Chris\
+
+  I actually, I was going to ask a question, the start of it, like all of this stuff has got so much more complex on the front end. If you're starting today as a front end developer, where'd you go? I mean, there's web pack. There's SAS, there's less, there's all these crazy things. Like where do you go to get started other than picking something like, create your own. 
+
+
+  \
+
+  Chris Coyier\
+
+  Yeah, exactly. That's why. Right. Cause it's so easy. You type, you know, our next JS. It's so beautiful. It's so easy to get started. One little command has some opinions about where you put files, handles the routing for you. Oh my God. Why would I, why would you use anything else? Amazing. You know, it's my tool of choice. Yeah. WordPress does a good job at the, on another angle, like I can just install it and I have this realist website that's just filthy with functionality. I can do anything and the plugins blow it up even more than that. The e-commerce anything you want to do in WordPress. The barrier to then get started developing for WordPress is a little higher, I would think. Cause it's, it's a little harder to spin up locally and it's kind of what's my deployment process going to be like, I don't know. 
+
+
+  \
+
+  Chris Coyier\
+
+  They don't really help you with that. 
+
+
+  \
+
+  Chris\
+
+  That's true. They never really have had they have it right from the very get from the get go. There's never been a particularly easy deployment cycle, different environments for WordPress, 
+
+
+  \
+
+  Chris Coyier\
+
+  Largely SFTP based. I think, there's definitely not like a good, even my favorite WordPress hosts don't have like a get hub repo to deploy WordPress flow. Really? I need that because I feel like that's, to me it feels like table stakes. These days is developer D yes. I'm working in get like, is there any other way that's would be very weird not to work and get, and then that means, okay, so I need some tool then to do, get to FTP to deploy this thing. Cause I guess that's what I have to do. Like that's I don't relish that, but whatever let's go, 
+
+
+  \
+
+  Chris\
+
+  Well, here's another one then, which is best to get hub, get lamp a bit, book it or Azure dev ops or something else. 
+
+
+  \
+
+  Chris Coyier\
+
+  Get hub as the clear winner there. Although I use get lab for years and years, that code pen, because of their ability to self install it, which I think you can do with GitHub too. Get lab was made it affordable and get lab to their credit has really nice CGI that they built in. They were way ahead of GitHub on that, but now get hub has get hub actions. Unfortunately as much as I am rooting for little team, get lab over there, get hub as is the behemoth in the room. 
+
+
+  \
+
+  Chris\
+
+  Yeah. The actions would nice. I'd ask one about CIA. No, wait, let's do C I, so which one, which is best for CIO? Would it be forgotten them all now? Travis. Travis. Yeah. Got Travis. You've got actions. You've got what's the word I'm thinking circle. That's the one Magnum CEI was my favorite. I don't know. 
+
+
+  \
+
+  Chris Coyier\
+
+  Yeah. I'm the only one I really used was get lab and circle and now we've, we're literally have moved literally everything on to actions. We at code pen and we are actions, actions, and that's kind of cool. I felt like a lot of trust early on because in a sense it feels a little early still of actions. I don't think it's like as robust as it could. 
+
+
+  \
+
+  Chris\
+
+  It feels to me a little too easy. Like I feel like there should be more steps to make it work. No, 
+
+
+  \
+
+  Chris Coyier\
+
+  Yeah. It's weird. It's weird. He's, it's built in and if you're using GitHub issues anyway, and you're using vs code, which is now super tightly integrated, it feels like once they got what you got, the get hub hooks in you and you just stay there, the whole tooling workflow altogether. It's just too. 
+
+
+  \
+
+  Chris\
+
+  Savannah's coat is vs. Code your editor of choice these days as well. And oh God, another pop quiz question. Isn't it. I could, I could list all of those, but I'm wondering. 
+
+
+  \
+
+  Chris Coyier\
+
+  What are the others? The only, the only time I've ever been compelled to move away is when I see somebody use something like WebStorm or one of those like really like PHP, fancy ones that do extra there, but yeah. Vs code seems like thing at the stranglehold on things for the, not that I blame anybody else, I know hold outs on sublime, text and stuff that are like, it's so fast. Why would I, but to me vs code smoking fast these days too, 
+
+
+  \
+
+  Chris\
+
+  Well I've only got one last one, which is, which is best AWS, Google or Azure. 
+
+
+  \
+
+  Chris Coyier\
+
+  We're all AWS that code pen. I think they're generally ahead of the game and people play catch up to AWS generally. So you'd use the other one. If they gave you a good coupon for your startup or anything. 
+
+
+  \
+
+  Chris\
+
+  Yeah, absolutely. Well, I hope those answers help people cause these are difficult decisions and actually I think, it's really useful to have somebody else's perspective on them. It's helped me. I know, I know I'm doing when we get off this call, great stuff. I think we should wrap it up there. So thank you so much for joining. Chris has been, it's been fab having you on. 
+
+
+  \
+
+  Chris Coyier\
+
+  The show. Take care guys. Thanks.
