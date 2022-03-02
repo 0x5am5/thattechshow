@@ -5,7 +5,7 @@ on:
   schedule:
     # Customize schedule expression at crontab.guru
     # This one runs at 5:01 UTC daily
-    - cron: "1 5 * * *"
+    - cron: "31 5 * * *"
 jobs:
   build:
     name: Call Netlify build hook
