@@ -1,0 +1,789 @@
+title: Episode 46 - Leading NATO's Cyber Defence with Lauri Almann
+transcript: >-
+  Lauri\
+
+  Hello, My name is Lauri Almann. I'm a member of the board and co-founder of CyberEx Services and Technologies. We build the cyber ranges, which basically is to give our customers an ability to train, to test and prepare their companies, organizations fight cyber threats. I'm I'm not a tech person originally. I think I should get that apology out at the very beginning. I'm a lawyer by education, but now that means we are allowed to do all the lawyer jokes in the show. And I started as a civil servant and my one of my first foreign postings was Kyev Ukraine. I was 19. I was working in a consulate, basically customer service. And, and from there, here I am in a tech company selling cyber ranges. 
+
+
+  \
+
+  Chris\
+
+  How, how does one find oneself as a civil servant working as a dip them at age 19? Was that, was that the plan? 
+
+
+  \
+
+  Lauri\
+
+  It was not actually what happened was it was a summer internship and I was in the, in the second year of law school and I applied for a summer internship and they just couldn't find workforce to fill certain positions in Kiev embassy. At that time, it wasn't a popular posting. Well, I think that's case also these days, but of course among the different much sad circumstances, but I think it was 1995 at that time, but things transpired from there. Ultimately to our Brussels embassy, from there to our ministry of defense, started working on our NA access package and then ended in, ended up in Georgetown law school, credited that as well. Two law degrees, which again, I should apologies, I think, and then I, I sat for a New York state bar and I was ready to, to start as an attorney somewhere in a corporate office. 
+
+
+  \
+
+  Lauri\
+
+  When I, when I was made an offer to become a permanent secretary of defense in a stoned. That's a once in a lifetime opportunity. And, and I took it year was 2004 and very, very consequential for all the, from the cyber security perspective, because that was the time when we started to see that our reliance on e-services digital society, because Estonia had made it pretty long steps already in, in that road could be dangerous. What we did in 2004, we did rounds with NATO member countries proposing to open a NATO center of excellence on cybersecurity in Estonia, because we thought this is going to be the next new threat. And, and as I was preparing for today's show as well, I went through my notes and the first briefing from our proposal, it came back and they said, NATO, doesn't see none of the natal. 
+
+
+  \
+
+  Lauri\
+
+  I see cyber in their toolbox or a as a problem. The point too was they also don't find any funding for the center. We need to fund it on ourself. That was my, I would, I, I mean, although it was government money and it was, is the whole process of budgetary planning. I think that was one of the greatest startup investments that the government could do because the whole government decided, okay, we are going to front that money on our own stone, taxpayer paid for what later would become NATO center of excellence on cybersecurity, which is currently sits in Berlin. And, and of course it was timely because 2007, we had a cyber attack against Estonia. And again, that was a fun journey. We can talk about that as well. Although I hate to Del too much on old war stories and because, they get more and more, they get excited, they get more exciting by time. 
+
+
+  \
+
+  Lauri\
+
+  I, I kinda, I can promise and one's role in them always increases. So, but it was, it was an interesting moment because we had to go through, I think were the first country who had to go through the hoops of trying to explain what happened to the world, trying to convince that maybe they were Russians and maybe this is important. Maybe this is something that other countries are going to see, and maybe, they didn't, maybe even though it was just a DDoS against couple of government websites, it is still consequential because maybe they're trying something out here that everybody else should pay attention. Were the first government to talk about cyber and to talk about cyber threats and attack against cyber targets. We were not the first government by far to be attacked, but the other governments had classified everything that we declassified, I would say 99% of what happened. 
+
+
+  \
+
+  Lauri\
+
+  We were being used as an example of this new threat. 
+
+
+  \
+
+  Chris\
+
+  That's pretty fascinating. Yeah. You were saying that, what was it, 2004, 2005, you said. 
+
+
+  \
+
+  Lauri\
+
+  2004, we started to notice something is going on and then then made a proposal to start paying attention that went nowhere. But, but we started investing on our own and we had, of course we had some allies who working closely with us. We, we had one nation represented in the center that wasn't still recognized that was largely funded by stone government. We couldn't, we couldn't disclose who the nationality was, but when, when the guys sat down and started speaking in the perfect New York accent, then everybody could see what the nation was supporting us. That was also so. 
+
+
+  \
+
+  Chris\
+
+  I'm, I'm curious if NATO were unwilling to get behind setting up the center of excellence at that time, cause they didn't see it as a threat. How were you convinced that it was a threat? Did you just deal with the information differently or did you, had you passed it in a different way or is it the, the, the nature of being a, that some people are gonna disagree and some people aren't? 
+
+
+  \
+
+  Lauri\
+
+  I think we had a very wide consensus in the government. I think we had extremely high awareness on cyber in the government because at that time, Estonia foreign minister and later our president Thomas Henry Gill, who was largely behind what was called the tiger leap in Estonia, he proposed in the, in mid nineties to start equipping Estonia schools with computers, computer classes were not so, so much heard about in other countries. We started computer classes in nineties Estonia and that drove our digital society. We already, by that time, we had a very extensive e-services. I think we had online taxis, we had all kinds of forms, basically communication and services provided by the government were online to a very large extent already that time. And, and were just, I think were just looking at the threat differently and we saw that this is something that is coming not to mention the business surface in Estonia, lots of online businesses going on already at that time. 
+
+
+  \
+
+  Lauri\
+
+  I mean, good. I think around that time, Skype was starting to take off, I think it took off in 2006, but I mean, the people were already there. And why thinking? I mean, it's, it was already there. 
+
+
+  \
+
+  Chris\
+
+  Skype is in origins. 
+
+
+  \
+
+  Lauri\
+
+  Skype is I think legal it's Danish origin, but some of the original programmers and team members. And, and I think also what you can call founder co-founders are from Estonia. Yes. 
+
+
+  \
+
+  Chris\
+
+  I, I think I've forgotten where it originated from in the midst of mists of times now. It's is it still even published as a separate piece of software? Is it, is it folded into teams? I think it might be. 
+
+
+  \
+
+  Lauri\
+
+  I think it's, I think it's Microsoft. 
+
+
+  \
+
+  Chris\
+
+  Now. Yeah. Well, it was, well, it was definitely, I remember it being bought by Microsoft, but I think I'm not even sure if it's a standalone product anymore. I'm gonna have to look that. 
+
+
+  \
+
+  Lauri\
+
+  Up. I think it, I think it is. I think it's. 
+
+
+  \
+
+  Chris\
+
+  So, I mean, I think that's a really interesting journey. I mean, from going from taking in two law degrees, did you, at what point did you become interested in the cybersecurity stuff? Was that only through that defense role or were you because of the way that the con the country was dealing with stuff, were you already interested in technology at that part? 
+
+
+  \
+
+  Lauri\
+
+  I was interested in when I was working in Brussels in 1998, I was working in Brussels and actually Belgium defense academy in Brussels had these lectures on the future of warfare. And, and I was very inspired by one of the lectures given by Steve Mets, who was from us. I think he was from us army was American dealing with future war studies and was talking about how the warfare is going to and how the cybersecurity is also going to be a part of it. Further we, when we started our legal work, we had a, a, a, a, a series of seminars on all kinds of legal aspects that defense corporation might involve. Cyber started to come up more and more it's. For example, we had a seminar on NATO status of forces, basically what a country should do when a, a bunch of native forces passes through and somehow cyber issues. 
+
+
+  \
+
+  Lauri\
+
+  I, I don't remember exact context, but they started to come up and then we then started to look at the, the journal articles, one of them. And, and I think it was widely believed in the beginning of two thousands. The cybersecurity problem is going to be the next big problem. If you look up, then there's the army war college magazine, it's called parameters and in their September, or is it August, 2001 number, there was an article about the attack against Pentagon that they all originated from perhaps St. Petersburg. It was called Byzantine. I think Byzantine maze was the code name of the attack. And, and that was the call for attention. If you, once again, remember that the date that I said September, 2001 was when it was published, then that's when nine 11 happened and the whole military discussion overnight moved to desert or counter IDs insurgency. 
+
+
+  \
+
+  Lauri\
+
+  The cyber discussion that we have discussed this with experts from that time from 2001, after the horrible and tragic events, of course, was buried under the, under, under the other types of counterterrorist discussions. And, and didn't get that attention until 2007. When I think when it, when we Estonia as, as country and Estonia government put it squarely back in the agenda. It was there, but it was dormed. 
+
+
+  \
+
+  Samuel\
+
+  This is obviously at the beginnings of, cyber crime, cyber terrorism, and various aspects like that, given that we are, I mean, gosh, like 15 years, 20 years away from those, those sorts of conversations, has it manifested in the ways that you predicted back then, or that you'd obviously in those early days, you wouldn't have known you would've wouldn't know how things would've manifested. Has it happened quite predictably and in the ways that you imagined, or is it kind of changed? There are things that you didn't foresee at all with regards to cyber crime. 
+
+
+  \
+
+  Lauri\
+
+  We couldn't, I think one of the factors, nobody couldn't foresee is the use of, tablets and cell phones and basically computing power that everybody carries with them. In the beginning of the that's something, there was something that was ignored. I think there's the famous report of the future threats of cyber from, I think it was from 2006, that completely ignored the rise of iPhone. Of course, who could have predicted that. But, but that, that's an, of course the whole data met versus the commercialization of the threat is something that is something I think we still don't quite understand. Also the level of activity one side on nation states and the sheer aggressiveness of it. I think a lot of it is rooted in our initial failure to hold some of those first attempts to hold them responsible for some of those first attempts, like to, I think, I mean, what we did, what we did well, after that, we started talking about it. 
+
+
+  \
+
+  Lauri\
+
+  We started developing cybersecurity strategies. We started to put that pay attention. I think that went well, but still we had to go through all kinds of, I I, to my mind, little bit of unnecessary high burden of proof that something more sinister is going on. Yeah, I think that's, that's somewhat the failure. 
+
+
+  \
+
+  Samuel\
+
+  Mm. Was it a very coordinated effort between everyone in those early stages as well? Or was there a bit of a, a bit of rough and tumble to try and be the nation or the country or whatever, or department even that figures are out or, or was it very coordinated? You all took a very serious, like, how can we solve this or prepare for this together? 
+
+
+  \
+
+  Lauri\
+
+  It wasn't that coordinated, but it's like with every new project or every new there's this, what are the phases? The, the forming, the storming, and then whatever, the rest two stages are never gotten them. So I, I dunno, knowing. 
+
+
+  \
+
+  Chris\
+
+  Norming is definitely one of. 
+
+
+  \
+
+  Lauri\
+
+  Them norming. Yes. 
+
+
+  \
+
+  Chris\
+
+  And then performing. 
+
+
+  \
+
+  Lauri\
+
+  Yeah. Performing, I, I don't know anything about it, but, but sure. It's, it was certainly difficult and it is now, and now we are in this norming phase and I think to come back to your quite, I think this is something that we might, might get seriously wrong because people do not understand technology who make laws. I, I say that as a lawyer, we are looking for example, in United nations at the, on creation of cyber norms. And I, I think it's very important. I think all of this cyber diplomacy and all those initiatives are extremely important, but I think we have to be mindful how technology works. Sometimes when we try to regulate it, and when we try to over impose a certain regulations on, or when we think we know how one or another thing works, then we usually can get stuff wrong and we might get and create free lanes or, or give free passes to some of those countries who are not so eager to follow those norms. 
+
+
+  \
+
+  Lauri\
+
+  What happens is very much like with free trade, I think by all ways, throw this parallel with free trade and cyber regulation. There are countries like, I dunno, Canada and United States who actually go to court and discuss, I dunno, fit those sanitary rules of a meat product, crossing the border. They do it in all series because that's the law. There are certain rules that need to be applied. The same discussion between China and United States is who political. It, it has nothing to do with rules. These rules are being used just to advance your experts and block imports of other countries. We might get that in cyber as well. If we, if we think too much legalistically here and, and don't take into account political reality that there are nations who are simply uninterested in following those rules and rather see other people follow those and then break them all together. 
+
+
+  \
+
+  Chris\
+
+  I think this is a pretty fascinating topic. It's an area that I've been interested in for a very long time. Maybe you can clear some things up cause yeah, sure. Because, well, of course, I think specifically as a, as a lawyer as well, cuz I, I was frustrated a few years back, obviously I think a lot of people who listen to this podcast and, and just in general as a developers or project managers or whatever in software companies had to deal with the fallout of things like GDPR. Before that all of the cookie laws and things that came out have changed the face of the web, but probably not as drastically as we initially thought they would. I, what I find interesting about it is the law makers, as you say, that are making these laws without having that knowledge of technology, and you only have to look at like the, the Senate disposition was it dis disposition, the Senate interviews of mark Zuckerberg and how embarrassing they were deposition. 
+
+
+  \
+
+  Lauri\
+
+  Yeah. 
+
+
+  \
+
+  Chris\
+
+  That deposition disposition I was saying, but deposition you're absolutely right. That's why we've got a lawyer on the show. Correct. My, my language. But yeah, absolutely. I think it was embarrassing watching that, like, it was like, people love like the cringeworthy comedy of Ricky GVA. Really, you actually only have to watch that and far worse, the reality and it's terrifying, but yeah, I, I, I, I did some research a little while ago to look at, okay, who in politics actually has any background in computer science at all? I think I, I looked at all of the MEPS, all of the British MPS and all of the representatives in, in the houses in America. I think I fell and one person who had a computer science degree, which was David Davis and his was from 79, I think when punch cards were all the rage. So, government is always so far behind on those things and yet we rely on them so heavily. 
+
+
+  \
+
+  Lauri\
+
+  They're weirdly behind yet also a hit. So, so it's a combination of, I, I think there's no, I mean, when now I have been working closely with, I mean, 10 years with really great technological team that we have here in cyber technologies. I mean, this is one of world, top teams on cyber exercises on cyber ranges. When I see them work and then how they live in the matrix, so to speak, It brings some humility, at least also to my worldview, when I talk about law, the confidence that is being displayed and, and put out is, is scary. Absolutely. Now we regulate AI and we reregulate AI, according to, I understand the European prevention human right, or something like this, because the problem is that we even don't understand AI. We even don't understand all the implications. We even don't understand the implications, what that regulation might do. 
+
+
+  \
+
+  Lauri\
+
+  I'm talking about all kinds of neutrality requirements that now are, are put forward with, with EU it's it's, I mean, as a goal, it is great and noble, but it, sometimes it just doesn't work like that. And, and that's the problem. There is other side to the coin. And, and I, I call it as an interface problem, which is that sometimes when I, as a lawyer ask a question from technical personnel, they just may not get me because my goal might be this friend. I will, again, I don't want to talk too much about the 2007, because we had lots of good examples from there. It's it, it maybe it's worthwhile. I went to the technical team who was preparing the defenses, the cyber emergency response team, five technicians were sitting behind the tables. I was preparing defense them. Can you tell me from how many computers during that attack? 
+
+
+  \
+
+  Lauri\
+
+  Because it was a, a large pot, the collection of pots from how many computers were attacked. Everybody in the room started to laugh who are, and their tech. They said we have freely free communications. So that was that. That was great thing. I said, you're stupid. You, you don't understand technology. Why do you ask the question? Because every computer has a different computing power. It doesn't give you any information. It doesn't give you any information of the size of the attack as we look at it. And I said, you don't get it. I'm not here to look at technical information. I'm making a political talking point, right. It now, because I specifically want to know how many people's homes or computers were preached by whoever perpetrated this, because each of those single events is a trespass or some crime. And that gives me the number. 
+
+
+  \
+
+  Lauri\
+
+  So, so because I'm trusting a political talking point that should resonate in United nations or you, or native. We finally got there and said, were attacked from 1 million computers in more than 100 jurisdictions, including Vatican. So, so that was the talking point I was drafting. It's, it's a nice sentence to, drop into any political conversation at that time. 
+
+
+  \
+
+  Chris\
+
+  I think, especially if you get the Vatican in there, definitely. I mean, oh yeah. Again, that's the difference then? I suppose, between the people working behind the scenes, doing permanent secretary work like yourself, I suppose, the techies and then the face of it, which is the politicians, I guess. We've gotta find a way to bridge the gap, I suppose, in communication. Cause also then it goes to the public as well. Doesn't it, as you say, to try and put it into language that people can understand. 
+
+
+  \
+
+  Lauri\
+
+  Yes. And it's wider than that. It's wider than politicians. It's also boards. It's also, it's also supervisory boards or boards of directors and, and the sea. One of the things that I think is desperately needed still is building that interface between technology and between the sea shoots or the boards or politicians. I think the road there shouldn't be condescending on the technology side. It shouldn't be, it's a techy problem from the politicians or the manager's side. And those types of live experiences. I have to earn my daily salary. I plug in the cyber range here, but for example, a on the cyber range, we often give companies an experience. What does it feel to experience a cyber attack? We set up a network and a company architecture. We put several teams to defend several architectures, but on top of that, very often we put a board and it's actual board that is sitting. 
+
+
+  \
+
+  Lauri\
+
+  So, so they actually get an understanding, what does it look like? What is our face to the world, or what is the world facing infrastructure that we have to deal with and defend what is the office network that we have to protect and enhance cyber awareness, what are, what security suit, some of the special systems and how the attackers may pivot between different places. So, so we get that knowledge live and also show that to large extent our, the effectiveness of the response depends on your reaction and your decisions. One very good example from a live exercise to bring that knowledge was that we orchestrated a, a, a cyber exercise, a, a system was preached a critical service of a company let's going any e-service. If you're in, in e-business an online business and the Oracle was sitting there, and the question was, do we take the service down or not information compromised, customer data, all those things. 
+
+
+  \
+
+  Lauri\
+
+  The board was deliberately, there was not a standard procedure. It took them time to understand the problem first, but because of the time they spent, and by the time they said, let's take down the service. They, our, a red team had escalated the privileges already that high, that all the admins of the company were kicked out. So the fault service was now running. And what do you do now? You physically cut the cable. This is something that the politicians boards see issue should understand the, the unpredictability of some of the moves that can happen in, in cyberspace. 
+
+
+  \
+
+  Chris\
+
+  Yeah. And the potential consequences. 
+
+
+  \
+
+  Lauri\
+
+  Exactly. Exactly. 
+
+
+  \
+
+  Chris\
+
+  So, so just to, to go back on that, then cyber ranges, what is a cyber range? Talk to us about that. 
+
+
+  \
+
+  Lauri\
+
+  Cyber range is a, an environment and platform where we can emulate business or special infrastructure. We use a library and library items can be a regular virtual machine, or they can be physical, special systems that we connect to what we call a game net or environment. And we set them up as organizations. You have your firewalls and you have your office network security. You may have cloud, you may have, your customer is segment. On that, we put actual, working different working software. We, we use the tools and, and softwares that are normally used by the, by the company. We can attack it, or we can test some defensive equipment on that before going live. We can exercise how we defend this. We can take that infrastructure, multiply it between different teams and we can have great competition. For the last week, we had a competi for European union mill certs. 
+
+
+  \
+
+  Lauri\
+
+  We had 20 EU mill certs, which is military cyber emergency response teams exercising on our cyber range and basically trying to hunt for threats. So, so this is just one use of cyber range. You can, you can use it to test personnel. You can use it to train them, to prepare them for the recent threats. Yeah. That's, this is what we do. It's, it's hard to make a working cyber range. There are, there are very few of them. What we say sometimes is that we're in competition with PowerPoint presentations. There are a lot of people who say that we can do all that, but actually it's hard in practice have worked on our range and on our automation, visualization, situational awareness solution at the library for seven years now. 
+
+
+  \
+
+  Chris\
+
+  That something you customize for each organization or you provide it as a sandbox for people to test things in. 
+
+
+  \
+
+  Lauri\
+
+  Both options? So, first we say that, why don't you take a look at our library? We have 2000 items there. And, and perhaps there's a great chance that a lot of them are usable that we already have in the library. The second point is, do you really need the whole organization being replicated for an exercise? And, and what is that you want to do? If you want to test out the new firewall, if you want to test out the new, I know anti ware or logging software, then perhaps again, this would be an overkill, there are few instances where full infrastructure replication makes sense. It is space. Definitely. If you're a space station, then you would like to have a full infrastructure, because if you want to test equipment, especially defensive equipment, you don't want to try that out live. So, so there, it makes sense to actually build and go and build the actual replica. 
+
+
+  \
+
+  Lauri\
+
+  It can be costly if there are not effective tools, how to do that. 
+
+
+  \
+
+  Chris\
+
+  This is penetration testing on steroids for an, for a whole organization really is. 
+
+
+  \
+
+  Lauri\
+
+  Yes. And, and also trying out what it feels to be under, under cyber attack. 
+
+
+  \
+
+  Chris\
+
+  The simulation of like, okay, something is actually happening now, how are we going to respond to it. 
+
+
+  \
+
+  Lauri\
+
+  Exactly. 
+
+
+  \
+
+  Samuel\
+
+  There an assessment going on from both sides? On the back end, you're looking at you're observing that hack or that attack taking place. And, whether it's you or the actual, your client are doing things to respond to that. The other side, are they looking for vulnerabilities in order to kind of patch them? There a kind of duality kind of assessment going on or are you just say, right, let's look for vulnerabilities. And that's the only source of exercise. We say, what's our response to that? 
+
+
+  \
+
+  Lauri\
+
+  The, there are various options. What, what you can do, we are free. We offer all kinds of experiences one, and this is right on point, very recently, more popular types of exercises and requirements are dealing precisely with looking for vulnerability. So we call them tread hunting exercises. We set up an company infrastructure, and we go through the whole attack cycle. And I think this is very important. We explain how they come in, how they gain foothold, how they pivot and how to look for them, especially if it's a zero day. If for example, if we look at the exchange event and then how they leave back doors, how we uncover those back doors, but there is no hardening going on, but it is just to inform people of how things happen. This is also very helpful to combine with management, because you have the whole little mockup of a picture of your organization in front of you. 
+
+
+  \
+
+  Lauri\
+
+  You have it in a huge dashboard, and you can actually explain, this is why cyber awareness is important. This is why the investment in the firewall is important. This is why this reach and upgrade is important. And this is why it is important. When Microsoft exchange has zero day, we take down the organization for five hours and do the patches because we have actually had cases with the recent exchange that it personnel was afraid to go to the management, to tell, we need to take system down for a while. They actually lost some, some valuable data cause of that. Then you have the life fire. This is the other type of exercise that you described. We build up an infrastructure and we put a red team on it. We can invite the customer representatives there as well to either to perform the offensive activities or to, to see how our people, we have our own red team who they do, how they do it, and then, or it can be customers, red team as well, which is not a rare case. 
+
+
+  \
+
+  Lauri\
+
+  You would have to do the full defense. That's the most intense experience. You have the infrastructure, you have to go and discover the vulnerabilities. You have to do the patches. And it's great for teamwork. And, and again, understands your, the weaknesses within the organization beyond technical. Because what we ask our participants in the exercises to do is to write situation reports and incident reports. We give them to the board or crisis committee of the company and they need to assess it. So, and the, sometimes the criteria to assessment is, do you understand it? Can you do something with it? Is there this? So what argument? And, and that's why I say, when I go and blame, politicians of not understanding cyber to some degree, the reasons politicians, lawyers sees you not understanding cyber, is we also on the techn now I'm on the technical side suddenly. 
+
+
+  \
+
+  Lauri\
+
+  No, well, I'm somewhere in the middle, but on the technical side teams often do not take or make the effort to also trying to explain what is going on. So, so that's also part of the exercise and important, important stuff. 
+
+
+  \
+
+  Samuel\
+
+  Yeah. Yeah. And how long do these assessments? I mean, obviously they're gonna vary, but on average, how long do these assessments, normally you take. 
+
+
+  \
+
+  Lauri\
+
+  A, a good threat hunting exercise would take you two days. A good life exercise would go somewhere between two to three days. We have seen five day exercises, a good board exercise. If, if we put the border or component there, we wouldn't get their attention for longer than two hours, but that's already very generous. If we could get them for two hours on, on top of technical, that's good. But, but I think what is changing now and what we want to change is we don't want to serve a menu. We want to give the customers the kitchen so they could actually, and that's the reason customers are all different. We want the customers to be smart, to actually design their own experiences based on our library. Moreover more importantly, we also want them to create content and be able to ch to sell that content also to other customers. 
+
+
+  \
+
+  Lauri\
+
+  If you are a, if you're a university and if you have a cyber security program and you have 50 students doing their research, we don't know what the research is. It, it can take us to some very interesting places. We just want them to able to have a cyber range. We want them to be able to have a bunch of targets to start with and then do their research and maybe develop new targets, implement new vulnerabilities and, and whatnot, and then be able to sell it to other universities because sharing is. 
+
+
+  \
+
+  Samuel\
+
+  Absolutely. 
+
+
+  \
+
+  Chris\
+
+  It sounds like you're approaching this from almost like a, a war games type scenario. I imagine that's gonna get a lot more buy-in from organizations that are gonna want to get involved in that because it's entertaining. If not, if nothing else. 
+
+
+  \
+
+  Lauri\
+
+  It's it's and it is also, I, I mean, we always believe that there has to be a fun element to that then, and excitement, and it is about team building also, and building that interface. One of them always the greatest moment for us in any exercise has been that when we deliver the range to a client or when we deliver exercise to a client and we have the visualization suited up when the customer pushes us away, when the senior personnel comes and starts briefing themselves and go through it. And, and that's the moment when you see that the customer really owns it. And, and when they are happy about it and they can explain it in their which, in the way that their management understands and it all starts to make sense. So I think that's good. 
+
+
+  \
+
+  Chris\
+
+  I, I imagine it must be quite a visible learning curve. You you're watching them go through that process of, going from very little understanding of, they're probably just concerned about security at the start to actually wanting to engage, understanding how they're engaging in it at the end of it and how they can improve their business going forward. I think that must be absolutely fascinating. 
+
+
+  \
+
+  Lauri\
+
+  It is. It's, it's, it's a good feeling actually. 
+
+
+  \
+
+  Samuel\
+
+  How are you then staying ahead of, because you have this library, which is obviously a great basis for a lot of these attacks, how are you looking of the opportunities to build new elements to that library? Also just be one step ahead of the game, because it's forever evolving, right? 
+
+
+  \
+
+  Lauri\
+
+  Oh my God. Yes. And, and getting harder and harder all by day. My, my job among other things is to write scenarios. I am some, sometimes call me chief storytelling. I am, and my job is to put the narrative on the exercise. I mean, it's a very technical exercise. It's a routine. Basically you have a new vulnerability you implemented. Our, a team has actually come up with is pretty well informed. I, I saying we have good collaboration network. We, so we have an idea of the vulnerabilities, but sometimes the sheer aggressiveness of the attack that are taking place, the scenarios that play out that you put on paper are much worse than I can. I can come up with these days. I can give a couple of examples. In 2017, I was pitching a scenario to a large international exercise, where we had a lot of representatives from various countries, including UK, to do a scenario where a hospital is under ransomware attack. 
+
+
+  \
+
+  Lauri\
+
+  What is the decision making process and what is the technical response and what that could be April, 2017. The host of the exercise says, no, no, it's not realistic. This is, this goes too far. Let's, let's not go there. Now that it situation is different. Again, we did in another international exercise was just before the colonial pipeline. It was exactly the same ransomware attack against critical infrastructure. We submitted the scenario on Thursday that happened over weekend. The exercise was on, on Tuesday. Guys you're just copying what is happening in the real world. This is not the original thinking. And, and the feeling that I get is that the real world is getting away from our thinking, but I think it's just something that we have to deal with. But, but yeah, we, of course we follow the, from the technology side, we follow the regular methods of, of the attack structure and infrastructure. 
+
+
+  \
+
+  Lauri\
+
+  And then we participate in the forums. What I find difficult is that sometimes the way offensive cyber is being used these days. And, and I think what many people don't realize is that it's everywhere that you do not have to do anything to be a, a target of an attack. It's unpredictable. 
+
+
+  \
+
+  Chris\
+
+  There a getting ahead of the game? Cause it feels like if you were to simplify a cyber attack down to a criminal activity as a society, we're generally always behind criminals, except for the ones that get caught. 
+
+
+  \
+
+  Lauri\
+
+  No. 
+
+
+  \
+
+  Chris\
+
+  So, is there always gonna be a case that there's, there's always gonna be somewhere out someone out there, one step ahead, who's thought of something different because otherwise we're planning for something that may never happen. 
+
+
+  \
+
+  Lauri\
+
+  I think true. I think that's the, that's how the world has always been. I think a couple of things come to mind, a critical question is how do we behave in a situation like that? What is our tolerance of failure? What is our tolerance of risk? What is our ability to think outside of the box? I was in a, I, I was in a seminar where were discussing the future of cyber exercise. Were given a task to teach an 1880 year old grandma basics of cybers security and the task, like a teamwork. The task was how would you do that? Everybody jumped into the game and were starting to, how well, I said, let's stop for a minute and ask question and what that eight year old grandma can teach us about cybersecurity, her mistakes may inform us, what do we do when she makes that, stupid mistake and how do we make sure that we actually learn and put that in practice? 
+
+
+  \
+
+  Lauri\
+
+  Again, this, the position of security at experts being little bit condescending and not seeing, we must see intelligence opportunity, learning opportunity in every failure we must have. That should feed the tolerance of failure. If we, we see a ran over attack, we shouldn't treat it as a terrorist dilemma or, moral dilemma of good and bad. We should treat it as an intelligence opportunity. What can we learn from here? How can we go after? And, and for example, if we take ran somewhere, I think we run the risk of losing a lot of data because of some of the posture that has being again, put forward by, by people involved. And let me let explain. For ransomware hits and we have run that also in some of our exercise, and the question is, do you pay the question? Do you pay is not a binary choice, but in our response, very often it's treated as binary choice. 
+
+
+  \
+
+  Lauri\
+
+  When you go to the yes column already, or the yes box, you are already bad guy and you are, paying to the terrorists and negotiating with hostage situation and, and so on. Well, there are a couple of points legally in our legal systems, ransomware is never treated in equal of severity as terrorist or hostage situation. It's not, we, we call it in our country, the first degree crime. It is not the first degree crime. This is just definitionally wrong. If we want to treat it as terrorism or hostage situation, then we should first define it in the criminal law as terrorism or host situation, maybe we should, but today we are not, then second is that the payment can come in various forms. It is not a secret that a lot of institutions are taking the risk by their risk management playbook to take the risk of paying and whatever is being said on the moral side, they do it. 
+
+
+  \
+
+  Lauri\
+
+  Now, if we over moralize the situation, these companies are not sharing data with us. And we are just eliminating one discussion. We are a lot of, lot of data, and we are eliminating lot of ability to discuss and go after that. Instead, I think we should be debating following things, which is, do we have a phone number in every national police where we can go and call, make a safe payment, share the data, go after that, maybe build a database and apply some algorithm to try to find out actually, who is behind it and do those attribution. We saw that now first time in colonial pipeline, they actually did it. They actually made a fake payment. FBI went after that, and that was effective. There was in enormously effective. I think, I, I think these, this is the thinking that we should display. If we want to stay ahead of the game. 
+
+
+  \
+
+  Chris\
+
+  Do you think that there's other lessons that we can learn from how non cyber crimes have been tackled over the, I was gonna say decades, but it, it is decades, I suppose. Are there lessons that we can learn that we should be applying to how we deal with cyber? 
+
+
+  \
+
+  Lauri\
+
+  Yes, absolutely. And, and I think we can take parallel and they can be creative about it. I think in certain trial wars have been, I mean, people have been extremely creative and extremely successful. For example, our company has been working in colo Columbia with Columbia defense forces for a long time. And, and we see how effective, for example, Columbia has been in encountering the men of drug crimes. Again, how creative the country has been. I think there are lots of lessons learned from there. I think, experience in fighting, again, lots of people compare and just ransomware is bit of an obsession, but again, it's just so bad. Lot of people compare it to terrorism and host situation. It's not, I, I, I don't think it's a false equivalency. I would compare it to corruption because somebody wants money for, in an illegal way. That's, that's much closer to me to corruption, 
+
+
+  \
+
+  Chris\
+
+  Like blackmail, I suppose, in a way, isn't it. And. 
+
+
+  \
+
+  Lauri\
+
+  Blackmail, blackmail and exactly something like this. And, and again, we should use some of the tools and techniques that are used in fighting corrupt blackmail. It's the tool boxes are also out there. 
+
+
+  \
+
+  Chris\
+
+  I think a lot of that will come down to back to the conversation. We, we had a few minutes ago where we're talking about that knowledge and that level of understanding of cybersecurity, but through, I think it throughout the different levels, actually, cuz it's not just the, getting it to the layperson in the public who's non-technical or the politicians or whatever, but probably within the industry as well, because you were talking about cybersecurity, but talking down to people. I actually, I think there's probably a lot of developers out there building software without a full appreciation of the risks. Because I think from my perspective, I know about cybersecurity. I, enough to have an, have to be fascinated the conversation we're having. I think if I was, if I were to try and do the black ha is it black? Ha hacker. I think it isn't it. 
+
+
+  \
+
+  Chris\
+
+  The, if I was to try and do that, I don't think I'd be very good at it. I mean, we've had a, a hacker on the show before as well. I just, I, I worry that maybe even within the tech industry, the developers, the, the, the techies that are out there probably don't have the level of knowledge that they need to, like, how do we, how do we get better at understanding the risks here, 
+
+
+  \
+
+  Lauri\
+
+  Which I think the key here is to learn, I would be very interested in knowing when you are coding. Why you, why don't you care about that? Just, is it the general way you are used to doing things? Is it what needs to be changed? I think we should take that premise in, in teaching cyber awareness that people are inherently not interested in this topic until, and there's this, it's not the, and happen to me approach. And it's makes life too complicated. And, and now I need to learn some extra things and there is certain resentment. What we have seen is lots of companies implementing cyber awareness programs and they are, they don't seem to be working because they are mandatory. We don't give people enough opportunity to vent out their problems. It's just another PO like they work like another PowerPoint presentation, which say you should use multifactor authentication every time don't put the, the USB drive, wherever, you put it's, it's just the it's Moses to cyber hygiene doesn't seem to be working. 
+
+
+  \
+
+  Lauri\
+
+  We had a cyber awareness program that we designed for a customer. By accident, we left a feedback field open in one of the questions and what happened? It was an organization which had, I think, 5,000 people in it. 2000 people in cyber awareness course took time to respond to the comment. And, and they made a point that we are not going to follow that particular route. Cause we think it's stupid. It was about USB drives and what the rule and the presentation said, you shouldn't be using USB drives given to you on trade shows because it may contain something bad. 2000 people out of 5,000 said, we don't care. We use that anyway. And now that's the learning moment. I think this is what we should thinking about in the cyber, in building cyber awareness courses, in building cyber trainings at all, why people do that? 
+
+
+  \
+
+  Lauri\
+
+  Where are those points of disagreement with us? They say, you know, it's my property. I, I want to use it. Well, this particular organization didn't have too many ports open, but it was an interesting information. I think every step of the way, when we do cyber awareness and build cyber awareness, we should be asking that question. Cyber awareness is not a technical issue. It is half Newton, half Freud, and it's, there's a lot of psychological and, and subconscious stuff going on, which we also need to pay attention. 
+
+
+  \
+
+  Samuel\
+
+  Mm. I think for me, one, I do not understand hacking, I fundamentally do not understand how hacking works. There's this anxiety brought on by the fact that I have no idea how something works and there's nothing. And, and it's far beyond my technical understanding to be able to prepare for that, or to under, to code that, when I'm writing code I'm a front end developer. My rules have always been, if you're using forms, that's really all I need to worry about. As far as front end engineering goes, if you extend that onto hosting and infrastructure. Yeah. There are a few certain configuration things I can do, but really, I don't understand a lot of that. The second aspect is sometimes it's just too damn convenient to use those USB things. 
+
+
+  \
+
+  Lauri\
+
+  It's yes, of course. 
+
+
+  \
+
+  Samuel\
+
+  The convenience versus, you know, whatever. That's why Google make all their products free is because it, you lower the barrier to entry. You, you get to farm all that data. That's why these products are free. It's just combination of those two things means that I don't think I'm as cyber security aware as I could be. I imagine that's the same for a lot of other people. 
+
+
+  \
+
+  Lauri\
+
+  And, and exactly, and a lot of people are convenient and we are not going to change the human nature here, but what we can do and what works sometimes is we can little bit step by step, get the subconscious of people. And, and sometimes the role of those trainings is that, maybe you don't need to be that aware in every step of the way, but maybe then in this one moment, when it really matters, you actually think, yeah, I'm not going to check that link out. Another one is that I think we should be making the point that if you are going through the cyber awareness course, when you come out of it, you are not going to be scared, but you are actually informed what do I can do to make my life better? What kinds of tools I'm going to use that I am, that my quality of life is not gonna change. 
+
+
+  \
+
+  Lauri\
+
+  I mean, the, where is just to shut down the computer, not use it. And, but that's, I find dangerous is that lots of cyber awareness courses are scaring people off. There are these I'm particularly against I'm really evangelically against fishing tests in large organizations. It teaches absolutely nothing because we know, I know that with a good spear fit email, I'm going to get into mailbox, or if I'm not going to get it, my red team is going to do that. The typical success of, I think Symantec has put that out. 69% of Phish emails are going are, are successful. I know we should inform people, let's just make it a, a show or let's just present it in a different way, like a gamified way. Show them a picture of an email, regular email and a Phish email. And, and let's collect points. How do you notice that this element in the email might be Phish might come from a malicious source and let's reward them. 
+
+
+  \
+
+  Lauri\
+
+  But, but if you send out the link with a Phish email, I can tell the success rate of any phishing campaign that is offered, I think is 69% up to 70%, we have done a phishing campaign that was 90%. I think it was 96 successful. What we did, we sent out parking fines. It was a perfect parking fine. Who was the most eager clickers on that email, people who didn't have cars, it's just at 96% rate, but why do we need to humiliate these people in, by a training like this? My question is what happens next? Once you have clicked that in the, in those trainings, what happens next is your screen is going to be blocked. You are forcefully taken to a cyber awareness course, which you already hate because you are feel humiliated, then you click through it and then you can go back to your work. 
+
+
+  \
+
+  Lauri\
+
+  I think this is the worst possible method of teaching, teaching through humiliation. Doesn't get us anywhere. You, on top of that, you add a boring, PowerPoint. So, but what we should be looking is what do we do? What do we do with people who have clicked on those links? How do we encourage them to come forward and say, I, I think I was hacked and, and to tell them it's okay, we have a plan. We are going with you. You actually enhance the security of organization by information and being part of the community. I think we should be focusing on that part. 
+
+
+  \
+
+  Chris\
+
+  Based on the conversation that we've had today, as well though, it doesn't feel like that, the Phish thing, cause that is like the predominant view that most people have, or, or get exposed to within an organization, especially non-technical people. It doesn't feel like that is the thing that we should be worrying about at the moment, Phish, like it is, it's still a vulnerability, definitely, but there are bigger things to worry about, right? 
+
+
+  \
+
+  Lauri\
+
+  Sure, absolutely. Although I, I, I wouldn't discount that threat because this is still one of the leading ways to get into the system and pivot forward. A lot of our scenarios start with this and you can really do a lot of damage by, by that. But, but of course, the bigger things to worry about the F secure Miko and made that statement a couple of weeks ago, we saw a first sign of it with Microsoft exchange zero a and this is AI threats that are surfacing and AI enabled vectors that are coming up. What happened of course in, I don't know if you are, you're familiar, but we can walk through it very quickly. Microsoft exchange, one of the most used corporate softwares often faces vulnerabilities. This is what happens when you, when you do software. There's, I mean, nothing particularly wrong with it. Now, there was a zero day vulnerability that had been exploited by a sophisticated actor, but as you are sitting in and you're gathering data sooner or later, you're to be exposed and what happened, it was, I think, in Denmark from a large, important financial institution, when a day security company performed test, they found that C day and what a security company usually does when they find something like this, they publish it. 
+
+
+  \
+
+  Lauri\
+
+  And now this Sierra day is public. The bad actor, the really sophisticated, bad actor exploiting the situation now is exposed and their game is over, but after exposing the Sierra day, the other game and race starts. What happens is Microsoft is forced to, or, has to issue a, a patch. Now this patch is going to be reversed engineered by the community of little bit lower level hackers, but still sophisticated. They try to start getting into the systems of companies using this known vulnerability. Now, what we saw with Microsoft exchange attack was an AI enabled ability to do that reverse engineering and to locate these CDA vulnerable organizations. That was immensely exponentially, more wider than you could. You could, you could see in previous attacks like that when a zero days is being exposed and those organizations with these vulnerabilities are still out there. This is something, and there are, there are other vulnerabilities that we are looking, then it doesn't have to be a corporate it zero day vulnerability. 
+
+
+  \
+
+  Lauri\
+
+  There are, there are other mistakes that are misconfigured firewalls, whatnot. So, so I think this is one of the scariest challenge. I think our ability to provide machine learning tools to counter that threat and our ability to let machine in learning, take decisions to counter this threat, that in some ways has already manifested itself, or at least is, is giving science to manifest that is going to be one of the greatest challenges. 
+
+
+  \
+
+  Chris\
+
+  So, I mean, I I've really enjoyed the arc of this conversation. I want just bring it back because the, when you were talking earlier about some of that paper that was published around late nineties, early two thousands, 
+
+
+  \
+
+  Lauri\
+
+  Isn't they may. 
+
+
+  \
+
+  Chris\
+
+  The bene MAs. Yes. That one, I I'm fascinated that seems to that's such a pivotal point. One of the, one of the best books was the Cook's egg, which starts with the security vulnerability and identified in Berkeley with an accounting era. I think it starts with. 
+
+
+  \
+
+  Lauri\
+
+  Yeah. 
+
+
+  \
+
+  Chris\
+
+  Yeah. Which I think we've made, we may have mentioned on the show before when we've been talking about this stuff. I think it seems like if that's starting in the eighties and then there's this big point at the turn of the millennium, are we progressing with our knowledge of cybersecurity at the rate that we should be progressing? 
+
+
+  \
+
+  Lauri\
+
+  Yes. Yes. Yes. I, I, I don't want to be one of those who's who tries to sell cybersecurity through fear, because I think it's not particularly effective. Although, I mean, there are certain points where we have to say that, the risk is too high. We have to do something, but we're doing a lot. I mean, I think certainly we see companies fortune 1000 companies being much more responsible. Of course, I see two trends that can be drivers for that change. One of them could be insurance industry because basically all insurance in future. And, and we see that trend to large extent is going to be cyber insurance. Our insurance premiums are going to depend on how good we are on cyber. And that can be a significant amount. There is a debate if that is going to be significant or not. I think this, this could be a factor. 
+
+
+  \
+
+  Lauri\
+
+  Another thing is the shareholders, our own system of how we, the system of fiduciary duty. This is my lawyer again. We'll come back to the, that's the full LA. Now the lawyer in MES, I mean, the logic is that the company boards, they need to be responsible. They need to make money for their shareholders. And, and if they do not act in a loyal and prudent way, then they may face what is called derivative lawsuits. One of the things S by their shareholders, even minority shareholders, for example. What we will see is the same trends that has made so much difference in other areas of compliance or responsibility or liability that those shareholders themselves are also, as we teach people cyber awareness, they might be minority shareholders in our companies as well. So, so we might actually prepare that awareness also in, in, in terms of corporate liability, which again is not the bad thing. 
+
+
+  \
+
+  Lauri\
+
+  If it, if it gets us to a more safer space. 
+
+
+  \
+
+  Chris\
+
+  I mean, I think that's a good note to end on. There any, are there any final points you want to any, actually, any final predictions you want to make for where we're going with cybersecurity? 
+
+
+  \
+
+  Lauri\
+
+  When, when I look at the world, I, I, I look at it at the, in, in three segments. And, and one of them is the technology that we use, the things that we learn. I, I think we are going to see a much more awareness, cybersecurity awareness, a lot more tools. I think one of the questions actually is going to be how are we going to deal with our success? Because, because that's going to be an interesting thing to see when we look at the threat vectors, things that we cannot control. I think the whole metaverse discussion things that are happening in Mets are going to also have a cybersecurity impact in enormous way, the way that we do not understand, I think we are looking at this AI machine learning threats, but also responses. The key question is, are we going to be prepared it to do that on the organizational? 
+
+
+  \
+
+  Lauri\
+
+  The third point is the organizations have that, that structures dealing with it. I think we are going to see a lot of corporation beyond NATO EU, and we are going to see a consolidation of like-minded nations outside the formal alliances and the very future of internet. As we know it is going to be a big topic. I mean, you see that Russia has successfully implemented their iron wall. The China has implemented their firewall, how the network itself is going to look like 10 years from now. That's, that's going to be an interesting thing. I think some nations are going to be much more aggressive, but then again, I think corporations are going to be much more responsible. Finally, there's the psychological aspect, the laziness, the convenience, I think we are going to see a lot more cybersecurity now everyday lives. We need to find a normal way to do it. 
+
+
+  \
+
+  Lauri\
+
+  And, and I think there are a couple of good that needs to do. It. 
+
+
+  \
+
+  Chris\
+
+  Certainly sounds like it. I think I like the approach that you're taking with making it engaging. I think that's really important. Thank you very much for us on the show. Laura, it's been a fascinating conversation. 
+
+
+  \
+
+  Lauri\
+
+  Thank you. Thank you for.
