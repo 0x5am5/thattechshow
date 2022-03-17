@@ -26,6 +26,11 @@
   status = 301
 
 [[redirects]]
+  from = "/episodes/47-inside-intels-federal-division"
+  to = "/episodes/47-inside-intel's-federal-division"
+  status = 301
+
+[[redirects]]
   from = "/episodes/episode-37-zombies-emacs-and-getting-clojure-with-magnar-sveen"
   to = "/episodes/37-zombies-emacs-and-getting-clojure-with-magnar-sveen"
   status = 301
