@@ -20,12 +20,12 @@
   to = "/ads.txt"
   status = 200
 
-[[redirectsw]]
+[[redirects]]
   from = "/episode/*"
   to = "/episodes/:splat"
   status = 301
 
-[[redirectsw]]
+[[redirects]]
   from = "/episodes/episode-37-zombies-emacs-and-getting-clojure-with-magnar-sveen"
   to = "/episodes/37-zombies-emacs-and-getting-clojure-with-magnar-sveen"
   status = 301
