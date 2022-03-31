@@ -27,6 +27,11 @@
 
 [[redirects]]
   from = "/episodes/47-inside-intels-federal-division"
+  to = "/episodes/48-building-products-and-technical-recruitment-with-michal-juhas"
+  status = 301
+
+[[redirects]]
+  from = "/48-building-products-and-technical-recruitment"
   to = "/episodes/47-inside-intel's-federal-division"
   status = 301
 
