@@ -28,8 +28,7 @@ feed.entries.each do |item|
         'item' => item,
         'media' => item.enclosure_url,
         'duration'=> item.itunes_duration
-
-        }
+    }
 
     FileUtils.mkdir_p("_posts")
     File.open("_posts/#{name}.html", "w") do |f|
