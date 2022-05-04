@@ -5,7 +5,10 @@ on:
   schedule:
     # Customize schedule expression at crontab.guru
     # This one runs at 5:01 UTC daily
-    - cron: "31 5 * * *"
+    # Discussion on when Timezone support will be added https://github.com/github/feedback/discussions/13454
+    # For now we just run twice
+    - cron: "30 4 * * *"
+    - cron: "30 5 * * *"
 jobs:
   build:
     name: Call Netlify build hook
