@@ -24,6 +24,11 @@
   from = "/episode/*"
   to = "/episodes/:splat"
   status = 301
+  
+[[redirects]]
+  from = "/episodes/55-launching-a-product-in-a-new-market-category-with-nicole-smith"
+  to = "/episodes/55-sidepreneurship-and-launching-a-product-in-a-new-market-category-with-nicole-smith"
+  status = 301
 
 [[redirects]]
   from = "/episodes/50-episode-50-that-tech-show-50th-birthday-extravaganza-with-samuel-gregory-and-chris-addams"
