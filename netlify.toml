@@ -24,6 +24,11 @@
   from = "/episode/*"
   to = "/episodes/:splat"
   status = 301
+
+[[redirects]]
+  from = "/episodes/56-navigating-your-career-in-tech-from-an-mit-instructor-mark-herschberg"
+  to = "/episodes/56-navigating-your-career-in-tech-from-an-mit-instructor-with-mark-herschberg"
+  status = 301
   
 [[redirects]]
   from = "/episodes/55-launching-a-product-in-a-new-market-category-with-nicole-smith"
