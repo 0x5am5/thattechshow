@@ -131,7 +131,7 @@ header .button-link {
     justify-content: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    height: 85vh;
+    min-height: 85vh;
 }
 
 .header-title {
@@ -273,5 +273,6 @@ h2 span {
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 75px;
+    grid-gap: 10px;
 }
 
