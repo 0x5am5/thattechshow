@@ -18,10 +18,11 @@ p a:link {
 
 header .button-link {
     color: white;
+    display: flex;
+    align-items: center;
 }
 
 .hero {
-    max-width: 900px;
 }
 
 .link-image {
@@ -51,9 +52,9 @@ header .button-link {
     max-width: 100%;
 }
 
-@media  (min-width: 768px) {
+@media (min-width: 768px) {
     .post-hero-image {
-        width: 300px;    
+        width: 300px;
     }
 }
 
@@ -110,8 +111,8 @@ header .button-link {
 @media screen and (min-width: 768px) {
     .hero {
         display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+        align-items: flex-start;
+        flex-direction: column;
         flex-direction: row;
         padding-left: 0;
         padding-right: 0;
@@ -130,6 +131,7 @@ header .button-link {
     justify-content: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    height: 85vh;
 }
 
 .header-title {
@@ -145,7 +147,6 @@ header .button-link {
 .episodes {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1024px;
 }
 
 .podcast-list {
@@ -202,6 +203,7 @@ header .button-link {
 h2 {
     text-transform: uppercase;
     font: bold Futura, Sans-Serif;
+    margin-bottom: 2em;
 }
 
 h2 span {
@@ -263,5 +265,19 @@ h2 span {
     @include media-breakpoint-only(lg) {
         column-count: 4;
     }
+}
+
+.logos__logo-img {
+    max-width: 200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logos__row {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 75px;
 }
 
