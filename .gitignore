@@ -1,6 +1,10 @@
-.DS_Store
 _pgbackup
+_pginfo
+pinegrow.json
+
 .jekyll-cache
+
+**/.DS_Store
+
 _site
-pgia
 _posts
