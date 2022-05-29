@@ -261,12 +261,6 @@ h2 span {
     margin-right: auto;
 }
 
-.card-columns {
-    @include media-breakpoint-only(lg) {
-        column-count: 4;
-    }
-}
-
 .logos__logo-img {
     max-width: 200px;
     width: 100%;
