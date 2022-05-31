@@ -33,6 +33,7 @@ header .button-link {
 
 .link-image {
     max-height: 50px;
+    width: auto;
 }
 
 .list-reset {
@@ -49,6 +50,7 @@ header .button-link {
 .hero-text {
     font-size: 2em;
     margin-top: 0;
+    margin-bottom: 1em;
 }
 
 .post-hero-image {
