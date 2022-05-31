@@ -50,7 +50,7 @@
             <li class="nav-item active"><a class="nav-link" href="/press">Press</a>
             </li>
           </ul>
-          <a href="https://www.buymeacoffee.com/thattechshow" target="_blank" rel="noreferrer nofollow" class="button-link ms-auto patreon-link text-white"><img src="images/icons/buymeacoffee.svg" width="25"/> 
+          <a href="https://www.buymeacoffee.com/thattechshow" target="_blank" rel="noreferrer nofollow" class="button-link ms-auto patreon-link text-white"><img src="/images/icons/buymeacoffee.svg" width="25"/> 
             Support us</a>
         </div>
       </nav>
@@ -71,11 +71,14 @@
             <p><i>Available where all good podcasts are downloaded</i></p>
             <p></p>
             <ul class="list-reset podcast-list">
-              <li class="list-item"><a href="spotify:show:1Qcv0qPRsA7FjB2yjMqjGd" target="_blank" rel="noreferrer nofollow" title="Listen on Spotify" class="hero-link"> <img src="https://d33wubrfki0l68.cloudfront.net/7125c6861ab88071609d5e76a0704bcdbe38c3ad/78322/images/spotify.png" alt="Listen on Spotify" class="link-image listen-image"/></a>
+              <li class="list-item">
+                <a href="spotify:show:1Qcv0qPRsA7FjB2yjMqjGd" target="_blank" rel="noreferrer nofollow" title="Listen on Spotify" class="hero-link"> <img src="https://d33wubrfki0l68.cloudfront.net/7125c6861ab88071609d5e76a0704bcdbe38c3ad/78322/images/spotify.png" alt="Listen on Spotify" class="link-image listen-image"/></a>
               </li>
-              <li class="list-item"><a name="anchor" target="_blank" rel="noreferrer nofollow" class="hero-link" href="https://www.stitcher.com/show/that-tech-show"><img src="https://d33wubrfki0l68.cloudfront.net/a581725a09ffbcc678338090a62f735cc3281dc2/59784/images/stitcher_listen_badge_color_dark_bg.png" class="link-image"/></a>
+              <li class="list-item">
+                <a name="anchor" target="_blank" rel="noreferrer nofollow" class="hero-link" href="https://www.stitcher.com/show/that-tech-show"><img src="https://d33wubrfki0l68.cloudfront.net/a581725a09ffbcc678338090a62f735cc3281dc2/59784/images/stitcher_listen_badge_color_dark_bg.png" class="link-image"/></a>
               </li>
-              <li class="list-item"><a href="https://itunes.apple.com/us/podcast/id1551868741?mt=2" target="_blank" rel="noreferrer nofollow" title="Listen on Apple Podcast" class="hero-link"> <img alt="Listen on Apple Podcast" class="link-image" src="https://d33wubrfki0l68.cloudfront.net/a3f9ec7e9730861cc10cced3dbb70c90bd299290/29ccb/images/apple.png" style="max-height: 50px"/></a>
+              <li class="list-item">
+                <a href="https://itunes.apple.com/us/podcast/id1551868741?mt=2" target="_blank" rel="noreferrer nofollow" title="Listen on Apple Podcast" class="hero-link"> <img alt="Listen on Apple Podcast" class="link-image" src="https://d33wubrfki0l68.cloudfront.net/a3f9ec7e9730861cc10cced3dbb70c90bd299290/29ccb/images/apple.png" style="max-height: 50px"/></a>
               </li>
             </ul>
           </div>
@@ -115,7 +118,8 @@
                 <h3 class="hero-text text-uppercase">{{ post.title }}</h3>
                 <p>Published: {{ post.pubdate }}</p>
                 <p class="card-text">{{post.subtitle}}</p>
-                <div class="card-text">{{post.description | truncatewords: 50, "..." }}</div><a href="{{ post.url }}" class="inline-block mb-3 text-current">Find out more</a>
+                <div class="card-text">{{post.description | truncatewords: 50, "..." }}</div>
+                <a href="{{ post.url }}" class="inline-block mb-3 text-current">Find out more</a>
                 <audio class="mt-auto p-1 w-100" controls preload="none">
                   <source src="{{post.media}}" type="audio/mp3"/>
                 </audio>
@@ -127,9 +131,7 @@
         <h2>Other Episodes</h2>
         <div class="row" data-pg-ia-scene='{"l":[{"a":{"l":[{"t":".card","l":[{"t":"set","p":0,"d":0,"l":{"y":"100px"}},{"t":"tween","p":0,"d":0.5,"s":0.1,"l":{"y":0,"autoAlpha":1}}]}]}}]}'>
           {% for post in site.posts limit:3 offset:1 %}
-          <div class="col-sm-4 d-flex" style="padding-bottom: 1em;">
-            <a href="{{post.url}}" class="card text-white episode-link-card" style="text-decoration: none; background: transparent; height: 100%" aria-label="{{ post.title }}" data-pg-ia-hide> <img class="card-img-top" src="{{post.image}}" width="200px"/> <div class="card-body flex flex-col">
-                <small class="text-muted">Published: {{post.pubdate}}</small>
+          <div class="col-sm-4 d-flex" style="padding-bottom: 1em;"><a href="{{post.url}}" class="card text-white episode-link-card" style="text-decoration: none; background: transparent; height: 100%" aria-label="{{ post.title }}" data-pg-ia-hide> <img class="card-img-top" src="{{post.image}}" width="200px"/> <div class="card-body flex flex-col"><small class="text-muted">Published: {{post.pubdate}}</small>
                 <h3 class="card-title mt-2" href="{{ post.url }}" style="font-size: 1.3em">{{ post.title }}</h3>
                 <p class="card-text">{{post.subtitle}}</p>
                 <audio class="mt-auto p-1" controls preload="none">
@@ -138,8 +140,7 @@
               </div> </a>
           </div>
           {% endfor %}
-          <div class="col-12 text-center">
-            <a href="{{site.baseurl}}/episodes" class="button-link">See more</a>
+          <div class="col-12 text-center"><a href="{{site.baseurl}}/episodes" class="button-link">See more</a>
           </div>
         </div>
       </div>

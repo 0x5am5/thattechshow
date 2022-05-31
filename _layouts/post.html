@@ -5,13 +5,8 @@
   <head>
     <link href="/favicon.jpeg" rel="icon" type="image/jpg"/>
     <meta charset="utf-8"/>
-    <link href="/css/style.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <script>
-      window.RSS_URL =
-        'https://s8hdp1sdz5.execute-api.eu-west-2.amazonaws.com/latest/proxy/';
-    </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="description" content="{{ page.description | strip_html | truncatewords: 30, '...' }}"/>
     <meta name="author" content=""/>
@@ -32,31 +27,34 @@
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous"/>
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/style.css" rel="stylesheet"/>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8621956146036386" crossorigin="anonymous"></script>
     <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
   </head>
   <body style="padding-top: 0; margin: 0" class="bg-dark">
     <header class="bg-dark header-wrap sticky-top" data-pgc-save-partial="_includes/header.html" data-pgc-save-partial-operation="load">
-      <nav class="bg-dark border-b-2 border-white navbar navbar-dark navbar-expand-lg">
-        <a class="navbar-brand header-title hero-text" href="/">That Tech Show</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+      <nav class="bg-dark border-b-2 border-white navbar navbar-dark navbar-expand-lg"><a class="navbar-brand header-title hero-text" href="/">That Tech Show</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active"><a class="nav-link" href="/about-us">About Us</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="/about-us">About Us</a>
             </li>
-            <li class="nav-item active"><a class="nav-link" href="/contact-us">Contact</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="/contact-us">Contact</a>
             </li>
-            <li class="nav-item active"><a class="nav-link" href="/episodes">Episodes</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="/episodes">Episodes</a>
             </li>
-            <li class="nav-item active"><a class="nav-link" href="/links">Links</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="/links">Links</a>
             </li>
-            <li class="nav-item active"><a class="nav-link" href="/press">Press</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="/press">Press</a>
             </li>
-          </ul><a href="https://www.patreon.com/thattechshow" target="_blank" rel="noreferrer nofollow" class="button-link ms-auto patreon-link text-white"> <svg style="vertical-align: middle;display: inline" viewBox="0 0 512 512" width="15" height="15">
-              <path fill="white" d="M512 194.8c0 101.3-82.4 183.8-183.8 183.8-101.7 0-184.4-82.4-184.4-183.8 0-101.6 82.7-184.3 184.4-184.3C429.6 10.5 512 93.2 512 194.8zM0 501.5h90v-491H0v491z"></path>
-            </svg>
-            Buy us a coffee! </a>
+          </ul><a href="https://www.buymeacoffee.com/thattechshow" target="_blank" rel="noreferrer nofollow" class="button-link ms-auto patreon-link text-white"><img src="/images/icons/buymeacoffee.svg" width="25"/> 
+            Support us</a>
         </div>
       </nav>
     </header>
@@ -70,28 +68,35 @@
                 <source src="{{page.media}}" type="audio/mp3"/>
               </audio>
               <p class="mt-4"> <i>Available where all good podcasts are downloaded</i> </p>
-              <div class="row"><a href="{{ site.data.links.spotify.link }}" aria-label="spotify" class="col-2 btn m-1 p-2 text-white"> <i style="width: 30px; height: 30px" class="fa-spotify fab fa-2x"></i> </a>
+              <div class="row">
+                <a href="{{ site.data.links.spotify.link }}" aria-label="spotify" class="col-2 btn m-1 p-2 text-white"> <i style="width: 30px; height: 30px" class="fa-spotify fab fa-2x"></i> </a>
                 <p class="col-6 text-uppercase m-3">Spotify</p>
               </div>
-              <div class="row"><a href="{{ site.data.links.apple.link }}" aria-label="apple" class="col-2 btn m-1 p-2 text-white"> <i style="width: 30px; height: 30px" class="fa-apple fab fa-2x"></i> </a>
+              <div class="row">
+                <a href="{{ site.data.links.apple.link }}" aria-label="apple" class="col-2 btn m-1 p-2 text-white"> <i style="width: 30px; height: 30px" class="fa-apple fab fa-2x"></i> </a>
                 <p class="col-6 text-uppercase m-3">Apple</p>
               </div>
-              <div class="row"><a href="{{ site.data.links.stitcher.link }}" aria-label="stitcher" class="col-2 btn m-1 p-2 text-white"><img class="" height="30px" width="30px" src="../../../images/icons/stitcher.svg"/></a>
+              <div class="row">
+                <a href="{{ site.data.links.stitcher.link }}" aria-label="stitcher" class="col-2 btn m-1 p-2 text-white"><img class="" height="30px" width="30px" src="../../../images/icons/stitcher.svg"/></a>
                 <p class="col-6 text-uppercase m-3">Stitcher</p>
               </div>
-              <div class="row"><a href="{{ site.data.links.tune-in.link }}" aria-label="tune-in" class="col-2 btn m-1 p-2 text-white"><img height="30px" width="30px" src="../../../images/icons/tunein.svg"/></a>
+              <div class="row">
+                <a href="{{ site.data.links.tune-in.link }}" aria-label="tune-in" class="col-2 btn m-1 p-2 text-white"><img height="30px" width="30px" src="../../../images/icons/tunein.svg"/></a>
                 <p class="col-6 text-uppercase m-3">Tune-In</p>
               </div>
-              <div class="row"><a href="{{ site.data.links.podchaser.link }}" aria-label="podchaser" class="col-2 btn m-1 p-2 text-white"><img height="30px" width="30px" src="../../../images/icons/podchaser.svg"/></a>
+              <div class="row">
+                <a href="{{ site.data.links.podchaser.link }}" aria-label="podchaser" class="col-2 btn m-1 p-2 text-white"><img height="30px" width="30px" src="../../../images/icons/podchaser.svg"/></a>
                 <p class="col-6 text-uppercase m-3">Podchaser</p>
               </div>
-              <div class="row"><a href="{{ site.data.links.youtube.link }}" aria-label="YouTube" class="col-2 btn m-1 p-2 text-white"> <i style="width: 40; height: 40" class="fa-youtube fab fa-2x"></i> </a>
+              <div class="row">
+                <a href="{{ site.data.links.youtube.link }}" aria-label="YouTube" class="col-2 btn m-1 p-2 text-white"> <i style="width: 40; height: 40" class="fa-youtube fab fa-2x"></i> </a>
                 <p class="col-6 text-uppercase m-3">YouTube</p>
               </div>
             </div>
             <div class="col-md-7">
               <h1 class="hero-text text-uppercase">{{page.title}}</h1>
-              <h2 style="font-size: 1.2em">{{ page.subtitle }}</h2><small class="text-muted vstack gap-2">Published: {{page.pubdate}}</small>
+              <h2 style="font-size: 1.2em">{{ page.subtitle }}</h2>
+              <small class="text-muted vstack gap-2">Published: {{page.pubdate}}</small>
               <p>{{ page.description }}</p>
             </div>
           </div>
@@ -113,8 +118,7 @@
           {% endif %}
           {% if episodeData.transcript %}
           <div style="margin-bottom: 2em">
-            <h3>Episode Transcript</h3>
-            <small>Notice an Error? Our transcripts are automatically generated. If you notice something offensive, <a href="/contact-us">please let us know!</a></small>
+            <h3>Episode Transcript</h3><small>Notice an Error? Our transcripts are automatically generated. If you notice something offensive, <a href="/contact-us">please let us know!</a></small>
             <div class="text-left pt-5" id="transcript">
               <div id="preview">{{ episodeData.transcript | markdownify | truncatewords: 500 }}</div>               
               <div id="full" style="display: none;">{{ episodeData.transcript | markdownify }}</div>               
@@ -136,8 +140,7 @@
                   <img class="media-object" src="{{post.image}}" alt="{{post.title}}"/>
                 </div> <div class="media-body col-md-6">
                   <h3 class="media-heading">
-                    {{ post.title }} </h3>
-                  <small class="text-muted vstack gap-2">Published: {{post.pubdate}} </small>
+                    {{ post.title }} </h3><small class="text-muted vstack gap-2">Published: {{post.pubdate}} </small>
                   <div class="vstack gap-2">{{post.subtitle}}</div>                   
                   <p class="pt-3">Learn more... </p> 
                 </div> <div class="media-body col-md-2">
