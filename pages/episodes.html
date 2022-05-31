@@ -31,9 +31,9 @@ permalink: :basename
       }
     </script>
     <script src="https://kit.fontawesome.com/440cd2ca6e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"/>
-    <link href="../bootstrap_theme/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8621956146036386" crossorigin="anonymous"></script>
+    <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
   </head>
   <body style="padding-top: 0; margin: 0" class="bg-dark">
     <header class="bg-dark header-wrap sticky-top" data-pgc-save-partial="../_includes/header.html" data-pgc-save-partial-operation="load">
@@ -58,16 +58,15 @@ permalink: :basename
             <li class="nav-item active">
               <a class="nav-link" href="/press">Press</a>
             </li>
-          </ul>
-          <a href="https://www.buymeacoffee.com/thattechshow" target="_blank" rel="noreferrer nofollow" class="button-link patreon-link text-white"><img src="/images/icons/buymeacoffee.svg" width="25"/> 
+          </ul><a href="https://www.buymeacoffee.com/thattechshow" target="_blank" rel="noreferrer nofollow" class="button-link ms-auto patreon-link text-white"><img src="/images/icons/buymeacoffee.svg" width="25"/> 
             Support us</a>
         </div>
       </nav>
     </header>
     <main class="main p-3 mb-2 bg-dark text-white" style="padding-left: 15px; padding-right: 15px">
       <section class="episodes">
-        <h1>Episodes</h1>
         <div class="container">
+          <h1>Episodes</h1>
           <div class="row">
             {% for post in site.posts %}
             <div class="col-12 pb-4 mb-4 border-b-2">
@@ -93,5 +92,6 @@ permalink: :basename
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="/assets/js/popper.min.js"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../pgia/lib/pgia.js"></script>
   </body>
 </html>

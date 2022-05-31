@@ -11,6 +11,12 @@ html {
     color: white;
 }
 
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
 a:link,
 p a:link {
     color: var(--color-primary);
@@ -159,10 +165,10 @@ header .button-link {
 }
 
 .about-hero {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
     margin-bottom: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
 }
 
 .about-content {
@@ -203,7 +209,8 @@ header .button-link {
 h2 {
     text-transform: uppercase;
     font: bold Futura, Sans-Serif;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+    margin-top: 2em;
 }
 
 h2 span {
@@ -274,5 +281,17 @@ h2 span {
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 75px;
     grid-gap: 10px;
+}
+
+h1 {
+    margin-bottom: 2em;
+}
+
+.patreon-link img {
+    width: 30px;
+}
+
+.social-icon {
+    width: 40px;
 }
 

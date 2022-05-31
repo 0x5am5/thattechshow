@@ -9,14 +9,10 @@ permalink: :basename
     <link href="/css/style.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <script>
-      window.RSS_URL =
-        'https://s8hdp1sdz5.execute-api.eu-west-2.amazonaws.com/latest/proxy/';
-    </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
-    <title>THAT TECH SHOW - Hosted by Chris Addams & Sam Gregory</title>
+    <title>That Tech Show - Hosted by Chris Addams & Sam Gregory</title>
     <script src="https://kit.fontawesome.com/440cd2ca6e.js" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TEM8PPB2T0"></script>
     <script>
@@ -31,10 +27,9 @@ permalink: :basename
       }
     </script>
     <script src="https://kit.fontawesome.com/440cd2ca6e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"/>
-    <link href="../bootstrap_theme/bootstrap.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="../blocks.css"/>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8621956146036386" crossorigin="anonymous"></script>
+    <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
   </head>
   <body style="padding-top: 0; margin: 0">
     <header class="bg-dark header-wrap sticky-top" data-pgc-save-partial="../_includes/header.html" data-pgc-save-partial-operation="load">
@@ -54,8 +49,7 @@ permalink: :basename
             </li>
             <li class="nav-item active"><a class="nav-link" href="/press">Press</a>
             </li>
-          </ul>
-          <a href="https://www.buymeacoffee.com/thattechshow" target="_blank" rel="noreferrer nofollow" class="button-link patreon-link text-white"><img src="images/icons/buymeacoffee.svg" width="25"/> 
+          </ul><a href="https://www.buymeacoffee.com/thattechshow" target="_blank" rel="noreferrer nofollow" class="button-link ms-auto patreon-link text-white"><img src="/images/icons/buymeacoffee.svg" width="25"/> 
             Support us</a>
         </div>
       </nav>
@@ -73,23 +67,24 @@ permalink: :basename
         ">
         <div class="container pb-4 pt-4">
           <h2>Listen & Subscribe</h2>
-          <div class="d-inline-flex flex-wrap"><a href="{{ site.data.links.spotify.link }}" aria-label="spotify" class="btn btn-secondary m-2 p-3 rounded-circle shadow"> <i style="width: 40; height: 40" class="fa-spotify fab"></i> </a><a href="{{ site.data.links.apple.link }}" aria-label="spotify" class="btn btn-secondary m-2 p-3 rounded-circle shadow"> <i style="width: 40; height: 40" class="fa-apple fab"></i> </a><a href="{{ site.data.links.stitcher.link }}" aria-label="stitcher" class="btn btn-secondary m-2 p-3 rounded-circle shadow text-white"><img height="40px" width="40px" src="../images/icons/stitcher.svg"/></a><a href="{{ site.data.links.tune-in.link }}" aria-label="tune-in" class="btn btn-secondary m-2 p-3 rounded-circle shadow text-white"><img height="40px" width="40px" src="../images/icons/tunein.svg"/></a><a href="{{ site.data.links.podchaser.link }}" aria-label="podchaser" class="btn btn-secondary m-2 p-3 rounded-circle shadow text-white"><img height="40px" width="40px" src="../images/icons/podchaser.svg"/></a>
+          <div class="d-inline-flex flex-wrap"><a href="{{ site.data.links.spotify.link }}" aria-label="spotify" class="btn btn-secondary m-2 p-3 rounded-circle shadow"> <i style="width: 40; height: 40" class="fa-spotify fab"></i> </a><a href="{{ site.data.links.apple.link }}" aria-label="spotify" class="btn btn-secondary m-2 p-3 rounded-circle shadow"> <i style="width: 40; height: 40" class="fa-apple fab"></i> </a><a href="{{ site.data.links.stitcher.link }}" aria-label="stitcher" class="btn btn-secondary m-2 p-3 rounded-circle shadow text-white"><img height="40px" width="40px" src="../images/icons/stitcher.svg" class="social-icon"/></a><a href="{{ site.data.links.tune-in.link }}" aria-label="tune-in" class="btn btn-secondary m-2 p-3 rounded-circle shadow text-white"><img height="40px" width="40px" src="../images/icons/tunein.svg" class="social-icon"/></a><a href="{{ site.data.links.podchaser.link }}" aria-label="podchaser" class="btn btn-secondary m-2 p-3 rounded-circle shadow text-white"><img height="40px" width="40px" src="../images/icons/podchaser.svg" class="social-icon"/></a>
           </div>
           <h2 class="mt-5">WATCH</h2>
-          <div class="d-inline-flex flex-wrap"><a href="{{ site.data.links.youtube.link }}" aria-label="spotify" class="btn btn-secondary m-2 p-3 rounded-circle shadow"> <i style="width: 40; height: 40" class="fa-youtube fab"></i> </a><a href="{{ site.data.links.twitch.link }}" aria-label="twitch" class="btn btn-secondary m-2 p-3 rounded-circle shadow text-white"><img height="40px" width="40px" src="../images/icons/twitch.svg"/></a>
+          <div class="d-inline-flex flex-wrap"><a href="{{ site.data.links.youtube.link }}" aria-label="spotify" class="btn btn-secondary m-2 p-3 rounded-circle shadow"> <i style="width: 40; height: 40" class="fa-youtube fab"></i> </a><a href="{{ site.data.links.twitch.link }}" aria-label="twitch" class="btn btn-secondary m-2 p-3 rounded-circle shadow text-white"><img height="40px" width="40px" src="../images/icons/twitch.svg" class="social-icon"/></a>
           </div>
           <h2 class="mt-5">Socialise</h2>
           <div class="d-inline-flex flex-wrap"><a href="{{ site.data.links.facebook.link }}" aria-label="facebook" class="btn btn-secondary m-2 p-3 rounded-circle shadow"> <i style="width: 40; height: 40" class="fa-facebook fab"></i> </a><a href="{{ site.data.links.twitter.link }}" aria-label="twitter" class="btn btn-secondary m-2 p-3 rounded-circle shadow"> <i style="width: 40; height: 40" class="fa-twitter fab"></i> </a><a href="{{ site.data.links.instagram.link }}" aria-label="instagram" class="btn btn-secondary m-2 p-3 rounded-circle shadow"> <i style="width: 40; height: 40" class="fa-instagram fab"></i> </a><a href="{{ site.data.links.linkedin.link }}" aria-label="linkedin" class="btn btn-secondary m-2 p-3 rounded-circle shadow"> <i style="width: 40; height: 40" class="fa-linkedin fab"></i> </a><a href="{{ site.data.links.tiktok.link }}" aria-label="tiktok" class="btn btn-secondary m-2 p-3 rounded-circle shadow"> <i style="width: 40; height: 40" class="fa-tiktok fab"></i> </a>
           </div>
           <h2 class="mt-5">Support</h2>
-          <div class="d-inline-flex flex-wrap"><a href="{{ site.data.links.buymeacoffee.link }}" aria-label="buymeacoffee" class="btn btn-secondary m-2 p-3 rounded-circle shadow text-white"><img height="40px" width="40px" src="../images/icons/buymeacoffee.svg"/></a><a href="{{ site.data.links.patreon.link }}" aria-label="patreon" class="btn btn-secondary m-2 p-3 rounded-circle shadow text-white"><img height="40px" width="40px" src="../images/icons/patreon.svg"/></a>
+          <div class="d-inline-flex flex-wrap"><a href="{{ site.data.links.buymeacoffee.link }}" aria-label="buymeacoffee" class="btn btn-secondary m-2 p-3 rounded-circle shadow text-white"><img height="40px" width="40px" src="../images/icons/buymeacoffee.svg" class="social-icon"/></a><a href="{{ site.data.links.patreon.link }}" aria-label="patreon" class="btn btn-secondary m-2 p-3 rounded-circle shadow text-white"><img height="40px" width="40px" src="../images/icons/patreon.svg" class="social-icon"/></a>
           </div>
         </div>
       </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="/assets/js/popper.min.js"></script>
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../pgia/lib/pgia.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.13.1/js/all.js"></script>
   </body>
 </html>
