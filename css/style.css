@@ -1,5 +1,7 @@
 :root {
     --color-primary: #f7f300;
+    --color-brand-blue: #8DFFFE;
+    --color-brand-yellow: #F7F300;
 }
 
 body,
@@ -12,7 +14,7 @@ html {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     vertical-align: middle;
 }
@@ -295,5 +297,11 @@ h1 {
 
 .social-icon {
     width: 40px;
+}
+
+.live-banner {
+    background-color: var(--color-primary);
+    color: var(--bs-gray-900);
+    font-size: 1.1rem;
 }
 
