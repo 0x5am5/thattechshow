@@ -106,12 +106,13 @@ collections:
     label_singular: 'Transcript'
     identifier_field: title
     fields:
-      - { label: 'Title', name: 'title', widget: 'text'}
+      - { label: 'Title', name: 'title', widget: 'text', required: true }
       - label: 'Related'
         name: 'related'
         widget: 'list'
+        required: false
         fields:
-          - {label: 'Title', name: 'title', widget: 'string' }
-          - {label: 'URL', name: 'url', widget: 'string' }
-          - {label: 'Image URL', name: 'image', widget: 'string' }
-      - { label: 'Transcript', name: 'transcript', widget: 'markdown'}
+          - {label: 'Title', name: 'title', widget: 'string', required: true }
+          - {label: 'URL', name: 'url', widget: 'string', required: true }
+          - {label: 'Image URL', name: 'image', widget: 'string', required: true }
+      - { label: 'Transcript', name: 'transcript', widget: 'markdown', required: false}
