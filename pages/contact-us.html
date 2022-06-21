@@ -6,7 +6,6 @@ permalink: :basename
   <head>
     <link href="/favicon.jpeg" rel="icon" type="image/jpg"/>
     <meta charset="utf-8"/>
-    <link href="/css/style.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -26,9 +25,7 @@ permalink: :basename
       }
     </script>
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="../blocks.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css"/>
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
+    <link href="/css/style.css" rel="stylesheet"/>
     <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
   </head>
   <body style="padding-top: 0; margin: 0" class="bg-dark">
@@ -56,7 +53,7 @@ permalink: :basename
         </div>
       </nav>
     </header>
-    <main class="main p-3 mb-2 bg-dark text-white" style="padding-left: 15px; padding-right: 15px">
+    <main class="main p-3 mb-2 text-white" style="padding-left: 15px; padding-right: 15px">
       <div class="
           bg-dark
           d-flex
@@ -88,6 +85,11 @@ permalink: :basename
         </div>
       </div>
     </main>
+    <footer style="margin-top: 50px" data-pgc-save-partial="../_includes/footer.html" data-pgc-save-partial-operation="load">
+      <div class="inner-content text-center">
+        <p style="color: white" class="pb-5">&copy;That Tech Show 2022</p>
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="/assets/js/popper.min.js"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script>
