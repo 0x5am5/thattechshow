@@ -6,13 +6,8 @@ permalink: :basename
   <head>
     <link href="/favicon.jpeg" rel="icon" type="image/jpg"/>
     <meta charset="utf-8"/>
-    <link href="/css/style.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <script>
-      window.RSS_URL =
-        'https://s8hdp1sdz5.execute-api.eu-west-2.amazonaws.com/latest/proxy/';
-    </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
@@ -30,6 +25,7 @@ permalink: :basename
       }
     </script>
     <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/style.css" rel="stylesheet"/>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8621956146036386" crossorigin="anonymous"></script>
     <script>/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute('data-pg-ia-disabled')) { window.pgia_small_mq=typeof pgia_small_mq=='string'?pgia_small_mq:'(max-width:767px)';window.pgia_large_mq=typeof pgia_large_mq=='string'?pgia_large_mq:'(min-width:768px)';var style = document.createElement('style');var pgcss='html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}';if(document.documentElement.hasAttribute('data-pg-id') && document.documentElement.hasAttribute('data-pg-mobile')) {pgia_small_mq='(min-width:0)';pgia_large_mq='(min-width:99999px)'} pgcss+='@media ' + pgia_small_mq + '{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}';pgcss+='@media ' + pgia_large_mq + '{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}';style.innerHTML=pgcss;document.querySelector('head').appendChild(style);}}catch(e){console&&console.log(e);}})()</script>
   </head>
@@ -37,26 +33,23 @@ permalink: :basename
     <header class="bg-dark header-wrap sticky-top" data-pgc-save-partial="../_includes/header.html" data-pgc-save-partial-operation="load">
       <nav class="bg-dark border-b-2 border-white navbar navbar-dark navbar-expand-lg">
         <a class="navbar-brand header-title hero-text" href="/">That Tech Show</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/about-us">About Us</a>
+            <li class="nav-item active"><a class="nav-link" href="/about-us">About Us</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/contact-us">Contact</a>
+            <li class="nav-item active"><a class="nav-link" href="/contact-us">Contact</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/episodes">Episodes</a>
+            <li class="nav-item active"><a class="nav-link" href="/episodes">Episodes</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/links">Links</a>
+            <li class="nav-item active"><a class="nav-link" href="/links">Links</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="/press">Press</a>
+            <li class="nav-item active"><a class="nav-link" href="/press">Press</a>
             </li>
-          </ul><a href="https://www.buymeacoffee.com/thattechshow" target="_blank" rel="noreferrer nofollow" class="button-link ms-auto patreon-link text-white"><img src="/images/icons/buymeacoffee.svg" width="25"/> 
+          </ul>
+          <a href="https://www.buymeacoffee.com/thattechshow" target="_blank" rel="noreferrer nofollow" class="button-link ms-auto patreon-link text-white"><img src="/images/icons/buymeacoffee.svg" width="25"/> 
             Support us</a>
         </div>
       </nav>
@@ -87,6 +80,11 @@ permalink: :basename
         </div>
       </section>
     </main>
+    <footer style="margin-top: 50px" data-pgc-save-partial="../_includes/footer.html" data-pgc-save-partial-operation="load">
+      <div class="inner-content text-center">
+        <p style="color: white" class="pb-5">&copy;That Tech Show 2022</p>
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="/assets/js/popper.min.js"></script>
     <script src="/bootstrap/js/bootstrap.min.js"></script>

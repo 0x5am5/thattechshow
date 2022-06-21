@@ -6,7 +6,6 @@ permalink: :basename
   <head>
     <link href="/favicon.jpeg" rel="icon" type="image/jpg"/>
     <meta charset="utf-8"/>
-    <link href="/css/style.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -25,7 +24,8 @@ permalink: :basename
         gtag('config', 'G-TEM8PPB2T0');
       }
     </script>
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/style.css" rel="stylesheet"/>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -67,7 +67,7 @@ permalink: :basename
         </div>
       </nav>
     </header>
-    <main class="bg-dark h-full main mb-2 p-3 text-white" style="padding-left: 15px; padding-right: 15px">
+    <main class="h-full main mb-2 p-3 text-white" style="padding-left: 15px; padding-right: 15px">
       <section class="about-content h-full">
         <h1>About the Show</h1>
         <div class="about-hero">
@@ -83,6 +83,17 @@ permalink: :basename
         {{ site.data.about.content }}
       </section>
     </main>
+    <footer style="margin-top: 50px" class="mt-4" data-pgc-save-partial="../_includes/footer.html" data-pgc-save-partial-operation="load">
+      <div class="inner-content text-center">
+        <p style="color: white" class="pb-5">&copy;That Tech Show 2022</p>
+      </div>
+      <div class="live-banner fixed-bottom p-3 rounded-2">
+        <div class="container">
+          <h2 class="fw-bold my-2">Announcement:&nbsp;THAT TECH SHOW LIVE!</h2>
+          <p>We&apos;re excited to announce that we will be doing a THAT TECH SHOW Live meetup event in <b>London</b> some time in <b>August</b>. If you&apos;re interested in attending or participating, <a href="http://eepurl.com/h4rFjv" target="_blank" class="fw-bolder text-black">let us know!</a></p>
+        </div>
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="../assets/js/popper.min.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
