@@ -67,7 +67,21 @@ permalink: :basename
                 </div>
                 <div class="col-md-9">
                   <h2 class="media-heading"> <a href="{{ post.url }}" class="text-white" style="font-size: .75em;text-decoration: none;">{{ post.title }}</a> </h2><small class="text-muted vstack gap-2">Published: {{post.pubdate}}</small>
-                  <div class="vstack gap-2">{{post.subtitle}}</div>
+                  {% if post.subtitle %}<p class="vstack gap-2">{{post.subtitle}}</p>{% endif %}
+                  {% for episode in site.data.transcripts %}
+                  {% assign episodeData = episode[1] %}
+                  {% assign pageTitle = page.title | slugify %}
+                  {% assign episodeTitle = episodeData.title | slugify %}
+                    {% if episodeTitle == pageTitle %}
+                      {% if episodeData.tags %}
+                      <ul class="tags">
+                        {% for tag in episodeData.tags limit:6 %}
+                          <li class="tag">{{tag.tag}}</li>
+                        {% endfor %}
+                      </ul>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
                   <audio class="p-1 mt-2 w-100" controls preload="none">
                     <source src="{{post.media}}" type="audio/mp3"/>
                   </audio>
