@@ -97,6 +97,20 @@
               <h1 class="hero-text text-uppercase">{{page.title}}</h1>
               <h2 style="font-size: 1.2em">{{ page.subtitle }}</h2>
               <small class="text-muted vstack gap-2">Published: {{page.pubdate}}</small>
+              {% for episode in site.data.transcripts %}
+              {% assign episodeData = episode[1] %}
+              {% assign pageTitle = page.title | slugify %}
+              {% assign episodeTitle = episodeData.title | slugify %}
+                {% if episodeTitle == pageTitle %}
+                  {% if episodeData.tags %}
+                  <ul class="tags">
+                    {% for tag in episodeData.tags %}
+                      <li class="tag">{{tag.tag}}</li>
+                    {% endfor %}
+                  </ul>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
               <p>{{ page.description }}</p>
             </div>
           </div>
