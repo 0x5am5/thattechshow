@@ -120,7 +120,7 @@
                 {% if post.subtitle %}<p class="card-text">{{post.subtitle}}</p>{% endif %}
                 {% for episode in site.data.transcripts %}
                   {% assign episodeData = episode[1] %}
-                  {% assign pageTitle = page.title | slugify %}
+                  {% assign pageTitle = post.title | slugify %}
                   {% assign episodeTitle = episodeData.title | slugify %}
                     {% if episodeTitle == pageTitle %}
                       {% if episodeData.tags %}
@@ -132,7 +132,7 @@
                     {% endif %}
                   {% endif %}
                 {% endfor %}
-                <div class="card-text">{{post.description | truncatewords: 50, "..." }}</div><a href="{{ post.url }}" class="inline-block mb-3 text-current">Find out more</a>
+                <div class="card-text">{{post.description | truncatewords: 50, "..." }}</div><a href="{{ post.url }}" class="text-white border rounded p-2 inline-block mb-3 d-inline-block">Find out more</a>
                 <audio class="mt-auto p-1 w-100" controls preload="none">
                   <source src="{{post.media}}" type="audio/mp3"/>
                 </audio>
@@ -144,23 +144,24 @@
         <h2>Other Episodes</h2>
         <div class="row" data-pg-ia-scene='{"l":[{"a":{"l":[{"t":".card","l":[{"t":"set","p":0,"d":0,"l":{"y":"100px"}},{"t":"tween","p":0,"d":0.5,"s":0.1,"l":{"y":0,"autoAlpha":1}}]}]},"p":"time"}]}'>
           {% for post in site.posts limit:3 offset:1 %}
-          <div class="col-sm-4 d-flex" style="padding-bottom: 1em;"><a href="{{post.url}}" class="card text-white episode-link-card" style="text-decoration: none; background: transparent; height: 100%" aria-label="{{ post.title }}" data-pg-ia-hide> <img class="card-img-top" src="{{post.image}}" width="200px"/> <div class="card-body flex flex-col"><small class="text-muted">Published: {{post.pubdate}}</small>
+          <div class="col-sm-4 d-flex" style="padding-bottom: 1em;"><a href="{{post.url}}" class="card text-white episode-link-card" style="text-decoration: none; background: transparent; height: 100%" aria-label="{{ post.title }}" data-pg-ia-hide> <img class="card-img-top" src="{{post.image}}" width="200px"/> <div class="card-body flex d-flex flex-column justify-content-between"><div><small class="text-muted">Published: {{post.pubdate}}</small>
                 <h3 class="card-title mt-2" href="{{ post.url }}" style="font-size: 1.3em">{{ post.title }}</h3>
-                <p class="card-text">{{post.subtitle}}</p>
+                {% if post.subtitle %}<p class="card-text">{{post.subtitle}}</p>{% endif %}
                 {% for episode in site.data.transcripts %}
                   {% assign episodeData = episode[1] %}
-                  {% assign pageTitle = page.title | slugify %}
+                  {% assign pageTitle = post.title | slugify %}
                   {% assign episodeTitle = episodeData.title | slugify %}
                     {% if episodeTitle == pageTitle %}
                       {% if episodeData.tags %}
-                      <ul class="tags">
-                        {% for tag in episodeData.tags limit:6 %}
+                      <ul class="tags small">
+                        {% for tag in episodeData.tags limit:3 %}
                           <li class="tag">{{tag.tag}}</li>
                         {% endfor %}
                       </ul>
                       {% endif %}
                     {% endif %}
                   {% endfor %}
+                </div>
                 <audio class="mt-auto p-1" controls preload="none">
                   <source src="{{post.media}}" type="audio/mp3"/>
                 </audio>
