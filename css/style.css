@@ -128,6 +128,11 @@ header .button-link {
     background-color: var(--color-brand-yellow);
     border-radius: 30px;
     color: black;
+    margin-bottom: .5em;
+}
+
+.tags .tag + .tag {
+    margin-left: .5em;
 }
 
 @media screen and (min-width: 768px) {
