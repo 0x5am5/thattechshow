@@ -66,14 +66,14 @@ permalink: :basename
                   <a href="{{post.url}}"> <img class="media-object" src="{{post.image}}" alt="..."/></a>
                 </div>
                 <div class="col-md-9">
-                  <h2 class="media-heading"> <a href="{{ post.url }}" class="text-white" style="font-size: .75em;text-decoration: none;">{{ post.title }}</a> </h2><small class="text-muted vstack gap-2">Published: {{post.pubdate}}</small>
-                  {% if post.subtitle %}<p class="vstack gap-2">{{post.subtitle}}</p>{% endif %}
+                  <h2 class="media-heading mt-0 mb-1"> <a href="{{ post.url }}" class="text-white" style="font-size: .75em;text-decoration: none;">{{ post.title }}</a> </h2><small class="text-muted vstack gap-2">Published: {{post.pubdate}}</small>
+                  {% if post.subtitle %}<p class="vstack gap-2 my-3">{{post.subtitle}}</p>{% endif %}
                   {% for episode in site.data.transcripts %}
                   {% assign episodeData = episode[1] %}
-                  {% assign pageTitle = page.title | slugify %}
+                  {% assign pageTitle = post.title | slugify %}
                   {% assign episodeTitle = episodeData.title | slugify %}
                     {% if episodeTitle == pageTitle %}
-                      {% if episodeData.tags %}
+                    {% if episodeData.tags %}
                       <ul class="tags">
                         {% for tag in episodeData.tags limit:6 %}
                           <li class="tag">{{tag.tag}}</li>
@@ -85,7 +85,7 @@ permalink: :basename
                   <audio class="p-1 mt-2 w-100" controls preload="none">
                     <source src="{{post.media}}" type="audio/mp3"/>
                   </audio>
-                  <p style="padding-top: 1em"> <a href="{{post.url}}" class="text-white" style="text-decoration: none;">Learn more...</a> </p>
+                  <p style="padding-top: 1em"> <a href="{{post.url}}" class="text-white border rounded p-2" style="text-decoration: none;">Learn more...</a> </p>
                 </div>
               </div>
             </div>
