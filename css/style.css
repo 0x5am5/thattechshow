@@ -131,11 +131,6 @@ header .button-link {
     margin-bottom: .5em;
 }
 
-.tags .tag.empty {
-    background-color: #333;
-    color: #ccc;
-}
-
 .tags .tag + .tag {
     margin-left: .5em;
 }
