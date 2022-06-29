@@ -31,9 +31,6 @@ header .button-link {
     align-items: center;
 }
 
-.hero {
-}
-
 .link-image {
     max-height: 50px;
     width: auto;
@@ -117,6 +114,20 @@ header .button-link {
 #episodes a:hover,
 #episodes a:focus {
     color: #f7f300;
+}
+
+.tags {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+}
+
+.tags .tag {
+    display: inline-block;
+    padding: .5em 1em;
+    background-color: var(--color-brand-yellow);
+    border-radius: 30px;
+    color: black;
 }
 
 @media screen and (min-width: 768px) {

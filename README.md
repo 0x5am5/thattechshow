@@ -9,5 +9,3 @@ Site is ran on Jekyll and built in Pinegrow
 Feed of posts is built using:
 
 `bundle exec ruby feed.rb`
-or
-`exec ruby feed.rb`
