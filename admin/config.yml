@@ -107,6 +107,11 @@ collections:
     identifier_field: title
     fields:
       - { label: 'Title', name: 'title', widget: 'text', required: true }
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'list'
+        fields:
+          - { label: 'Tag', name: 'tag', widget: 'string', required: true}
       - label: 'Related'
         name: 'related'
         widget: 'list'
