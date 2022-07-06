@@ -32,25 +32,27 @@
   </head>
   <body style="padding-top: 0; margin: 0">
     <header class="bg-dark header-wrap sticky-top" data-pgc-save-partial="_includes/header.html" data-pgc-save-partial-operation="load">
-      <nav class="bg-dark border-b-2 border-white navbar navbar-dark navbar-expand-lg">
-        <a class="navbar-brand header-title hero-text" href="/">That Tech Show</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+      <nav class="bg-dark border-b-2 border-white navbar navbar-dark navbar-expand-lg"><a class="navbar-brand header-title hero-text" href="/">That Tech Show</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active"><a class="nav-link" href="/about-us">About Us</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="/about-us">About Us</a>
             </li>
-            <li class="nav-item active"><a class="nav-link" href="/contact-us">Contact</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="/contact-us">Contact</a>
             </li>
-            <li class="nav-item active"><a class="nav-link" href="/episodes">Episodes</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="/episodes">Episodes</a>
             </li>
-            <li class="nav-item active"><a class="nav-link" href="/links">Links</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="/links">Links</a>
             </li>
-            <li class="nav-item active"><a class="nav-link" href="/press">Press</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="/press">Press</a>
             </li>
-          </ul>
-          <a href="https://www.buymeacoffee.com/thattechshow" target="_blank" rel="noreferrer nofollow" class="button-link ms-auto patreon-link text-white"><img src="/images/icons/buymeacoffee.svg" width="25"/> 
+          </ul><a href="https://www.buymeacoffee.com/thattechshow" target="_blank" rel="noreferrer nofollow" class="button-link ms-auto patreon-link text-white"><img src="/images/icons/buymeacoffee.svg" width="25"/> 
             Support us</a>
         </div>
       </nav>
@@ -116,8 +118,7 @@
                 {% endif %}
                 {% endif %}
                 {% endfor %}
-                <div class="card-text">{{post.description | truncatewords: 50, "..." }}</div>
-                <a href="{{ post.url }}" class="text-white border rounded p-2 inline-block mb-3 d-inline-block">Find out more</a>
+                <div class="card-text">{{post.description | truncatewords: 50, "..." }}</div><a href="{{ post.url }}" class="text-white border rounded p-2 inline-block mb-3 d-inline-block">Find out more</a>
                 <audio class="mt-auto p-1 w-100" controls preload="none">
                   <source src="{{post.media}}" type="audio/mp3"/>
                 </audio>
@@ -129,10 +130,8 @@
         <h2>Other Episodes</h2>
         <div class="row" data-pg-ia-scene='{"l":[{"a":{"l":[{"t":".card","l":[{"t":"set","p":0,"d":0,"l":{"y":"100px"}},{"t":"tween","p":0,"d":0.5,"s":0.1,"l":{"y":0,"autoAlpha":1}}]}]},"p":"time"}]}'>
           {% for post in site.posts limit:3 offset:1 %}
-          <div class="col-sm-4 d-flex" style="padding-bottom: 1em;">
-            <a href="{{post.url}}" class="card text-white episode-link-card" style="text-decoration: none; background: transparent; height: 100%" aria-label="{{ post.title }}" data-pg-ia-hide> <img class="card-img-top" src="{{post.image}}" width="200px"/> <div class="card-body flex d-flex flex-column justify-content-between">
-                <div>
-                  <small class="text-muted">Published: {{post.pubdate}}</small>
+          <div class="col-sm-4 d-flex" style="padding-bottom: 1em;"><a href="{{post.url}}" class="card text-white episode-link-card" style="text-decoration: none; background: transparent; height: 100%" aria-label="{{ post.title }}" data-pg-ia-hide> <img class="card-img-top" src="{{post.image}}" width="200px"/> <div class="card-body flex d-flex flex-column justify-content-between">
+                <div><small class="text-muted">Published: {{post.pubdate}}</small>
                   <h3 class="card-title mt-2" href="{{ post.url }}" style="font-size: 1.3em">{{ post.title }}</h3>
                   {% if post.subtitle %}
                   <p class="card-text">{{post.subtitle}}</p>{% endif %}
@@ -157,8 +156,7 @@
               </div> </a>
           </div>
           {% endfor %}
-          <div class="col-12 text-center">
-            <a href="{{site.baseurl}}/episodes" class="button-link">See more</a>
+          <div class="col-12 text-center"><a href="{{site.baseurl}}/episodes" class="button-link">See more</a>
           </div>
         </div>
       </div>
