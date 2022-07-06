@@ -140,7 +140,6 @@ header .button-link {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        flex-direction: row;
         padding-left: 0;
         padding-right: 0;
     }
@@ -153,12 +152,8 @@ header .button-link {
 }
 
 .hero-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    min-height: 85vh;
 }
 
 .header-title {
@@ -320,5 +315,8 @@ h1 {
     background-color: var(--color-primary);
     color: var(--bs-gray-900);
     font-size: 1.1rem;
+}
+
+.hero-banner {
 }
 
