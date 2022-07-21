@@ -26,6 +26,11 @@
   status = 301
 
 [[redirects]]
+  from = "/episodes/63-construct-3-no-code-game-creation-with-tom-and-ash"
+  to = "/episodes/63-construct-3-no-code-game-creation-with-tom-and-ashley"
+  status = 301
+
+[[redirects]]
   from = "/episodes/56-navigating-your-career-in-tech-from-an-mit-instructor-mark-herschberg"
   to = "/episodes/56-navigating-your-career-in-tech-from-an-mit-instructor-with-mark-herschberg"
   status = 301
